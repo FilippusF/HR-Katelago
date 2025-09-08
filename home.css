@@ -1,0 +1,60 @@
+/*classes for the home page.*/
+
+/* Importing the font */
+@font-face {
+  font-family: 'Velvetica';  
+  src: url('fonts/Velvetica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}  
+  
+.homeBackgroundImage {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+ .nav{
+    position: fixed;
+    top: 0.5%;
+    z-index: 1000;
+    width: 90%;
+    align-items:center;
+    font-family: Velvetica;
+    font-size: 20px;
+    justify-content:center;
+    word-spacing: 10%;
+    display: flex;
+ }   
+
+   .hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    .hover:hover {
+        color: black; 
+    }
+
+     .logo {
+      height: 50px;
+      width: 100px;
+      object-fit: contain;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px; 
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #bf9a3c;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
