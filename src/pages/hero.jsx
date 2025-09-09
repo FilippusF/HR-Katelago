@@ -1,54 +1,49 @@
 import React from 'react';
+import heroImage from '../assets/images/9.jpg';
 
 const Hero = () => {
   return (
     <section 
       className="hero-section d-flex align-items-center min-vh-100"
       style={{
-        background: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80")',
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${heroImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
       }}
     >
       <div className="container">
-        <div className="row align-items-center">
-          <div className="col-lg-6">
-            <div className="hero-content text-white">
+        <div className="row justify-content-center">
+          <div className="col-lg-10 col-xl-8">
+            <div className="hero-content text-white text-center">
               {/* Subtitle */}
               <p 
-                className="text-uppercase mb-3 fw-bold tracking-wider"
+                className="text-uppercase mb-4 fw-normal"
                 style={{
-                  color: '#ff6b4a',
-                  letterSpacing: '2px',
-                  fontSize: '14px'
+                  color: '#ffffff',
+                  letterSpacing: '3px',
+                  fontSize: '14px',
+                  opacity: '0.9'
                 }}
               >
-                STREAMLINE YOUR HR PROCESSES
+                Katelago HR Consultants
               </p>
 
               {/* Main Title */}
               <h1 
-                className="display-3 fw-bold mb-4 lh-1"
+                className="mb-5"
                 style={{
-                  fontSize: 'clamp(2.5rem, 5vw, 4rem)',
-                  fontWeight: '700'
+                  fontSize: 'clamp(2.8rem, 6vw, 4.5rem)',
+                  fontWeight: '300',
+                  lineHeight: '1.2',
+                  marginBottom: '3rem'
                 }}
               >
-                Scalable HR Services<br />
-                <span style={{color: '#20b2aa'}}>Designed To Help Your</span><br />
-                Business Grow.
+                We create a place where your people love to work!
               </h1>
 
-              {/* Description */}
-              <p className="lead mb-5" style={{fontSize: '1.1rem', lineHeight: '1.8'}}>
-                Transform your human resources management with our comprehensive 
-                solutions. We help businesses streamline their HR processes, 
-                improve employee satisfaction, and drive sustainable growth.
-              </p>
-
               {/* CTA Button */}
-              <div className="hero-cta">
+              <div className="hero-cta mb-5">
                 <a 
                   href="#contact" 
                   className="btn btn-lg px-5 py-3 rounded-pill fw-bold text-uppercase"
@@ -56,53 +51,27 @@ const Hero = () => {
                     backgroundColor: '#ff6b4a',
                     border: 'none',
                     color: 'white',
-                    fontSize: '16px',
-                    letterSpacing: '1px',
+                    fontSize: '14px',
+                    letterSpacing: '2px',
                     transition: 'all 0.3s ease',
-                    boxShadow: '0 4px 15px rgba(255, 107, 74, 0.3)'
+                    boxShadow: '0 4px 20px rgba(255, 107, 74, 0.3)',
+                    minWidth: '220px'
                   }}
                   onMouseOver={(e) => {
                     e.target.style.backgroundColor = '#e55a43';
                     e.target.style.transform = 'translateY(-2px)';
-                    e.target.style.boxShadow = '0 6px 20px rgba(255, 107, 74, 0.4)';
+                    e.target.style.boxShadow = '0 6px 25px rgba(255, 107, 74, 0.4)';
                   }}
                   onMouseOut={(e) => {
                     e.target.style.backgroundColor = '#ff6b4a';
                     e.target.style.transform = 'translateY(0)';
-                    e.target.style.boxShadow = '0 4px 15px rgba(255, 107, 74, 0.3)';
+                    e.target.style.boxShadow = '0 4px 20px rgba(255, 107, 74, 0.3)';
                   }}
                 >
-                  FREE CONSULTATION →
+                  Book a Consultation →
                 </a>
               </div>
-
-              {/* Stats or Features */}
-              <div className="row mt-5 pt-4">
-                <div className="col-4">
-                  <div className="text-center">
-                    <h3 className="fw-bold mb-1" style={{color: '#20b2aa'}}>500+</h3>
-                    <small className="text-muted">Happy Clients</small>
-                  </div>
-                </div>
-                <div className="col-4">
-                  <div className="text-center">
-                    <h3 className="fw-bold mb-1" style={{color: '#20b2aa'}}>10+</h3>
-                    <small className="text-muted">Years Experience</small>
-                  </div>
-                </div>
-                <div className="col-4">
-                  <div className="text-center">
-                    <h3 className="fw-bold mb-1" style={{color: '#20b2aa'}}>98%</h3>
-                    <small className="text-muted">Success Rate</small>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-
-          {/* Right side - could be used for additional content or kept empty */}
-          <div className="col-lg-6">
-            {/* Optional: Add an image, form, or additional content here */}
           </div>
         </div>
       </div>
@@ -130,23 +99,19 @@ const Hero = () => {
           }
         }
         
-        .tracking-wider {
-          letter-spacing: 2px;
-        }
-        
         .hero-section {
           position: relative;
           overflow: hidden;
         }
         
         .hero-content {
-          animation: fadeInUp 1s ease-out;
+          animation: fadeInUp 1.2s ease-out;
         }
         
         @keyframes fadeInUp {
           from {
             opacity: 0;
-            transform: translateY(30px);
+            transform: translateY(40px);
           }
           to {
             opacity: 1;
@@ -154,9 +119,33 @@ const Hero = () => {
           }
         }
         
+        .hero-content h1 {
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-content p {
+          text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
         @media (max-width: 768px) {
           .hero-section {
             background-attachment: scroll;
+          }
+          
+          .hero-content h1 {
+            font-size: 2.5rem !important;
+            line-height: 1.3;
+          }
+          
+          .hero-content p {
+            font-size: 12px;
+            letter-spacing: 2px;
+          }
+        }
+        
+        @media (max-width: 576px) {
+          .hero-content h1 {
+            font-size: 2rem !important;
           }
         }
       `}</style>
