@@ -48,24 +48,24 @@ const Hero = () => {
                   href="#contact" 
                   className="btn btn-lg px-5 py-3 rounded-pill fw-bold text-uppercase"
                   style={{
-                    backgroundColor: '#ff6b4a',
+                    backgroundColor: '#1e5631',
                     border: 'none',
                     color: 'white',
                     fontSize: '14px',
                     letterSpacing: '2px',
                     transition: 'all 0.3s ease',
-                    boxShadow: '0 4px 20px rgba(255, 107, 74, 0.3)',
+                    boxShadow: '0 4px 20px rgba(30, 86, 49, 0.3)',
                     minWidth: '220px'
                   }}
                   onMouseOver={(e) => {
-                    e.target.style.backgroundColor = '#e55a43';
+                    e.target.style.backgroundColor = '#2d7d32';
                     e.target.style.transform = 'translateY(-2px)';
-                    e.target.style.boxShadow = '0 6px 25px rgba(255, 107, 74, 0.4)';
+                    e.target.style.boxShadow = '0 6px 25px rgba(30, 86, 49, 0.4)';
                   }}
                   onMouseOut={(e) => {
-                    e.target.style.backgroundColor = '#ff6b4a';
+                    e.target.style.backgroundColor = '#1e5631';
                     e.target.style.transform = 'translateY(0)';
-                    e.target.style.boxShadow = '0 4px 20px rgba(255, 107, 74, 0.3)';
+                    e.target.style.boxShadow = '0 4px 20px rgba(30, 86, 49, 0.3)';
                   }}
                 >
                   Book a Consultation →

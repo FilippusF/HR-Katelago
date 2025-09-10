@@ -75,14 +75,14 @@ const Header = () => {
         zIndex: 1050,
         padding: '12px 0'
       }}>
-        <div className="container-fluid px-4">
+        <div className="container-fluid px-5">
           {/* Logo Section */}
           <a className="navbar-brand d-flex align-items-center" href="#" style={{ marginRight: '3rem' }}>
             <img 
               src="src/assets/images/main-logo.png" 
               alt="Logo" 
               style={{ 
-                height: '45px',
+                height: '55px',
                 width: 'auto'
               }}
             />

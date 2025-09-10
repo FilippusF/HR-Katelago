@@ -5,6 +5,7 @@ import whoImage from '../assets/images/who.png';
 import missionImage from '../assets/images/mission.jpg';
 import chooseImage from '../assets/images/choose.png';
 import logoImage from '../assets/images/Main-logo.png';
+import actionImage from '../assets/images/action.png';
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -766,6 +767,59 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Call to Action Section */}
+<section 
+  className="py-5"
+  style={{ 
+    backgroundImage: `url(${actionImage})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    minHeight: '400px',
+    position: 'relative'
+  }}
+>
+  {/* Overlay for better text readability */}
+  <div 
+    className="position-absolute top-0 start-0 w-100 h-100"
+    style={{
+      backgroundColor: 'rgba(0,0,0,0.6)',
+      zIndex: 1
+    }}
+  ></div>
+  
+  {/* Content */}
+  <div className="container position-relative" style={{ zIndex: 2 }}>
+    <div className="row justify-content-center text-center">
+      <div className="col-lg-8">
+        <h2 
+          className="display-4 fw-bold text-white mb-4"
+          style={{
+            lineHeight: '1.2'
+          }}
+        >
+          Let’s partner for HR Excellence.
+        </h2>
+        
+        <div className="mt-4">
+          <button
+            className="btn btn-lg px-5 py-3 rounded-pill fw-bold text-white border-0 cta-button"
+            style={{
+              backgroundColor: '#1e5631',
+              fontSize: '16px',
+              letterSpacing: '0.5px',
+              transition: 'all 0.3s ease',
+              boxShadow: '0 4px 15px rgba(30, 86, 49, 0.3)'
+            }}
+          >
+            Book a Consultation →
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/* Loader */}
       {isLoading && (
         <div 
@@ -787,7 +841,7 @@ const Home = () => {
             />
             <div 
               className="spinner-border"
-              style={{ color: '#20b2aa' }}
+              style={{ color: '#1e5631' }}
               role="status"
             >
               <span className="visually-hidden">Loading...</span>
@@ -874,6 +928,11 @@ const Home = () => {
 
         .choose-image:hover {
           transform: scale(1.02);
+        }
+
+        .cta-button:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 6px 20px rgba(30, 86, 49, 0.4) !important;
         }
       `}</style>
     </div>
