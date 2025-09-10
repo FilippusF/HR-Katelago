@@ -3,6 +3,7 @@ import Hero from './hero';
 import { clients } from '../data/clients';
 import whoImage from '../assets/images/who.png';
 import missionImage from '../assets/images/mission.jpg';
+import chooseImage from '../assets/images/choose.png';
 import logoImage from '../assets/images/Main-logo.png';
 
 const Home = () => {
@@ -556,16 +557,201 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Additional sections can be added here */}
-      <section className="py-5">
+      {/* How This HR Solutions Work Section */}
+      <section 
+        className="py-5"
+        style={{ 
+          backgroundColor: '#1e5631',
+          minHeight: '800px'
+        }}
+      >
         <div className="container">
-          <div className="row">
-            <div className="col-12 text-center">
-              <h2 className="mb-4">Welcome to Our HR Services</h2>
-              <p className="lead">
-                This is where additional content sections will go. 
-                You can add services, testimonials, about preview, etc.
+          {/* Section Header */}
+          <div className="row mb-5">
+            <div className="col-lg-6">
+              <h2 
+                className="display-5 fw-bold text-white mb-0"
+                style={{
+                  lineHeight: '1.2'
+                }}
+              >
+                Why Choose Us
+              </h2>
+            </div>
+            <div className="col-lg-6 d-flex align-items-end">
+              <p 
+                className="text-white mb-0"
+                style={{ 
+                  opacity: 0.8,
+                  fontSize: '16px',
+                  lineHeight: '1.6'
+                }}
+              >
+                20+ years of Industry Expertise – Experienced HR professionals.
               </p>
+            </div>
+          </div>
+
+          <div className="row">
+            {/* Left Side - Process Steps */}
+            <div className="col-lg-8 mb-4">
+              <div className="row g-4">
+                {/* Step 01 */}
+                <div className="col-md-6">
+                  <div 
+                    className="h-100 p-4 rounded-4"
+                    style={{
+                      backgroundColor: '#D4AF37',
+                      minHeight: '200px'
+                    }}
+                  >
+                    <div className="mb-3">
+                      <span 
+                        className="fw-bold"
+                        style={{
+                          fontSize: '48px',
+                          color: 'rgba(0,0,0,0.3)',
+                          lineHeight: '1'
+                        }}
+                      >
+                        01
+                      </span>
+                    </div>
+                    <h4 className="fw-bold mb-3" style={{ color: '#1e5631' }}>
+                      Bold Solutions, Trusted Results, Human Impact.
+                    </h4>
+                  </div>
+                </div>
+
+                {/* Step 02 */}
+                <div className="col-md-6">
+                  <div 
+                    className="h-100 p-4 rounded-4"
+                    style={{
+                      backgroundColor: '#D4AF37',
+                      minHeight: '200px'
+                    }}
+                  >
+                    <div className="mb-3">
+                      <span 
+                        className="fw-bold"
+                        style={{
+                          fontSize: '48px',
+                          color: 'rgba(0,0,0,0.3)',
+                          lineHeight: '1'
+                        }}
+                      >
+                        02
+                      </span>
+                    </div>
+                    <h4 className="fw-bold mb-3" style={{ color: '#1e5631' }}>
+                      Tailored Strategies, Compliance Assured.
+                    </h4>
+                    <p 
+                      className="mb-0"
+                      style={{ 
+                        color: '#1e5631',
+                        fontSize: '14px',
+                        opacity: 0.8
+                      }}
+                    >
+                      We design HR strategies tailored to your needs, ensuring compliance with labour laws
+                      while reducing risk..
+                    </p>
+                  </div>
+                </div>
+
+                {/* Step 03 */}
+                <div className="col-md-6">
+                  <div 
+                    className="h-100 p-4 rounded-4"
+                    style={{
+                      backgroundColor: '#D4AF37',
+                      minHeight: '200px'
+                    }}
+                  >
+                    <div className="mb-3">
+                      <span 
+                        className="fw-bold"
+                        style={{
+                          fontSize: '48px',
+                          color: 'rgba(0,0,0,0.3)',
+                          lineHeight: '1'
+                        }}
+                      >
+                        03
+                      </span>
+                    </div>
+                    <h4 className="fw-bold mb-3" style={{ color: '#1e5631' }}>
+                      Seamless Integration, Trusted Support.
+                    </h4>
+                    <p 
+                      className="mb-0"
+                      style={{ 
+                        color: '#1e5631',
+                        fontSize: '14px',
+                        opacity: 0.8
+                      }}
+                    >
+                      From in-house to outsourced HR, we safeguard confidentiality and professionalism at
+                      every step, delivering ethical and results-driven support.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Step 04 */}
+                <div className="col-md-6">
+                  <div 
+                    className="h-100 p-4 rounded-4 position-relative overflow-hidden"
+                    style={{
+                      backgroundColor: '#D4AF37',
+                      minHeight: '200px'
+                    }}
+                  >
+                    <div className="mb-3">
+                      <span 
+                        className="fw-bold text-white"
+                        style={{
+                          fontSize: '48px',
+                          opacity: 0.3,
+                          lineHeight: '1'
+                        }}
+                      >
+                        04
+                      </span>
+                    </div>
+                    <h4 className="fw-bold mb-3 text-white">
+                      Empowering Growth, People First.
+                    </h4>
+                    <p 
+                      className="mb-0 text-white"
+                      style={{ 
+                        fontSize: '14px',
+                        opacity: 0.9
+                      }}
+                    >
+                      At Katelago, we’re passionate about helping businesses grow with confidence,
+                      compliance, and people-first solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side - Image */}
+            <div className="col-lg-4">
+              <div className="h-100">
+                <div 
+                  className="rounded-4 overflow-hidden h-100"
+                  style={{
+                    minHeight: '500px',
+                    backgroundImage: `url(${chooseImage})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                  }}
+                >
+                </div>
+              </div>
             </div>
           </div>
         </div>
