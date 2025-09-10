@@ -557,7 +557,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* How This HR Solutions Work Section */}
+      {/* Why Choose Us Section */}
       <section 
         className="py-5"
         style={{ 
@@ -592,24 +592,26 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="row">
-            {/* Left Side - Process Steps */}
-            <div className="col-lg-8 mb-4">
-              <div className="row g-4">
-                {/* Step 01 */}
-                <div className="col-md-6">
+          <div className="row g-4">
+            {/* Top Row - Cards 01, 02, 03 */}
+            <div className="col-lg-8">
+              <div className="row g-4 mb-4">
+                {/* Card 01 */}
+                <div className="col-md-4">
                   <div 
-                    className="h-100 p-4 rounded-4"
+                    className="choose-card p-3 rounded-4 d-flex flex-column"
                     style={{
                       backgroundColor: '#D4AF37',
-                      minHeight: '200px'
+                      height: '220px',
+                      transition: 'all 0.3s ease',
+                      cursor: 'pointer'
                     }}
                   >
-                    <div className="mb-3">
+                    <div className="mb-2">
                       <span 
                         className="fw-bold"
                         style={{
-                          fontSize: '48px',
+                          fontSize: '36px',
                           color: 'rgba(0,0,0,0.3)',
                           lineHeight: '1'
                         }}
@@ -617,26 +619,28 @@ const Home = () => {
                         01
                       </span>
                     </div>
-                    <h4 className="fw-bold mb-3" style={{ color: '#1e5631' }}>
+                    <h6 className="fw-bold mb-0" style={{ color: '#1e5631', fontSize: '14px', lineHeight: '1.3' }}>
                       Bold Solutions, Trusted Results, Human Impact.
-                    </h4>
+                    </h6>
                   </div>
                 </div>
 
-                {/* Step 02 */}
-                <div className="col-md-6">
+                {/* Card 02 */}
+                <div className="col-md-4">
                   <div 
-                    className="h-100 p-4 rounded-4"
+                    className="choose-card p-3 rounded-4 d-flex flex-column"
                     style={{
                       backgroundColor: '#D4AF37',
-                      minHeight: '200px'
+                      height: '220px',
+                      transition: 'all 0.3s ease',
+                      cursor: 'pointer'
                     }}
                   >
-                    <div className="mb-3">
+                    <div className="mb-2">
                       <span 
                         className="fw-bold"
                         style={{
-                          fontSize: '48px',
+                          fontSize: '36px',
                           color: 'rgba(0,0,0,0.3)',
                           lineHeight: '1'
                         }}
@@ -644,37 +648,39 @@ const Home = () => {
                         02
                       </span>
                     </div>
-                    <h4 className="fw-bold mb-3" style={{ color: '#1e5631' }}>
+                    <h6 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '14px', lineHeight: '1.3' }}>
                       Tailored Strategies, Compliance Assured.
-                    </h4>
+                    </h6>
                     <p 
-                      className="mb-0"
+                      className="mb-0 flex-grow-1"
                       style={{ 
                         color: '#1e5631',
-                        fontSize: '14px',
-                        opacity: 0.8
+                        fontSize: '12px',
+                        opacity: 0.8,
+                        lineHeight: '1.4'
                       }}
                     >
-                      We design HR strategies tailored to your needs, ensuring compliance with labour laws
-                      while reducing risk..
+                      We design HR strategies tailored to your needs, ensuring compliance with labour laws.
                     </p>
                   </div>
                 </div>
 
-                {/* Step 03 */}
-                <div className="col-md-6">
+                {/* Card 03 */}
+                <div className="col-md-4">
                   <div 
-                    className="h-100 p-4 rounded-4"
+                    className="choose-card p-3 rounded-4 d-flex flex-column"
                     style={{
                       backgroundColor: '#D4AF37',
-                      minHeight: '200px'
+                      height: '220px',
+                      transition: 'all 0.3s ease',
+                      cursor: 'pointer'
                     }}
                   >
-                    <div className="mb-3">
+                    <div className="mb-2">
                       <span 
                         className="fw-bold"
                         style={{
-                          fontSize: '48px',
+                          fontSize: '36px',
                           color: 'rgba(0,0,0,0.3)',
                           lineHeight: '1'
                         }}
@@ -682,75 +688,78 @@ const Home = () => {
                         03
                       </span>
                     </div>
-                    <h4 className="fw-bold mb-3" style={{ color: '#1e5631' }}>
+                    <h6 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '14px', lineHeight: '1.3' }}>
                       Seamless Integration, Trusted Support.
-                    </h4>
+                    </h6>
                     <p 
-                      className="mb-0"
+                      className="mb-0 flex-grow-1"
                       style={{ 
                         color: '#1e5631',
-                        fontSize: '14px',
-                        opacity: 0.8
+                        fontSize: '12px',
+                        opacity: 0.8,
+                        lineHeight: '1.4'
                       }}
                     >
-                      From in-house to outsourced HR, we safeguard confidentiality and professionalism at
-                      every step, delivering ethical and results-driven support.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Step 04 */}
-                <div className="col-md-6">
-                  <div 
-                    className="h-100 p-4 rounded-4 position-relative overflow-hidden"
-                    style={{
-                      backgroundColor: '#D4AF37',
-                      minHeight: '200px'
-                    }}
-                  >
-                    <div className="mb-3">
-                      <span 
-                        className="fw-bold text-white"
-                        style={{
-                          fontSize: '48px',
-                          opacity: 0.3,
-                          lineHeight: '1'
-                        }}
-                      >
-                        04
-                      </span>
-                    </div>
-                    <h4 className="fw-bold mb-3 text-white">
-                      Empowering Growth, People First.
-                    </h4>
-                    <p 
-                      className="mb-0 text-white"
-                      style={{ 
-                        fontSize: '14px',
-                        opacity: 0.9
-                      }}
-                    >
-                      At Katelago, we’re passionate about helping businesses grow with confidence,
-                      compliance, and people-first solutions.
+                      From in-house to outsourced HR, we safeguard confidentiality and professionalism.
                     </p>
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* Right Side - Image */}
-            <div className="col-lg-4">
-              <div className="h-100">
+              {/* Bottom Row - Large Image */}
+              <div className="position-relative">
                 <div 
-                  className="rounded-4 overflow-hidden h-100"
+                  className="rounded-4 overflow-hidden choose-image"
                   style={{
-                    minHeight: '500px',
+                    height: '300px',
                     backgroundImage: `url(${chooseImage})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center'
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    backgroundColor: 'rgba(255,255,255,0.1)',
+                    transition: 'all 0.3s ease'
                   }}
                 >
                 </div>
+              </div>
+            </div>
+
+            {/* Right Side - Card 04 */}
+            <div className="col-lg-4">
+              <div 
+                className="choose-card p-4 rounded-4 h-100 position-relative overflow-hidden d-flex flex-column"
+                style={{
+                  backgroundColor: '#D4AF37',
+                  minHeight: '540px',
+                  transition: 'all 0.3s ease',
+                  cursor: 'pointer'
+                }}
+              >
+                <div className="mb-3">
+                  <span 
+                    className="fw-bold text-white"
+                    style={{
+                      fontSize: '48px',
+                      opacity: 0.3,
+                      lineHeight: '1'
+                    }}
+                  >
+                    04
+                  </span>
+                </div>
+                <h5 className="fw-bold mb-3 text-white" style={{ fontSize: '18px' }}>
+                  Empowering Growth, People First.
+                </h5>
+                <p 
+                  className="mb-0 text-white flex-grow-1"
+                  style={{ 
+                    fontSize: '14px',
+                    opacity: 0.9,
+                    lineHeight: '1.5'
+                  }}
+                >
+                  At Katelago, we're passionate about helping businesses grow with confidence, compliance, and people-first solutions.
+                </p>
               </div>
             </div>
           </div>
@@ -856,6 +865,15 @@ const Home = () => {
           50% {
             transform: scale(1.1);
           }
+        }
+
+        .choose-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .choose-image:hover {
+          transform: scale(1.02);
         }
       `}</style>
     </div>
