@@ -102,13 +102,11 @@ const Header = () => {
           {/* Navigation Menu */}
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav me-auto" style={{ gap: '2.5rem' }}>
-              {/* HOME Dropdown */}
-              <li className="nav-item dropdown">
+              {/* HOME */}
+              <li className="nav-item">
                 <a 
-                  className="nav-link dropdown-toggle text-dark fw-medium position-relative d-flex align-items-center" 
-                  href="#" 
-                  role="button" 
-                  data-bs-toggle="dropdown"
+                  className="nav-link text-dark fw-medium" 
+                  href="/"
                   style={{ 
                     fontSize: '15px',
                     letterSpacing: '0.3px',
@@ -118,17 +116,7 @@ const Header = () => {
                   }}
                 >
                   HOME
-                  <i className="bi bi-plus-lg ms-2" style={{ fontSize: '12px', fontWeight: 'bold' }}></i>
                 </a>
-                <ul className="dropdown-menu border-0 shadow-lg" style={{
-                  backgroundColor: '#fff',
-                  borderRadius: '8px',
-                  marginTop: '8px'
-                }}>
-                  <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Home V1</a></li>
-                  <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Home V2</a></li>
-                  <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Home V3</a></li>
-                </ul>
               </li>
 
               {/* ABOUT Dropdown */}
