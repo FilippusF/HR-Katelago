@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Hero from './hero';
+import { clients } from '../data/clients';
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -254,6 +255,60 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Clients Section */}
+      <section className="py-5" style={{ backgroundColor: '#2c3e50' }}>
+        <div className="container">
+          <div className="text-center mb-5">
+            <h2 className="text-white mb-0" style={{ fontSize: '1.5rem', fontWeight: '400' }}>
+              250+ Corporate Clients Trust Us
+            </h2>
+          </div>
+          
+          {/* Client Logos Slider */}
+          <div className="client-slider-wrapper overflow-hidden">
+            <div className="client-slider d-flex align-items-center">
+              {/* First set of logos */}
+              <div className="client-slide d-flex align-items-center">
+                {clients.map((client) => (
+                  <div key={client.id} className="client-logo mx-4">
+                    <img 
+                      src={client.logo} 
+                      alt={client.name}
+                      style={{ 
+                        height: '60px', 
+                        width: 'auto', 
+                        maxWidth: '150px',
+                        objectFit: 'contain',
+                        filter: 'brightness(0) invert(1)'
+                      }}
+                    />
+                  </div>
+                ))}
+              </div>
+              
+              {/* Duplicate set for seamless loop */}
+              <div className="client-slide d-flex align-items-center">
+                {clients.map((client) => (
+                  <div key={`${client.id}-duplicate`} className="client-logo mx-4">
+                    <img 
+                      src={client.logo} 
+                      alt={client.name}
+                      style={{ 
+                        height: '60px', 
+                        width: 'auto', 
+                        maxWidth: '150px',
+                        objectFit: 'contain',
+                        filter: 'brightness(0) invert(1)'
+                      }}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Additional sections can be added here */}
       <section className="py-5">
         <div className="container">
@@ -277,6 +332,36 @@ const Home = () => {
 
         .shadow-lg {
           box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+        }
+
+        .client-slider-wrapper {
+          position: relative;
+        }
+
+        .client-slider {
+          animation: slideRightToLeft 30s linear infinite;
+        }
+
+        @keyframes slideRightToLeft {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
+        .client-slider:hover {
+          animation-play-state: paused;
+        }
+
+        .client-logo {
+          opacity: 0.7;
+          transition: opacity 0.3s ease;
+        }
+
+        .client-logo:hover {
+          opacity: 1;
         }
       `}</style>
     </div>

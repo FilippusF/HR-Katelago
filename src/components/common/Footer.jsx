@@ -132,7 +132,7 @@ const Footer = () => {
         <div className="row align-items-center">
           <div className="col-12 text-center text-lg-start">
             <p className="mb-0 text-light small" style={{ color: '#ffffff !important' }}>
-              ALL RIGHT RESERVED - WIRASTUDIO ELEMENTOR KIT
+              © 2025 All Rights Reserved - Made with ❤️ by Loop Technologies
             </p>
           </div>
         </div>
