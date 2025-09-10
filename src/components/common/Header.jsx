@@ -13,27 +13,59 @@ const Header = () => {
       <div style={{ backgroundColor: '#2c3e50' }} className="text-white py-2">
         <div className="container-fluid px-4">
           <div className="d-flex justify-content-between align-items-center small">
-            <div className="d-flex align-items-center">
-              <div className="d-flex align-items-center me-4">
+            <ul style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              listStyleType: 'none',
+              margin: 0,
+              padding: 0,
+              marginLeft: '-25px',
+              marginRight: '-25px'
+            }}>
+              <li style={{ 
+                display: 'flex', 
+                alignItems: 'center',
+                paddingLeft: '25px',
+                paddingRight: '25px'
+              }}>
                 <i className="bi bi-envelope me-2"></i>
                 <span>info@katelago.com</span>
-              </div>
-              <div className="d-flex align-items-center">
+              </li>
+              <li style={{ 
+                display: 'flex', 
+                alignItems: 'center',
+                paddingLeft: '25px',
+                paddingRight: '25px'
+              }}>
                 <i className="bi bi-telephone me-2"></i>
                 <span>+264 81 393 44 31</span>
-              </div>
-            </div>
-            <div className="d-flex align-items-center">
-              <a href="https://www.facebook.com/profile.php?id=61556197468363" className="text-white text-decoration-none me-3 hover-opacity">
-                <i className="bi bi-facebook"></i>
-              </a>
-              <a href="https://www.instagram.com/katelagohr/?hl=en" className="text-white text-decoration-none me-3 hover-opacity">
-                <i className="bi bi-instagram"></i>
-              </a>
-              <a href="https://www.linkedin.com/company/katelago-human-resources-consultants/?viewAsMember=true" className="text-white text-decoration-none me-3 hover-opacity">
-                <i className="bi bi-linkedin"></i>
-              </a>
-            </div>
+              </li>
+            </ul>
+            <ul style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              listStyleType: 'none',
+              margin: 0,
+              padding: 0,
+              marginLeft: '-4px',
+              marginRight: '-4px'
+            }}>
+              <li style={{ paddingLeft: '4px', paddingRight: '4px' }}>
+                <a href="https://www.facebook.com/profile.php?id=61556197468363" className="text-white text-decoration-none hover-opacity">
+                  <i className="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li style={{ paddingLeft: '4px', paddingRight: '4px' }}>
+                <a href="https://www.instagram.com/katelagohr/?hl=en" className="text-white text-decoration-none hover-opacity">
+                  <i className="bi bi-instagram"></i>
+                </a>
+              </li>
+              <li style={{ paddingLeft: '4px', paddingRight: '4px' }}>
+                <a href="https://www.linkedin.com/company/katelago-human-resources-consultants/?viewAsMember=true" className="text-white text-decoration-none hover-opacity">
+                  <i className="bi bi-linkedin"></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
