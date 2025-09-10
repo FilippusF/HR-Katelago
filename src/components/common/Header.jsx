@@ -248,22 +248,22 @@ const Header = () => {
               href="#" 
               className="btn text-white fw-semibold px-4 py-2"
               style={{ 
-                background: 'linear-gradient(135deg, #20b2aa 0%, #17a2b8 100%)',
+                background: 'linear-gradient(135deg, #1e5631 0%, #2d7d32 100%)',
                 borderRadius: '25px',
                 border: 'none',
                 textTransform: 'uppercase',
                 letterSpacing: '0.5px',
                 fontSize: '13px',
                 transition: 'all 0.3s ease',
-                boxShadow: '0 3px 10px rgba(32, 178, 170, 0.3)'
+                boxShadow: '0 3px 10px rgba(30, 86, 49, 0.3)'
               }}
               onMouseEnter={(e) => {
                 e.target.style.transform = 'translateY(-2px)';
-                e.target.style.boxShadow = '0 5px 15px rgba(32, 178, 170, 0.4)';
+                e.target.style.boxShadow = '0 5px 15px rgba(30, 86, 49, 0.4)';
               }}
               onMouseLeave={(e) => {
                 e.target.style.transform = 'translateY(0)';
-                e.target.style.boxShadow = '0 3px 10px rgba(32, 178, 170, 0.3)';
+                e.target.style.boxShadow = '0 3px 10px rgba(30, 86, 49, 0.3)';
               }}
             >
               Contact us
