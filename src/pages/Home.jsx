@@ -3,9 +3,12 @@ import Hero from './hero';
 import { clients } from '../data/clients';
 import whoImage from '../assets/images/who.png';
 import missionImage from '../assets/images/mission.jpg';
+import logoImage from '../assets/images/Main-logo.png';
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [showBackToTop, setShowBackToTop] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -31,6 +34,27 @@ const Home = () => {
       }
     };
   }, []);
+
+  // Loader effect
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Back to top button visibility
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 300);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <div className="home-page">
@@ -547,6 +571,58 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Loader */}
+      {isLoading && (
+        <div 
+          className="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+          style={{
+            backgroundColor: 'rgba(255, 255, 255, 0.95)',
+            zIndex: 9999
+          }}
+        >
+          <div className="text-center">
+            <img 
+              src={logoImage} 
+              alt="Katelago Logo" 
+              className="mb-3"
+              style={{
+                height: '80px',
+                animation: 'pulse 1.5s ease-in-out infinite'
+              }}
+            />
+            <div 
+              className="spinner-border"
+              style={{ color: '#20b2aa' }}
+              role="status"
+            >
+              <span className="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Back to Top Button */}
+      {showBackToTop && (
+        <button
+          onClick={scrollToTop}
+          className="btn position-fixed rounded-circle shadow-lg"
+          style={{
+            bottom: '30px',
+            right: '30px',
+            width: '50px',
+            height: '50px',
+            backgroundColor: '#20b2aa',
+            border: 'none',
+            zIndex: 1000,
+            transition: 'all 0.3s ease'
+          }}
+        >
+          <svg width="20" height="20" fill="white" viewBox="0 0 16 16">
+            <path d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+          </svg>
+        </button>
+      )}
+
       <style jsx>{`
         .btn:hover {
           transform: translateY(-2px);
@@ -585,6 +661,15 @@ const Home = () => {
 
         .client-logo:hover {
           opacity: 1;
+        }
+
+        @keyframes pulse {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.1);
+          }
         }
       `}</style>
     </div>

@@ -266,7 +266,7 @@ const Header = () => {
                 e.target.style.boxShadow = '0 3px 10px rgba(32, 178, 170, 0.3)';
               }}
             >
-              GET A QUOTE
+              Contact us
             </a>
           </div>
         </div>
