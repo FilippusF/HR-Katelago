@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Hero from './hero';
 import { clients } from '../data/clients';
+import whoImage from '../assets/images/who.png';
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -109,7 +110,7 @@ const Home = () => {
                   <div 
                     className="me-3 p-2 rounded"
                     style={{
-                      backgroundColor: '#ffe6e6',
+                      backgroundColor: '#e8f5e8',
                       minWidth: '40px'
                     }}
                   >
@@ -118,7 +119,7 @@ const Home = () => {
                       height="24" 
                       viewBox="0 0 24 24" 
                       fill="none"
-                      style={{ color: '#ff6b6b' }}
+                      style={{ color: '#28a745' }}
                     >
                       <path 
                         d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
@@ -167,7 +168,7 @@ const Home = () => {
             {/* Right Content - Images with Animation */}
             <div className="col-lg-6">
               <div className="position-relative">
-                {/* Main Image */}
+                {/* Main Content Card */}
                 <div 
                   className="rounded-4 overflow-hidden shadow-lg"
                   style={{
@@ -178,7 +179,7 @@ const Home = () => {
                   <div 
                     className="w-100 h-100 d-flex align-items-center justify-content-center"
                     style={{
-                      backgroundImage: 'url("data:image/svg+xml,%3Csvg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="400" height="300" fill="%23f8f9fa"/%3E%3Ctext x="200" y="150" text-anchor="middle" fill="%236c757d" font-family="Arial" font-size="14"%3EBusiness Meeting%3C/text%3E%3C/svg%3E")',
+                      backgroundImage: `url(${whoImage})`,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center'
                     }}
@@ -220,7 +221,7 @@ const Home = () => {
                     <div 
                       className="me-3 p-3 rounded-circle"
                       style={{
-                        backgroundColor: '#ff6b6b',
+                        backgroundColor: '#28a745',
                         minWidth: '60px'
                       }}
                     >
@@ -256,11 +257,11 @@ const Home = () => {
       </section>
 
       {/* Clients Section */}
-      <section className="py-5" style={{ backgroundColor: '#2c3e50' }}>
+      <section className="py-5" style={{ backgroundColor: '#e9ecef' }}>
         <div className="container">
           <div className="text-center mb-5">
-            <h2 className="text-white mb-0" style={{ fontSize: '1.5rem', fontWeight: '400' }}>
-              250+ Corporate Clients Trust Us
+            <h2 className="mb-0" style={{ fontSize: '2rem', fontWeight: '600', color: '#2c3e50' }}>
+              9+ Corporate Clients Trust Us
             </h2>
           </div>
           
@@ -270,16 +271,16 @@ const Home = () => {
               {/* First set of logos */}
               <div className="client-slide d-flex align-items-center">
                 {clients.map((client) => (
-                  <div key={client.id} className="client-logo mx-4">
+                  <div key={client.id} className="client-logo mx-5">
                     <img 
                       src={client.logo} 
                       alt={client.name}
                       style={{ 
-                        height: '60px', 
+                        height: '100px', 
                         width: 'auto', 
-                        maxWidth: '150px',
+                        maxWidth: '200px',
                         objectFit: 'contain',
-                        filter: 'brightness(0) invert(1)'
+                        filter: 'none'
                       }}
                     />
                   </div>
@@ -289,16 +290,16 @@ const Home = () => {
               {/* Duplicate set for seamless loop */}
               <div className="client-slide d-flex align-items-center">
                 {clients.map((client) => (
-                  <div key={`${client.id}-duplicate`} className="client-logo mx-4">
+                  <div key={`${client.id}-duplicate`} className="client-logo mx-5">
                     <img 
                       src={client.logo} 
                       alt={client.name}
                       style={{ 
-                        height: '60px', 
+                        height: '100px', 
                         width: 'auto', 
-                        maxWidth: '150px',
+                        maxWidth: '200px',
                         objectFit: 'contain',
-                        filter: 'brightness(0) invert(1)'
+                        filter: 'none'
                       }}
                     />
                   </div>
