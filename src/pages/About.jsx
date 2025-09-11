@@ -543,6 +543,255 @@ const About = () => {
               </div>
             </section>
 
+      {/* Our Process Section */}
+      <section className="py-5" style={{ backgroundColor: '#f8f9fa' }}>
+        <div className="container">
+          {/* Section Header */}
+          <div className="text-center mb-5">
+            <div className="mb-3">
+              <span 
+                className="text-uppercase fw-medium"
+                style={{
+                  fontSize: '12px',
+                  letterSpacing: '2px',
+                  color: '#D4AF37',
+                  fontWeight: '600'
+                }}
+              >
+                HOW WE WORK
+              </span>
+            </div>
+            <h2 
+              className="display-5 fw-bold mb-4"
+              style={{
+                fontSize: '2.8rem',
+                lineHeight: '1.2',
+                fontWeight: '700',
+                color: '#2c3e50'
+              }}
+            >
+              Our Process
+            </h2>
+            <p 
+              className="lead"
+              style={{
+                color: '#6c757d',
+                maxWidth: '600px',
+                margin: '0 auto'
+              }}
+            >
+              We follow a structured approach to deliver exceptional HR solutions tailored to your business needs.
+            </p>
+          </div>
+
+          {/* Process Steps */}
+          <div className="row g-4">
+            {/* Step 1 */}
+            <div className="col-lg-4 col-md-6">
+              <div 
+                className="process-card h-100 p-4 rounded-4 text-center"
+                style={{
+                  backgroundColor: 'white',
+                  border: '2px solid #f0f0f0',
+                  transition: 'all 0.4s ease',
+                  cursor: 'pointer',
+                  animation: 'fadeInUp 0.6s ease-out 0.1s both'
+                }}
+              >
+                <div 
+                  className="process-number mx-auto mb-4 d-flex align-items-center justify-content-center"
+                  style={{
+                    width: '80px',
+                    height: '80px',
+                    backgroundColor: '#1e5631',
+                    borderRadius: '50%',
+                    fontSize: '24px',
+                    fontWeight: 'bold',
+                    color: 'white'
+                  }}
+                >
+                  01
+                </div>
+                <h5 
+                  className="fw-bold mb-3"
+                  style={{ color: '#2c3e50', fontSize: '1.3rem' }}
+                >
+                  Grabbing a coffee and catching up
+                </h5>
+                <p 
+                  style={{ color: '#6c757d', fontSize: '14px', lineHeight: '1.6' }}
+                >
+                  Informal chat (virtual or in-person) to see if we're the right fit.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 2 */}
+            <div className="col-lg-4 col-md-6">
+              <div 
+                className="process-card h-100 p-4 rounded-4 text-center"
+                style={{
+                  backgroundColor: 'white',
+                  border: '2px solid #f0f0f0',
+                  transition: 'all 0.4s ease',
+                  cursor: 'pointer',
+                  animation: 'fadeInUp 0.6s ease-out 0.2s both'
+                }}
+              >
+                <div 
+                  className="process-number mx-auto mb-4 d-flex align-items-center justify-content-center"
+                  style={{
+                    width: '80px',
+                    height: '80px',
+                    backgroundColor: '#D4AF37',
+                    borderRadius: '50%',
+                    fontSize: '24px',
+                    fontWeight: 'bold',
+                    color: 'white'
+                  }}
+                >
+                  02
+                </div>
+                <h5 
+                  className="fw-bold mb-3"
+                  style={{ color: '#2c3e50', fontSize: '1.3rem' }}
+                >
+                  Discover and Understand
+                </h5>
+                <p 
+                  style={{ color: '#6c757d', fontSize: '14px', lineHeight: '1.6' }}
+                >
+                  Deep dive into business needs and goals.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 3 */}
+            <div className="col-lg-4 col-md-6">
+              <div 
+                className="process-card h-100 p-4 rounded-4 text-center"
+                style={{
+                  backgroundColor: 'white',
+                  border: '2px solid #f0f0f0',
+                  transition: 'all 0.4s ease',
+                  cursor: 'pointer',
+                  animation: 'fadeInUp 0.6s ease-out 0.3s both'
+                }}
+              >
+                <div 
+                  className="process-number mx-auto mb-4 d-flex align-items-center justify-content-center"
+                  style={{
+                    width: '80px',
+                    height: '80px',
+                    backgroundColor: '#1e5631',
+                    borderRadius: '50%',
+                    fontSize: '24px',
+                    fontWeight: 'bold',
+                    color: 'white'
+                  }}
+                >
+                  03
+                </div>
+                <h5 
+                  className="fw-bold mb-3"
+                  style={{ color: '#2c3e50', fontSize: '1.3rem' }}
+                >
+                  Crafting Solutions
+                </h5>
+                <p 
+                  style={{ color: '#6c757d', fontSize: '14px', lineHeight: '1.6' }}
+                >
+                  Develop tailored HR solutions aligned to business outcomes.
+                </p>
+              </div>
+            </div>
+
+
+
+            {/* Step 4 */}
+            <div className="col-lg-4 col-md-6">
+              <div 
+                className="process-card h-100 p-4 rounded-4 text-center"
+                style={{
+                  backgroundColor: 'white',
+                  border: '2px solid #f0f0f0',
+                  transition: 'all 0.4s ease',
+                  cursor: 'pointer',
+                  animation: 'fadeInUp 0.6s ease-out 0.4s both'
+                }}
+              >
+                <div 
+                  className="process-number mx-auto mb-4 d-flex align-items-center justify-content-center"
+                  style={{
+                    width: '80px',
+                    height: '80px',
+                    backgroundColor: '#D4AF37',
+                    borderRadius: '50%',
+                    fontSize: '24px',
+                    fontWeight: 'bold',
+                    color: 'white'
+                  }}
+                >
+                  04
+                </div>
+                <h5 
+                  className="fw-bold mb-3"
+                  style={{ color: '#2c3e50', fontSize: '1.3rem' }}
+                >
+                  Implement and Embed
+                </h5>
+                <p 
+                  style={{ color: '#6c757d', fontSize: '14px', lineHeight: '1.6' }}
+                >
+                  Partner with clients to execute and embed solutions.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 5 */}
+            <div className="col-lg-8 col-md-12 mx-auto">
+              <div 
+                className="process-card h-100 p-4 rounded-4 text-center"
+                style={{
+                  backgroundColor: '#1e5631',
+                  border: '2px solid #1e5631',
+                  transition: 'all 0.4s ease',
+                  cursor: 'pointer',
+                  animation: 'fadeInUp 0.6s ease-out 0.5s both'
+                }}
+              >
+                <div 
+                  className="process-number mx-auto mb-4 d-flex align-items-center justify-content-center"
+                  style={{
+                    width: '80px',
+                    height: '80px',
+                    backgroundColor: '#D4AF37',
+                    borderRadius: '50%',
+                    fontSize: '24px',
+                    fontWeight: 'bold',
+                    color: 'white'
+                  }}
+                >
+                  05
+                </div>
+                <h5 
+                  className="fw-bold mb-3 text-white"
+                  style={{ fontSize: '1.3rem' }}
+                >
+                  We are here to help you grow
+                </h5>
+                <p 
+                  className="text-white mb-0"
+                  style={{ fontSize: '14px', lineHeight: '1.6', opacity: 0.9 }}
+                >
+                  Long-term HR partner, supporting growth and change.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Loader */}
       {isLoading && (
         <div 
@@ -684,6 +933,47 @@ const About = () => {
           transform: translateY(-5px);
           background-color: rgba(255, 255, 255, 0.15) !important;
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        @keyframes fadeInUp {
+          0% {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .process-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+          border-color: #D4AF37 !important;
+        }
+        
+        .process-card:hover .process-number {
+          transform: scale(1.1);
+        }
+        
+        @keyframes arrowFloat {
+          0%, 100% {
+            opacity: 0.7;
+          }
+          50% {
+            opacity: 1;
+          }
+        }
+        
+        @media (max-width: 768px) {
+          .process-card {
+            margin-bottom: 2rem;
+          }
+          
+          .process-arrow,
+          .curved-arrow {
+            display: none !important;
+          }
         }
       `}</style>
     </>
