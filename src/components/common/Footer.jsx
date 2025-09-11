@@ -18,8 +18,9 @@ const Footer = () => {
               />
             </div>
             <p className="text-light small" style={{ color: '#ffffff !important' }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec 
-              ullamcorper mattis, pulvinar dapibus leo.
+              We combine creativity, innovation, and deep expertise, both local and global, to
+              provide customized HR solutions that help your business stand out, attract top talent,
+              and secure success in a competitive market.
             </p>
           </div>
 

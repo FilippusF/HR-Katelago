@@ -486,7 +486,7 @@ const Home = () => {
                       style={{
                         width: '60px',
                         height: '60px',
-                        backgroundColor: '#ff6b6b',
+                        backgroundColor: '#D4AF37',
                         fontSize: '24px',
                         fontWeight: 'bold',
                         color: 'white'
@@ -527,7 +527,7 @@ const Home = () => {
                       style={{
                         width: '60px',
                         height: '60px',
-                        backgroundColor: '#28a745',
+                        backgroundColor: '#1e5631',
                         fontSize: '24px',
                         fontWeight: 'bold',
                         color: 'white'

@@ -1,11 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const [activeDropdown, setActiveDropdown] = useState(null);
-
-  const toggleDropdown = (dropdown) => {
-    setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
-  };
 
   return (
     <>
@@ -104,9 +100,9 @@ const Header = () => {
             <ul className="navbar-nav me-auto" style={{ gap: '2.5rem' }}>
               {/* HOME */}
               <li className="nav-item">
-                <a 
+                <Link 
                   className="nav-link text-dark fw-medium" 
-                  href="/"
+                  to="/"
                   style={{ 
                     fontSize: '15px',
                     letterSpacing: '0.3px',
@@ -116,7 +112,7 @@ const Header = () => {
                   }}
                 >
                   HOME
-                </a>
+                </Link>
               </li>
 
               {/* ABOUT Dropdown */}
@@ -142,7 +138,7 @@ const Header = () => {
                   borderRadius: '8px',
                   marginTop: '8px'
                 }}>
-                  <li><a className="dropdown-item py-2 px-3" href="/about" style={{ transition: 'all 0.3s ease' }}>About Us</a></li>
+                  <li><Link className="dropdown-item py-2 px-3" to="/about" style={{ transition: 'all 0.3s ease' }}>About Us</Link></li>
                   <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Our Team</a></li>
                   <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Company History</a></li>
                   <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Mission & Vision</a></li>
@@ -172,7 +168,7 @@ const Header = () => {
                   borderRadius: '8px',
                   marginTop: '8px'
                 }}>
-                  <li><a className="dropdown-item py-2 px-3" href="/services" style={{ transition: 'all 0.3s ease' }}>All Services</a></li>
+                  <li><Link className="dropdown-item py-2 px-3" to="/services" style={{ transition: 'all 0.3s ease' }}>All Services</Link></li>
                   <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Recruitment</a></li>
                   <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>HR Consulting</a></li>
                   <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Training & Development</a></li>
@@ -234,8 +230,8 @@ const Header = () => {
                   borderRadius: '8px',
                   marginTop: '8px'
                 }}>
-                  <li><a className="dropdown-item py-2 px-3" href="/careers" style={{ transition: 'all 0.3s ease' }}>Careers</a></li>
-                  <li><a className="dropdown-item py-2 px-3" href="/contact" style={{ transition: 'all 0.3s ease' }}>Contact</a></li>
+                  <li><Link className="dropdown-item py-2 px-3" to="/careers" style={{ transition: 'all 0.3s ease' }}>Careers</Link></li>
+                  <li><Link className="dropdown-item py-2 px-3" to="/contact" style={{ transition: 'all 0.3s ease' }}>Contact</Link></li>
                   <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>FAQ</a></li>
                   <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Privacy Policy</a></li>
                   <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Terms of Service</a></li>
