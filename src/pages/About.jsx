@@ -1,14 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import aboutImage from '../assets/images/about.png';
+import a1Image from '../assets/images/a1.png';
+import a2Image from '../assets/images/a2.png';
+import logoImage from '../assets/images/Main-logo.png';
 
 const About = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 300);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <>
-      
       {/* Hero Section with Background Image */}
       <section 
         className="hero-section position-relative d-flex align-items-center"
         style={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("src/images/about.png")',
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${aboutImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -17,8 +41,8 @@ const About = () => {
         }}
       >
         <div className="container">
-          <div className="row">
-            <div className="col-lg-8 mx-auto text-center text-white">
+          <div className="row justify-content-center">
+            <div className="col-lg-8 text-center text-white">
               {/* Breadcrumb */}
               <div className="mb-4">
                 <span 
@@ -46,10 +70,10 @@ const About = () => {
               >
                 Empowering Businesses
                 <br />
-                Through Expert.
+                Through Expert HR Solutions
               </h1>
               
-              {/* Optional subtitle or description */}
+              {/* Description */}
               <p 
                 className="lead mb-0"
                 style={{
@@ -64,23 +88,242 @@ const About = () => {
             </div>
           </div>
         </div>
-        
-        {/* Overlay for better text readability */}
-        <div 
-          className="position-absolute w-100 h-100"
-          style={{
-            background: 'linear-gradient(135deg, rgba(30, 86, 49, 0.3) 0%, rgba(45, 125, 50, 0.3) 100%)',
-            top: 0,
-            left: 0,
-            zIndex: 1
-          }}
-        ></div>
-        
-        {/* Content wrapper to ensure text is above overlay */}
-        <div className="position-relative" style={{ zIndex: 2, width: '100%' }}>
-          {/* Content already included above */}
+      </section>
+
+      {/* WHO WE ARE Section */}
+      <section className="py-5" style={{ backgroundColor: '#f8f9fa' }}>
+        <div className="container">
+          <div className="row align-items-center">
+            {/* Left Content */}
+            <div className="col-lg-6 pe-lg-5">
+              {/* Section Label */}
+              <div className="mb-3">
+                <span 
+                  className="text-uppercase fw-medium"
+                  style={{ 
+                    fontSize: '12px',
+                    letterSpacing: '2px',
+                    color: '#D4AF37',
+                    fontWeight: '600'
+                  }}
+                >
+                  About Us
+                </span>
+              </div>
+              
+              {/* Main Heading */}
+              <h2 
+                className="display-5 fw-bold mb-4"
+                style={{
+                  fontSize: '2.8rem',
+                  lineHeight: '1.2',
+                  fontWeight: '700',
+                  color: '#2c3e50'
+                }}
+              >
+                Katelago HR Consultants
+              </h2>
+              
+              {/* Description */}
+              <p 
+                className="mb-4"
+                style={{
+                  fontSize: '1.1rem',
+                  color: '#6c757d',
+                  lineHeight: '1.6'
+                }}
+              >
+                At Katelago HR Consultants, we are dedicated to transforming the way businesses
+                manage their human resources. As a leading provider of virtual HR solutions, based
+                in Windhoek, Namibia, we offer a full spectrum of HR services tailored to meet the
+                unique needs of businesses across various industries.
+              </p>
+              
+              {/* Quote */}
+              <blockquote 
+                className="border-start border-4 ps-4 mb-4"
+                style={{ 
+                  borderColor: '#6c757d!important',
+                  fontStyle: 'italic',
+                  color: '#6c757d'
+                }}
+              >
+                Our expertise spans HR strategy, Talent Acquisition, Payroll Management and compliance,
+                HR Consulting, Psychometric Assessment and Organizational Development, all designed to
+                empower businesses and drive sustainable growth.
+              </blockquote>
+              
+              {/* Feature Item */}
+              <div className="d-flex align-items-start mb-4">
+                <div 
+                  className="me-3 mt-1"
+                  style={{
+                    width: '24px',
+                    height: '24px',
+                    backgroundColor: '#1e5631',
+                    borderRadius: '4px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0
+                  }}
+                >
+                  <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h5 
+                    className="fw-bold mb-2"
+                    style={{ color: '#6c757d', fontSize: '1.2rem' }}
+                  >
+                    Great Team Work
+                  </h5>
+                </div>
+              </div>
+            </div>
+            
+            {/* Right Images */}
+            <div className="col-lg-6 mt-5 mt-lg-0">
+              <div className="position-relative">
+                {/* Main large image */}
+                <div className="position-relative">
+                  <img 
+                    src={a2Image}
+                    alt="Business meeting"
+                    className="img-fluid rounded shadow-lg"
+                    style={{
+                      width: '100%',
+                      height: 'auto',
+                      borderRadius: '15px'
+                    }}
+                  />
+                </div>
+                
+                {/* Smaller overlapping image */}
+                <div 
+                  className="position-absolute slide-in-left"
+                  style={{
+                    bottom: '-30px',
+                    left: '-50px',
+                    zIndex: 2,
+                    animation: 'slideInLeft 0.8s ease-out'
+                  }}
+                >
+                  <img 
+                    src={a1Image}
+                    alt="Team collaboration"
+                    className="img-fluid rounded shadow-lg"
+                    style={{
+                      width: '280px',
+                      height: '180px',
+                      objectFit: 'cover',
+                      borderRadius: '15px'
+                    }}
+                  />
+                </div>
+                
+                {/* Call Us Now Card - Moved outside and positioned at bottom */}
+                <div 
+                  className="position-absolute bg-white rounded shadow p-3"
+                  style={{
+                    bottom: '-60px',
+                    right: '20px',
+                    minWidth: '200px',
+                    zIndex: 3
+                  }}
+                >
+                    <div className="d-flex align-items-center">
+                      <div 
+                        className="me-3"
+                        style={{
+                          width: '40px',
+                          height: '40px',
+                          backgroundColor: '#1e5631',
+                          borderRadius: '50%',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center'
+                        }}
+                      >
+                        <svg width="20" height="20" fill="white" viewBox="0 0 16 16">
+                          <path fillRule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h6 
+                          className="fw-bold mb-1"
+                          style={{ color: '#2c3e50', fontSize: '1rem' }}
+                        >
+                          Call Us Now
+                        </h6>
+                        <p 
+                          className="mb-0 small"
+                          style={{ color: '#6c757d' }}
+                        >
+                          +264 81 393 44 31
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      {/* Loader */}
+      {isLoading && (
+        <div 
+          className="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+          style={{
+            backgroundColor: 'rgba(255, 255, 255, 0.95)',
+            zIndex: 9999
+          }}
+        >
+          <div className="text-center">
+            <img 
+              src={logoImage} 
+              alt="Katelago Logo" 
+              className="mb-3"
+              style={{
+                height: '80px',
+                animation: 'pulse 1.5s ease-in-out infinite'
+              }}
+            />
+            <div 
+              className="spinner-border"
+              style={{ color: '#1e5631' }}
+              role="status"
+            >
+              <span className="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Back to Top Button */}
+      {showBackToTop && (
+        <button
+          onClick={scrollToTop}
+          className="btn position-fixed rounded-circle shadow-lg"
+          style={{
+            bottom: '30px',
+            right: '30px',
+            width: '50px',
+            height: '50px',
+            backgroundColor: '#1e5631',
+            border: 'none',
+            zIndex: 1000,
+            transition: 'all 0.3s ease'
+          }}
+        >
+          <svg width="20" height="20" fill="white" viewBox="0 0 16 16">
+            <path d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+          </svg>
+        </button>
+      )}
 
       {/* Additional CSS for responsive design */}
       <style jsx>{`
@@ -97,6 +340,30 @@ const About = () => {
           .hero-section .lead {
             font-size: 1.1rem !important;
           }
+          
+          .display-5 {
+            font-size: 2rem !important;
+          }
+          
+          .slide-in-left {
+            position: relative !important;
+            bottom: auto !important;
+            left: auto !important;
+            margin-top: 30px;
+          }
+          
+          .slide-in-left img {
+            width: 100% !important;
+            max-width: 280px;
+            height: auto !important;
+          }
+          
+          .position-absolute[style*="bottom: -60px"] {
+            position: relative !important;
+            bottom: auto !important;
+            right: auto !important;
+            margin-top: 20px;
+          }
         }
         
         @media (max-width: 576px) {
@@ -111,6 +378,35 @@ const About = () => {
           
           .hero-section .lead {
             font-size: 1rem !important;
+          }
+          
+          .display-5 {
+            font-size: 1.8rem !important;
+          }
+        }
+        
+        .btn:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 25px rgba(30, 86, 49, 0.3);
+        }
+        
+        @keyframes pulse {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.1);
+          }
+        }
+        
+        @keyframes slideInLeft {
+          0% {
+            transform: translateX(-100px);
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 1;
           }
         }
       `}</style>
