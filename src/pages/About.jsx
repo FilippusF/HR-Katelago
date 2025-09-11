@@ -3,6 +3,7 @@ import aboutImage from '../assets/images/about.png';
 import a1Image from '../assets/images/a1.png';
 import a2Image from '../assets/images/a2.png';
 import logoImage from '../assets/images/Main-logo.png';
+import missionImage from '../assets/images/mission.jpg';
 
 const About = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -273,6 +274,275 @@ const About = () => {
         </div>
       </section>
 
+
+
+            {/* Vision & Mission Section */}
+            <section 
+              className="py-5"
+              style={{ 
+                minHeight: '700px',
+                backgroundImage: `linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), url(${missionImage})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundAttachment: 'fixed'
+              }}
+            >
+              <div className="container">
+                {/* Section Header */}
+                <div className="text-center mb-5">
+                  <div className="mb-3">
+                    <span 
+                      className="text-uppercase fw-normal"
+                      style={{
+                        color: 'rgba(255, 255, 255, 0.7)',
+                        fontSize: '14px',
+                        letterSpacing: '3px'
+                      }}
+                    >
+                      VISION & MISSION
+                    </span>
+                  </div>
+                  <h2 
+                    className="display-5 fw-bold text-white mb-4"
+                    style={{
+                      maxWidth: '800px',
+                      margin: '0 auto',
+                      lineHeight: '1.2'
+                    }}
+                  >
+                    Our  Vision, Mission, Values &amp; Philosophy
+                  </h2>
+                </div>
+      
+                <div className="row align-items-stretch">
+                  {/* Left Card */}
+                  <div className="col-lg-6 mb-4">
+                    <div 
+                      className="h-100 p-5 rounded-4"
+                      style={{
+                        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                        backdropFilter: 'blur(10px)',
+                        border: '1px solid rgba(255, 255, 255, 0.1)'
+                      }}
+                    >
+                      <h3 className="text-white mb-4 fw-bold">
+                        Values
+                      </h3>
+      
+                      {/* Check Items */}
+                      <div className="mb-3">
+                        <div className="d-flex align-items-center mb-3">
+                          <div 
+                            className="me-3 rounded-circle d-flex align-items-center justify-content-center"
+                            style={{
+                              width: '24px',
+                              height: '24px',
+                              backgroundColor: '#28a745'
+                            }}
+                          >
+                            <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
+                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                          </div>
+                          <span className="text-white" style={{ opacity: 0.9 }}>
+                            Empowerment &amp; Growth
+                          </span>
+                        </div>
+                        
+                        <div className="d-flex align-items-center">
+                          <div 
+                            className="me-3 rounded-circle d-flex align-items-center justify-content-center"
+                            style={{
+                              width: '24px',
+                              height: '24px',
+                              backgroundColor: '#28a745'
+                            }}
+                          >
+                            <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
+                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                          </div>
+                          <span className="text-white" style={{ opacity: 0.9 }}>
+                            Collaboration
+                          </span>
+                        </div>
+                        <br />
+      
+                        <div className="d-flex align-items-center mb-3">
+                          <div 
+                            className="me-3 rounded-circle d-flex align-items-center justify-content-center"
+                            style={{
+                              width: '24px',
+                              height: '24px',
+                              backgroundColor: '#28a745'
+                            }}
+                          >
+                            <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
+                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                          </div>
+                          <span className="text-white" style={{ opacity: 0.9 }}>
+                            Excellence Innovation
+                          </span>
+                        </div>
+      
+                        <div className="d-flex align-items-center mb-3">
+                          <div 
+                            className="me-3 rounded-circle d-flex align-items-center justify-content-center"
+                            style={{
+                              width: '24px',
+                              height: '24px',
+                              backgroundColor: '#28a745'
+                            }}
+                          >
+                            <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
+                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                          </div>
+                          <span className="text-white" style={{ opacity: 0.9 }}>
+                            Innovation
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  {/* Right Card */}
+                  <div className="col-lg-6">
+                    <div className="h-100">
+                      {/* First Item */}
+                      <div 
+                        className="p-4 rounded-4 mb-4"
+                        style={{
+                          backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                          backdropFilter: 'blur(10px)',
+                          border: '1px solid rgba(255, 255, 255, 0.1)'
+                        }}
+                      >
+                        <div className="d-flex align-items-start">
+                          <div 
+                            className="me-4 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0"
+                            style={{
+                              width: '60px',
+                              height: '60px',
+                              backgroundColor: '#D4AF37',
+                              fontSize: '24px',
+                              fontWeight: 'bold',
+                              color: 'white'
+                            }}
+                          >
+                            01
+                          </div>
+                          <div>
+                            <h5 className="text-white fw-bold mb-2">
+                              Values
+                            </h5>
+                            <p 
+                              className="text-white mb-0"
+                              style={{ 
+                                opacity: 0.8,
+                                fontSize: '14px'
+                              }}
+                            >
+                              To be recognized as the leading HR firm, positively impacting our clients and
+                              their employees through our innovative and people-centric approach..
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+      
+                      {/* Second Item */}
+                      <div 
+                        className="p-4 rounded-4 mb-4 vision-mission-card"
+                        style={{
+                          backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                          backdropFilter: 'blur(10px)',
+                          border: '1px solid rgba(255, 255, 255, 0.1)',
+                          transition: 'all 0.3s ease',
+                          cursor: 'pointer'
+                        }}
+                      >
+                        <div className="d-flex align-items-start">
+                          <div 
+                            className="me-4 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0"
+                            style={{
+                              width: '60px',
+                              height: '60px',
+                              backgroundColor: '#1e5631',
+                              fontSize: '24px',
+                              fontWeight: 'bold',
+                              color: 'white'
+                            }}
+                          >
+                            02
+                          </div>
+                          <div>
+                            <h5 className="text-white fw-bold mb-2">
+                              Mission
+                            </h5>
+                            <p 
+                              className="text-white mb-0"
+                              style={{ 
+                                opacity: 0.8,
+                                fontSize: '14px'
+                              }}
+                            >
+                              To empower businesses with professional, innovative HR solutions and
+                              positively impact employees.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Third Item - Philosophy */}
+                      <div 
+                        className="p-4 rounded-4 vision-mission-card"
+                        style={{
+                          backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                          backdropFilter: 'blur(10px)',
+                          border: '1px solid rgba(255, 255, 255, 0.1)',
+                          transition: 'all 0.3s ease',
+                          cursor: 'pointer'
+                        }}
+                      >
+                        <div className="d-flex align-items-start">
+                          <div 
+                            className="me-4 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0"
+                            style={{
+                              width: '60px',
+                              height: '60px',
+                              backgroundColor: '#D4AF37',
+                              fontSize: '24px',
+                              fontWeight: 'bold',
+                              color: 'white'
+                            }}
+                          >
+                            03
+                          </div>
+                          <div>
+                            <h5 className="text-white fw-bold mb-2">
+                              Philosophy
+                            </h5>
+                            <p 
+                              className="text-white mb-0"
+                              style={{ 
+                                opacity: 0.8,
+                                fontSize: '14px'
+                              }}
+                            >
+                              We believe small actions create extraordinary impact. By listening
+                              deeply, reflecting on our work, and understanding others, we craft solutions that
+                              inspire trust and drive meaningful change.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
       {/* Loader */}
       {isLoading && (
         <div 
@@ -408,6 +678,12 @@ const About = () => {
             transform: translateX(0);
             opacity: 1;
           }
+        }
+        
+        .vision-mission-card:hover {
+          transform: translateY(-5px);
+          background-color: rgba(255, 255, 255, 0.15) !important;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
       `}</style>
     </>
