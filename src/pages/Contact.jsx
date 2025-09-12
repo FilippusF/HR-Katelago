@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import contactImage from '../assets/images/9.jpg';
+import logoImage from '../assets/images/Main-logo.png';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -7,6 +8,27 @@ const Contact = () => {
     email: '',
     message: ''
   });
+  const [isLoading, setIsLoading] = useState(true);
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 300);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const handleChange = (e) => {
     setFormData({
@@ -164,6 +186,74 @@ const Contact = () => {
         </div>
       </div>
     </div>
+
+      {/* Loader */}
+      {isLoading && (
+        <div 
+          className="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+          style={{
+            backgroundColor: 'rgba(255, 255, 255, 0.95)',
+            zIndex: 9999
+          }}
+        >
+          <div className="text-center">
+            <img 
+              src={logoImage} 
+              alt="Katelago Logo" 
+              className="mb-3"
+              style={{
+                height: '80px',
+                animation: 'pulse 1.5s ease-in-out infinite'
+              }}
+            />
+            <div 
+              className="spinner-border"
+              style={{ color: '#1e5631' }}
+              role="status"
+            >
+              <span className="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Back to Top Button */}
+      {showBackToTop && (
+        <button
+          onClick={scrollToTop}
+          className="btn position-fixed rounded-circle shadow-lg"
+          style={{
+            bottom: '30px',
+            right: '30px',
+            width: '50px',
+            height: '50px',
+            backgroundColor: '#1e5631',
+            border: 'none',
+            zIndex: 1000,
+            transition: 'all 0.3s ease'
+          }}
+        >
+          <svg width="20" height="20" fill="white" viewBox="0 0 16 16">
+            <path d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+          </svg>
+        </button>
+      )}
+
+      <style jsx>{`
+        @keyframes pulse {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.1);
+          }
+        }
+        
+        .btn:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 25px rgba(30, 86, 49, 0.3);
+        }
+      `}</style>
     </>
   );
 };
