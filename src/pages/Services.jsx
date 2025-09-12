@@ -1009,7 +1009,202 @@ const Services = () => {
   </div>
 </section>
 
+{/* Psychometric Assessment Section */}
+<section className="py-5" style={{ backgroundColor: '#ffffff' }}>
+  <div className="container">
+    <div className="row align-items-center">
+      {/* Left Content */}
+      <div className="col-lg-6 pe-lg-5">
+        <div className="mb-3">
+          <span 
+            className="text-uppercase fw-medium"
+            style={{ 
+              fontSize: '12px',
+              letterSpacing: '2px',
+              color: '#D4AF37',
+              fontWeight: '600'
+            }}
+          >
+            Assessment Services
+          </span>
+        </div>
+        
+        <h2 
+          className="display-6 fw-bold mb-3"
+          style={{
+            fontSize: '2.5rem',
+            lineHeight: '1.2',
+            color: '#1e5631',
+            fontWeight: '700'
+          }}
+        >
+          Psychometric Assessment
+        </h2>
+        
+        <p 
+          className="mb-4"
+          style={{
+            fontSize: '1rem',
+            lineHeight: '1.6',
+            color: '#6c757d'
+          }}
+        >
+          We utilize Psychometric Assessments to evaluate candidates' suitability for roles and organizations.
+        </p>
+        
+        <p 
+          className="mb-4"
+          style={{
+            fontSize: '1rem',
+            lineHeight: '1.6',
+            color: '#6c757d'
+          }}
+        >
+          Our proven methodology helps streamline recruitment, optimize team performance, and foster workforce development.
+        </p>
+      </div>
 
+      {/* Right Content - Assessment Features */}
+      <div className="col-lg-6 mt-5 mt-lg-0">
+        <div className="row g-4">
+          {/* Behavioural Assessment */}
+          <div className="col-12">
+            <div 
+              className="p-4 rounded-4 d-flex align-items-start"
+              style={{
+                backgroundColor: '#f8f9fa',
+                border: '2px solid #D4AF37'
+              }}
+            >
+              <div 
+                className="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                style={{
+                  width: '50px',
+                  height: '50px',
+                  backgroundColor: '#1e5631',
+                  color: '#D4AF37'
+                }}
+              >
+                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+              </div>
+              <div>
+                <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '1.1rem' }}>
+                  Behavioural Assessment
+                </h5>
+                <p className="mb-0" style={{ fontSize: '0.9rem', color: '#6c757d' }}>
+                  Understanding candidates' work habits and preferences.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Competency Mapping */}
+          <div className="col-12">
+            <div 
+              className="p-4 rounded-4 d-flex align-items-start"
+              style={{
+                backgroundColor: '#f8f9fa',
+                border: '1px solid #e9ecef'
+              }}
+            >
+              <div 
+                className="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                style={{
+                  width: '50px',
+                  height: '50px',
+                  backgroundColor: '#D4AF37',
+                  color: '#1e5631'
+                }}
+              >
+                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div>
+                <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '1.1rem' }}>
+                  Competency Mapping
+                </h5>
+                <p className="mb-0" style={{ fontSize: '0.9rem', color: '#6c757d' }}>
+                  Aligning behavioural patterns with job competencies.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Candidate Matching */}
+          <div className="col-12">
+            <div 
+              className="p-4 rounded-4 d-flex align-items-start"
+              style={{
+                backgroundColor: '#f8f9fa',
+                border: '1px solid #e9ecef'
+              }}
+            >
+              <div 
+                className="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                style={{
+                  width: '50px',
+                  height: '50px',
+                  backgroundColor: '#D4AF37',
+                  color: '#1e5631'
+                }}
+              >
+                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                </svg>
+              </div>
+              <div>
+                <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '1.1rem' }}>
+                  Candidate Matching
+                </h5>
+                <p className="mb-0" style={{ fontSize: '0.9rem', color: '#6c757d' }}>
+                  Leveraging Shadowmatch to select best-fit candidates.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Team Dynamics & Employee Development */}
+          <div className="col-6">
+            <div 
+              className="p-3 rounded-4 h-100"
+              style={{
+                backgroundColor: '#1e5631',
+                color: 'white'
+              }}
+            >
+              <h6 className="fw-bold mb-2" style={{ fontSize: '1rem' }}>
+                Team Dynamics
+              </h6>
+              <p className="mb-0" style={{ fontSize: '0.85rem', opacity: 0.9 }}>
+                Enhancing collaboration and team performance.
+              </p>
+            </div>
+          </div>
+
+          <div className="col-6">
+            <div 
+              className="p-3 rounded-4 h-100"
+              style={{
+                backgroundColor: '#1e5631',
+                color: 'white'
+              }}
+            >
+              <h6 className="fw-bold mb-2" style={{ fontSize: '1rem' }}>
+                Employee Development
+              </h6>
+              <p className="mb-0" style={{ fontSize: '0.85rem', opacity: 0.9 }}>
+                Identifying growth areas and tailoring training interventions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Loader */}
       {isLoading && (
