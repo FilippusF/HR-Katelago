@@ -4,6 +4,7 @@ import logoImage from '../assets/images/Main-logo.png';
 import missionImage from '../assets/images/mission.jpg';
 import p1Image from '../assets/images/p1.png';
 import chooseImage from '../assets/images/choose.png';
+import whoImage from '../assets/images/who.png';
 
 const Services = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -790,17 +791,6 @@ const Services = () => {
     {/* Header */}
     <div className="row mb-5">
       <div className="col-12 text-center">
-        <p 
-          className="text-uppercase mb-2"
-          style={{
-            fontSize: '0.9rem',
-            letterSpacing: '2px',
-            color: '#D4AF37',
-            fontWeight: '500'
-          }}
-        >
-          HOW IT'S WORK
-        </p>
         <h2 
           className="display-6 fw-bold mb-4"
           style={{
@@ -810,8 +800,20 @@ const Services = () => {
             fontWeight: '700'
           }}
         >
-          How This HR Solutions Work
+          Job Grading &amp; Salary Benchmarking
         </h2>
+        <p 
+          className="text-white mb-0"
+          style={{
+            fontSize: '1.1rem',
+            lineHeight: '1.6',
+            opacity: 0.9,
+            maxWidth: '800px',
+            margin: '0 auto'
+          }}
+        >
+          We utilize the Patterson Grading System for Job Evaluation, Job Grading, and Salary Benchmarking, ensuring fair and transparent compensation structures.
+        </p>
       </div>
     </div>
 
@@ -845,10 +847,11 @@ const Services = () => {
                 </div>
                 <div>
                   <h5 className="fw-bold mb-2" style={{ color: '#ffffff', fontSize: '1.2rem' }}>
-                    Talk With Us
+                    Objective Job Grading
                   </h5>
                   <p className="mb-0" style={{ color: '#b8c5d1', fontSize: '0.9rem', lineHeight: '1.6' }}>
-                    Lorem ipsum dolor sit amet consectetur.
+                    Evaluating roles based on education,
+                    responsibility, complexity, and autonomy.
                   </p>
                 </div>
               </div>
@@ -880,10 +883,11 @@ const Services = () => {
                 </div>
                 <div>
                   <h5 className="fw-bold mb-2" style={{ color: '#ffffff', fontSize: '1.2rem' }}>
-                    HR Solutions
+                    Transparent Salary Benchmarking
                   </h5>
                   <p className="mb-0" style={{ color: '#b8c5d1', fontSize: '0.9rem', lineHeight: '1.6' }}>
-                    Lorem ipsum dolor sit amet consectetur.
+                    Aligning pay structures with industry
+                    standards for fairness.
                   </p>
                 </div>
               </div>
@@ -915,10 +919,10 @@ const Services = () => {
                 </div>
                 <div>
                   <h5 className="fw-bold mb-2" style={{ color: '#ffffff', fontSize: '1.2rem' }}>
-                    Scalable Services
+                    Competitive Reward Systems
                   </h5>
                   <p className="mb-0" style={{ color: '#b8c5d1', fontSize: '0.9rem', lineHeight: '1.6' }}>
-                    Lorem ipsum dolor sit amet consectetur.
+                    Designing equitable salary and benefits structures.
                   </p>
                 </div>
               </div>
@@ -950,10 +954,10 @@ const Services = () => {
                 </div>
                 <div>
                   <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '1.2rem' }}>
-                    Business Stays On Top
+                    Compliance &amp; Risk Mitigation
                   </h5>
                   <p className="mb-0" style={{ color: '#1e5631', fontSize: '0.9rem', lineHeight: '1.6', opacity: 0.8 }}>
-                    Lorem ipsum dolor sit amet consectetur.
+                    Protecting businesses from legal risks related to pay and discrimination.
                   </p>
                 </div>
               </div>
@@ -973,33 +977,15 @@ const Services = () => {
               backgroundColor: '#2c3e50'
             }}
           >
-            {/* Image Placeholder - Replace with your actual image */}
-            <div 
-              className="w-100 h-100 d-flex align-items-center justify-content-center"
+            <img 
+              src={whoImage}
+              alt="Job Grading & Salary Benchmarking"
+              className="w-100 h-100"
               style={{
-                backgroundColor: '#495057',
-                backgroundImage: 'linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(30, 86, 49, 0.1) 100%)'
+                objectFit: 'cover',
+                objectPosition: 'center'
               }}
-            >
-              <div className="text-center">
-                <div 
-                  className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
-                  style={{
-                    width: '80px',
-                    height: '80px',
-                    backgroundColor: 'rgba(212, 175, 55, 0.2)',
-                    color: '#D4AF37'
-                  }}
-                >
-                  <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
-                  </svg>
-                </div>
-                <p style={{ color: '#D4AF37', fontSize: '1rem', fontWeight: '500' }}>
-                  Replace with Your Image
-                </p>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -1016,7 +1002,7 @@ const Services = () => {
             margin: 0
           }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          With our non-discriminatory approach, job ranks are defined from Unskilled Grade to Director, ensuring justifiable salary decisions.
         </p>
       </div>
     </div>
