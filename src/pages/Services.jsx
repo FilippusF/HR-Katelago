@@ -1206,6 +1206,220 @@ const Services = () => {
   </div>
 </section>
 
+{/* Employer of Record Section */}
+<section 
+  className="py-5"
+  style={{
+    backgroundImage: `linear-gradient(rgba(30, 86, 49, 0.9), rgba(30, 86, 49, 0.9)), url(${missionImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed'
+  }}
+>
+  <div className="container">
+    <div className="row align-items-center">
+      {/* Left Content */}
+      <div className="col-lg-6 pe-lg-5">
+        <div className="mb-3">
+          <span 
+            className="text-uppercase fw-medium"
+            style={{ 
+              fontSize: '12px',
+              letterSpacing: '2px',
+              color: '#D4AF37',
+              fontWeight: '600'
+            }}
+          >
+            Employment Solutions
+          </span>
+        </div>
+        
+        <h2 
+          className="display-6 fw-bold mb-3 text-white"
+          style={{
+            fontSize: '2.5rem',
+            lineHeight: '1.2',
+            fontWeight: '700'
+          }}
+        >
+          Employer of Record (EOR)
+        </h2>
+        
+        <p 
+          className="mb-4 text-white"
+          style={{
+            fontSize: '1rem',
+            lineHeight: '1.6',
+            opacity: 0.9
+          }}
+        >
+          We act as the legal employer on your behalf, managing all employment responsibilities while you retain full control over day-to-day operations and performance.
+        </p>
+        
+        <p 
+          className="mb-0 text-white"
+          style={{
+            fontSize: '1rem',
+            lineHeight: '1.6',
+            opacity: 0.9
+          }}
+        >
+          With our Employer of Record services, businesses, including those in the Oil & Gas sector, can expand their workforce in Namibia with confidence, speed, and full legal assurance.
+        </p>
+      </div>
+
+      {/* Right Content - EOR Features */}
+      <div className="col-lg-6 mt-5 mt-lg-0">
+        <div className="row g-4">
+          {/* Seamless Hiring & Onboarding */}
+          <div className="col-12">
+            <div 
+              className="p-4 rounded-4"
+              style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                backdropFilter: 'blur(10px)',
+                border: '2px solid #D4AF37'
+              }}
+            >
+              <div className="d-flex align-items-start">
+                <div 
+                  className="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                  style={{
+                    width: '50px',
+                    height: '50px',
+                    backgroundColor: '#D4AF37',
+                    color: '#1e5631'
+                  }}
+                >
+                  <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
+                    Seamless Hiring & Onboarding
+                  </h5>
+                  <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
+                    Onboard employees anywhere in Namibia without the need for local entity registration.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Full Legal Employment Compliance */}
+          <div className="col-12">
+            <div 
+              className="p-4 rounded-4"
+              style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.2)'
+              }}
+            >
+              <div className="d-flex align-items-start">
+                <div 
+                  className="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                  style={{
+                    width: '50px',
+                    height: '50px',
+                    backgroundColor: 'rgba(212, 175, 55, 0.2)',
+                    color: '#D4AF37'
+                  }}
+                >
+                  <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
+                    Full Legal Employment Compliance
+                  </h5>
+                  <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
+                    We ensure contracts, payroll, taxes, and statutory contributions fully comply with Namibian labour laws.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Risk Management & HR Compliance */}
+          <div className="col-12">
+            <div 
+              className="p-4 rounded-4"
+              style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.2)'
+              }}
+            >
+              <div className="d-flex align-items-start">
+                <div 
+                  className="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                  style={{
+                    width: '50px',
+                    height: '50px',
+                    backgroundColor: 'rgba(212, 175, 55, 0.2)',
+                    color: '#D4AF37'
+                  }}
+                >
+                  <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
+                    Risk Management & HR Compliance
+                  </h5>
+                  <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
+                    Mitigating legal risks through correct classification, fair labour practices, and up-to-date documentation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Payroll, Tax & Benefit Administration */}
+          <div className="col-12">
+            <div 
+              className="p-4 rounded-4"
+              style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.2)'
+              }}
+            >
+              <div className="d-flex align-items-start">
+                <div 
+                  className="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                  style={{
+                    width: '50px',
+                    height: '50px',
+                    backgroundColor: 'rgba(212, 175, 55, 0.2)',
+                    color: '#D4AF37'
+                  }}
+                >
+                  <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
+                    Payroll, Tax & Benefit Administration
+                  </h5>
+                  <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
+                    Efficient, timely and compliant salary payments, PAYE, Social Security, and Workmen's Compensation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/* Loader */}
       {isLoading && (
         <div 
