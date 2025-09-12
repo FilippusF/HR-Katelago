@@ -5,6 +5,7 @@ import Services from './pages/Services';
 import Industries from './pages/industries';
 import Careers from './pages/Careers';
 import Contact from './pages/Contact';
+import Testimonials from './pages/testimonials';
 
 import Layout from './components/common/Layout';
 import Home from './pages/Home';
@@ -20,6 +21,7 @@ function App() {
           <Route path="/industries" element={<Industries />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/testimonials" element={<Testimonials />} />
         </Routes>
       </Layout>
     </Router>
