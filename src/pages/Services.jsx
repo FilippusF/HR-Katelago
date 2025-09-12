@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import servicesImage from '../assets/images/about.png'; // Using same background image
 import logoImage from '../assets/images/Main-logo.png';
+import missionImage from '../assets/images/mission.jpg';
+import p1Image from '../assets/images/p1.png';
 
 const Services = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -88,10 +90,264 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Services content will go here */}
-      <div className="container py-5">
-        <p>Services page content coming soon...</p>
-      </div>
+      {/* Tailored HR Services Section */}
+      <section className="py-5" style={{ backgroundColor: '#ffffff' }}>
+        <div className="container">
+          <div className="row align-items-center">
+            {/* Left Content */}
+            <div className="col-lg-6 pe-lg-5">
+              <div className="mb-3">
+                <span 
+                  className="text-uppercase fw-medium"
+                  style={{ 
+                    fontSize: '12px',
+                    letterSpacing: '2px',
+                    color: '#D4AF37',
+                    fontWeight: '600'
+                  }}
+                >
+                  Overview
+                </span>
+              </div>
+              
+              <h2 
+                className="display-6 fw-bold mb-4"
+                style={{
+                  fontSize: '2.5rem',
+                  lineHeight: '1.2',
+                  color: '#1e5631',
+                  fontWeight: '700'
+                }}
+              >
+                Payroll Administration
+              </h2>
+              
+              <p 
+                className="mb-4"
+                style={{
+                  fontSize: '1rem',
+                  lineHeight: '1.6',
+                  color: '#6c757d'
+                }}
+              >
+                We provide full payroll solutions that make your payroll process simple, accurate, and
+                efficient.
+              </p>
+            </div>
+
+            {/* Right Content - Services Grid */}
+            <div className="col-lg-6 mt-5 mt-lg-0">
+              <div className="row g-4">
+                {/* Image Card */}
+                <div className="col-12">
+                  <div 
+                    className="position-relative rounded-4 overflow-hidden"
+                    style={{
+                      height: '250px'
+                    }}
+                  >
+                    <img 
+                      src={p1Image}
+                      alt="HR Services"
+                      className="w-100 h-100"
+                      style={{
+                        objectFit: 'cover',
+                        objectPosition: 'center'
+                      }}
+                    />
+                  </div>
+                </div>
+
+                {/* Service Cards */}
+                <div className="col-6">
+                  <div 
+                    className="p-4 rounded-4 h-100"
+                    style={{
+                      backgroundColor: '#1e5631',
+                      color: 'white'
+                    }}
+                  >
+                    <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
+                      Payroll Processing
+                    </h5>
+                    <p className="mb-0" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
+                      Monthly payroll, cost-to-company calculations, and payslips.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="col-6">
+                  <div 
+                    className="p-4 rounded-4 h-100"
+                    style={{
+                      backgroundColor: '#f8f9fa',
+                      color: '#1e5631'
+                    }}
+                  >
+                    <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
+                      Tax &amp; Compliance
+                    </h5>
+                    <p className="mb-0" style={{ fontSize: '0.9rem', color: '#6c757d' }}>
+                      PAYE deductions, SSC/Medical Aid registrations, and ITAS returns.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="col-6">
+                  <div 
+                    className="p-4 rounded-4 h-100"
+                    style={{
+                      backgroundColor: '#f8f9fa',
+                      color: '#1e5631'
+                    }}
+                  >
+                    <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
+                      Leave &amp; Benefits Management
+                    </h5>
+                    <p className="mb-0" style={{ fontSize: '0.9rem', color: '#6c757d' }}>
+                      Strategic recruitment and selection of top-tier candidates.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="col-6">
+                  <div 
+                    className="p-4 rounded-4 h-100"
+                    style={{
+                      backgroundColor: '#f8f9fa',
+                      color: '#1e5631'
+                    }}
+                  >
+                    <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
+                      Employee Onboarding
+                    </h5>
+                    <p className="mb-0" style={{ fontSize: '0.9rem', color: '#6c757d' }}>
+                      Seamless integration process for new team members.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* HR Consulting & Outsourcing Section */}
+      <section 
+        className="py-5"
+        style={{
+          backgroundImage: `linear-gradient(rgba(30, 86, 49, 0.9), rgba(30, 86, 49, 0.9)), url(${missionImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        <div className="container">
+          {/* Section Header */}
+          <div className="text-center mb-5">
+            <div className="mb-3">
+              <span 
+                className="text-uppercase fw-medium"
+                style={{ 
+                  fontSize: '12px',
+                  letterSpacing: '2px',
+                  color: '#D4AF37',
+                  fontWeight: '600'
+                }}
+              >
+                Our Services
+              </span>
+            </div>
+            
+            <h2 
+              className="display-5 fw-bold mb-4 text-white"
+              style={{
+                fontSize: '2.8rem',
+                lineHeight: '1.2',
+                fontWeight: '700'
+              }}
+            >
+              HR Consulting &amp; Outsourcing
+            </h2>
+            
+            <p 
+              className="mb-5 text-white"
+              style={{
+                fontSize: '1.1rem',
+                lineHeight: '1.6',
+                opacity: 0.9,
+                maxWidth: '600px',
+                margin: '0 auto'
+              }}
+            >
+              Our HR Consulting services help businesses build strong, compliant, and people-
+              centred workplaces by aligning HR with business goals.
+            </p>
+          </div>
+          
+          {/* Services Grid */}
+          <div className="row g-4">
+            {[
+              'Recruitment & Selection',
+              'HR Policies',
+              'Company Playbook',
+              'Employee Handbook',
+              'Culture & Employer Branding',
+              'Affirmative Action Report',
+              'Change Management',
+              'Organisational Development',
+              'Succession Planning',
+              'Job Descriptions',
+              'HR Documents, Employment Contracts, etc',
+              'Employee Relations',
+              'Disciplinary Enquiry Process & or Chair',
+              'Performance Management'
+            ].map((service, index) => (
+              <div 
+                key={index}
+                className="col-lg-6 col-md-6"
+                style={{
+                  animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`
+                }}
+              >
+                <div 
+                  className="service-item d-flex align-items-center p-4 rounded-4"
+                  style={{
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    backdropFilter: 'blur(10px)',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    transition: 'all 0.3s ease',
+                    cursor: 'pointer'
+                  }}
+                >
+                  <div 
+                    className="me-3 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                    style={{
+                      width: '24px',
+                      height: '24px',
+                      backgroundColor: '#D4AF37'
+                    }}
+                  >
+                    <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
+                      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                  </div>
+                  <span 
+                    className="text-white"
+                    style={{ 
+                      fontSize: '15px',
+                      fontWeight: '500',
+                      opacity: 0.95
+                    }}
+                  >
+                    {service}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Loader */}
       {isLoading && (
@@ -156,9 +412,31 @@ const Services = () => {
           }
         }
         
+        @keyframes fadeInUp {
+          0% {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
         .btn:hover {
           transform: translateY(-2px);
           box-shadow: 0 8px 25px rgba(30, 86, 49, 0.3);
+        }
+        
+        .service-item:hover {
+          transform: translateY(-5px);
+          background-color: rgba(255, 255, 255, 0.2) !important;
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .service-item:hover .me-3 {
+          background-color: #1e5631 !important;
+          transform: scale(1.1);
         }
       `}</style>
     </>
