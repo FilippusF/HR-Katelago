@@ -139,9 +139,6 @@ const Header = () => {
                   marginTop: '8px'
                 }}>
                   <li><Link className="dropdown-item py-2 px-3" to="/about" style={{ transition: 'all 0.3s ease' }}>About Us</Link></li>
-                  <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Our Team</a></li>
-                  <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Company History</a></li>
-                  <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Mission & Vision</a></li>
                 </ul>
               </li>
 
@@ -169,10 +166,7 @@ const Header = () => {
                   marginTop: '8px'
                 }}>
                   <li><Link className="dropdown-item py-2 px-3" to="/services" style={{ transition: 'all 0.3s ease' }}>All Services</Link></li>
-                  <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Recruitment</a></li>
-                  <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>HR Consulting</a></li>
-                  <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Training & Development</a></li>
-                  <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Payroll Management</a></li>
+                  <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Industries we serve</a></li>
                 </ul>
               </li>
 
