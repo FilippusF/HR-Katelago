@@ -185,7 +185,7 @@ const Header = () => {
                     color: '#333 !important'
                   }}
                 >
-                  PROJECTS
+                  VACANCIES
                   <i className="bi bi-plus-lg ms-2" style={{ fontSize: '12px', fontWeight: 'bold' }}></i>
                 </a>
                 <ul className="dropdown-menu border-0 shadow-lg" style={{
@@ -193,10 +193,7 @@ const Header = () => {
                   borderRadius: '8px',
                   marginTop: '8px'
                 }}>
-                  <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Recent Projects</a></li>
-                  <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Case Studies</a></li>
-                  <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Success Stories</a></li>
-                  <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Portfolio</a></li>
+                  <li><a className="dropdown-item py-2 px-3" href="/careers" style={{ transition: 'all 0.3s ease' }}>Recent Vacancies</a></li>
                 </ul>
               </li>
 
