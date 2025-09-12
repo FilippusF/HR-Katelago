@@ -111,7 +111,7 @@ const Services = () => {
               </div>
               
               <h2 
-                className="display-6 fw-bold mb-4"
+                className="display-6 fw-bold mb-3"
                 style={{
                   fontSize: '2.5rem',
                   lineHeight: '1.2',
@@ -121,6 +121,28 @@ const Services = () => {
               >
                 Payroll Administration
               </h2>
+              
+              {/* Tagline */}
+              <div 
+                className="mb-4 p-3 rounded-3"
+                style={{
+                  backgroundColor: '#f8f9fa',
+                  border: '2px solid #D4AF37',
+                  borderRadius: '12px'
+                }}
+              >
+                <p 
+                  className="mb-0 text-center fw-bold"
+                  style={{
+                    fontSize: '1.1rem',
+                    color: '#1e5631',
+                    letterSpacing: '1px',
+                    fontWeight: '600'
+                  }}
+                >
+                  Accurate. Compliant. Seamless Payroll.
+                </p>
+              </div>
               
               <p 
                 className="mb-4"
@@ -205,7 +227,8 @@ const Services = () => {
                       Leave &amp; Benefits Management
                     </h5>
                     <p className="mb-0" style={{ fontSize: '0.9rem', color: '#6c757d' }}>
-                      Strategic recruitment and selection of top-tier candidates.
+                      Leave tracking, pension fund administration, and
+                      termination payouts.
                     </p>
                   </div>
                 </div>
@@ -219,10 +242,10 @@ const Services = () => {
                     }}
                   >
                     <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
-                      Employee Onboarding
+                      Payroll Reporting
                     </h5>
                     <p className="mb-0" style={{ fontSize: '0.9rem', color: '#6c757d' }}>
-                      Seamless integration process for new team members.
+                      Detailed reports, historical payroll access, and secured electronic payslips.
                     </p>
                   </div>
                 </div>
