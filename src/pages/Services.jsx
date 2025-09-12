@@ -3,6 +3,7 @@ import servicesImage from '../assets/images/about.png'; // Using same background
 import logoImage from '../assets/images/Main-logo.png';
 import missionImage from '../assets/images/mission.jpg';
 import p1Image from '../assets/images/p1.png';
+import chooseImage from '../assets/images/choose.png';
 
 const Services = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -372,57 +373,70 @@ const Services = () => {
         </div>
       </section>
 
-      {/* HR Benefits Process Section */}
-<section className="py-5" style={{ backgroundColor: '#2c3e50' }}>
+      {/* How This HR Solutions Work Section */}
+<section 
+  className="py-5"
+  style={{ 
+    backgroundColor: '#1e5631',
+    minHeight: '800px'
+  }}
+>
   <div className="container">
-    {/* Header */}
+    {/* Section Header */}
     <div className="row mb-5">
-      <div className="col-12 text-center">
+      <div className="col-lg-6">
         <h2 
-          className="display-6 fw-bold mb-4"
+          className="display-5 fw-bold text-white mb-0"
           style={{
-            fontSize: '2.5rem',
-            lineHeight: '1.2',
-            color: '#ffffff',
-            fontWeight: '700'
+            lineHeight: '1.2'
           }}
         >
-          Recruitment &amp; Talent Acquisition
+          How This HR Solutions Work
         </h2>
+      </div>
+      <div className="col-lg-6 d-flex align-items-end">
         <p 
-          className="lead mx-auto"
-          style={{
-            fontSize: '1.1rem',
-            lineHeight: '1.6',
-            color: '#b8c5d1',
-            maxWidth: '600px'
+          className="text-white mb-0"
+          style={{ 
+            opacity: 0.8,
+            fontSize: '16px',
+            lineHeight: '1.6'
           }}
         >
-          We design recruitment solutions that help you attract, recruit, and keep the right
-          talent to drive your business forward.
+          We design recruitment solutions that help you attract, recruit, and keep the right talent to drive your business forward.
         </p>
       </div>
     </div>
 
-    {/* Process Steps */}
-    <div className="row">
-      <div className="col-12">
-        <div className="d-flex flex-wrap justify-content-center align-items-stretch gap-4">
-          {/* Step 1 - Highlighted */}
-          <div className="d-flex flex-column align-items-center" style={{ animation: 'fadeInUp 0.6s ease-out 0.1s both' }}>
+    <div className="row g-4">
+      {/* Process Cards */}
+      <div className="col-lg-12">
+        <div className="row g-4">
+          {/* Card 01 */}
+          <div className="col-lg-3 col-md-6" style={{ animation: 'fadeInUp 0.6s ease-out 0.1s both' }}>
             <div 
-              className="text-center p-4 rounded-4 position-relative mb-3 process-box"
+              className="process-card p-4 rounded-4 d-flex flex-column h-100"
               style={{
                 backgroundColor: '#D4AF37',
-                color: '#1e5631',
-                width: '250px',
-                height: '220px',
+                minHeight: '280px',
                 transition: 'all 0.3s ease',
-                border: '3px solid #1e5631'
+                cursor: 'pointer'
               }}
             >
+              <div className="mb-3">
+                <span 
+                  className="fw-bold"
+                  style={{
+                    fontSize: '48px',
+                    color: 'rgba(30, 86, 49, 0.3)',
+                    lineHeight: '1'
+                  }}
+                >
+                  01
+                </span>
+              </div>
               <div 
-                className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+                className="rounded-circle d-flex align-items-center justify-content-center mb-3"
                 style={{
                   width: '50px',
                   height: '50px',
@@ -434,147 +448,159 @@ const Services = () => {
                   <path d="M21 8a8.1 8.1 0 0 0-7-7 8.1 8.1 0 0 0-7 7c0 2.15.5 4.35 1.36 6.36l5.63 10.54.01.02.01.02c.18.32.5.66.99.66s.81-.34.99-.66l.01-.02.01-.02 5.63-10.54C20.5 12.35 21 10.15 21 8zm-7 4a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
                 </svg>
               </div>
-              <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
-                Talent Sourcing &amp; Advertising
+              <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '16px', lineHeight: '1.3' }}>
+                Talent Sourcing & Advertising
               </h5>
-              <p className="mb-0" style={{ fontSize: '0.85rem', opacity: 0.8 }}>
-                Access to broad networks and targeted platforms to connect with best-fit candidates.
-              </p>
-              <div 
-                className="position-absolute rounded-circle d-flex align-items-center justify-content-center"
-                style={{
-                  top: '-15px',
-                  right: '-15px',
-                  width: '30px',
-                  height: '30px',
-                  backgroundColor: '#1e5631',
-                  color: '#D4AF37',
-                  fontSize: '0.8rem',
-                  fontWeight: '700'
+              <p 
+                className="mb-0 flex-grow-1"
+                style={{ 
+                  color: '#1e5631',
+                  fontSize: '13px',
+                  opacity: 0.8,
+                  lineHeight: '1.4'
                 }}
               >
-                1
-              </div>
+                Access to broad networks and targeted platforms to connect with best-fit candidates.
+              </p>
             </div>
           </div>
 
-          {/* Step 2 */}
-          <div className="d-flex flex-column align-items-center" style={{ animation: 'fadeInUp 0.6s ease-out 0.2s both' }}>
+          {/* Card 02 */}
+          <div className="col-lg-3 col-md-6" style={{ animation: 'fadeInUp 0.6s ease-out 0.2s both' }}>
             <div 
-              className="text-center p-4 rounded-4 position-relative mb-3 process-box"
+              className="process-card p-4 rounded-4 d-flex flex-column h-100"
               style={{
-                backgroundColor: '#1e5631',
-                color: '#ffffff',
-                width: '250px',
-                height: '220px',
-                transition: 'all 0.3s ease'
+                backgroundColor: '#D4AF37',
+                minHeight: '280px',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer'
               }}
             >
+              <div className="mb-3">
+                <span 
+                  className="fw-bold"
+                  style={{
+                    fontSize: '48px',
+                    color: 'rgba(30, 86, 49, 0.3)',
+                    lineHeight: '1'
+                  }}
+                >
+                  02
+                </span>
+              </div>
               <div 
-                className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+                className="rounded-circle d-flex align-items-center justify-content-center mb-3"
                 style={{
                   width: '50px',
                   height: '50px',
-                  backgroundColor: '#D4AF37',
-                  color: '#1e5631'
+                  backgroundColor: '#1e5631',
+                  color: '#D4AF37'
                 }}
               >
                 <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
               </div>
-              <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
-                Screening &amp; Shortlisting
+              <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '16px', lineHeight: '1.3' }}>
+                Screening & Shortlisting
               </h5>
-              <p className="mb-0" style={{ fontSize: '0.85rem', opacity: 0.9 }}>
-                Structured CV reviews, tele-screens, and assessments to identify top talent.
-              </p>
-              <div 
-                className="position-absolute rounded-circle d-flex align-items-center justify-content-center"
-                style={{
-                  top: '-15px',
-                  right: '-15px',
-                  width: '30px',
-                  height: '30px',
-                  backgroundColor: '#D4AF37',
+              <p 
+                className="mb-0 flex-grow-1"
+                style={{ 
                   color: '#1e5631',
-                  fontSize: '0.8rem',
-                  fontWeight: '700'
+                  fontSize: '13px',
+                  opacity: 0.8,
+                  lineHeight: '1.4'
                 }}
               >
-                2
-              </div>
+                Structured CV reviews, tele-screens, and assessments to identify top talent.
+              </p>
             </div>
           </div>
 
-          {/* Step 3 */}
-          <div className="d-flex flex-column align-items-center" style={{ animation: 'fadeInUp 0.6s ease-out 0.3s both' }}>
+          {/* Card 03 */}
+          <div className="col-lg-3 col-md-6" style={{ animation: 'fadeInUp 0.6s ease-out 0.3s both' }}>
             <div 
-              className="text-center p-4 rounded-4 position-relative mb-3 process-box"
+              className="process-card p-4 rounded-4 d-flex flex-column h-100"
               style={{
-                backgroundColor: '#1e5631',
-                color: '#ffffff',
-                width: '250px',
-                height: '220px',
-                transition: 'all 0.3s ease'
+                backgroundColor: '#D4AF37',
+                minHeight: '280px',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer'
               }}
             >
+              <div className="mb-3">
+                <span 
+                  className="fw-bold"
+                  style={{
+                    fontSize: '48px',
+                    color: 'rgba(30, 86, 49, 0.3)',
+                    lineHeight: '1'
+                  }}
+                >
+                  03
+                </span>
+              </div>
               <div 
-                className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+                className="rounded-circle d-flex align-items-center justify-content-center mb-3"
                 style={{
                   width: '50px',
                   height: '50px',
-                  backgroundColor: '#D4AF37',
-                  color: '#1e5631'
+                  backgroundColor: '#1e5631',
+                  color: '#D4AF37'
                 }}
               >
                 <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
                 </svg>
               </div>
-              <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
+              <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '16px', lineHeight: '1.3' }}>
                 Interview Support
               </h5>
-              <p className="mb-0" style={{ fontSize: '0.85rem', opacity: 0.9 }}>
-                Providing interview guides, structured questions, and coordination to ensure consistency.
-              </p>
-              <div 
-                className="position-absolute rounded-circle d-flex align-items-center justify-content-center"
-                style={{
-                  top: '-15px',
-                  right: '-15px',
-                  width: '30px',
-                  height: '30px',
-                  backgroundColor: '#D4AF37',
+              <p 
+                className="mb-0 flex-grow-1"
+                style={{ 
                   color: '#1e5631',
-                  fontSize: '0.8rem',
-                  fontWeight: '700'
+                  fontSize: '13px',
+                  opacity: 0.8,
+                  lineHeight: '1.4'
                 }}
               >
-                3
-              </div>
+                Providing interview guides, structured questions, and coordination to ensure consistency.
+              </p>
             </div>
           </div>
 
-          {/* Step 4 */}
-          <div className="d-flex flex-column align-items-center" style={{ animation: 'fadeInUp 0.6s ease-out 0.4s both' }}>
+          {/* Card 04 */}
+          <div className="col-lg-3 col-md-6" style={{ animation: 'fadeInUp 0.6s ease-out 0.4s both' }}>
             <div 
-              className="text-center p-4 rounded-4 position-relative mb-3 process-box"
+              className="process-card p-4 rounded-4 d-flex flex-column h-100"
               style={{
-                backgroundColor: '#1e5631',
-                color: '#ffffff',
-                width: '250px',
-                height: '220px',
-                transition: 'all 0.3s ease'
+                backgroundColor: '#D4AF37',
+                minHeight: '280px',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer'
               }}
             >
+              <div className="mb-3">
+                <span 
+                  className="fw-bold"
+                  style={{
+                    fontSize: '48px',
+                    color: 'rgba(30, 86, 49, 0.3)',
+                    lineHeight: '1'
+                  }}
+                >
+                  04
+                </span>
+              </div>
               <div 
-                className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+                className="rounded-circle d-flex align-items-center justify-content-center mb-3"
                 style={{
                   width: '50px',
                   height: '50px',
-                  backgroundColor: '#D4AF37',
-                  color: '#1e5631'
+                  backgroundColor: '#1e5631',
+                  color: '#D4AF37'
                 }}
               >
                 <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -582,30 +608,25 @@ const Services = () => {
                   <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
                 </svg>
               </div>
-              <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
+              <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '16px', lineHeight: '1.3' }}>
                 Onboarding Solutions
               </h5>
-              <p className="mb-0" style={{ fontSize: '0.85rem', opacity: 0.9 }}>
-                Smooth candidate integration with tailored induction and orientation support.
-              </p>
-              <div 
-                className="position-absolute rounded-circle d-flex align-items-center justify-content-center"
-                style={{
-                  top: '-15px',
-                  right: '-15px',
-                  width: '30px',
-                  height: '30px',
-                  backgroundColor: '#D4AF37',
+              <p 
+                className="mb-0 flex-grow-1"
+                style={{ 
                   color: '#1e5631',
-                  fontSize: '0.8rem',
-                  fontWeight: '700'
+                  fontSize: '13px',
+                  opacity: 0.8,
+                  lineHeight: '1.4'
                 }}
               >
-                4
-              </div>
+                Smooth candidate integration with tailored induction and orientation support.
+              </p>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
         {/* Benefits Summary Section */}
         <div className="row mt-5">
@@ -751,13 +772,20 @@ const Services = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
   </div>
 </section>
 
 {/* How This HR Solutions Work Section */}
-<section className="py-5" style={{ backgroundColor: '#1e5631' }}>
+<section 
+  className="py-5" 
+  style={{ 
+    backgroundColor: 'transparent',
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${chooseImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  }}
+>
   <div className="container">
     {/* Header */}
     <div className="row mb-5">
@@ -995,6 +1023,8 @@ const Services = () => {
   </div>
 </section>
 
+
+
       {/* Loader */}
       {isLoading && (
         <div 
@@ -1085,12 +1115,12 @@ const Services = () => {
           transform: scale(1.1);
         }
         
-        .process-box:hover {
-          transform: translateY(-10px) scale(1.02);
-          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        .process-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 25px rgba(0,0,0,0.15);
         }
         
-        .process-box:hover .rounded-circle {
+        .process-card:hover .rounded-circle {
           transform: scale(1.1) rotate(360deg);
           transition: all 0.5s ease;
         }
