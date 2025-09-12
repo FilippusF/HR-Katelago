@@ -221,11 +221,8 @@ const Header = () => {
                   borderRadius: '8px',
                   marginTop: '8px'
                 }}>
-                  <li><Link className="dropdown-item py-2 px-3" to="/careers" style={{ transition: 'all 0.3s ease' }}>Careers</Link></li>
                   <li><Link className="dropdown-item py-2 px-3" to="/contact" style={{ transition: 'all 0.3s ease' }}>Contact</Link></li>
-                  <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>FAQ</a></li>
-                  <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Privacy Policy</a></li>
-                  <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Terms of Service</a></li>
+                  <li><Link className="dropdown-item py-2 px-3" to="/testimonials" style={{ transition: 'all 0.3s ease' }}>Testimonials</Link></li>
                 </ul>
               </li>
             </ul>
