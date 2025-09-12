@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import logoImage from '../assets/images/Main-logo.png';
+import aboutImage from '../assets/images/about.png';
 
 const Industries = () => {
+  const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(true);
   const [showBackToTop, setShowBackToTop] = useState(false);
 
@@ -26,11 +29,14 @@ const Industries = () => {
 
   return (
     <>
-      {/* Hero Section */}
+      {/* Hero Section with Background Image */}
       <section 
         className="hero-section position-relative d-flex align-items-center"
         style={{
-          background: 'linear-gradient(135deg, #1e5631 0%, #2c3e50 100%)',
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${aboutImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
           height: '60vh',
           minHeight: '500px'
         }}
@@ -38,6 +44,7 @@ const Industries = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8 text-center text-white">
+              {/* Breadcrumb */}
               <div className="mb-4">
                 <span 
                   className="text-uppercase fw-medium"
@@ -48,21 +55,26 @@ const Industries = () => {
                     opacity: 0.9
                   }}
                 >
-                  INDUSTRIES
+                  INDUSTRIES WE SERVE
                 </span>
               </div>
               
+              {/* Main Title */}
               <h1 
                 className="display-4 fw-bold mb-4"
                 style={{
                   fontSize: '3.5rem',
                   lineHeight: '1.2',
-                  fontWeight: '700'
+                  fontWeight: '700',
+                  textShadow: '2px 2px 4px rgba(0,0,0,0.5)'
                 }}
               >
-                Industries We Serve
+                Comprehensive HR Solutions
+                <br />
+                Across Diverse Industry Sectors
               </h1>
               
+              {/* Description */}
               <p 
                 className="lead mb-0"
                 style={{
@@ -72,75 +84,165 @@ const Industries = () => {
                   margin: '0 auto'
                 }}
               >
-                Comprehensive HR solutions across diverse industry sectors.
+                Tailored human resource strategies designed to meet the unique challenges and opportunities within your specific industry.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Coming Soon Section */}
-      <section className="py-5" style={{ backgroundColor: '#f8f9fa', minHeight: '50vh' }}>
+      {/* Industries Section */}
+      <section className="py-5" style={{ backgroundColor: '#f8f9fa' }}>
         <div className="container">
-          <div className="row justify-content-center align-items-center" style={{ minHeight: '40vh' }}>
-            <div className="col-lg-6 text-center">
-              <div 
-                className="mb-4"
-                style={{
-                  width: '120px',
-                  height: '120px',
-                  backgroundColor: '#1e5631',
-                  borderRadius: '50%',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  margin: '0 auto'
-                }}
-              >
-                <svg width="60" height="60" fill="white" viewBox="0 0 16 16">
-                  <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
-                  <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
-                </svg>
-              </div>
-              
-              <h2 
-                className="display-5 fw-bold mb-4"
-                style={{
-                  fontSize: '2.5rem',
-                  color: '#2c3e50'
-                }}
-              >
-                Content Coming Soon
-              </h2>
-              
-              <p 
-                className="lead mb-4"
-                style={{
-                  color: '#6c757d',
-                  fontSize: '1.1rem'
-                }}
-              >
-                We're working hard to bring you detailed information about the industries we serve. 
-                Stay tuned for comprehensive insights into our sector-specific HR solutions.
-              </p>
-              
-              <div 
-                className="d-inline-flex align-items-center px-4 py-2 rounded-pill"
-                style={{
-                  backgroundColor: '#D4AF37',
-                  color: 'white',
-                  fontSize: '14px',
-                  fontWeight: '600'
-                }}
-              >
-                <div 
-                  className="spinner-border spinner-border-sm me-2"
-                  style={{ width: '16px', height: '16px' }}
-                  role="status"
-                >
-                  <span className="visually-hidden">Loading...</span>
+          <div className="row">
+            {/* Oil & Gas */}
+            <div className="col-lg-6 mb-4">
+              <div className="card h-100 border-0 shadow-sm">
+                <div className="card-body p-4">
+                  <div className="d-flex align-items-center mb-3">
+                    <div 
+                      className="me-3"
+                      style={{
+                        width: '50px',
+                        height: '50px',
+                        backgroundColor: '#1e5631',
+                        borderRadius: '50%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center'
+                      }}
+                    >
+                      <svg width="24" height="24" fill="white" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                      </svg>
+                    </div>
+                    <h3 className="card-title mb-0" style={{ color: '#2c3e50', fontSize: '1.5rem' }}>Oil & Gas</h3>
+                  </div>
+                  <p className="card-text" style={{ color: '#6c757d', lineHeight: '1.6' }}>
+                    Workforce compliance & EOR support.
+                  </p>
                 </div>
-                Under Development
+              </div>
+            </div>
+
+            {/* Mining & Engineering */}
+            <div className="col-lg-6 mb-4">
+              <div className="card h-100 border-0 shadow-sm">
+                <div className="card-body p-4">
+                  <div className="d-flex align-items-center mb-3">
+                    <div 
+                      className="me-3"
+                      style={{
+                        width: '50px',
+                        height: '50px',
+                        backgroundColor: '#1e5631',
+                        borderRadius: '50%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center'
+                      }}
+                    >
+                      <svg width="24" height="24" fill="white" viewBox="0 0 16 16">
+                        <path d="M9 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H7a.5.5 0 0 1-.5-.5V1H1.5a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V6.5a.5.5 0 0 0-.5-.5H9z"/>
+                      </svg>
+                    </div>
+                    <h3 className="card-title mb-0" style={{ color: '#2c3e50', fontSize: '1.5rem' }}>Mining & Engineering</h3>
+                  </div>
+                  <p className="card-text" style={{ color: '#6c757d', lineHeight: '1.6' }}>
+                    Talent acquisition, payroll, HR solutions.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Construction Projects */}
+            <div className="col-lg-6 mb-4">
+              <div className="card h-100 border-0 shadow-sm">
+                <div className="card-body p-4">
+                  <div className="d-flex align-items-center mb-3">
+                    <div 
+                      className="me-3"
+                      style={{
+                        width: '50px',
+                        height: '50px',
+                        backgroundColor: '#1e5631',
+                        borderRadius: '50%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center'
+                      }}
+                    >
+                      <svg width="24" height="24" fill="white" viewBox="0 0 16 16">
+                        <path d="M8.5 1a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V5a.5.5 0 0 0 1 0V3.5H10a.5.5 0 0 0 0-1H8.5V1zM3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-9z"/>
+                      </svg>
+                    </div>
+                    <h3 className="card-title mb-0" style={{ color: '#2c3e50', fontSize: '1.5rem' }}>Construction Projects</h3>
+                  </div>
+                  <p className="card-text" style={{ color: '#6c757d', lineHeight: '1.6' }}>
+                    Project-based HR solutions.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Startups & SMEs */}
+            <div className="col-lg-6 mb-4">
+              <div className="card h-100 border-0 shadow-sm">
+                <div className="card-body p-4">
+                  <div className="d-flex align-items-center mb-3">
+                    <div 
+                      className="me-3"
+                      style={{
+                        width: '50px',
+                        height: '50px',
+                        backgroundColor: '#1e5631',
+                        borderRadius: '50%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center'
+                      }}
+                    >
+                      <svg width="24" height="24" fill="white" viewBox="0 0 16 16">
+                        <path d="M7 14s-3-2-3-6 3-6 3-6 3 2 3 6-3 6-3 6z"/>
+                        <path d="M9 14s3-2 3-6-3-6-3-6-3 2-3 6 3 6 3 6z"/>
+                      </svg>
+                    </div>
+                    <h3 className="card-title mb-0" style={{ color: '#2c3e50', fontSize: '1.5rem' }}>Startups & SMEs</h3>
+                  </div>
+                  <p className="card-text" style={{ color: '#6c757d', lineHeight: '1.6' }}>
+                    Affordable HR outsourcing.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* NGOs & Development Projects */}
+            <div className="col-lg-12 mb-4">
+              <div className="card h-100 border-0 shadow-sm">
+                <div className="card-body p-4">
+                  <div className="d-flex align-items-center mb-3">
+                    <div 
+                      className="me-3"
+                      style={{
+                        width: '50px',
+                        height: '50px',
+                        backgroundColor: '#1e5631',
+                        borderRadius: '50%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center'
+                      }}
+                    >
+                      <svg width="24" height="24" fill="white" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zM4.5 7.5a.5.5 0 0 1 0-1h5.793L8.146 4.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 7.5H4.5z"/>
+                      </svg>
+                    </div>
+                    <h3 className="card-title mb-0" style={{ color: '#2c3e50', fontSize: '1.5rem' }}>NGOs & Development Projects</h3>
+                  </div>
+                  <p className="card-text" style={{ color: '#6c757d', lineHeight: '1.6' }}>
+                    Compliance & organizational development.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -161,9 +263,11 @@ const Industries = () => {
               src={logoImage} 
               alt="Katelago Logo" 
               className="mb-3"
+              onClick={() => navigate('/')}
               style={{
                 height: '80px',
-                animation: 'pulse 1.5s ease-in-out infinite'
+                animation: 'pulse 1.5s ease-in-out infinite',
+                cursor: 'pointer'
               }}
             />
             <div 
@@ -215,13 +319,40 @@ const Industries = () => {
           box-shadow: 0 8px 25px rgba(30, 86, 49, 0.3);
         }
         
+        .btn-outline-primary:hover {
+          background-color: #1e5631;
+          border-color: #1e5631;
+          color: white;
+        }
+        
+        .hero-content {
+          animation: fadeInUp 1.2s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(40px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .breadcrumb-item + .breadcrumb-item::before {
+          content: '/';
+          color: rgba(255, 255, 255, 0.6);
+        }
+        
         @media (max-width: 768px) {
           .hero-section {
-            height: 50vh !important;
-            min-height: 400px !important;
+            min-height: 50vh !important;
+            padding-top: 100px !important;
+            padding-bottom: 60px !important;
           }
           
-          .hero-section h1 {
+          .hero-content h1 {
             font-size: 2.5rem !important;
           }
           
@@ -231,7 +362,7 @@ const Industries = () => {
         }
         
         @media (max-width: 576px) {
-          .hero-section h1 {
+          .hero-content h1 {
             font-size: 2rem !important;
           }
           

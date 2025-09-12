@@ -166,7 +166,7 @@ const Header = () => {
                   marginTop: '8px'
                 }}>
                   <li><Link className="dropdown-item py-2 px-3" to="/services" style={{ transition: 'all 0.3s ease' }}>All Services</Link></li>
-                  <li><a className="dropdown-item py-2 px-3" href="#" style={{ transition: 'all 0.3s ease' }}>Industries we serve</a></li>
+                  <li><a className="dropdown-item py-2 px-3" href="/industries" style={{ transition: 'all 0.3s ease' }}>Industries we serve</a></li>
                 </ul>
               </li>
 
