@@ -6,6 +6,14 @@ import aboutImage from '../assets/images/about.png';
 const Testimonials = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const uniqueTestimonials = testimonials.filter((testimonial, index, self) => 
+    index === self.findIndex(t => t.id === testimonial.id)
+  );
+
+  const testimonialsPerSlide = 4;
+  const totalSlides = Math.ceil(uniqueTestimonials.length / testimonialsPerSlide);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -21,6 +29,26 @@ const Testimonials = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % totalSlides);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [totalSlides]);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % totalSlides);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+  };
+
+  const getTestimonialsForSlide = (slideIndex) => {
+    const start = slideIndex * testimonialsPerSlide;
+    return uniqueTestimonials.slice(start, start + testimonialsPerSlide);
+  };
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -90,76 +118,167 @@ const Testimonials = () => {
         </div>
       </section>
 
-      {/* Testimonials Grid */}
-      <section className="py-5">
+      {/* Testimonials Slider */}
+      <section 
+        className="py-5 position-relative"
+        style={{
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(${aboutImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
         <div className="container">
-          <div className="row g-4">
-            {testimonials.filter((testimonial, index, self) => 
-              index === self.findIndex(t => t.id === testimonial.id)
-            ).map((testimonial) => (
-              <div key={testimonial.id} className="col-lg-6">
-                <div 
-                  className="h-100 p-4 rounded-4 shadow-sm"
+          <div className="position-relative">
+            <div className="overflow-hidden">
+              <div 
+                className="d-flex"
+                style={{
+                  transform: `translateX(-${currentSlide * 100}%)`,
+                  transition: 'transform 0.5s ease-in-out'
+                }}
+              >
+                {Array.from({ length: totalSlides }).map((_, slideIndex) => (
+                  <div key={slideIndex} className="w-100 flex-shrink-0">
+                    <div className="row g-4 justify-content-center">
+                      {getTestimonialsForSlide(slideIndex).map((testimonial) => (
+                        <div key={testimonial.id} className="col-lg-3 col-md-6">
+                          <div 
+                            className="testimonial-box p-3 shadow-sm"
+                            style={{
+                              backgroundColor: 'rgba(212, 175, 55, 0.9)',
+                              border: '1px solid #D4AF37',
+                              transition: 'all 0.3s ease',
+                              width: '250px',
+                              height: '250px',
+                              borderRadius: '20px',
+                              cursor: 'pointer',
+                              margin: '0 auto'
+                            }}
+                          >
+                            {/* Stars */}
+                            <div className="mb-2">
+                              {[...Array(testimonial.rating)].map((_, i) => (
+                                <span key={i} style={{ color: '#1e5631', fontSize: '14px' }}>★</span>
+                              ))}
+                            </div>
+                            
+                            {/* Content */}
+                            <p 
+                              className="mb-3"
+                              style={{ 
+                                fontSize: '12px',
+                                lineHeight: '1.4',
+                                color: '#2c3e50',
+                                fontStyle: 'italic',
+                                overflow: 'hidden',
+                                display: '-webkit-box',
+                                WebkitLineClamp: 4,
+                                WebkitBoxOrient: 'vertical'
+                              }}
+                            >
+                              "{testimonial.content}"
+                            </p>
+                            
+                            {/* Author */}
+                            <div className="d-flex align-items-center">
+                              <div 
+                                className="rounded me-2 d-flex align-items-center justify-content-center"
+                                style={{
+                                  width: '40px',
+                                  height: '35px',
+                                  backgroundColor: 'white',
+                                  border: '1px solid #e9ecef',
+                                  padding: '4px'
+                                }}
+                              >
+                                <img 
+                                  src={testimonial.logo} 
+                                  alt={`${testimonial.company} logo`}
+                                  style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'contain'
+                                  }}
+                                />
+                              </div>
+                              <div>
+                                <h6 className="mb-0 fw-bold" style={{ color: '#2c3e50', fontSize: '12px' }}>
+                                  {testimonial.name}
+                                </h6>
+                                <small style={{ color: '#495057', fontSize: '10px' }}>
+                                  {testimonial.position}, {testimonial.company}
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            {/* Navigation Buttons */}
+            {totalSlides > 1 && (
+              <>
+                <button
+                  onClick={prevSlide}
+                  className="btn position-absolute top-50 start-0 translate-middle-y rounded-circle shadow"
                   style={{
-                    backgroundColor: '#f8f9fa',
-                    border: '1px solid #e9ecef',
-                    transition: 'all 0.3s ease'
+                    width: '50px',
+                    height: '50px',
+                    backgroundColor: '#1e5631',
+                    border: 'none',
+                    zIndex: 10,
+                    marginLeft: '-25px'
                   }}
                 >
-                  {/* Stars */}
-                  <div className="mb-3">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <span key={i} style={{ color: '#D4AF37', fontSize: '18px' }}>★</span>
-                    ))}
-                  </div>
-                  
-                  {/* Content */}
-                  <p 
-                    className="mb-4"
-                    style={{ 
-                      fontSize: '16px',
-                      lineHeight: '1.6',
-                      color: '#495057',
-                      fontStyle: 'italic'
+                  <svg width="20" height="20" fill="white" viewBox="0 0 16 16">
+                    <path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                  </svg>
+                </button>
+                
+                <button
+                  onClick={nextSlide}
+                  className="btn position-absolute top-50 end-0 translate-middle-y rounded-circle shadow"
+                  style={{
+                    width: '50px',
+                    height: '50px',
+                    backgroundColor: '#1e5631',
+                    border: 'none',
+                    zIndex: 10,
+                    marginRight: '-25px'
+                  }}
+                >
+                  <svg width="20" height="20" fill="white" viewBox="0 0 16 16">
+                    <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                </button>
+              </>
+            )}
+            
+            {/* Dots Indicator */}
+            {totalSlides > 1 && (
+              <div className="d-flex justify-content-center mt-4">
+                {Array.from({ length: totalSlides }).map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentSlide(index)}
+                    className="btn p-0 mx-1"
+                    style={{
+                      width: '12px',
+                      height: '12px',
+                      borderRadius: '50%',
+                      backgroundColor: currentSlide === index ? '#1e5631' : '#dee2e6',
+                      border: 'none',
+                      transition: 'all 0.3s ease'
                     }}
-                  >
-                    "{testimonial.content}"
-                  </p>
-                  
-                  {/* Author */}
-                  <div className="d-flex align-items-center">
-                    <div 
-                      className="rounded me-3 d-flex align-items-center justify-content-center"
-                      style={{
-                        width: '60px',
-                        height: '50px',
-                        backgroundColor: 'white',
-                        border: '2px solid #e9ecef',
-                        padding: '8px'
-                      }}
-                    >
-                      <img 
-                        src={testimonial.logo} 
-                        alt={`${testimonial.company} logo`}
-                        style={{
-                          width: '100%',
-                          height: '100%',
-                          objectFit: 'contain'
-                        }}
-                      />
-                    </div>
-                    <div>
-                      <h6 className="mb-0 fw-bold" style={{ color: '#2c3e50' }}>
-                        {testimonial.name}
-                      </h6>
-                      <small style={{ color: '#6c757d' }}>
-                        {testimonial.position}, {testimonial.company}
-                      </small>
-                    </div>
-                  </div>
-                </div>
+                  />
+                ))}
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -247,9 +366,19 @@ const Testimonials = () => {
       )}
 
       <style jsx>{`
-        .testimonials-page .shadow-sm:hover {
+        .testimonial-box:hover {
+          background-color: rgba(30, 86, 49, 0.9) !important;
+          border-color: #1e5631 !important;
           transform: translateY(-5px);
-          box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+          box-shadow: 0 10px 25px rgba(0,0,0,0.2) !important;
+        }
+        
+        .testimonial-box:hover * {
+          color: white !important;
+        }
+        
+        .testimonial-box:hover .mb-2 span {
+          color: #D4AF37 !important;
         }
         
         .btn:hover {
