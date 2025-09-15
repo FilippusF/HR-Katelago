@@ -229,7 +229,7 @@ const Header = () => {
 
             {/* CTA Button */}
             <a 
-              href="#" 
+              href="/contact" 
               className="btn text-white fw-semibold px-4 py-2"
               style={{ 
                 background: 'linear-gradient(135deg, #1e5631 0%, #2d7d32 100%)',
