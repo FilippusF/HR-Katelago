@@ -49,7 +49,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: minmax(150px,auto);
-    gap:20px;       
+    gap:20px;      
 }
 
 .containerServices div {
@@ -63,13 +63,72 @@
 
 .containerServices div img {
     width: 100%;        
-    height: 200px;      
+    height: 300px;      
     object-fit: cover;  
     border-radius: 10px; 
     border: solid 1.5px #214f38;
     display: block;     
 }
 
+
+/* Keyframes for moving up */
+@keyframes moveUp {
+  from {
+    transform: translateY(50px); /* Start lower */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0); /* End at normal position */
+    opacity: 1;
+  }
+}
+
+.sectionContainer {
+  display: flex;           /* put children side by side */
+  align-items: center;     /* vertically center text with image */
+  gap: 20px;               /* space between image and text */
+  padding: 20px;
+  background-color: #ffffff;
+  margin-top: 5%;
+  
+}
+
+.sectionContainer img {
+  width: 300px;            /* fixed image width */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  border: #214f38 solid 1px;
+}
+
+.sectionContainer .textContent {
+  flex: 1;           
+  margin-left: auto;
+}
+
+/* section2 background image*/
+.backgroundImageSection2{
+    background-image: url("images/background\ -\ Copy.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+/*services circle*/
+.servicesCircle {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    background: #c9b071;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #214f38;
+    margin-right: 5px;
+    font-weight: bold;
+    text-align: center;
+}
 
 
 
