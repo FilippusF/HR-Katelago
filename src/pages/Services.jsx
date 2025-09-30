@@ -437,7 +437,7 @@ const Services = () => {
                   className="fw-bold"
                   style={{
                     fontSize: '48px',
-                    color: 'rgba(30, 86, 49, 0.3)',
+                    color: '#1e5631',
                     lineHeight: '1'
                   }}
                 >
@@ -490,7 +490,7 @@ const Services = () => {
                   className="fw-bold"
                   style={{
                     fontSize: '48px',
-                    color: 'rgba(30, 86, 49, 0.3)',
+                    color: '#1e5631',
                     lineHeight: '1'
                   }}
                 >
@@ -543,7 +543,7 @@ const Services = () => {
                   className="fw-bold"
                   style={{
                     fontSize: '48px',
-                    color: 'rgba(30, 86, 49, 0.3)',
+                    color: '#1e5631',
                     lineHeight: '1'
                   }}
                 >
@@ -596,7 +596,7 @@ const Services = () => {
                   className="fw-bold"
                   style={{
                     fontSize: '48px',
-                    color: 'rgba(30, 86, 49, 0.3)',
+                    color: '#1e5631',
                     lineHeight: '1'
                   }}
                 >
@@ -835,7 +835,7 @@ const Services = () => {
             <div 
               className="p-4 rounded-4 h-100"
               style={{
-                backgroundColor: '#2c3e50',
+                backgroundColor: '#D4AF37',
                 transition: 'all 0.3s ease'
               }}
             >
@@ -845,7 +845,7 @@ const Services = () => {
                   style={{
                     width: '60px',
                     height: '60px',
-                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    backgroundColor: '#1e5631',
                     fontSize: '1.5rem',
                     fontWeight: '700',
                     color: '#ffffff'
@@ -854,10 +854,10 @@ const Services = () => {
                   01
                 </div>
                 <div>
-                  <h5 className="fw-bold mb-2" style={{ color: '#ffffff', fontSize: '1.2rem' }}>
+                  <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '1.2rem' }}>
                     Objective Job Grading
                   </h5>
-                  <p className="mb-0" style={{ color: '#b8c5d1', fontSize: '0.9rem', lineHeight: '1.6' }}>
+                  <p className="mb-0" style={{ color: '#1e5631', fontSize: '0.9rem', lineHeight: '1.6' }}>
                     Evaluating roles based on education,
                     responsibility, complexity, and autonomy.
                   </p>
@@ -871,7 +871,7 @@ const Services = () => {
             <div 
               className="p-4 rounded-4 h-100"
               style={{
-                backgroundColor: '#2c3e50',
+                backgroundColor: '#D4AF37',
                 transition: 'all 0.3s ease'
               }}
             >
@@ -881,7 +881,7 @@ const Services = () => {
                   style={{
                     width: '60px',
                     height: '60px',
-                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    backgroundColor: '#1e5631',
                     fontSize: '1.5rem',
                     fontWeight: '700',
                     color: '#ffffff'
@@ -890,10 +890,10 @@ const Services = () => {
                   02
                 </div>
                 <div>
-                  <h5 className="fw-bold mb-2" style={{ color: '#ffffff', fontSize: '1.2rem' }}>
+                  <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '1.2rem' }}>
                     Transparent Salary Benchmarking
                   </h5>
-                  <p className="mb-0" style={{ color: '#b8c5d1', fontSize: '0.9rem', lineHeight: '1.6' }}>
+                  <p className="mb-0" style={{ color: '#1e5631', fontSize: '0.9rem', lineHeight: '1.6' }}>
                     Aligning pay structures with industry
                     standards for fairness.
                   </p>
@@ -907,7 +907,7 @@ const Services = () => {
             <div 
               className="p-4 rounded-4 h-100"
               style={{
-                backgroundColor: '#2c3e50',
+                backgroundColor: '#D4AF37',
                 transition: 'all 0.3s ease'
               }}
             >
@@ -917,7 +917,7 @@ const Services = () => {
                   style={{
                     width: '60px',
                     height: '60px',
-                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    backgroundColor: '#1e5631',
                     fontSize: '1.5rem',
                     fontWeight: '700',
                     color: '#ffffff'
@@ -926,10 +926,10 @@ const Services = () => {
                   03
                 </div>
                 <div>
-                  <h5 className="fw-bold mb-2" style={{ color: '#ffffff', fontSize: '1.2rem' }}>
+                  <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '1.2rem' }}>
                     Competitive Reward Systems
                   </h5>
-                  <p className="mb-0" style={{ color: '#b8c5d1', fontSize: '0.9rem', lineHeight: '1.6' }}>
+                  <p className="mb-0" style={{ color: '#1e5631', fontSize: '0.9rem', lineHeight: '1.6' }}>
                     Designing equitable salary and benefits structures.
                   </p>
                 </div>
@@ -952,10 +952,10 @@ const Services = () => {
                   style={{
                     width: '60px',
                     height: '60px',
-                    backgroundColor: 'rgba(30, 86, 49, 0.2)',
+                    backgroundColor: '#1e5631',
                     fontSize: '1.5rem',
                     fontWeight: '700',
-                    color: '#1e5631'
+                    color: 'white'
                   }}
                 >
                   04
@@ -1004,7 +1004,7 @@ const Services = () => {
       <div className="col-lg-4 offset-lg-8">
         <p 
           style={{
-            color: '#b8c5d1',
+            color: 'white',
             fontSize: '0.95rem',
             lineHeight: '1.6',
             margin: 0
