@@ -1005,7 +1005,7 @@ const Services = () => {
         <p 
           style={{
             color: 'white',
-            fontSize: '0.95rem',
+            fontSize: '1.1rem',
             lineHeight: '1.6',
             margin: 0
           }}
@@ -1114,7 +1114,7 @@ const Services = () => {
               className="p-4 rounded-4 d-flex align-items-start"
               style={{
                 backgroundColor: '#f8f9fa',
-                border: '1px solid #e9ecef'
+                border: '2px solid #D4AF37'
               }}
             >
               <div 
@@ -1147,7 +1147,7 @@ const Services = () => {
               className="p-4 rounded-4 d-flex align-items-start"
               style={{
                 backgroundColor: '#f8f9fa',
-                border: '1px solid #e9ecef'
+                border: '2px solid #D4AF37'
               }}
             >
               <div 
