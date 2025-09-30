@@ -400,7 +400,7 @@ const Services = () => {
             lineHeight: '1.2'
           }}
         >
-          How This HR Solutions Work
+          Recruitment &amp; Talent Acquisition
         </h2>
       </div>
       <div className="col-lg-6 d-flex align-items-end">
