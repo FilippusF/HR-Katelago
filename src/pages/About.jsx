@@ -134,10 +134,8 @@ const About = () => {
                   lineHeight: '1.6'
                 }}
               >
-                At Katelago HR Consultants, we are dedicated to transforming the way businesses
-                manage their human resources. As a leading provider of virtual HR solutions, based
-                in Windhoek, Namibia, we offer a full spectrum of HR services tailored to meet the
-                unique needs of businesses across various industries.
+                 Shaping the future of work in Namibia, Katelago is shaping bold,
+                empowered, and human HR solutions that move businesses forward.
               </p>
               
               {/* Quote */}
@@ -149,9 +147,12 @@ const About = () => {
                   color: '#6c757d'
                 }}
               >
-                Our expertise spans HR strategy, Talent Acquisition, Payroll Management and compliance,
-                HR Consulting, Psychometric Assessment and Organizational Development, all designed to
-                empower businesses and drive sustainable growth.
+                Founded in 2012, on the principles of integrity, innovation, and excellence,
+                Katelago HR Consultants is committed to providing strategic HR solutions that
+                enhance productivity and employee engagement. Our team of seasoned HR
+                professionals brings years of expertise in HR best practices, labour law, and
+                workplace dynamics, ensuring that our clients receive top-tier service and compliance
+                assurance.
               </blockquote>
               
               {/* Feature Item */}
@@ -169,18 +170,6 @@ const About = () => {
                     flexShrink: 0
                   }}
                 >
-                  <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                  </svg>
-                </div>
-                <div>
-                  <h5 
-                    className="fw-bold mb-2"
-                    style={{ color: '#6c757d', fontSize: '1.2rem' }}
-                  >
-                    Great Team Work
-                  </h5>
                 </div>
               </div>
             </div>
@@ -337,7 +326,7 @@ const About = () => {
                             style={{
                               width: '24px',
                               height: '24px',
-                              backgroundColor: '#28a745'
+                              backgroundColor: '#1e5631'
                             }}
                           >
                             <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
@@ -355,7 +344,7 @@ const About = () => {
                             style={{
                               width: '24px',
                               height: '24px',
-                              backgroundColor: '#28a745'
+                              backgroundColor: '#1e5631'
                             }}
                           >
                             <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
@@ -374,7 +363,7 @@ const About = () => {
                             style={{
                               width: '24px',
                               height: '24px',
-                              backgroundColor: '#28a745'
+                              backgroundColor: '#1e5631'
                             }}
                           >
                             <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
@@ -392,7 +381,7 @@ const About = () => {
                             style={{
                               width: '24px',
                               height: '24px',
-                              backgroundColor: '#28a745'
+                              backgroundColor: '#1e5631'
                             }}
                           >
                             <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
@@ -425,7 +414,7 @@ const About = () => {
                             style={{
                               width: '60px',
                               height: '60px',
-                              backgroundColor: '#D4AF37',
+                              backgroundColor: '#1e5631',
                               fontSize: '24px',
                               fontWeight: 'bold',
                               color: 'white'
@@ -511,7 +500,7 @@ const About = () => {
                             style={{
                               width: '60px',
                               height: '60px',
-                              backgroundColor: '#D4AF37',
+                              backgroundColor: '#1e5631',
                               fontSize: '24px',
                               fontWeight: 'bold',
                               color: 'white'
@@ -591,7 +580,7 @@ const About = () => {
               <div 
                 className="process-card h-100 p-4 rounded-4 text-center"
                 style={{
-                  backgroundColor: 'white',
+                  backgroundColor: '#1e5631',
                   border: '2px solid #f0f0f0',
                   transition: 'all 0.4s ease',
                   cursor: 'pointer',
@@ -603,7 +592,7 @@ const About = () => {
                   style={{
                     width: '80px',
                     height: '80px',
-                    backgroundColor: '#1e5631',
+                    backgroundColor: '#D4AF37',
                     borderRadius: '50%',
                     fontSize: '24px',
                     fontWeight: 'bold',
@@ -614,12 +603,12 @@ const About = () => {
                 </div>
                 <h5 
                   className="fw-bold mb-3"
-                  style={{ color: '#2c3e50', fontSize: '1.3rem' }}
+                  style={{ color: 'white', fontSize: '1.3rem' }}
                 >
                   Grabbing a coffee and catching up
                 </h5>
                 <p 
-                  style={{ color: '#6c757d', fontSize: '14px', lineHeight: '1.6' }}
+                  style={{ color: 'white', fontSize: '14px', lineHeight: '1.6' }}
                 >
                   Informal chat (virtual or in-person) to see if we're the right fit.
                 </p>
@@ -631,7 +620,7 @@ const About = () => {
               <div 
                 className="process-card h-100 p-4 rounded-4 text-center"
                 style={{
-                  backgroundColor: 'white',
+                  backgroundColor: '#1e5631',
                   border: '2px solid #f0f0f0',
                   transition: 'all 0.4s ease',
                   cursor: 'pointer',
@@ -654,12 +643,12 @@ const About = () => {
                 </div>
                 <h5 
                   className="fw-bold mb-3"
-                  style={{ color: '#2c3e50', fontSize: '1.3rem' }}
+                  style={{ color: 'white', fontSize: '1.3rem' }}
                 >
                   Discover and Understand
                 </h5>
                 <p 
-                  style={{ color: '#6c757d', fontSize: '14px', lineHeight: '1.6' }}
+                  style={{ color: 'white', fontSize: '14px', lineHeight: '1.6' }}
                 >
                   Deep dive into business needs and goals.
                 </p>
@@ -671,7 +660,7 @@ const About = () => {
               <div 
                 className="process-card h-100 p-4 rounded-4 text-center"
                 style={{
-                  backgroundColor: 'white',
+                  backgroundColor: '#1e5631',
                   border: '2px solid #f0f0f0',
                   transition: 'all 0.4s ease',
                   cursor: 'pointer',
@@ -683,7 +672,7 @@ const About = () => {
                   style={{
                     width: '80px',
                     height: '80px',
-                    backgroundColor: '#1e5631',
+                    backgroundColor: '#D4AF37',
                     borderRadius: '50%',
                     fontSize: '24px',
                     fontWeight: 'bold',
@@ -694,12 +683,12 @@ const About = () => {
                 </div>
                 <h5 
                   className="fw-bold mb-3"
-                  style={{ color: '#2c3e50', fontSize: '1.3rem' }}
+                  style={{ color: 'white', fontSize: '1.3rem' }}
                 >
                   Crafting Solutions
                 </h5>
                 <p 
-                  style={{ color: '#6c757d', fontSize: '14px', lineHeight: '1.6' }}
+                  style={{ color: 'white', fontSize: '14px', lineHeight: '1.6' }}
                 >
                   Develop tailored HR solutions aligned to business outcomes.
                 </p>
@@ -713,7 +702,7 @@ const About = () => {
               <div 
                 className="process-card h-100 p-4 rounded-4 text-center"
                 style={{
-                  backgroundColor: 'white',
+                  backgroundColor: '#1e5631',
                   border: '2px solid #f0f0f0',
                   transition: 'all 0.4s ease',
                   cursor: 'pointer',
@@ -736,12 +725,12 @@ const About = () => {
                 </div>
                 <h5 
                   className="fw-bold mb-3"
-                  style={{ color: '#2c3e50', fontSize: '1.3rem' }}
+                  style={{ color: 'white', fontSize: '1.3rem' }}
                 >
                   Implement and Embed
                 </h5>
                 <p 
-                  style={{ color: '#6c757d', fontSize: '14px', lineHeight: '1.6' }}
+                  style={{ color: 'white', fontSize: '14px', lineHeight: '1.6' }}
                 >
                   Partner with clients to execute and embed solutions.
                 </p>

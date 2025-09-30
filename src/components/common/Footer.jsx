@@ -18,9 +18,8 @@ const Footer = () => {
               />
             </div>
             <p className="text-light small" style={{ color: '#ffffff !important' }}>
-              We combine creativity, innovation, and deep expertise, both local and global, to
-              provide customized HR solutions that help your business stand out, attract top talent,
-              and secure success in a competitive market.
+              Shaping the future of work in Namibia, Katelago is shaping bold,
+              empowered, and human HR solutions that move businesses forward.
             </p>
           </div>
 
@@ -49,12 +48,6 @@ const Footer = () => {
               <li className="mb-2">
                 <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
-                  Projects Work
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
-                  <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   Contact Us
                 </a>
               </li>
@@ -63,36 +56,43 @@ const Footer = () => {
 
           {/* HR Solution Column */}
           <div className="col-lg-2 col-md-6 mb-4">
-            <h5 className="text-white mb-3">HR Solution</h5>
+            <h5 className="text-white mb-3">HR Solutions</h5>
             <ul className="list-unstyled">
               <li className="mb-2">
                 <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
-                  Employee Training
+                  HR Consulting 
                 </a>
               </li>
               <li className="mb-2">
                 <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
-                  Payroll Automation
+                  Payroll Administration
                 </a>
               </li>
               <li className="mb-2">
                 <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
-                  Business Grow
+                  Talent Acquisition
                 </a>
               </li>
               <li className="mb-2">
                 <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
-                  Outsource HR
+                  Job Grading
                 </a>
               </li>
               <li className="mb-2">
                 <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
-                  Business HR
+                    Psychometric Assessment
+                </a>
+              </li>
+
+              <li className="mb-2">
+                <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                  <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
+                    Employer of Record
                 </a>
               </li>
             </ul>

@@ -82,7 +82,7 @@ const Home = () => {
                     className="badge text-uppercase fw-normal px-0"
                     style={{
                       backgroundColor: 'transparent',
-                      color: '#ff6b6b',
+                      color: '#28a745',
                       fontSize: '12px',
                       letterSpacing: '2px'
                     }}
@@ -95,11 +95,11 @@ const Home = () => {
                 <h1 
                   className="display-5 fw-bold mb-4"
                   style={{
-                    color: '#2c3e50',
+                    color: '#D4AF37',
                     lineHeight: '1.2'
                   }}
                 >
-                  We create a place where your people love to work
+                  We create a place where your people love to work!
                 </h1>
 
                 {/* Description */}
@@ -111,24 +111,23 @@ const Home = () => {
                     lineHeight: '1.6'
                   }}
                 >
-                  Shaping the future of work in Namibia, Katelago is shaping bold,
-                  empowered, and human HR solutions that move businesses forward.
+                  Being remarkable is a journey, and it begins by creating an inspiring workplace
+                    where employees thrive, achievements are celebrated, and your team is empowered
+                    every step of the way.
                 </p>
 
                 {/* Quote */}
                 <blockquote 
                   className="border-start border-4 ps-4 mb-4"
                   style={{
-                    borderColor: '#ff6b6b !important',
+                    borderColor: '#28a745 !important',
                     fontStyle: 'italic',
                     color: '#6c757d'
                   }}
                 >
-                  Founded in 2012, on the principles of integrity, innovation, and excellence,
-                  Katelago HR Consultants is committed to providing strategic HR solutions that
-                  enhance productivity and employee engagement. Our team of seasoned HR
-                  professionals brings years of expertise in HR best practices, labour law, and
-                  workplace dynamics, ensuring that our clients receive top-tier service and compliance
+                  We combine creativity, innovation, and deep expertise, both local and global, to
+                  provide customized HR solutions that help your business stand out, attract top talent,
+                  and secure success in a competitive market.
                   assurance.
                 </blockquote>
 
@@ -288,7 +287,7 @@ const Home = () => {
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="mb-0" style={{ fontSize: '2rem', fontWeight: '600', color: '#2c3e50' }}>
-              9+ Corporate Clients Trust Us
+              Corporate Clients Trust Us
             </h2>
           </div>
           
@@ -398,7 +397,7 @@ const Home = () => {
                       style={{
                         width: '24px',
                         height: '24px',
-                        backgroundColor: '#28a745'
+                        backgroundColor: '#1e5631'
                       }}
                     >
                       <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
@@ -416,7 +415,7 @@ const Home = () => {
                       style={{
                         width: '24px',
                         height: '24px',
-                        backgroundColor: '#28a745'
+                        backgroundColor: '#1e5631'
                       }}
                     >
                       <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
@@ -435,7 +434,7 @@ const Home = () => {
                       style={{
                         width: '24px',
                         height: '24px',
-                        backgroundColor: '#28a745'
+                        backgroundColor: '#1e5631'
                       }}
                     >
                       <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
@@ -453,7 +452,7 @@ const Home = () => {
                       style={{
                         width: '24px',
                         height: '24px',
-                        backgroundColor: '#28a745'
+                        backgroundColor: '#1e5631'
                       }}
                     >
                       <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
@@ -486,7 +485,7 @@ const Home = () => {
                       style={{
                         width: '60px',
                         height: '60px',
-                        backgroundColor: '#D4AF37',
+                        backgroundColor: '#1e5631',
                         fontSize: '24px',
                         fontWeight: 'bold',
                         color: 'white'
@@ -496,7 +495,7 @@ const Home = () => {
                     </div>
                     <div>
                       <h5 className="text-white fw-bold mb-2">
-                        Values
+                        Vision
                       </h5>
                       <p 
                         className="text-white mb-0"
@@ -602,7 +601,7 @@ const Home = () => {
                   <div 
                     className="choose-card p-3 rounded-4 d-flex flex-column"
                     style={{
-                      backgroundColor: '#D4AF37',
+                      backgroundColor: '#c69b0cff',
                       height: '220px',
                       transition: 'all 0.3s ease',
                       cursor: 'pointer'
@@ -631,7 +630,7 @@ const Home = () => {
                   <div 
                     className="choose-card p-3 rounded-4 d-flex flex-column"
                     style={{
-                      backgroundColor: '#D4AF37',
+                      backgroundColor: '#c69b0cff',
                       height: '220px',
                       transition: 'all 0.3s ease',
                       cursor: 'pointer'
@@ -655,7 +654,7 @@ const Home = () => {
                     <p 
                       className="mb-0 flex-grow-1"
                       style={{ 
-                        color: '#1e5631',
+                        color: 'white',
                         fontSize: '12px',
                         opacity: 0.8,
                         lineHeight: '1.4'
@@ -671,7 +670,7 @@ const Home = () => {
                   <div 
                     className="choose-card p-3 rounded-4 d-flex flex-column"
                     style={{
-                      backgroundColor: '#D4AF37',
+                      backgroundColor: '#c69b0cff',
                       height: '220px',
                       transition: 'all 0.3s ease',
                       cursor: 'pointer'
@@ -695,7 +694,7 @@ const Home = () => {
                     <p 
                       className="mb-0 flex-grow-1"
                       style={{ 
-                        color: '#1e5631',
+                        color: 'white',
                         fontSize: '12px',
                         opacity: 0.8,
                         lineHeight: '1.4'
@@ -730,7 +729,7 @@ const Home = () => {
               <div 
                 className="choose-card p-4 rounded-4 h-100 position-relative overflow-hidden d-flex flex-column"
                 style={{
-                  backgroundColor: '#D4AF37',
+                  backgroundColor: '#c69b0cff',
                   minHeight: '540px',
                   transition: 'all 0.3s ease',
                   cursor: 'pointer'
