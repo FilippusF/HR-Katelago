@@ -187,8 +187,10 @@ const Services = () => {
                   <div 
                     className="p-4 rounded-4 h-100"
                     style={{
-                      backgroundColor: '#1e5631',
-                      color: 'white'
+                      backgroundColor: '#f8f9fa',
+                      color: '#1e5631',
+                      border: '2px solid #D4AF37',
+                      borderRadius: '12px'
                     }}
                   >
                     <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
@@ -205,7 +207,9 @@ const Services = () => {
                     className="p-4 rounded-4 h-100"
                     style={{
                       backgroundColor: '#f8f9fa',
-                      color: '#1e5631'
+                      color: '#1e5631',
+                      border: '2px solid #D4AF37',
+                      borderRadius: '12px'
                     }}
                   >
                     <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
@@ -222,7 +226,9 @@ const Services = () => {
                     className="p-4 rounded-4 h-100"
                     style={{
                       backgroundColor: '#f8f9fa',
-                      color: '#1e5631'
+                      color: '#1e5631',
+                      border: '2px solid #D4AF37',
+                      borderRadius: '12px'
                     }}
                   >
                     <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
@@ -240,7 +246,9 @@ const Services = () => {
                     className="p-4 rounded-4 h-100"
                     style={{
                       backgroundColor: '#f8f9fa',
-                      color: '#1e5631'
+                      color: '#1e5631',
+                      border: '2px solid #D4AF37',
+                      borderRadius: '12px'
                     }}
                   >
                     <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
