@@ -269,7 +269,7 @@ const Services = () => {
       <section 
         className="py-5"
         style={{
-          backgroundImage: `linear-gradient(rgba(30, 86, 49, 0.9), rgba(30, 86, 49, 0.9)), url(${missionImage})`,
+          backgroundImage: `url(${missionImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -385,10 +385,12 @@ const Services = () => {
       {/* How This HR Solutions Work Section */}
 <section 
   className="py-5"
-  style={{ 
-    backgroundColor: '#1e5631',
-    minHeight: '800px'
-  }}
+  style={{
+          backgroundImage: `url(${missionImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
 >
   <div className="container">
     {/* Section Header */}
@@ -1218,7 +1220,7 @@ const Services = () => {
 <section 
   className="py-5"
   style={{
-    backgroundImage: `linear-gradient(rgba(30, 86, 49, 0.9), rgba(30, 86, 49, 0.9)), url(${missionImage})`,
+    backgroundImage: `url(${missionImage})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundAttachment: 'fixed'
@@ -1331,8 +1333,8 @@ const Services = () => {
                   style={{
                     width: '50px',
                     height: '50px',
-                    backgroundColor: 'rgba(212, 175, 55, 0.2)',
-                    color: '#D4AF37'
+                    backgroundColor: '#D4AF37',
+                    color: '#1e5631'
                   }}
                 >
                   <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -1367,8 +1369,8 @@ const Services = () => {
                   style={{
                     width: '50px',
                     height: '50px',
-                    backgroundColor: 'rgba(212, 175, 55, 0.2)',
-                    color: '#D4AF37'
+                    backgroundColor: '#D4AF37',
+                    color: '#1e5631'
                   }}
                 >
                   <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -1403,8 +1405,8 @@ const Services = () => {
                   style={{
                     width: '50px',
                     height: '50px',
-                    backgroundColor: 'rgba(212, 175, 55, 0.2)',
-                    color: '#D4AF37'
+                    backgroundColor: '#D4AF37',
+                    color: '#1e5631'
                   }}
                 >
                   <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
