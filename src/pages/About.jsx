@@ -4,6 +4,7 @@ import a1Image from '../assets/images/a1.png';
 import a2Image from '../assets/images/a2.png';
 import logoImage from '../assets/images/Main-logo.png';
 import missionImage from '../assets/images/mission.jpg';
+import TenImage from '../assets/images/10.jpg';
 
 const About = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -102,7 +103,7 @@ const About = () => {
                 <span 
                   className="text-uppercase fw-medium"
                   style={{ 
-                    fontSize: '12px',
+                    fontSize: '15px', //changed from 12px to 15px
                     letterSpacing: '2px',
                     color: '#D4AF37',
                     fontWeight: '600'
@@ -202,7 +203,7 @@ const About = () => {
                   }}
                 >
                   <img 
-                    src={a1Image}
+                    src={TenImage}
                     alt="Team collaboration"
                     className="img-fluid rounded shadow-lg"
                     style={{
@@ -284,7 +285,7 @@ const About = () => {
                       className="text-uppercase fw-normal"
                       style={{
                         color: 'rgba(255, 255, 255, 0.7)',
-                        fontSize: '14px',
+                        fontSize: '15px',
                         letterSpacing: '3px'
                       }}
                     >
@@ -541,7 +542,7 @@ const About = () => {
               <span 
                 className="text-uppercase fw-medium"
                 style={{
-                  fontSize: '12px',
+                  fontSize: '15px', //chamged to 15px
                   letterSpacing: '2px',
                   color: '#D4AF37',
                   fontWeight: '600'

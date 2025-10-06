@@ -112,7 +112,7 @@ const Services = () => {
                 </span>
               </div>
               
-              <h2 
+              <h2 id='PayrollAdministration'
                 className="display-6 fw-bold mb-3"
                 style={{
                   fontSize: '2.5rem',
@@ -266,7 +266,7 @@ const Services = () => {
       </section>
 
       {/* HR Consulting & Outsourcing Section */}
-      <section 
+      <section id="HRConsultingAndOutSourcing"
         className="py-5"
         style={{
           backgroundImage: `url(${missionImage})`,
@@ -292,7 +292,7 @@ const Services = () => {
               </span>
             </div>
             
-            <h2 
+            <h2 id='HRConsultingAndOutSourcing'
               className="display-5 fw-bold mb-4 text-white"
               style={{
                 fontSize: '2.8rem',
@@ -346,7 +346,7 @@ const Services = () => {
                 <div 
                   className="service-item d-flex align-items-center p-4 rounded-4"
                   style={{
-                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    backgroundColor: 'rgba(20, 18, 18, 0.3)',
                     backdropFilter: 'blur(10px)',
                     border: '1px solid rgba(255, 255, 255, 0.2)',
                     transition: 'all 0.3s ease',
@@ -396,7 +396,7 @@ const Services = () => {
     {/* Section Header */}
     <div className="row mb-5">
       <div className="col-lg-6">
-        <h2 
+        <h2 id='RecruitmentAndTalentAcquisition'
           className="display-5 fw-bold text-white mb-0"
           style={{
             lineHeight: '1.2'
@@ -655,8 +655,10 @@ const Services = () => {
                 style={{
                   width: '80px',
                   height: '80px',
-                  backgroundColor: '#D4AF37',
-                  color: '#1e5631'
+                  backgroundColor: 'rgba(237, 235, 226, 0.1)', //changed the star to be transparent 
+                  color: '#1e5631',
+                  border: '2px solid #D4AF37' //Changed the star to 
+                  
                 }}
               >
                 <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
@@ -694,7 +696,7 @@ const Services = () => {
                   <div 
                     className="p-3 rounded-3"
                     style={{
-                      backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                      backgroundColor: 'rgba(176, 61, 61, 0.1)',
                       border: '1px solid rgba(255, 255, 255, 0.2)'
                     }}
                   >
@@ -801,7 +803,7 @@ const Services = () => {
     {/* Header */}
     <div className="row mb-5">
       <div className="col-12 text-center">
-        <h2 
+        <h2 id='JobGradingAndSalaryBenchmarking'
           className="display-6 fw-bold mb-4"
           style={{
             fontSize: '2.5rem',
@@ -1039,7 +1041,7 @@ const Services = () => {
           </span>
         </div>
         
-        <h2 
+        <h2 id='PsychometricAssessment'
           className="display-6 fw-bold mb-3"
           style={{
             fontSize: '2.5rem',
@@ -1091,8 +1093,8 @@ const Services = () => {
                 style={{
                   width: '50px',
                   height: '50px',
-                  backgroundColor: '#1e5631',
-                  color: '#D4AF37'
+                  backgroundColor: '#D4AF37',
+                  color: '#1e5631'
                 }}
               >
                 <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -1244,7 +1246,7 @@ const Services = () => {
           </span>
         </div>
         
-        <h2 
+        <h2 id='EOR'
           className="display-6 fw-bold mb-3 text-white"
           style={{
             fontSize: '2.5rem',
@@ -1288,7 +1290,7 @@ const Services = () => {
               style={{
                 backgroundColor: 'rgba(255, 255, 255, 0.1)',
                 backdropFilter: 'blur(10px)',
-                border: '2px solid #D4AF37'
+                border: '1px solid rgba(255, 255, 255, 0.2)'
               }}
             >
               <div className="d-flex align-items-start">
