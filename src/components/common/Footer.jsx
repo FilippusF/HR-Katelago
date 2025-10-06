@@ -28,25 +28,25 @@ const Footer = () => {
             <h5 className="text-white mb-3">Quick Links</h5>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Home" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   Homepage
                 </a>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/About" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   About Us
                 </a>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   Our Services
                 </a>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Contact" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   Contact Us
                 </a>
