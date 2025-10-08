@@ -132,7 +132,6 @@ const Header = () => {
                   }}
                 >
                   ABOUT
-                  <i className="bi bi-plus-lg ms-2" style={{ fontSize: '12px', fontWeight: 'bold' }}></i>
                 </a>
                 <ul className="dropdown-menu border-0 shadow-lg" style={{
                   backgroundColor: '#fff',
@@ -159,7 +158,6 @@ const Header = () => {
                   }}
                 >
                   SERVICES
-                  <i className="bi bi-plus-lg ms-2" style={{ fontSize: '12px', fontWeight: 'bold' }}></i>
                 </a>
                 <ul className="dropdown-menu border-0 shadow-lg" style={{
                   backgroundColor: '#fff',
@@ -187,7 +185,6 @@ const Header = () => {
                   }}
                 >
                   VACANCIES
-                  <i className="bi bi-plus-lg ms-2" style={{ fontSize: '12px', fontWeight: 'bold' }}></i>
                 </a>
                 <ul className="dropdown-menu border-0 shadow-lg" style={{
                   backgroundColor: '#fff',
@@ -215,7 +212,6 @@ const Header = () => {
                   }}
                 >
                   PAGES
-                  <i className="bi bi-plus ms-2" style={{ fontSize: '16px', fontWeight: 'bold' }}></i>
                 </a>
                 <ul className="dropdown-menu border-0 shadow-lg" style={{
                   backgroundColor: '#fff',
@@ -263,16 +259,16 @@ const Header = () => {
         }
         
         .nav-link:hover {
-          color: #20b2aa !important;
+          color:  #1e5631 !important;
         }
         
         .nav-link:hover .bi-plus-lg {
-          color: #20b2aa !important;
+          color:  #1e5631 !important;
         }
         
         .dropdown-item:hover {
           background-color: #f8f9fa !important;
-          color: #20b2aa !important;
+          color:  #1e5631 !important;
         }
         
         .hover-opacity:hover {

@@ -247,7 +247,7 @@ const Home = () => {
                     <div 
                       className="me-3 p-3 rounded-circle"
                       style={{
-                        backgroundColor: '#28a745',
+                        backgroundColor: ' #1e5631',
                         minWidth: '60px'
                       }}
                     >

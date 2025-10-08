@@ -28,25 +28,25 @@ const Footer = () => {
             <h5 className="text-white mb-3">Quick Links</h5>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Home" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   Homepage
                 </a>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/About" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   About Us
                 </a>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   Our Services
                 </a>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Contact" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   Contact Us
                 </a>
@@ -59,38 +59,38 @@ const Footer = () => {
             <h5 className="text-white mb-3">HR Solutions</h5>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services#HRConsultingAndOutSourcing" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   HR Consulting 
                 </a>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services#PayrollAdministration" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   Payroll Administration
                 </a>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services#RecruitmentAndTalentAcquisition" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   Talent Acquisition
                 </a>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services#JobGradingAndSalaryBenchmarking" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   Job Grading
                 </a>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services#PsychometricAssessment" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                     Psychometric Assessment
                 </a>
               </li>
 
               <li className="mb-2">
-                <a href="#" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services#EOR" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                     Employer of Record
                 </a>
@@ -133,7 +133,7 @@ const Footer = () => {
         <div className="row align-items-center">
           <div className="col-12 text-center text-lg-start">
             <p className="mb-0 text-light small" style={{ color: '#ffffff !important' }}>
-              © 2025 All Rights Reserved - Made with ❤️ by Loop Technologies
+              © 2025 All Rights Reserved - Made with 💙 by Loop Technologies
             </p>
           </div>
         </div>
