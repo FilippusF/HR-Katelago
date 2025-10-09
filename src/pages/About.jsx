@@ -245,13 +245,13 @@ const About = () => {
                       <div>
                         <h6 
                           className="fw-bold mb-1"
-                          style={{ color: '#2c3e50', fontSize: '1rem' }}
+                          style={{ color: 'black', fontSize: '1rem' }}
                         >
                           Call Us Now
                         </h6>
                         <p 
                           className="mb-0 small"
-                          style={{ color: '#6c757d' }}
+                          style={{ color: 'black' }}
                         >
                           +264 81 393 44 31
                         </p>
