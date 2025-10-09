@@ -542,9 +542,9 @@ const About = () => {
               <span 
                 className="text-uppercase fw-medium"
                 style={{
-                  fontSize: '15px', //chamged to 15px
+                  fontSize: '25px', //chamged to 15px
                   letterSpacing: '2px',
-                  color: '#D4AF37',
+                  color: '#c09c31',
                   fontWeight: '600'
                 }}
               >
