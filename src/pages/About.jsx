@@ -105,7 +105,7 @@ const About = () => {
                   style={{ 
                     fontSize: '15px', //changed from 12px to 15px
                     letterSpacing: '2px',
-                    color: '#D4AF37',
+                    color: '#c09c31',
                     fontWeight: '600'
                   }}
                 >
@@ -120,7 +120,7 @@ const About = () => {
                   fontSize: '2.8rem',
                   lineHeight: '1.2',
                   fontWeight: '700',
-                  color: '#2c3e50'
+                  color: 'black'
                 }}
               >
                 Katelago HR Consultants
@@ -131,7 +131,7 @@ const About = () => {
                 className="mb-4"
                 style={{
                   fontSize: '1.1rem',
-                  color: '#6c757d',
+                  color: 'black',
                   lineHeight: '1.6'
                 }}
               >
@@ -145,7 +145,7 @@ const About = () => {
                 style={{ 
                   borderColor: '#6c757d!important',
                   fontStyle: 'italic',
-                  color: '#6c757d'
+                  color: 'black'
                 }}
               >
                 Founded in 2012, on the principles of integrity, innovation, and excellence,
@@ -163,7 +163,7 @@ const About = () => {
                   style={{
                     width: '24px',
                     height: '24px',
-                    backgroundColor: '#1e5631',
+                    backgroundColor: '#174D31',
                     borderRadius: '4px',
                     display: 'flex',
                     alignItems: 'center',
@@ -231,7 +231,7 @@ const About = () => {
                         style={{
                           width: '40px',
                           height: '40px',
-                          backgroundColor: '#1e5631',
+                          backgroundColor: '#174D31',
                           borderRadius: '50%',
                           display: 'flex',
                           alignItems: 'center',
