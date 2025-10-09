@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="col-lg-3 col-md-6 mb-4">
             <div className="mb-3">
               <img 
-                src="src/assets/images/main-logo.png" 
+                src="src/assets/images/Gold-Icon.png" 
                 alt="Katelago HR" 
                 style={{ 
                   height: '80px',
@@ -59,40 +59,41 @@ const Footer = () => {
             <h5 className="text-white mb-3">HR Solutions</h5>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <a href="/Services#HRConsultingAndOutSourcing" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services#HRConsultingAndOutSourcing" className="text-light text-decoration-none" style={{ color: '#ffffff !important'}}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   HR Consulting 
                 </a>
               </li>
               <li className="mb-2">
-                <a href="/Services#PayrollAdministration" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services#PayrollAdministration" className="text-light text-decoration-none" style={{ color: '#ffffff !important'}}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
-                  Payroll Administration
+                  Payroll 
+                 &nbsp; Administration
                 </a>
               </li>
               <li className="mb-2">
-                <a href="/Services#RecruitmentAndTalentAcquisition" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services#RecruitmentAndTalentAcquisition" className="text-light text-decoration-none" style={{ color: '#ffffff !important'}}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   Talent Acquisition
                 </a>
               </li>
               <li className="mb-2">
-                <a href="/Services#JobGradingAndSalaryBenchmarking" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services#JobGradingAndSalaryBenchmarking" className="text-light text-decoration-none" style={{ color: '#ffffff !important'}}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   Job Grading
                 </a>
               </li>
               <li className="mb-2">
-                <a href="/Services#PsychometricAssessment" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services#PsychometricAssessment" className="text-light text-decoration-none" style={{ color: '#ffffff !important'}}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                     Psychometric Assessment
                 </a>
               </li>
 
               <li className="mb-2">
-                <a href="/Services#EOR" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services#EOR" className="text-light text-decoration-none" style={{ color: '#ffffff !important'}}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
-                    Employer of Record
+                  Employer of Record
                 </a>
               </li>
             </ul>

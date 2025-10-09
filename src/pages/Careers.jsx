@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import chooseImage from '../assets/images/choose.png';
 import logoImage from '../assets/images/Main-logo.png';
+import StationImage from '../assets/images/9.jpg';
 
 const Careers = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -31,7 +32,7 @@ const Careers = () => {
       <section 
         className="hero-section position-relative d-flex align-items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${chooseImage})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${StationImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',

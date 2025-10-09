@@ -560,7 +560,7 @@ const About = () => {
               <div 
                 className="process-card h-100 p-4 rounded-4 text-center"
                 style={{
-                  backgroundColor: '#1e5631',
+                  backgroundColor: 'T#1e5631',
                   border: '2px solid #f0f0f0',
                   transition: 'all 0.4s ease',
                   cursor: 'pointer',
