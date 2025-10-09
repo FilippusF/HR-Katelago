@@ -557,7 +557,7 @@ const About = () => {
                 fontSize: '2.8rem',
                 lineHeight: '1.2',
                 fontWeight: '700',
-                color: '#2c3e50'
+                color: 'black'
               }}
             >
               Our Process
@@ -565,7 +565,7 @@ const About = () => {
             <p 
               className="lead"
               style={{
-                color: '#6c757d',
+                color: 'black',
                 maxWidth: '600px',
                 margin: '0 auto'
               }}
@@ -581,7 +581,7 @@ const About = () => {
               <div 
                 className="process-card h-100 p-4 rounded-4 text-center"
                 style={{
-                  backgroundColor: '#1e5631',
+                  backgroundColor: '#174D31',
                   border: '2px solid #f0f0f0',
                   transition: 'all 0.4s ease',
                   cursor: 'pointer',
@@ -593,7 +593,7 @@ const About = () => {
                   style={{
                     width: '80px',
                     height: '80px',
-                    backgroundColor: '#D4AF37',
+                    backgroundColor: '#c09c31',
                     borderRadius: '50%',
                     fontSize: '24px',
                     fontWeight: 'bold',
@@ -621,8 +621,8 @@ const About = () => {
               <div 
                 className="process-card h-100 p-4 rounded-4 text-center"
                 style={{
-                  backgroundColor: '#1e5631',
-                  border: '2px solid #f0f0f0',
+                  backgroundColor: '#174D31',
+                  border: '2px solid #c09c31',
                   transition: 'all 0.4s ease',
                   cursor: 'pointer',
                   animation: 'fadeInUp 0.6s ease-out 0.2s both'
@@ -633,7 +633,7 @@ const About = () => {
                   style={{
                     width: '80px',
                     height: '80px',
-                    backgroundColor: '#D4AF37',
+                    backgroundColor: '#c09c31',
                     borderRadius: '50%',
                     fontSize: '24px',
                     fontWeight: 'bold',
@@ -661,7 +661,7 @@ const About = () => {
               <div 
                 className="process-card h-100 p-4 rounded-4 text-center"
                 style={{
-                  backgroundColor: '#1e5631',
+                  backgroundColor: '#174D31',
                   border: '2px solid #f0f0f0',
                   transition: 'all 0.4s ease',
                   cursor: 'pointer',
@@ -673,7 +673,7 @@ const About = () => {
                   style={{
                     width: '80px',
                     height: '80px',
-                    backgroundColor: '#D4AF37',
+                    backgroundColor: '#c09c31',
                     borderRadius: '50%',
                     fontSize: '24px',
                     fontWeight: 'bold',
@@ -703,7 +703,7 @@ const About = () => {
               <div 
                 className="process-card h-100 p-4 rounded-4 text-center"
                 style={{
-                  backgroundColor: '#1e5631',
+                  backgroundColor: '#174D31',
                   border: '2px solid #f0f0f0',
                   transition: 'all 0.4s ease',
                   cursor: 'pointer',
