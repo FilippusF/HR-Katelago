@@ -84,7 +84,8 @@ const Home = () => {
                       backgroundColor: 'transparent',
                       color: '#174D3A',
                       fontSize: '12px',
-                      letterSpacing: '2px'
+                      letterSpacing: '2px',
+                      fontFamily: 'Arial, sans-serif'
                     }}
                   >
                     WHO WE ARE
@@ -96,7 +97,8 @@ const Home = () => {
                   className="display-5 fw-bold mb-4"
                   style={{
                     color: '#C09C31',
-                    lineHeight: '1.2'
+                    lineHeight: '1.2',
+                    fontFamily: 'Arial, sans-serif'
                   }}
                 >
                   We create a place where your people love to work!
@@ -104,11 +106,12 @@ const Home = () => {
 
                 {/* Description */}
                 <p 
-                  className="lead mb-4"
+                  className="lead mb-4 fw-bold"
                   style={{
                     color: 'black',
                     fontSize: '16px',
-                    lineHeight: '1.6'
+                    lineHeight: '1.6',
+                    fontFamily: 'Arial, sans-serif'
                   }}
                 >
                   Being remarkable is a journey, and it begins by creating an inspiring workplace
@@ -118,11 +121,12 @@ const Home = () => {
 
                 {/* Quote */}
                 <blockquote 
-                  className="border-start border-4 ps-4 mb-4"
+                  className="border-start border-4 ps-4 mb-4 fw-bold"
                   style={{
                     borderColor: '#174D3A !important',
                     fontStyle: 'italic',
-                    color: 'black'
+                    color: 'black',
+                    fontFamily: 'Arial, sans-serif'
                   }}
                 >
                   We combine creativity, innovation, and deep expertise, both local and global, to
@@ -173,14 +177,15 @@ const Home = () => {
                     </svg>
                   </div>
                   <div>
-                    <h5 className="fw-bold mb-2" style={{ color: 'black' }}>
+                    <h5 className="fw-bold mb-2" style={{ color: 'black', fontFamily: 'Arial, sans-serif' }}>
                       Team Ethos
                     </h5>
                     <p 
-                      className="mb-0"
+                      className="mb-0 fw-bold"
                       style={{
                         color: 'black',
-                        fontSize: '14px'
+                        fontSize: '14px',
+                        fontFamily: 'Arial, sans-serif'
                       }}
                     >
                       We are not just consultants, we are partners in building empowered
@@ -224,8 +229,8 @@ const Home = () => {
                           <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
                         </svg>
                       </div>
-                      <h4 className="fw-bold">Expertise 20+ years</h4>
-                      <p className="mb-0">HR best practices, labour law, workplace dynamics.</p>
+                      <h4 className="fw-bold" style={{ fontFamily: 'Arial, sans-serif' }}>Expertise 20+ years</h4>
+                      <p className="mb-0" style={{ fontFamily: 'Arial, sans-serif' }}>HR best practices, labour law, workplace dynamics.</p>
                     </div>
                   </div>
                 </div>
@@ -261,14 +266,15 @@ const Home = () => {
                       </svg>
                     </div>
                     <div>
-                      <h6 className="fw-bold mb-1" style={{ color: 'black' }}>
+                      <h6 className="fw-bold mb-1" style={{ color: 'black', fontFamily: 'Arial, sans-serif' }}>
                         Call Us Now
                       </h6>
                       <p 
                         className="mb-0"
                         style={{
                           color: 'black',
-                          fontSize: '14px'
+                          fontSize: '14px',
+                          fontFamily: 'Arial, sans-serif'
                         }}
                       >
                         +264 81 393 44 31
