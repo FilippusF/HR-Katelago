@@ -104,7 +104,7 @@ const Services = () => {
                   style={{ 
                     fontSize: '12px',
                     letterSpacing: '2px',
-                    color: '#D4AF37',
+                    color: '#c09c31',
                     fontWeight: '600'
                   }}
                 >
@@ -117,7 +117,7 @@ const Services = () => {
                 style={{
                   fontSize: '2.5rem',
                   lineHeight: '1.2',
-                  color: '#1e5631',
+                  color: '#174D31',
                   fontWeight: '700'
                 }}
               >
@@ -129,7 +129,7 @@ const Services = () => {
                 className="mb-4 p-3 rounded-3"
                 style={{
                   backgroundColor: '#f8f9fa',
-                  border: '2px solid #D4AF37',
+                  border: '2px solid #c09c31',
                   borderRadius: '12px'
                 }}
               >
@@ -137,7 +137,7 @@ const Services = () => {
                   className="mb-0 text-center fw-bold"
                   style={{
                     fontSize: '1.1rem',
-                    color: '#1e5631',
+                    color: '#174D31',
                     letterSpacing: '1px',
                     fontWeight: '600'
                   }}
@@ -151,7 +151,7 @@ const Services = () => {
                 style={{
                   fontSize: '1rem',
                   lineHeight: '1.6',
-                  color: '#6c757d'
+                  color: 'black'
                 }}
               >
                 We provide full payroll solutions that make your payroll process simple, accurate, and
@@ -188,15 +188,15 @@ const Services = () => {
                     className="p-4 rounded-4 h-100"
                     style={{
                       backgroundColor: '#f8f9fa',
-                      color: '#1e5631',
-                      border: '2px solid #D4AF37',
+                      color: '#174D31',
+                      border: '2px solid #c09c31',
                       borderRadius: '12px'
                     }}
                   >
                     <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
                       Payroll Processing
                     </h5>
-                    <p className="mb-0" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
+                    <p className="mb-0" style={{ fontSize: '0.9rem', color: 'black' }}>
                       Monthly payroll, cost-to-company calculations, and payslips.
                     </p>
                   </div>
@@ -207,15 +207,15 @@ const Services = () => {
                     className="p-4 rounded-4 h-100"
                     style={{
                       backgroundColor: '#f8f9fa',
-                      color: '#1e5631',
-                      border: '2px solid #D4AF37',
+                      color: '#174D31',
+                      border: '2px solid #c09c31',
                       borderRadius: '12px'
                     }}
                   >
                     <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
                       Tax &amp; Compliance
                     </h5>
-                    <p className="mb-0" style={{ fontSize: '0.9rem', color: '#6c757d' }}>
+                    <p className="mb-0" style={{ fontSize: '0.9rem', color: 'black' }}>
                       PAYE deductions, SSC/Medical Aid registrations, and ITAS returns.
                     </p>
                   </div>
@@ -226,15 +226,15 @@ const Services = () => {
                     className="p-4 rounded-4 h-100"
                     style={{
                       backgroundColor: '#f8f9fa',
-                      color: '#1e5631',
-                      border: '2px solid #D4AF37',
+                      color: '#174D31',
+                      border: '2px solid #c09c31',
                       borderRadius: '12px'
                     }}
                   >
                     <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
                       Leave &amp; Benefits Management
                     </h5>
-                    <p className="mb-0" style={{ fontSize: '0.9rem', color: '#6c757d' }}>
+                    <p className="mb-0" style={{ fontSize: '0.9rem', color: 'black' }}>
                       Leave tracking, pension fund administration, and
                       termination payouts.
                     </p>
@@ -246,15 +246,15 @@ const Services = () => {
                     className="p-4 rounded-4 h-100"
                     style={{
                       backgroundColor: '#f8f9fa',
-                      color: '#1e5631',
-                      border: '2px solid #D4AF37',
+                      color: '#174D31',
+                      border: '2px solid #c09c31',
                       borderRadius: '12px'
                     }}
                   >
                     <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
                       Payroll Reporting
                     </h5>
-                    <p className="mb-0" style={{ fontSize: '0.9rem', color: '#6c757d' }}>
+                    <p className="mb-0" style={{ fontSize: '0.9rem', color: 'black' }}>
                       Detailed reports, historical payroll access, and secured electronic payslips.
                     </p>
                   </div>
@@ -284,7 +284,7 @@ const Services = () => {
                 style={{ 
                   fontSize: '12px',
                   letterSpacing: '2px',
-                  color: '#D4AF37',
+                  color: '#c09c31',
                   fontWeight: '600'
                 }}
               >
@@ -358,7 +358,7 @@ const Services = () => {
                     style={{
                       width: '24px',
                       height: '24px',
-                      backgroundColor: '#D4AF37'
+                      backgroundColor: '#c09c31'
                     }}
                   >
                     <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
@@ -428,7 +428,7 @@ const Services = () => {
             <div 
               className="process-card p-4 rounded-4 d-flex flex-column h-100"
               style={{
-                backgroundColor: '#D4AF37',
+                backgroundColor: '#c09c31',
                 minHeight: '280px',
                 transition: 'all 0.3s ease',
                 cursor: 'pointer'
@@ -439,7 +439,7 @@ const Services = () => {
                   className="fw-bold"
                   style={{
                     fontSize: '48px',
-                    color: '#1e5631',
+                    color: '#174D31',
                     lineHeight: '1'
                   }}
                 >
@@ -451,21 +451,21 @@ const Services = () => {
                 style={{
                   width: '50px',
                   height: '50px',
-                  backgroundColor: '#1e5631',
-                  color: '#D4AF37'
+                  backgroundColor: '#174D31',
+                  color: '#c09c31'
                 }}
               >
                 <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M21 8a8.1 8.1 0 0 0-7-7 8.1 8.1 0 0 0-7 7c0 2.15.5 4.35 1.36 6.36l5.63 10.54.01.02.01.02c.18.32.5.66.99.66s.81-.34.99-.66l.01-.02.01-.02 5.63-10.54C20.5 12.35 21 10.15 21 8zm-7 4a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
                 </svg>
               </div>
-              <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '16px', lineHeight: '1.3' }}>
+              <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '16px', lineHeight: '1.3' }}>
                 Talent Sourcing & Advertising
               </h5>
               <p 
                 className="mb-0 flex-grow-1"
                 style={{ 
-                  color: '#1e5631',
+                  color: '#174D31',
                   fontSize: '13px',
                   opacity: 0.8,
                   lineHeight: '1.4'
@@ -481,7 +481,7 @@ const Services = () => {
             <div 
               className="process-card p-4 rounded-4 d-flex flex-column h-100"
               style={{
-                backgroundColor: '#D4AF37',
+                backgroundColor: '#c09c31',
                 minHeight: '280px',
                 transition: 'all 0.3s ease',
                 cursor: 'pointer'
@@ -492,7 +492,7 @@ const Services = () => {
                   className="fw-bold"
                   style={{
                     fontSize: '48px',
-                    color: '#1e5631',
+                    color: '#174D31',
                     lineHeight: '1'
                   }}
                 >
@@ -504,21 +504,21 @@ const Services = () => {
                 style={{
                   width: '50px',
                   height: '50px',
-                  backgroundColor: '#1e5631',
-                  color: '#D4AF37'
+                  backgroundColor: '#174D31',
+                  color: '#c09c31'
                 }}
               >
                 <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
               </div>
-              <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '16px', lineHeight: '1.3' }}>
+              <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '16px', lineHeight: '1.3' }}>
                 Screening & Shortlisting
               </h5>
               <p 
                 className="mb-0 flex-grow-1"
                 style={{ 
-                  color: '#1e5631',
+                  color: '#174D31',
                   fontSize: '13px',
                   opacity: 0.8,
                   lineHeight: '1.4'
@@ -534,7 +534,7 @@ const Services = () => {
             <div 
               className="process-card p-4 rounded-4 d-flex flex-column h-100"
               style={{
-                backgroundColor: '#D4AF37',
+                backgroundColor: '#c09c31',
                 minHeight: '280px',
                 transition: 'all 0.3s ease',
                 cursor: 'pointer'
@@ -545,7 +545,7 @@ const Services = () => {
                   className="fw-bold"
                   style={{
                     fontSize: '48px',
-                    color: '#1e5631',
+                    color: '#174D31',
                     lineHeight: '1'
                   }}
                 >
@@ -557,21 +557,21 @@ const Services = () => {
                 style={{
                   width: '50px',
                   height: '50px',
-                  backgroundColor: '#1e5631',
-                  color: '#D4AF37'
+                  backgroundColor: '#174D31',
+                  color: '#c09c31'
                 }}
               >
                 <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
                 </svg>
               </div>
-              <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '16px', lineHeight: '1.3' }}>
+              <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '16px', lineHeight: '1.3' }}>
                 Interview Support
               </h5>
               <p 
                 className="mb-0 flex-grow-1"
                 style={{ 
-                  color: '#1e5631',
+                  color: '#174D31',
                   fontSize: '13px',
                   opacity: 0.8,
                   lineHeight: '1.4'
@@ -587,7 +587,7 @@ const Services = () => {
             <div 
               className="process-card p-4 rounded-4 d-flex flex-column h-100"
               style={{
-                backgroundColor: '#D4AF37',
+                backgroundColor: '#c09c31',
                 minHeight: '280px',
                 transition: 'all 0.3s ease',
                 cursor: 'pointer'
@@ -598,7 +598,7 @@ const Services = () => {
                   className="fw-bold"
                   style={{
                     fontSize: '48px',
-                    color: '#1e5631',
+                    color: '#174D31',
                     lineHeight: '1'
                   }}
                 >
@@ -610,8 +610,8 @@ const Services = () => {
                 style={{
                   width: '50px',
                   height: '50px',
-                  backgroundColor: '#1e5631',
-                  color: '#D4AF37'
+                  backgroundColor: '#174D31',
+                  color: '#c09c31'
                 }}
               >
                 <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -619,13 +619,13 @@ const Services = () => {
                   <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
                 </svg>
               </div>
-              <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '16px', lineHeight: '1.3' }}>
+              <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '16px', lineHeight: '1.3' }}>
                 Onboarding Solutions
               </h5>
               <p 
                 className="mb-0 flex-grow-1"
                 style={{ 
-                  color: '#1e5631',
+                  color: '#174D31',
                   fontSize: '13px',
                   opacity: 0.8,
                   lineHeight: '1.4'
@@ -646,7 +646,7 @@ const Services = () => {
               className="text-center p-5 rounded-4"
               style={{
                 backgroundColor: 'rgba(212, 175, 55, 0.1)',
-                border: '2px solid #D4AF37',
+                border: '2px solid #c09c31',
                 backdropFilter: 'blur(10px)'
               }}
             >
@@ -656,8 +656,8 @@ const Services = () => {
                   width: '80px',
                   height: '80px',
                   backgroundColor: 'rgba(237, 235, 226, 0.1)', //changed the star to be transparent 
-                  color: '#1e5631',
-                  border: '2px solid #D4AF37' //Changed the star to 
+                  color: '#174D31',
+                  border: '2px solid #c09c31' //Changed the star to 
                   
                 }}
               >
@@ -705,8 +705,8 @@ const Services = () => {
                       style={{
                         width: '50px',
                         height: '50px',
-                        backgroundColor: '#1e5631',
-                        color: '#D4AF37'
+                        backgroundColor: '#174D31',
+                        color: '#c09c31'
                       }}
                     >
                       <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -735,8 +735,8 @@ const Services = () => {
                       style={{
                         width: '50px',
                         height: '50px',
-                        backgroundColor: '#1e5631',
-                        color: '#D4AF37'
+                        backgroundColor: '#174D31',
+                        color: '#c09c31'
                       }}
                     >
                       <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -765,8 +765,8 @@ const Services = () => {
                       style={{
                         width: '50px',
                         height: '50px',
-                        backgroundColor: '#1e5631',
-                        color: '#D4AF37'
+                        backgroundColor: '#174D31',
+                        color: '#c09c31'
                       }}
                     >
                       <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -839,7 +839,7 @@ const Services = () => {
             <div 
               className="p-4 rounded-4 h-100"
               style={{
-                backgroundColor: '#D4AF37',
+                backgroundColor: '#c09c31',
                 transition: 'all 0.3s ease'
               }}
             >
@@ -849,7 +849,7 @@ const Services = () => {
                   style={{
                     width: '60px',
                     height: '60px',
-                    backgroundColor: '#1e5631',
+                    backgroundColor: '#174D31',
                     fontSize: '1.5rem',
                     fontWeight: '700',
                     color: '#ffffff'
@@ -858,10 +858,10 @@ const Services = () => {
                   01
                 </div>
                 <div>
-                  <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '1.2rem' }}>
+                  <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '1.2rem' }}>
                     Objective Job Grading
                   </h5>
-                  <p className="mb-0" style={{ color: '#1e5631', fontSize: '0.9rem', lineHeight: '1.6' }}>
+                  <p className="mb-0" style={{ color: '#174D31', fontSize: '0.9rem', lineHeight: '1.6' }}>
                     Evaluating roles based on education,
                     responsibility, complexity, and autonomy.
                   </p>
@@ -875,7 +875,7 @@ const Services = () => {
             <div 
               className="p-4 rounded-4 h-100"
               style={{
-                backgroundColor: '#D4AF37',
+                backgroundColor: '#c09c31',
                 transition: 'all 0.3s ease'
               }}
             >
@@ -885,7 +885,7 @@ const Services = () => {
                   style={{
                     width: '60px',
                     height: '60px',
-                    backgroundColor: '#1e5631',
+                    backgroundColor: '#174D31',
                     fontSize: '1.5rem',
                     fontWeight: '700',
                     color: '#ffffff'
@@ -894,10 +894,10 @@ const Services = () => {
                   02
                 </div>
                 <div>
-                  <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '1.2rem' }}>
+                  <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '1.2rem' }}>
                     Transparent Salary Benchmarking
                   </h5>
-                  <p className="mb-0" style={{ color: '#1e5631', fontSize: '0.9rem', lineHeight: '1.6' }}>
+                  <p className="mb-0" style={{ color: '#174D31', fontSize: '0.9rem', lineHeight: '1.6' }}>
                     Aligning pay structures with industry
                     standards for fairness.
                   </p>
@@ -911,7 +911,7 @@ const Services = () => {
             <div 
               className="p-4 rounded-4 h-100"
               style={{
-                backgroundColor: '#D4AF37',
+                backgroundColor: '#c09c31',
                 transition: 'all 0.3s ease'
               }}
             >
@@ -921,7 +921,7 @@ const Services = () => {
                   style={{
                     width: '60px',
                     height: '60px',
-                    backgroundColor: '#1e5631',
+                    backgroundColor: '#174D31',
                     fontSize: '1.5rem',
                     fontWeight: '700',
                     color: '#ffffff'
@@ -930,10 +930,10 @@ const Services = () => {
                   03
                 </div>
                 <div>
-                  <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '1.2rem' }}>
+                  <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '1.2rem' }}>
                     Competitive Reward Systems
                   </h5>
-                  <p className="mb-0" style={{ color: '#1e5631', fontSize: '0.9rem', lineHeight: '1.6' }}>
+                  <p className="mb-0" style={{ color: '#174D31', fontSize: '0.9rem', lineHeight: '1.6' }}>
                     Designing equitable salary and benefits structures.
                   </p>
                 </div>
@@ -946,7 +946,7 @@ const Services = () => {
             <div 
               className="p-4 rounded-4 h-100"
               style={{
-                backgroundColor: '#D4AF37',
+                backgroundColor: '#c09c31',
                 transition: 'all 0.3s ease'
               }}
             >
@@ -956,7 +956,7 @@ const Services = () => {
                   style={{
                     width: '60px',
                     height: '60px',
-                    backgroundColor: '#1e5631',
+                    backgroundColor: '#174D31',
                     fontSize: '1.5rem',
                     fontWeight: '700',
                     color: 'white'
@@ -965,10 +965,10 @@ const Services = () => {
                   04
                 </div>
                 <div>
-                  <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '1.2rem' }}>
+                  <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '1.2rem' }}>
                     Compliance &amp; Risk Mitigation
                   </h5>
-                  <p className="mb-0" style={{ color: '#1e5631', fontSize: '0.9rem', lineHeight: '1.6', opacity: 0.8 }}>
+                  <p className="mb-0" style={{ color: '#174D31', fontSize: '0.9rem', lineHeight: '1.6', opacity: 0.8 }}>
                     Protecting businesses from legal risks related to pay and discrimination.
                   </p>
                 </div>
@@ -1033,7 +1033,7 @@ const Services = () => {
             style={{ 
               fontSize: '12px',
               letterSpacing: '2px',
-              color: '#D4AF37',
+              color: '#c09c31',
               fontWeight: '600'
             }}
           >
@@ -1046,7 +1046,7 @@ const Services = () => {
           style={{
             fontSize: '2.5rem',
             lineHeight: '1.2',
-            color: '#1e5631',
+            color: '#174D31',
             fontWeight: '700'
           }}
         >
@@ -1085,7 +1085,7 @@ const Services = () => {
               className="p-4 rounded-4 d-flex align-items-start"
               style={{
                 backgroundColor: '#f8f9fa',
-                border: '2px solid #D4AF37'
+                border: '2px solid #c09c31'
               }}
             >
               <div 
@@ -1093,8 +1093,8 @@ const Services = () => {
                 style={{
                   width: '50px',
                   height: '50px',
-                  backgroundColor: '#D4AF37',
-                  color: '#1e5631'
+                  backgroundColor: '#c09c31',
+                  color: '#174D31'
                 }}
               >
                 <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -1102,7 +1102,7 @@ const Services = () => {
                 </svg>
               </div>
               <div>
-                <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '1.1rem' }}>
+                <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '1.1rem' }}>
                   Behavioural Assessment
                 </h5>
                 <p className="mb-0" style={{ fontSize: '0.9rem', color: '#6c757d' }}>
@@ -1118,7 +1118,7 @@ const Services = () => {
               className="p-4 rounded-4 d-flex align-items-start"
               style={{
                 backgroundColor: '#f8f9fa',
-                border: '2px solid #D4AF37'
+                border: '2px solid #c09c31'
               }}
             >
               <div 
@@ -1126,8 +1126,8 @@ const Services = () => {
                 style={{
                   width: '50px',
                   height: '50px',
-                  backgroundColor: '#D4AF37',
-                  color: '#1e5631'
+                  backgroundColor: '#c09c31',
+                  color: '#174D31'
                 }}
               >
                 <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -1135,7 +1135,7 @@ const Services = () => {
                 </svg>
               </div>
               <div>
-                <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '1.1rem' }}>
+                <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '1.1rem' }}>
                   Competency Mapping
                 </h5>
                 <p className="mb-0" style={{ fontSize: '0.9rem', color: '#6c757d' }}>
@@ -1151,7 +1151,7 @@ const Services = () => {
               className="p-4 rounded-4 d-flex align-items-start"
               style={{
                 backgroundColor: '#f8f9fa',
-                border: '2px solid #D4AF37'
+                border: '2px solid #c09c31'
               }}
             >
               <div 
@@ -1159,8 +1159,8 @@ const Services = () => {
                 style={{
                   width: '50px',
                   height: '50px',
-                  backgroundColor: '#D4AF37',
-                  color: '#1e5631'
+                  backgroundColor: '#c09c31',
+                  color: '#174D31'
                 }}
               >
                 <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -1168,7 +1168,7 @@ const Services = () => {
                 </svg>
               </div>
               <div>
-                <h5 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '1.1rem' }}>
+                <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '1.1rem' }}>
                   Candidate Matching
                 </h5>
                 <p className="mb-0" style={{ fontSize: '0.9rem', color: '#6c757d' }}>
@@ -1183,7 +1183,7 @@ const Services = () => {
             <div 
               className="p-3 rounded-4 h-100"
               style={{
-                backgroundColor: '#1e5631',
+                backgroundColor: '#174D31',
                 color: 'white'
               }}
             >
@@ -1200,7 +1200,7 @@ const Services = () => {
             <div 
               className="p-3 rounded-4 h-100"
               style={{
-                backgroundColor: '#1e5631',
+                backgroundColor: '#174D31',
                 color: 'white'
               }}
             >
@@ -1238,7 +1238,7 @@ const Services = () => {
             style={{ 
               fontSize: '12px',
               letterSpacing: '2px',
-              color: '#D4AF37',
+              color: '#c09c31',
               fontWeight: '600'
             }}
           >
@@ -1299,8 +1299,8 @@ const Services = () => {
                   style={{
                     width: '50px',
                     height: '50px',
-                    backgroundColor: '#D4AF37',
-                    color: '#1e5631'
+                    backgroundColor: '#c09c31',
+                    color: '#174D31'
                   }}
                 >
                   <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -1335,8 +1335,8 @@ const Services = () => {
                   style={{
                     width: '50px',
                     height: '50px',
-                    backgroundColor: '#D4AF37',
-                    color: '#1e5631'
+                    backgroundColor: '#c09c31',
+                    color: '#174D31'
                   }}
                 >
                   <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -1371,8 +1371,8 @@ const Services = () => {
                   style={{
                     width: '50px',
                     height: '50px',
-                    backgroundColor: '#D4AF37',
-                    color: '#1e5631'
+                    backgroundColor: '#c09c31',
+                    color: '#174D31'
                   }}
                 >
                   <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -1407,8 +1407,8 @@ const Services = () => {
                   style={{
                     width: '50px',
                     height: '50px',
-                    backgroundColor: '#D4AF37',
-                    color: '#1e5631'
+                    backgroundColor: '#c09c31',
+                    color: '#174D31'
                   }}
                 >
                   <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -1453,7 +1453,7 @@ const Services = () => {
             />
             <div 
               className="spinner-border"
-              style={{ color: '#1e5631' }}
+              style={{ color: '#174D31' }}
               role="status"
             >
               <span className="visually-hidden">Loading...</span>
@@ -1472,7 +1472,7 @@ const Services = () => {
             right: '30px',
             width: '50px',
             height: '50px',
-            backgroundColor: '#1e5631',
+            backgroundColor: '#174D31',
             border: 'none',
             zIndex: 1000,
             transition: 'all 0.3s ease'
@@ -1518,7 +1518,7 @@ const Services = () => {
         }
         
         .service-item:hover .me-3 {
-          background-color: #1e5631 !important;
+          background-color: #174D31 !important;
           transform: scale(1.1);
         }
         
