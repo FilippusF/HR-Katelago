@@ -347,7 +347,7 @@ const Home = () => {
         className="py-5"
         style={{ 
           minHeight: '700px',
-          backgroundImage: `linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), url(${missionImage})`,
+          backgroundImage: `url(${missionImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -567,7 +567,7 @@ const Home = () => {
       <section 
         className="py-5"
         style={{ 
-          backgroundColor: '#1e5631',
+          backgroundColor: '#174D3A',
           minHeight: '800px'
         }}
       >
@@ -618,7 +618,7 @@ const Home = () => {
                         className="fw-bold"
                         style={{
                           fontSize: '36px',
-                          color: 'rgba(0,0,0,0.3)',
+                          color: 'white',
                           lineHeight: '1'
                         }}
                       >
@@ -647,7 +647,7 @@ const Home = () => {
                         className="fw-bold"
                         style={{
                           fontSize: '36px',
-                          color: 'rgba(0,0,0,0.3)',
+                          color: 'white',
                           lineHeight: '1'
                         }}
                       >
@@ -687,7 +687,7 @@ const Home = () => {
                         className="fw-bold"
                         style={{
                           fontSize: '36px',
-                          color: 'rgba(0,0,0,0.3)',
+                          color: 'white',
                           lineHeight: '1'
                         }}
                       >
@@ -746,7 +746,7 @@ const Home = () => {
                     className="fw-bold text-white"
                     style={{
                       fontSize: '48px',
-                      opacity: 0.3,
+                      color: 'rgba(0,0,0,0.3)',
                       lineHeight: '1'
                     }}
                   >
