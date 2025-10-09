@@ -271,7 +271,7 @@ const About = () => {
               className="py-5"
               style={{ 
                 minHeight: '700px',
-                backgroundImage: `linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), url(${missionImage})`,
+                backgroundImage: `url(${missionImage})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundAttachment: 'fixed'
