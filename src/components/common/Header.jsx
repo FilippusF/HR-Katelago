@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import mainLogo from '../../assets/images/Main-logo.png';
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+    // Check initial scroll position
+    handleScroll();
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <>
@@ -68,9 +79,13 @@ const Header = () => {
       </div>
 
       {/* Main Navigation */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-white position-sticky top-0 shadow-sm" style={{ 
+      <nav className="navbar navbar-expand-lg position-sticky top-0 shadow-sm" style={{ 
         zIndex: 1050,
-        padding: '12px 0'
+        padding: '12px 0',
+        backgroundColor: isScrolled ? 'rgba(255, 255, 255, 0.6)' : 'rgba(255, 255, 255, 0.3)',
+        backdropFilter: 'blur(10px)',
+        WebkitBackdropFilter: 'blur(10px)',
+        transition: 'all 0.3s ease'
       }}>
         <div className="container-fluid px-5">
           {/* Logo Section */}
