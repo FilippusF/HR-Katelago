@@ -82,7 +82,7 @@ const Home = () => {
                     className="badge text-uppercase fw-normal px-0"
                     style={{
                       backgroundColor: 'transparent',
-                      color: '#28a745',
+                      color: '#174D3A',
                       fontSize: '12px',
                       letterSpacing: '2px'
                     }}
@@ -95,7 +95,7 @@ const Home = () => {
                 <h1 
                   className="display-5 fw-bold mb-4"
                   style={{
-                    color: '#D4AF37',
+                    color: '#C09C31',
                     lineHeight: '1.2'
                   }}
                 >
@@ -106,7 +106,7 @@ const Home = () => {
                 <p 
                   className="lead mb-4"
                   style={{
-                    color: '#6c757d',
+                    color: 'black',
                     fontSize: '16px',
                     lineHeight: '1.6'
                   }}
@@ -120,9 +120,9 @@ const Home = () => {
                 <blockquote 
                   className="border-start border-4 ps-4 mb-4"
                   style={{
-                    borderColor: '#28a745 !important',
+                    borderColor: '#174D3A !important',
                     fontStyle: 'italic',
-                    color: '#6c757d'
+                    color: 'black'
                   }}
                 >
                   We combine creativity, innovation, and deep expertise, both local and global, to
@@ -145,7 +145,7 @@ const Home = () => {
                       height="24" 
                       viewBox="0 0 24 24" 
                       fill="none"
-                      style={{ color: '#28a745' }}
+                      style={{ color: '#174D3A' }}
                     >
                       <path 
                         d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
@@ -173,13 +173,13 @@ const Home = () => {
                     </svg>
                   </div>
                   <div>
-                    <h5 className="fw-bold mb-2" style={{ color: '#2c3e50' }}>
+                    <h5 className="fw-bold mb-2" style={{ color: 'black' }}>
                       Team Ethos
                     </h5>
                     <p 
                       className="mb-0"
                       style={{
-                        color: '#6c757d',
+                        color: 'black',
                         fontSize: '14px'
                       }}
                     >
@@ -247,7 +247,7 @@ const Home = () => {
                     <div 
                       className="me-3 p-3 rounded-circle"
                       style={{
-                        backgroundColor: ' #1e5631',
+                        backgroundColor: ' #174D3A',
                         minWidth: '60px'
                       }}
                     >
@@ -261,13 +261,13 @@ const Home = () => {
                       </svg>
                     </div>
                     <div>
-                      <h6 className="fw-bold mb-1" style={{ color: '#2c3e50' }}>
+                      <h6 className="fw-bold mb-1" style={{ color: 'black' }}>
                         Call Us Now
                       </h6>
                       <p 
                         className="mb-0"
                         style={{
-                          color: '#6c757d',
+                          color: 'black',
                           fontSize: '14px'
                         }}
                       >
