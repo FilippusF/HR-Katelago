@@ -4,7 +4,7 @@ import a1Image from '../assets/images/a1.png';
 import a2Image from '../assets/images/a2.png';
 import logoImage from '../assets/images/Main-logo.png';
 import missionImage from '../assets/images/mission.jpg';
-import TenImage from '../assets/images/10.jpg';
+
 
 const About = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -192,28 +192,7 @@ const About = () => {
                   />
                 </div>
                 
-                {/* Smaller overlapping image */}
-                <div 
-                  className="position-absolute slide-in-left"
-                  style={{
-                    bottom: '-30px',
-                    left: '-50px',
-                    zIndex: 2,
-                    animation: 'slideInLeft 0.8s ease-out'
-                  }}
-                >
-                  <img 
-                    src={TenImage}
-                    alt="Team collaboration"
-                    className="img-fluid rounded shadow-lg"
-                    style={{
-                      width: '280px',
-                      height: '180px',
-                      objectFit: 'cover',
-                      borderRadius: '15px'
-                    }}
-                  />
-                </div>
+
                 
                 {/* Call Us Now Card - Moved outside and positioned at bottom */}
                 <div 
@@ -715,7 +694,7 @@ const About = () => {
                   style={{
                     width: '80px',
                     height: '80px',
-                    backgroundColor: '#D4AF37',
+                    backgroundColor: '#c09c31',
                     borderRadius: '50%',
                     fontSize: '24px',
                     fontWeight: 'bold',
@@ -743,8 +722,8 @@ const About = () => {
               <div 
                 className="process-card h-100 p-4 rounded-4 text-center"
                 style={{
-                  backgroundColor: '#1e5631',
-                  border: '2px solid #1e5631',
+                  backgroundColor: '#174D31',
+                  border: '2px solid #174D31',
                   transition: 'all 0.4s ease',
                   cursor: 'pointer',
                   animation: 'fadeInUp 0.6s ease-out 0.5s both'
@@ -755,7 +734,7 @@ const About = () => {
                   style={{
                     width: '80px',
                     height: '80px',
-                    backgroundColor: '#D4AF37',
+                    backgroundColor: '#c09c31',
                     borderRadius: '50%',
                     fontSize: '24px',
                     fontWeight: 'bold',
