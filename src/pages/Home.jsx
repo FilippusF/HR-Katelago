@@ -6,6 +6,7 @@ import missionImage from '../assets/images/mission.jpg';
 import chooseImage from '../assets/images/choose.png';
 import logoImage from '../assets/images/Main-logo.png';
 import actionImage from '../assets/images/action.png';
+import stillImage from '../assets/images/10.jpg';
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -712,7 +713,7 @@ const Home = () => {
                   className="rounded-4 overflow-hidden choose-image"
                   style={{
                     height: '300px',
-                    backgroundImage: `url(${chooseImage})`,
+                    backgroundImage: `url(${stillImage})`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
