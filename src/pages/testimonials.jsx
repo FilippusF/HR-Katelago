@@ -286,7 +286,7 @@ const Testimonials = () => {
       {/* CTA Section */}
       <section 
         className="py-5"
-        style={{ backgroundColor: '#1e5631' }}
+        style={{ backgroundColor: '#174D31' }}
       >
         <div className="container">
           <div className="row justify-content-center text-center">
@@ -300,8 +300,8 @@ const Testimonials = () => {
               <button
                 className="btn btn-lg px-5 py-3 rounded-pill fw-bold border-0"
                 style={{
-                  backgroundColor: '#D4AF37',
-                  color: '#1e5631',
+                  backgroundColor: '#c09c31',
+                  color: '#174D31',
                   fontSize: '16px',
                   transition: 'all 0.3s ease'
                 }}
@@ -312,6 +312,7 @@ const Testimonials = () => {
           </div>
         </div>
       </section>
+      <br /> <br />
 
       {/* Loader */}
       {isLoading && (
@@ -334,7 +335,7 @@ const Testimonials = () => {
             />
             <div 
               className="spinner-border"
-              style={{ color: '#1e5631' }}
+              style={{ color: '#174D31' }}
               role="status"
             >
               <span className="visually-hidden">Loading...</span>
@@ -353,7 +354,7 @@ const Testimonials = () => {
             right: '30px',
             width: '50px',
             height: '50px',
-            backgroundColor: '#1e5631',
+            backgroundColor: '#174D31',
             border: 'none',
             zIndex: 1000,
             transition: 'all 0.3s ease'
@@ -367,8 +368,8 @@ const Testimonials = () => {
 
       <style jsx>{`
         .testimonial-box:hover {
-          background-color: rgba(30, 86, 49, 0.9) !important;
-          border-color: #1e5631 !important;
+          background-color: #174D31 !important;
+          border-color: #174D31 !important;
           transform: translateY(-5px);
           box-shadow: 0 10px 25px rgba(0,0,0,0.2) !important;
         }
@@ -378,7 +379,7 @@ const Testimonials = () => {
         }
         
         .testimonial-box:hover .mb-2 span {
-          color: #D4AF37 !important;
+          color: #c09c31 !important;
         }
         
         .btn:hover {
