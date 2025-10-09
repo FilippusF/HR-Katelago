@@ -5,6 +5,7 @@ import a2Image from '../assets/images/a2.png';
 import logoImage from '../assets/images/Main-logo.png';
 import missionImage from '../assets/images/mission.jpg';
 import TenImage from '../assets/images/10.jpg';
+import StationImage from '../assets/images/9.jpg';
 
 const About = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -34,7 +35,7 @@ const About = () => {
       <section 
         className="hero-section position-relative d-flex align-items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${aboutImage})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${StationImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -192,28 +193,6 @@ const About = () => {
                   />
                 </div>
                 
-                {/* Smaller overlapping image */}
-                <div 
-                  className="position-absolute slide-in-left"
-                  style={{
-                    bottom: '-30px',
-                    left: '-50px',
-                    zIndex: 2,
-                    animation: 'slideInLeft 0.8s ease-out'
-                  }}
-                >
-                  <img 
-                    src={TenImage}
-                    alt="Team collaboration"
-                    className="img-fluid rounded shadow-lg"
-                    style={{
-                      width: '280px',
-                      height: '180px',
-                      objectFit: 'cover',
-                      borderRadius: '15px'
-                    }}
-                  />
-                </div>
                 
                 {/* Call Us Now Card - Moved outside and positioned at bottom */}
                 <div 
@@ -271,7 +250,7 @@ const About = () => {
               className="py-5"
               style={{ 
                 minHeight: '700px',
-                backgroundImage: `linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), url(${missionImage})`,
+                backgroundImage: `url(${missionImage})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundAttachment: 'fixed'

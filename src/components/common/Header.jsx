@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import mainLogo from '../../assets/images/Main-logo.png';
+import goldLogo from '../../assets/images/Gold-Icon.png';
 
 const Header = () => {
 
@@ -76,7 +77,7 @@ const Header = () => {
           {/* Logo Section */}
           <a className="navbar-brand d-flex align-items-center" href="#" style={{ marginRight: '3rem' }}>
             <img 
-              src={mainLogo} 
+              src={goldLogo} 
               alt="Logo" 
               style={{ 
                 height: '55px',

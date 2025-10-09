@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { testimonials } from '../data/testimonials';
 import logoImage from '../assets/images/Main-logo.png';
 import aboutImage from '../assets/images/about.png';
+import StationImage from '../assets/images/9.jpg';
 
 const Testimonials = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -60,7 +61,7 @@ const Testimonials = () => {
       <section 
         className="hero-section position-relative d-flex align-items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${aboutImage})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${StationImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -147,7 +148,7 @@ const Testimonials = () => {
                             className="testimonial-box p-3 shadow-sm"
                             style={{
                               backgroundColor: 'rgba(212, 175, 55, 0.9)',
-                              border: '1px solid #D4AF37',
+                              border: '1px solid #C09C31',
                               transition: 'all 0.3s ease',
                               width: '250px',
                               height: '250px',

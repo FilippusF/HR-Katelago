@@ -286,7 +286,7 @@ const Home = () => {
       <section className="py-5" style={{ backgroundColor: '#e9ecef' }}>
         <div className="container">
           <div className="text-center mb-5">
-            <h2 className="mb-0" style={{ fontSize: '2rem', fontWeight: '600', color: '#2c3e50' }}>
+            <h2 className="mb-0" style={{ fontSize: '2rem', fontWeight: '600', color: '#C09C31' }}>
               Corporate Clients Trust Us
             </h2>
           </div>

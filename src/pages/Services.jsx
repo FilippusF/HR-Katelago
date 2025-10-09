@@ -5,6 +5,7 @@ import missionImage from '../assets/images/mission.jpg';
 import p1Image from '../assets/images/p1.png';
 import chooseImage from '../assets/images/choose.png';
 import whoImage from '../assets/images/who.png';
+import stationImage from '../assets/images/9.jpg';
 
 const Services = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -34,7 +35,7 @@ const Services = () => {
       <section 
         className="hero-section position-relative d-flex align-items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${servicesImage})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${stationImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
