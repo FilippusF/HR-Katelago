@@ -16,25 +16,13 @@ const Hero = () => {
         <div className="row justify-content-center">
           <div className="col-lg-10 col-xl-8">
             <div className="hero-content text-white text-center">
-              {/* Subtitle */}
-              <p 
-                className="text-uppercase mb-4 fw-normal"
-                style={{
-                  color: '#ffffff',
-                  letterSpacing: '3px',
-                  fontSize: '14px',
-                  opacity: '0.9'
-                }}
-              >
-                Katelago HR Consultants
-              </p>
 
               {/* Main Title */}
               <h1 
                 className="mb-5"
                 style={{
                   fontSize: 'clamp(2.8rem, 6vw, 4.5rem)',
-                  fontWeight: '300',
+                  fontWeight: 'bold',
                   lineHeight: '1.2',
                   marginBottom: '3rem'
                 }}

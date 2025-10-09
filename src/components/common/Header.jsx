@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <>
       {/* Top Contact Bar */}
-      <div style={{ backgroundColor: '#2c3e50' }} className="text-white py-2">
+      <div style={{ backgroundColor: '#174D3A' }} className="text-white py-2">
         <div className="container-fluid px-4">
           <div className="d-flex justify-content-between align-items-center small">
             <ul style={{
