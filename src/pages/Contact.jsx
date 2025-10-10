@@ -153,7 +153,7 @@ const Contact = () => {
               type="submit"
               className="btn text-white fw-semibold px-4 py-2"
               style={{
-                background: 'linear-gradient(135deg, #1e5631 0%, #2d7d32 100%)',
+                backgroundColor: '#174D3A',
                 borderRadius: '25px',
                 border: 'none',
                 textTransform: 'uppercase',
