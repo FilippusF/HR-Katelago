@@ -6,6 +6,8 @@ import missionImage from '../assets/images/mission.jpg';
 import chooseImage from '../assets/images/choose.png';
 import logoImage from '../assets/images/Main-logo.png';
 import actionImage from '../assets/images/action.png';
+import StationImage1 from '../assets/images/10.jpg'; 
+import StationImage2 from '../assets/images/9.jpg'; 
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -718,7 +720,7 @@ const Home = () => {
                   className="rounded-4 overflow-hidden choose-image"
                   style={{
                     height: '300px',
-                    backgroundImage: `url(${chooseImage})`,
+                    backgroundImage: `url(${StationImage1})`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
@@ -776,7 +778,7 @@ const Home = () => {
 <section 
   className="py-5"
   style={{ 
-    backgroundImage: `url(${actionImage})`,
+    backgroundImage: `url(${StationImage2})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',

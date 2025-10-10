@@ -4,7 +4,8 @@ import a1Image from '../assets/images/a1.png';
 import a2Image from '../assets/images/a2.png';
 import logoImage from '../assets/images/Main-logo.png';
 import missionImage from '../assets/images/mission.jpg';
-
+import StationImage1 from '../assets/images/10.jpg'; 
+import StationImage2 from '../assets/images/9.jpg'; 
 
 const About = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -181,7 +182,7 @@ const About = () => {
                 {/* Main large image */}
                 <div className="position-relative">
                   <img 
-                    src={a2Image}
+                    src={a1Image}
                     alt="Business meeting"
                     className="img-fluid rounded shadow-lg"
                     style={{
