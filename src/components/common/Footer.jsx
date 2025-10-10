@@ -1,4 +1,5 @@
 import React from 'react';
+import mainLogo from '../../assets/images/Main-logo.png';
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
           <div className="col-lg-3 col-md-6 mb-4">
             <div className="mb-3">
               <img 
-                src="src/assets/images/main-logo.png" 
+                src={mainLogo} 
                 alt="Katelago HR" 
                 style={{ 
                   height: '80px',
