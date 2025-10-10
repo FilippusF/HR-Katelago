@@ -210,32 +210,21 @@ const Header = () => {
                 </ul>
               </li>
 
-              {/* PAGES Dropdown */}
-              <li className="nav-item dropdown">
-                <a 
-                  className="nav-link dropdown-toggle text-dark fw-medium position-relative d-flex align-items-center" 
-                  href="#" 
-                  role="button" 
-                  data-bs-toggle="dropdown"
+              {/* CONTACT US */}
+              <li className="nav-item">
+                <Link 
+                  className="nav-link text-dark fw-medium" 
+                  to="/contact"
                   style={{ 
-                    fontSize: '16px',
+                    fontSize: '15px',
                     letterSpacing: '0.3px',
                     textTransform: 'uppercase',
                     transition: 'all 0.3s ease',
-                    color: '#333 !important',
-                    fontWeight: '600'
+                    color: '#333 !important'
                   }}
                 >
-                  PAGES
-                </a>
-                <ul className="dropdown-menu border-0 shadow-lg" style={{
-                  backgroundColor: '#fff',
-                  borderRadius: '8px',
-                  marginTop: '8px'
-                }}>
-                  <li><Link className="dropdown-item py-2 px-3" to="/contact" style={{ transition: 'all 0.3s ease' }}>Contact</Link></li>
-                  <li><Link className="dropdown-item py-2 px-3" to="/testimonials" style={{ transition: 'all 0.3s ease' }}>Testimonials</Link></li>
-                </ul>
+                  CONTACT US
+                </Link>
               </li>
             </ul>
 
