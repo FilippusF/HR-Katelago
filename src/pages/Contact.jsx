@@ -107,85 +107,116 @@ const Contact = () => {
         </div>
       </section>
 
-      <div className="container py-5">
-      <div className="row">
-        {/* Contact Form */}
-        <div className="col-lg-8 mb-5">
-          <h2 className="mb-4">Get in Touch</h2>
-          <form onSubmit={handleSubmit}>
-            <div className="mb-3">
-              <label htmlFor="name" className="form-label">Name</label>
-              <input
-                type="text"
-                className="form-control"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
+      {/* Contact Form Section with Background */}
+      <section style={{ backgroundColor: '#174D3A', padding: '4rem 0' }}>
+        <div className="container">
+          <div className="row">
+            {/* Contact Form */}
+            <div className="col-lg-8 mb-5">
+              <h2 className="mb-4 text-white">Get in Touch</h2>
+              <form onSubmit={handleSubmit}>
+                <div className="mb-3">
+                  <label htmlFor="name" className="form-label text-white">Name</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                      border: '1px solid rgba(255, 255, 255, 0.3)',
+                      padding: '0.75rem'
+                    }}
+                  />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="email" className="form-label text-white">Email</label>
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                      border: '1px solid rgba(255, 255, 255, 0.3)',
+                      padding: '0.75rem'
+                    }}
+                  />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="message" className="form-label text-white">Message</label>
+                  <textarea
+                    className="form-control"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                      border: '1px solid rgba(255, 255, 255, 0.3)',
+                      padding: '0.75rem'
+                    }}
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="btn text-white fw-semibold px-4 py-2"
+                  style={{
+                    backgroundColor: '#2d7d32',
+                    borderRadius: '25px',
+                    border: 'none',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.5px',
+                    fontSize: '13px',
+                    boxShadow: '0 3px 10px rgba(0, 0, 0, 0.3)'
+                  }}
+                >
+                  Get a Quotation
+                </button>
+              </form>
             </div>
-            <div className="mb-3">
-              <label htmlFor="email" className="form-label">Email</label>
-              <input
-                type="email"
-                className="form-control"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="mb-3">
-              <label htmlFor="message" className="form-label">Message</label>
-              <textarea
-                className="form-control"
-                id="message"
-                name="message"
-                rows="5"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="btn text-white fw-semibold px-4 py-2"
-              style={{
-                backgroundColor: '#174D3A',
-                borderRadius: '25px',
-                border: 'none',
-                textTransform: 'uppercase',
-                letterSpacing: '0.5px',
-                fontSize: '13px'
-              }}
-            >
-              Get a Quotation
-            </button>
-          </form>
-        </div>
 
-        {/* Direct Details */}
-        <div className="col-lg-4">
-          <h2 className="mb-4">Contact Details</h2>
-          <div className="contact-info">
-            <div className="mb-4">
-              <h5><i className="bi bi-geo-alt-fill me-2"></i>Address</h5>
-              <p className="mb-0">44 Sigma Street, Windhoek, Namibia</p>
-            </div>
-            <div className="mb-4">
-              <h5><i className="bi bi-telephone-fill me-2"></i>Phone</h5>
-              <p className="mb-0">+264 81 393 44 31</p>
-            </div>
-            <div className="mb-4">
-              <h5><i className="bi bi-envelope-fill me-2"></i>Email</h5>
-              <p className="mb-0">info@katelago.com</p>
+            {/* Contact Details */}
+            <div className="col-lg-4">
+              <h2 className="mb-4 text-white">Contact Details</h2>
+              <div className="contact-info text-white">
+                <div className="mb-4">
+                  <h5 className="text-white">
+                    <i className="bi bi-geo-alt-fill me-2"></i>Address
+                  </h5>
+                  <p className="mb-0" style={{ opacity: 0.9 }}>
+                    44 Sigma Street, Windhoek, Namibia
+                  </p>
+                </div>
+                <div className="mb-4">
+                  <h5 className="text-white">
+                    <i className="bi bi-telephone-fill me-2"></i>Phone
+                  </h5>
+                  <p className="mb-0" style={{ opacity: 0.9 }}>
+                    +264 81 393 44 31
+                  </p>
+                </div>
+                <div className="mb-4">
+                  <h5 className="text-white">
+                    <i className="bi bi-envelope-fill me-2"></i>Email
+                  </h5>
+                  <p className="mb-0" style={{ opacity: 0.9 }}>
+                    info@katelago.com
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
       {/* Loader */}
       {isLoading && (
@@ -251,7 +282,12 @@ const Contact = () => {
         
         .btn:hover {
           transform: translateY(-2px);
-          box-shadow: 0 8px 25px rgba(30, 86, 49, 0.3);
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-control:focus {
+          border-color: #2d7d32;
+          box-shadow: 0 0 0 0.2rem rgba(45, 125, 50, 0.25);
         }
       `}</style>
     </>
