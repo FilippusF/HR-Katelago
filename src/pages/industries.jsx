@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logoImage from '../assets/images/Main-logo.png';
 import aboutImage from '../assets/images/about.png';
+import StationImage2 from '../assets/images/9.jpg'; 
+import StationImage1 from '../assets/images/10.jpg';
+
 
 const Industries = () => {
   const navigate = useNavigate();
@@ -33,7 +36,7 @@ const Industries = () => {
       <section 
         className="hero-section position-relative d-flex align-items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${aboutImage})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${StationImage2})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
