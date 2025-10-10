@@ -1,12 +1,13 @@
 import React from 'react';
 import heroImage from '../assets/images/9.jpg';
+import HomeImage from '../assets/images/mission.jpg';
 
 const Hero = () => {
   return (
     <section 
       className="hero-section d-flex align-items-center min-vh-100"
       style={{
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${heroImage})`,
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${HomeImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'

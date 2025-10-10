@@ -8,6 +8,7 @@ import logoImage from '../assets/images/Main-logo.png';
 import actionImage from '../assets/images/action.png';
 import StationImage1 from '../assets/images/10.jpg'; 
 import StationImage2 from '../assets/images/9.jpg'; 
+import HomeImage from '../assets/images/mission.jpg';
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
