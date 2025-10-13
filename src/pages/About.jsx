@@ -136,8 +136,8 @@ const About = () => {
                   lineHeight: '1.6'
                 }}
               >
-                 Shaping the future of work in Namibia, Katelago is shaping bold,
-                empowered, and human HR solutions that move businesses forward.
+                Shaping the future of work in Africa, Katelago is redefining what it means to be bold, dynamic, and human in the world of HR.
+ We empower organisations to build compliant, inclusive, and future-ready workplaces where people, purpose, and progress come together.
               </p>
               
               {/* Quote */}
@@ -149,12 +149,9 @@ const About = () => {
                   color: 'black'
                 }}
               >
-                Founded in 2012, on the principles of integrity, innovation, and excellence,
-                Katelago HR Consultants is committed to providing strategic HR solutions that
-                enhance productivity and employee engagement. Our team of seasoned HR
-                professionals brings years of expertise in HR best practices, labour law, and
-                workplace dynamics, ensuring that our clients receive top-tier service and compliance
-                assurance.
+                Founded in 2012, Katelago HR Consultants was built on the belief that HR should be human first.
+                Our team of seasoned professionals combines deep expertise in HR best practice, labour law, and workplace culture to deliver people solutions that are both strategic and meaningful.
+                From payroll to performance, we partner with clients to transform compliance into confidence; and people into possibility.
               </blockquote>
               
               {/* Feature Item */}
