@@ -245,12 +245,12 @@ const Careers = () => {
                     </span>
                   </li>
                 </ul>
-              </div>
-
-              {/* Contact Info */}
-              <div 
-                className="bg-white rounded-4 p-4 shadow-sm"
-                style={{ border: '1px solid #e9ecef' }}
+               
+               {/* Removed the classed and other styling 
+                  and added margin on top to add space */}
+                <div 
+                className="" 
+                style={{ marginTop: '20px' }} 
               >
                 <h5 
                   className="fw-bold mb-3"
@@ -273,6 +273,8 @@ const Careers = () => {
                   </div>
                 </div>
               </div>
+              </div>
+
             </div>
           </div>
         </div>
