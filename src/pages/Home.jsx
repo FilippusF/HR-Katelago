@@ -190,8 +190,7 @@ const Home = () => {
                         fontFamily: 'Arial, sans-serif'
                       }}
                     >
-                      We are not just consultants, we are partners in building empowered
-                      workplaces.
+                      Redefining the future of work in Africa — Bold. Dynamic. Human.
                     </p>
                   </div>
                 </div>
@@ -294,7 +293,7 @@ const Home = () => {
                       src={client.logo} 
                       alt={client.name}
                       style={{ 
-                        height: '100px', 
+                        height: '150px', 
                         width: 'auto', 
                         maxWidth: '200px',
                         objectFit: 'contain',
@@ -644,7 +643,7 @@ const Home = () => {
                         className="fw-bold"
                         style={{
                           fontSize: '36px',
-                          color: 'white',
+                          color: '#174D3A',
                           lineHeight: '1'
                         }}
                       >
@@ -673,7 +672,7 @@ const Home = () => {
                         className="fw-bold"
                         style={{
                           fontSize: '36px',
-                          color: 'white',
+                          color:'#174D3A',
                           lineHeight: '1'
                         }}
                       >
@@ -686,7 +685,7 @@ const Home = () => {
                     <p 
                       className="mb-0 flex-grow-1"
                       style={{ 
-                        color: 'white',
+                        color: '#174D3A',
                         fontSize: '12px',
                         opacity: 0.8,
                         lineHeight: '1.4'
@@ -713,7 +712,7 @@ const Home = () => {
                         className="fw-bold"
                         style={{
                           fontSize: '36px',
-                          color: 'white',
+                          color: '#174D3A',
                           lineHeight: '1'
                         }}
                       >
@@ -726,7 +725,7 @@ const Home = () => {
                     <p 
                       className="mb-0 flex-grow-1"
                       style={{ 
-                        color: 'white',
+                        color: '#174D3A',
                         fontSize: '12px',
                         opacity: 0.8,
                         lineHeight: '1.4'
@@ -769,25 +768,27 @@ const Home = () => {
               >
                 <div className="mb-3">
                   <span 
-                    className="fw-bold text-white"
+                    className="fw-bold " 
                     style={{
                       fontSize: '48px',
                       color: 'rgba(0,0,0,0.3)',
-                      lineHeight: '1'
+                      lineHeight: '1',
+                      color:'#174D3A'
                     }}
                   >
                     04
                   </span>
                 </div>
-                <h5 className="fw-bold mb-3 text-white" style={{ fontSize: '18px' }}>
+                <h5 className="fw-bold mb-3" style={{ fontSize: '18px',color:'#174D3A' }}>
                   Empowering Growth, People First.
                 </h5>
                 <p 
-                  className="mb-0 text-white flex-grow-1"
+                  className="mb-0 flex-grow-1"
                   style={{ 
                     fontSize: '14px',
                     opacity: 0.9,
-                    lineHeight: '1.5'
+                    lineHeight: '1.5',
+                    color: '#174D3A'
                   }}
                 >
                   At Katelago, we're passionate about helping businesses grow with confidence, compliance, and people-first solutions.
