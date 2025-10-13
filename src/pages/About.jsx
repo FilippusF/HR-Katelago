@@ -574,7 +574,7 @@ const About = () => {
                     borderRadius: '50%',
                     fontSize: '24px',
                     fontWeight: 'bold',
-                    color: 'white'
+                    color: '#174D3A'
                   }}
                 >
                   01
@@ -614,7 +614,7 @@ const About = () => {
                     borderRadius: '50%',
                     fontSize: '24px',
                     fontWeight: 'bold',
-                    color: 'white'
+                    color: '#174D3A'
                   }}
                 >
                   02
@@ -654,7 +654,7 @@ const About = () => {
                     borderRadius: '50%',
                     fontSize: '24px',
                     fontWeight: 'bold',
-                    color: 'white'
+                    color: '#174D3A'
                   }}
                 >
                   03
@@ -696,7 +696,7 @@ const About = () => {
                     borderRadius: '50%',
                     fontSize: '24px',
                     fontWeight: 'bold',
-                    color: 'white'
+                    color: '#174D3A'
                   }}
                 >
                   04
@@ -736,7 +736,7 @@ const About = () => {
                     borderRadius: '50%',
                     fontSize: '24px',
                     fontWeight: 'bold',
-                    color: 'white'
+                    color: '#174D3A'
                   }}
                 >
                   05
