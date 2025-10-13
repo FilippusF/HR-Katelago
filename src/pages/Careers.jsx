@@ -3,6 +3,7 @@ import chooseImage from '../assets/images/choose.png';
 import logoImage from '../assets/images/Main-logo.png';
 import StationImage1 from '../assets/images/10.jpg'; 
 import StationImage2 from '../assets/images/9.jpg';
+import StationImage6 from '../assets/images/33.png';
 
 const Careers = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -33,7 +34,7 @@ const Careers = () => {
       <section 
         className="hero-section position-relative d-flex align-items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${StationImage2})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${StationImage6})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
