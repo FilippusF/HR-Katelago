@@ -117,9 +117,9 @@ const Home = () => {
                     fontFamily: 'Arial, sans-serif'
                   }}
                 >
-                  Being remarkable is a journey, and it begins by creating an inspiring workplace
-                    where employees thrive, achievements are celebrated, and your team is empowered
-                    every step of the way.
+                 Being remarkable is a journey, and at Katelago, that journey begins with people.
+                 We help organisations build beautiful businesses; bold, dynamic, and human workplaces 
+                 where teams feel inspired, valued, and equipped to grow.
                 </p>
 
                 {/* Quote */}
@@ -132,10 +132,9 @@ const Home = () => {
                     fontFamily: 'Arial, sans-serif'
                   }}
                 >
-                  We combine creativity, innovation, and deep expertise, both local and global, to
-                  provide customized HR solutions that help your business stand out, attract top talent,
-                  and secure success in a competitive market.
-                  assurance.
+                  We blend creativity, strategy, and compliance; drawing on over 20 years of HR expertise in labour law,
+                   people management, and workplace culture.
+                   With deep local insight and a global mindset, we design people solutions that help your business stand out, attract top talent, and sustain success.
                 </blockquote>
 
                 {/* Feature Item */}
