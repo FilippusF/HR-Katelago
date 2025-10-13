@@ -7,6 +7,7 @@ import chooseImage from '../assets/images/choose.png';
 import whoImage from '../assets/images/who.png';
 import StationImage2 from '../assets/images/9.jpg'; 
 import StationImage1 from '../assets/images/10.jpg';
+import StationImage3 from '../assets/images/mission.jpg';
 
 const Services = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -95,7 +96,7 @@ const Services = () => {
       </section>
 
       {/* Tailored HR Services Section */}
-      <section className="py-5" style={{ backgroundColor: '#ffffff' }}>
+      <section className="py-5" style={{ backgroundColor: '#174D31' }}>
         <div className="container">
           <div className="row align-items-center">
             {/* Left Content */}
@@ -119,7 +120,7 @@ const Services = () => {
                 style={{
                   fontSize: '2.5rem',
                   lineHeight: '1.2',
-                  color: '#174D31',
+                  color: 'white',
                   fontWeight: '700'
                 }}
               >
@@ -130,7 +131,7 @@ const Services = () => {
               <div 
                 className="mb-4 p-3 rounded-3"
                 style={{
-                  backgroundColor: '#f8f9fa',
+                  backgroundColor: '#c09c31',
                   border: '2px solid #c09c31',
                   borderRadius: '12px'
                 }}
@@ -153,7 +154,7 @@ const Services = () => {
                 style={{
                   fontSize: '1rem',
                   lineHeight: '1.6',
-                  color: 'black'
+                  color: 'white'
                 }}
               >
                 We provide full payroll solutions that make your payroll process simple, accurate, and
@@ -189,8 +190,8 @@ const Services = () => {
                   <div 
                     className="p-4 rounded-4 h-100"
                     style={{
-                      backgroundColor: '#f8f9fa',
-                      color: '#174D31',
+                      backgroundColor: '#c09c31',
+                      color: 'white',
                       border: '2px solid #c09c31',
                       borderRadius: '12px'
                     }}
@@ -198,7 +199,7 @@ const Services = () => {
                     <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
                       Payroll Processing
                     </h5>
-                    <p className="mb-0" style={{ fontSize: '0.9rem', color: 'black' }}>
+                    <p className="mb-0" style={{ fontSize: '0.9rem', color: 'white' }}>
                       Monthly payroll, cost-to-company calculations, and payslips.
                     </p>
                   </div>
@@ -208,8 +209,8 @@ const Services = () => {
                   <div 
                     className="p-4 rounded-4 h-100"
                     style={{
-                      backgroundColor: '#f8f9fa',
-                      color: '#174D31',
+                      backgroundColor: '#c09c31',
+                      color: 'white',
                       border: '2px solid #c09c31',
                       borderRadius: '12px'
                     }}
@@ -217,7 +218,7 @@ const Services = () => {
                     <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
                       Tax &amp; Compliance
                     </h5>
-                    <p className="mb-0" style={{ fontSize: '0.9rem', color: 'black' }}>
+                    <p className="mb-0" style={{ fontSize: '0.9rem', color: 'white' }}>
                       PAYE deductions, SSC/Medical Aid registrations, and ITAS returns.
                     </p>
                   </div>
@@ -227,8 +228,8 @@ const Services = () => {
                   <div 
                     className="p-4 rounded-4 h-100"
                     style={{
-                      backgroundColor: '#f8f9fa',
-                      color: '#174D31',
+                      backgroundColor: '#c09c31',
+                      color: 'white',
                       border: '2px solid #c09c31',
                       borderRadius: '12px'
                     }}
@@ -236,7 +237,7 @@ const Services = () => {
                     <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
                       Leave &amp; Benefits Management
                     </h5>
-                    <p className="mb-0" style={{ fontSize: '0.9rem', color: 'black' }}>
+                    <p className="mb-0" style={{ fontSize: '0.9rem', color: 'white' }}>
                       Leave tracking, pension fund administration, and
                       termination payouts.
                     </p>
@@ -247,8 +248,8 @@ const Services = () => {
                   <div 
                     className="p-4 rounded-4 h-100"
                     style={{
-                      backgroundColor: '#f8f9fa',
-                      color: '#174D31',
+                      backgroundColor: '#c09c31',
+                      color: 'white',
                       border: '2px solid #c09c31',
                       borderRadius: '12px'
                     }}
@@ -256,7 +257,7 @@ const Services = () => {
                     <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
                       Payroll Reporting
                     </h5>
-                    <p className="mb-0" style={{ fontSize: '0.9rem', color: 'black' }}>
+                    <p className="mb-0" style={{ fontSize: '0.9rem', color: 'white' }}>
                       Detailed reports, historical payroll access, and secured electronic payslips.
                     </p>
                   </div>
@@ -795,7 +796,7 @@ const Services = () => {
   className="py-5" 
   style={{ 
     backgroundColor: 'transparent',
-    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${chooseImage})`,
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${StationImage3})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat'
@@ -1024,7 +1025,7 @@ const Services = () => {
 </section>
 
 {/* Psychometric Assessment Section */}
-<section className="py-5" style={{ backgroundColor: '#ffffff' }}>
+<section className="py-5" style={{ backgroundColor: '#174D31' }}>
   <div className="container">
     <div className="row align-items-center">
       {/* Left Content */}
@@ -1048,7 +1049,7 @@ const Services = () => {
           style={{
             fontSize: '2.5rem',
             lineHeight: '1.2',
-            color: '#174D31',
+            color: 'white',
             fontWeight: '700'
           }}
         >
@@ -1060,7 +1061,7 @@ const Services = () => {
           style={{
             fontSize: '1rem',
             lineHeight: '1.6',
-            color: '#6c757d'
+            color: 'white'
           }}
         >
           We utilize Psychometric Assessments to evaluate candidates' suitability for roles and organizations.
@@ -1071,7 +1072,7 @@ const Services = () => {
           style={{
             fontSize: '1rem',
             lineHeight: '1.6',
-            color: '#6c757d'
+            color: 'white'
           }}
         >
           Our proven methodology helps streamline recruitment, optimize team performance, and foster workforce development.
@@ -1086,7 +1087,7 @@ const Services = () => {
             <div 
               className="p-4 rounded-4 d-flex align-items-start"
               style={{
-                backgroundColor: '#f8f9fa',
+                backgroundColor: '#c09c31',
                 border: '2px solid #c09c31'
               }}
             >
@@ -1107,7 +1108,7 @@ const Services = () => {
                 <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '1.1rem' }}>
                   Behavioural Assessment
                 </h5>
-                <p className="mb-0" style={{ fontSize: '0.9rem', color: '#6c757d' }}>
+                <p className="mb-0" style={{ fontSize: '0.9rem', color: 'white' }}>
                   Understanding candidates' work habits and preferences.
                 </p>
               </div>
@@ -1119,7 +1120,7 @@ const Services = () => {
             <div 
               className="p-4 rounded-4 d-flex align-items-start"
               style={{
-                backgroundColor: '#f8f9fa',
+                backgroundColor: '#c09c31',
                 border: '2px solid #c09c31'
               }}
             >
@@ -1140,7 +1141,7 @@ const Services = () => {
                 <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '1.1rem' }}>
                   Competency Mapping
                 </h5>
-                <p className="mb-0" style={{ fontSize: '0.9rem', color: '#6c757d' }}>
+                <p className="mb-0" style={{ fontSize: '0.9rem', color: 'white' }}>
                   Aligning behavioural patterns with job competencies.
                 </p>
               </div>
@@ -1152,7 +1153,7 @@ const Services = () => {
             <div 
               className="p-4 rounded-4 d-flex align-items-start"
               style={{
-                backgroundColor: '#f8f9fa',
+                backgroundColor: '#c09c31',
                 border: '2px solid #c09c31'
               }}
             >
@@ -1173,7 +1174,7 @@ const Services = () => {
                 <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '1.1rem' }}>
                   Candidate Matching
                 </h5>
-                <p className="mb-0" style={{ fontSize: '0.9rem', color: '#6c757d' }}>
+                <p className="mb-0" style={{ fontSize: '0.9rem', color: 'white' }}>
                   Leveraging Shadowmatch to select best-fit candidates.
                 </p>
               </div>
@@ -1185,7 +1186,7 @@ const Services = () => {
             <div 
               className="p-3 rounded-4 h-100"
               style={{
-                backgroundColor: '#174D31',
+                backgroundColor: '#c09c31',
                 color: 'white'
               }}
             >
@@ -1202,7 +1203,7 @@ const Services = () => {
             <div 
               className="p-3 rounded-4 h-100"
               style={{
-                backgroundColor: '#174D31',
+                backgroundColor: '#c09c31',
                 color: 'white'
               }}
             >
