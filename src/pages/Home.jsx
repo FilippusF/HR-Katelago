@@ -497,8 +497,10 @@ const Home = () => {
                           fontSize: '14px'
                         }}
                       >
-                        To be recognized as the leading HR firm, positively impacting our clients and
-                        their employees through our innovative and people-centric approach..
+                         To redefine the
+                          future of work in Africa by creating bold, 
+                          dynamic, and human workplaces where every business leads with people,
+                           purpose, and progress.
                       </p>
                     </div>
                   </div>
@@ -538,8 +540,9 @@ const Home = () => {
                           fontSize: '14px'
                         }}
                       >
-                        To empower businesses with professional, innovative HR solutions and
-                        positively impact employees..
+                      We exist to empower organisations to build compliant, inclusive, and future-ready workplaces 
+                      that honour both 
+                      business performance and human potential.
                       </p>
                     </div>
                   </div>
