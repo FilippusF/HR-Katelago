@@ -218,23 +218,7 @@ const Home = () => {
                       backgroundPosition: 'center'
                     }}
                   >
-                    <div className="text-center text-white">
-                      <div 
-                        className="rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center"
-                        style={{
-                          width: '80px',
-                          height: '80px',
-                          backgroundColor: 'rgba(255,255,255,0.2)'
-                        }}
-                      >
-                        <svg width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
-                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                          <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                        </svg>
-                      </div>
-                      <h4 className="fw-bold" style={{ fontFamily: 'Arial, sans-serif' }}>Expertise 20+ years</h4>
-                      <p className="mb-0" style={{ fontFamily: 'Arial, sans-serif' }}>HR best practices, labour law, workplace dynamics.</p>
-                    </div>
+    
                   </div>
                 </div>
 
@@ -596,7 +580,7 @@ const Home = () => {
                   lineHeight: '1.6'
                 }}
               >
-                20+ years of Industry Expertise – Experienced HR professionals.
+                
               </p>
             </div>
           </div>
