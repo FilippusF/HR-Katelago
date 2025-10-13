@@ -6,6 +6,7 @@ import p1Image from '../assets/images/p1.png';
 import chooseImage from '../assets/images/choose.png';
 import whoImage from '../assets/images/who.png';
 import StationImage2 from '../assets/images/9.jpg'; 
+import StationImage1 from '../assets/images/10.jpg';
 
 const Services = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -369,7 +370,7 @@ const Services = () => {
                   <span 
                     className="text-white"
                     style={{ 
-                      fontSize: '15px',
+                      fontSize: '20px',
                       fontWeight: '500',
                       opacity: 0.95
                     }}
