@@ -117,8 +117,8 @@ const Home = () => {
                     fontFamily: 'Arial, sans-serif'
                   }}
                 >
-                 Being remarkable is a journey, and at Katelago, that journey begins with people.
-                 We help organisations build beautiful businesses; bold, dynamic, and human workplaces 
+                <strong> Being remarkable   is a journey, </strong> and at Katelago, that journey begins with people.
+                 We help organisations build <strong> beautiful businesses</strong> bold, dynamic, and human workplaces 
                  where teams feel inspired, valued, and equipped to grow.
                 </p>
 
