@@ -136,7 +136,7 @@ const About = () => {
                   lineHeight: '1.6'
                 }}
               >
-                Shaping the future of work in Africa, Katelago is redefining what it means to be bold, dynamic, and human in the world of HR.
+               Shaping the future of work in Africa, Katelago is redefining what it means to be bold, dynamic, and human in the world of HR.
                 We empower organisations to build compliant, inclusive, and future-ready workplaces where people, purpose, and progress come together.
               </p>
               
@@ -149,7 +149,7 @@ const About = () => {
                   color: 'black'
                 }}
               >
-                Founded in 2012 , Katelago HR Consultants was built on the belief that HR should be human first.
+                <Strong> Founded in 2012 </Strong>, Katelago HR Consultants was built on the belief that HR should be human first.
                 Our team of seasoned professionals combines deep expertise in HR best practice, labour law, and workplace culture to deliver people solutions that are both strategic and meaningful.
                 From payroll to performance, we partner with clients to transform compliance into confidence; and people into possibility.
               </blockquote>
