@@ -4,6 +4,8 @@ import logoImage from '../assets/images/Main-logo.png';
 import aboutImage from '../assets/images/about.png';
 import StationImage2 from '../assets/images/9.jpg'; 
 import StationImage1 from '../assets/images/10.jpg';
+import StationImage4 from '../assets/images/13.jpg';
+
 
 
 const Industries = () => {
@@ -95,13 +97,13 @@ const Industries = () => {
       </section>
 
       {/* Industries Section */}
-      <section className="py-5" style={{ backgroundColor: '#f8f9fa' }}>
+      <section className="py-5" style={{ backgroundColor: '#1e5631' }}>
         <div className="container">
           <div className="row">
             {/* Oil & Gas */}
             <div className="col-lg-6 mb-4">
               <div className="card h-100 border-0 shadow-sm">
-                <div className="card-body p-4">
+                <div className="card-body p-4" style={{backgroundColor:'#c69b0cff'}}>
                   <div className="d-flex align-items-center mb-3">
                     <div 
                       className="me-3"
@@ -119,7 +121,7 @@ const Industries = () => {
                         <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
                       </svg>
                     </div>
-                    <h3 className="card-title mb-0" style={{ color: '#2c3e50', fontSize: '1.5rem' }}>Oil & Gas</h3>
+                    <h3 className="card-title mb-0" style={{ color: '#2c3e50', fontSize: '1.5rem'}}>Oil & Gas</h3>
                   </div>
                   <p className="card-text" style={{ color: '#6c757d', lineHeight: '1.6' }}>
                     Workforce compliance & EOR support.
@@ -131,7 +133,7 @@ const Industries = () => {
             {/* Mining & Engineering */}
             <div className="col-lg-6 mb-4">
               <div className="card h-100 border-0 shadow-sm">
-                <div className="card-body p-4">
+                <div className="card-body p-4" style={{backgroundColor:'#c69b0cff'}}>
                   <div className="d-flex align-items-center mb-3">
                     <div 
                       className="me-3"
@@ -161,7 +163,7 @@ const Industries = () => {
             {/* Construction Projects */}
             <div className="col-lg-6 mb-4">
               <div className="card h-100 border-0 shadow-sm">
-                <div className="card-body p-4">
+                <div className="card-body p-4" style={{backgroundColor:'#c69b0cff'}}>
                   <div className="d-flex align-items-center mb-3">
                     <div 
                       className="me-3"
@@ -191,7 +193,7 @@ const Industries = () => {
             {/* Startups & SMEs */}
             <div className="col-lg-6 mb-4">
               <div className="card h-100 border-0 shadow-sm">
-                <div className="card-body p-4">
+                <div className="card-body p-4" style={{backgroundColor:'#c69b0cff'}}>
                   <div className="d-flex align-items-center mb-3">
                     <div 
                       className="me-3"
@@ -222,7 +224,7 @@ const Industries = () => {
             {/* NGOs & Development Projects */}
             <div className="col-lg-12 mb-4">
               <div className="card h-100 border-0 shadow-sm">
-                <div className="card-body p-4">
+                <div className="card-body p-4" style={{backgroundColor:'#c69b0cff'}}>
                   <div className="d-flex align-items-center mb-3">
                     <div 
                       className="me-3"
