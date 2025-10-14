@@ -34,7 +34,7 @@ const Hero = () => {
               {/* CTA Button */}
               <div className="hero-cta mb-5">
                 <a 
-                  href="#contact" 
+                  href="/Contact" 
                   className="btn btn-lg px-5 py-3 rounded-pill fw-bold text-uppercase"
                   style={{
                     backgroundColor: '#1e5631',
