@@ -123,7 +123,7 @@ const Industries = () => {
                     </div>
                     <h3 className="card-title mb-0" style={{ color: '#2c3e50', fontSize: '1.5rem'}}>Oil & Gas</h3>
                   </div>
-                  <p className="card-text" style={{ color: '#6c757d', lineHeight: '1.6' }}>
+                  <p className="card-text" style={{ color: 'white', lineHeight: '1.6' }}>
                     Workforce compliance & EOR support.
                   </p>
                 </div>
@@ -153,7 +153,7 @@ const Industries = () => {
                     </div>
                     <h3 className="card-title mb-0" style={{ color: '#2c3e50', fontSize: '1.5rem' }}>Mining & Engineering</h3>
                   </div>
-                  <p className="card-text" style={{ color: '#6c757d', lineHeight: '1.6' }}>
+                  <p className="card-text" style={{ color: 'white', lineHeight: '1.6' }}>
                     Talent acquisition, payroll, HR solutions.
                   </p>
                 </div>
@@ -183,7 +183,7 @@ const Industries = () => {
                     </div>
                     <h3 className="card-title mb-0" style={{ color: '#2c3e50', fontSize: '1.5rem' }}>Construction Projects</h3>
                   </div>
-                  <p className="card-text" style={{ color: '#6c757d', lineHeight: '1.6' }}>
+                  <p className="card-text" style={{ color: 'white', lineHeight: '1.6' }}>
                     Project-based HR solutions.
                   </p>
                 </div>
@@ -214,7 +214,7 @@ const Industries = () => {
                     </div>
                     <h3 className="card-title mb-0" style={{ color: '#2c3e50', fontSize: '1.5rem' }}>Startups & SMEs</h3>
                   </div>
-                  <p className="card-text" style={{ color: '#6c757d', lineHeight: '1.6' }}>
+                  <p className="card-text" style={{ color: 'white', lineHeight: '1.6' }}>
                     Affordable HR outsourcing.
                   </p>
                 </div>
