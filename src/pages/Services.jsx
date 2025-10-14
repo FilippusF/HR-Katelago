@@ -691,7 +691,7 @@ const Services = () => {
                   margin: '0 auto 2rem auto'
                 }}
               >
-                With our expertise, you'll cut down recruitment time, improve candidate quality,
+                With our 20 year expertise, you'll cut down recruitment time, improve candidate quality,
                 and build a workforce that truly fits your company's values and goals.
               </p>
               
