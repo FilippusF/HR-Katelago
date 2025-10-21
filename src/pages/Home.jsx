@@ -117,8 +117,8 @@ const Home = () => {
                     fontFamily: 'Arial, sans-serif'
                   }}
                 >
-                 Being remarkable is a journey, and at Katelago, that journey begins with people.
-                 We help organisations build beautiful businesses; bold, dynamic, and human workplaces 
+                <strong> Being remarkable   is a journey, </strong> and at Katelago, that journey begins with people.
+                 We help organisations build <strong> beautiful businesses</strong> bold, dynamic, and human workplaces 
                  where teams feel inspired, valued, and equipped to grow.
                 </p>
 
@@ -834,8 +834,9 @@ const Home = () => {
         </h2>
         
         <div className="mt-4">
+          <a href="/Contact">
           <button
-            className="btn btn-lg px-5 py-3 rounded-pill fw-bold text-white border-0 cta-button"
+            className="btn btn-lg px-5 py-3 rounded-pill fw-bold text-white border-0 cta-button "
             style={{
               backgroundColor: '#1e5631',
               fontSize: '16px',
@@ -846,6 +847,7 @@ const Home = () => {
           >
             Book a Consultation →
           </button>
+          </a>
         </div>
       </div>
     </div>

@@ -136,7 +136,7 @@ const About = () => {
                   lineHeight: '1.6'
                 }}
               >
-                Shaping the future of work in Africa, Katelago is redefining what it means to be bold, dynamic, and human in the world of HR.
+               Shaping the future of work in Africa, Katelago is redefining what it means to be bold, dynamic, and human in the world of HR.
                 We empower organisations to build compliant, inclusive, and future-ready workplaces where people, purpose, and progress come together.
               </p>
               
@@ -149,7 +149,7 @@ const About = () => {
                   color: 'black'
                 }}
               >
-                Founded in 2012 , Katelago HR Consultants was built on the belief that HR should be human first.
+                <strong> Founded in 2012 </strong>, Katelago HR Consultants was built on the belief that HR should be human first.
                 Our team of seasoned professionals combines deep expertise in HR best practice, labour law, and workplace culture to deliver people solutions that are both strategic and meaningful.
                 From payroll to performance, we partner with clients to transform compliance into confidence; and people into possibility.
               </blockquote>
@@ -312,7 +312,7 @@ const About = () => {
                             </svg>
                           </div>
                           <span className="text-white" style={{ opacity: 0.9 }}>
-                            Empowerment &amp; Growth
+                            Bold
                           </span>
                         </div>
                         
@@ -330,7 +330,7 @@ const About = () => {
                             </svg>
                           </div>
                           <span className="text-white" style={{ opacity: 0.9 }}>
-                            Collaboration
+                            Dynamic
                           </span>
                         </div>
                         <br />
@@ -349,9 +349,10 @@ const About = () => {
                             </svg>
                           </div>
                           <span className="text-white" style={{ opacity: 0.9 }}>
-                            Excellence Innovation
+                            Human
                           </span>
                         </div>
+
       
                         <div className="d-flex align-items-center mb-3">
                           <div 
@@ -367,9 +368,47 @@ const About = () => {
                             </svg>
                           </div>
                           <span className="text-white" style={{ opacity: 0.9 }}>
-                            Innovation
+                            Integrity
                           </span>
                         </div>
+
+                        <div className="d-flex align-items-center mb-3">
+                          <div 
+                            className="me-3 rounded-circle d-flex align-items-center justify-content-center"
+                            style={{
+                              width: '24px',
+                              height: '24px',
+                              backgroundColor: '#1e5631'
+                            }}
+                          >
+                            <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
+                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                          </div>
+                          <span className="text-white" style={{ opacity: 0.9 }}>
+                            Excellence
+                          </span>
+                        </div>
+                        
+                        <div className="d-flex align-items-center mb-3">
+                          <div 
+                            className="me-3 rounded-circle d-flex align-items-center justify-content-center"
+                            style={{
+                              width: '24px',
+                              height: '24px',
+                              backgroundColor: '#1e5631'
+                            }}
+                          >
+                            <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
+                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                          </div>
+
+                          <span className="text-white" style={{ opacity: 0.9 }}>
+                            Collaboration 
+                          </span>
+                        </div>
+                        
                       </div>
                     </div>
                   </div>
@@ -454,8 +493,8 @@ const About = () => {
                                 fontSize: '14px'
                               }}
                             >
-                              To empower businesses with professional, innovative HR solutions and
-                              positively impact employees.
+                               We exist to empower organisations to build compliant, inclusive, and future-ready workplaces that honour both business 
+                               performance and human potential.
                             </p>
                           </div>
                         </div>

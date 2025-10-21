@@ -3,6 +3,7 @@ import chooseImage from '../assets/images/choose.png';
 import logoImage from '../assets/images/Main-logo.png';
 import StationImage1 from '../assets/images/10.jpg'; 
 import StationImage2 from '../assets/images/9.jpg';
+import StationImage6 from '../assets/images/33.png';
 
 const Careers = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -33,7 +34,7 @@ const Careers = () => {
       <section 
         className="hero-section position-relative d-flex align-items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${StationImage2})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${StationImage6})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -244,12 +245,12 @@ const Careers = () => {
                     </span>
                   </li>
                 </ul>
-              </div>
-
-              {/* Contact Info */}
-              <div 
-                className="bg-white rounded-4 p-4 shadow-sm"
-                style={{ border: '1px solid #e9ecef' }}
+               
+               {/* Removed the classed and other styling 
+                  and added margin on top to add space */}
+                <div 
+                className="" 
+                style={{ marginTop: '20px' }} 
               >
                 <h5 
                   className="fw-bold mb-3"
@@ -272,6 +273,8 @@ const Careers = () => {
                   </div>
                 </div>
               </div>
+              </div>
+
             </div>
           </div>
         </div>

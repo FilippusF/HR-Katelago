@@ -38,7 +38,7 @@ const Services = () => {
       <section 
         className="hero-section position-relative d-flex align-items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${StationImage4})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${StationImage2})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -691,7 +691,7 @@ const Services = () => {
                   margin: '0 auto 2rem auto'
                 }}
               >
-                With our expertise, you'll cut down recruitment time, improve candidate quality,
+                With our 20 year expertise, you'll cut down recruitment time, improve candidate quality,
                 and build a workforce that truly fits your company's values and goals.
               </p>
               
@@ -1250,6 +1250,9 @@ const Services = () => {
           </span>
         </div>
         
+        <div className='container' style={{padding: '20px', borderRadius: '10px' , backgroundColor: 'rgba(84, 82, 82, 0.2)',
+                backdropFilter: 'blur(20px)',
+                border: '1px solid rgba(255, 255, 255, 0.2)'}}>
         <h2 id='EOR'
           className="display-6 fw-bold mb-3 text-white"
           style={{
@@ -1262,11 +1265,12 @@ const Services = () => {
         </h2>
         
         <p 
-          className="mb-4 text-white"
+          className="mb-4 "
           style={{
             fontSize: '1rem',
             lineHeight: '1.6',
-            opacity: 0.9
+            opacity: 0.9,
+            color:'white'
           }}
         >
           We act as the legal employer on your behalf, managing all employment responsibilities while you retain full control over day-to-day operations and performance.
@@ -1282,6 +1286,7 @@ const Services = () => {
         >
           With our Employer of Record services, businesses, including those in the Oil & Gas sector, can expand their workforce in Namibia with confidence, speed, and full legal assurance.
         </p>
+        </div>
       </div>
 
       {/* Right Content - EOR Features */}

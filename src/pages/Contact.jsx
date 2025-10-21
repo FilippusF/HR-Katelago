@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import contactImage from '../assets/images/9.jpg';
 import logoImage from '../assets/images/Main-logo.png';
+import StationImage5 from '../assets/images/14.png';
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -49,7 +51,7 @@ const Contact = () => {
       <section 
         className="hero-section position-relative d-flex align-items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${contactImage})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${StationImage5})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
