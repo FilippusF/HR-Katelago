@@ -4,7 +4,6 @@ import logoImage from '../assets/images/Main-logo.png';
 import aboutImage from '../assets/images/about.png';
 import StationImage2 from '../assets/images/9.jpg'; 
 import StationImage1 from '../assets/images/10.jpg';
-import StationImage4 from '../assets/images/13.jpg';
 
 
 
