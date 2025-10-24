@@ -32,7 +32,7 @@ const Footer = () => {
               <li className="mb-2">
                 <a href="/Home" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
-                  Homepage
+                  Home Page
                 </a>
               </li>
               <li className="mb-2">
