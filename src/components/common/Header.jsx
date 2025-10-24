@@ -82,7 +82,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg position-sticky top-0 shadow-sm" style={{ 
         zIndex: 1050,
         padding: '12px 0',
-        backgroundColor: isScrolled ? 'rgba(255, 255, 255, 0.6)' : 'rgba(255, 255, 255, 0.3)',
+        backgroundColor:'rgba(180, 168, 168, 0.05)',  
         backdropFilter: 'blur(10px)',
         WebkitBackdropFilter: 'blur(10px)',
         transition: 'all 0.3s ease'
