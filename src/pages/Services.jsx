@@ -106,7 +106,7 @@ const Services = () => {
                 <span 
                   className="text-uppercase fw-medium"
                   style={{ 
-                    fontSize: '12px',
+                    fontSize: '20px',
                     letterSpacing: '2px',
                     color: '#c09c31',
                     fontWeight: '600'
@@ -286,7 +286,7 @@ const Services = () => {
               <span 
                 className="text-uppercase fw-medium"
                 style={{ 
-                  fontSize: '12px',
+                  fontSize: '20px',
                   letterSpacing: '2px',
                   color: '#c09c31',
                   fontWeight: '600'
@@ -1035,7 +1035,7 @@ const Services = () => {
           <span 
             className="text-uppercase fw-medium"
             style={{ 
-              fontSize: '12px',
+              fontSize: '20px',
               letterSpacing: '2px',
               color: '#c09c31',
               fontWeight: '600'
@@ -1240,7 +1240,7 @@ const Services = () => {
           <span 
             className="text-uppercase fw-medium"
             style={{ 
-              fontSize: '12px',
+              fontSize: '20px',
               letterSpacing: '2px',
               color: '#c09c31',
               fontWeight: '600'
