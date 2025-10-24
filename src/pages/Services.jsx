@@ -1109,7 +1109,7 @@ const Services = () => {
                 <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '1.1rem' }}>
                   Behavioural Assessment
                 </h5>
-                <p className="mb-0" style={{ fontSize: '0.9rem', color: 'white' }}>
+                <p className="mb-0" style={{ fontSize: '0.9rem', color: '#174D31' }}>
                   Understanding candidates' work habits and preferences.
                 </p>
               </div>
@@ -1142,7 +1142,7 @@ const Services = () => {
                 <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '1.1rem' }}>
                   Competency Mapping
                 </h5>
-                <p className="mb-0" style={{ fontSize: '0.9rem', color: 'white' }}>
+                <p className="mb-0" style={{ fontSize: '0.9rem', color: '#174D31' }}>
                   Aligning behavioural patterns with job competencies.
                 </p>
               </div>
@@ -1175,7 +1175,7 @@ const Services = () => {
                 <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '1.1rem' }}>
                   Candidate Matching
                 </h5>
-                <p className="mb-0" style={{ fontSize: '0.9rem', color: 'white' }}>
+                <p className="mb-0" style={{ fontSize: '0.9rem', color: '#174D31' }}>
                   Leveraging Shadowmatch to select best-fit candidates.
                 </p>
               </div>
@@ -1188,7 +1188,7 @@ const Services = () => {
               className="p-3 rounded-4 h-100"
               style={{
                 backgroundColor: '#c09c31',
-                color: 'white'
+                color: '#174D31'
               }}
             >
               <h6 className="fw-bold mb-2" style={{ fontSize: '1rem' }}>
@@ -1205,7 +1205,7 @@ const Services = () => {
               className="p-3 rounded-4 h-100"
               style={{
                 backgroundColor: '#c09c31',
-                color: 'white'
+                color: '#174D31'
               }}
             >
               <h6 className="fw-bold mb-2" style={{ fontSize: '1rem' }}>
