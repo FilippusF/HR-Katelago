@@ -307,6 +307,9 @@ const Services = () => {
               HR Consulting &amp; Outsourcing
             </h2>
             
+            <div className='container' style={{padding: '20px', borderRadius: '10px' , backgroundColor: 'rgba(84, 82, 82, 0.2)',
+                backdropFilter: 'blur(20px)',
+                border: '1px solid rgba(255, 255, 255, 0.2)' ,display: 'inline-block'}}>
             <p 
               className="mb-5 text-white"
               style={{
@@ -314,12 +317,14 @@ const Services = () => {
                 lineHeight: '1.6',
                 opacity: 0.9,
                 maxWidth: '600px',
-                margin: '0 auto'
+                margin: '0 auto',
+                marginTop: '20px',
               }}
             >
               Our HR Consulting services help businesses build strong, compliant, and people-
               centred workplaces by aligning HR with business goals.
             </p>
+          </div>
           </div>
           
           {/* Services Grid */}
@@ -409,11 +414,15 @@ const Services = () => {
           Recruitment &amp; Talent Acquisition
         </h2>
       </div>
-      <div className="col-lg-6 d-flex align-items-end">
+
+      <div className='container' style={{padding: '20px', borderRadius: '10px' , backgroundColor: 'rgba(84, 82, 82, 0.2)',
+                backdropFilter: 'blur(20px)',
+                border: '1px solid rgba(255, 255, 255, 0.2)'}}>
+      <div className="col-lg-6 d-flex align-items-end ">
         <p 
           className="text-white mb-0"
           style={{ 
-            opacity: 0.8,
+            opacity: 0.9,
             fontSize: '16px',
             lineHeight: '1.6'
           }}
@@ -421,6 +430,7 @@ const Services = () => {
           We design recruitment solutions that help you attract, recruit, and keep the right talent to drive your business forward.
         </p>
       </div>
+    </div>
     </div>
 
     <div className="row g-4">
