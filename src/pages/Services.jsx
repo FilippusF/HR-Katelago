@@ -192,7 +192,7 @@ const Services = () => {
                     className="p-4 rounded-4 h-100"
                     style={{
                       backgroundColor: '#c09c31',
-                      color: 'white',
+                      color: '#174D31',
                       border: '2px solid #c09c31',
                       borderRadius: '12px'
                     }}
@@ -200,7 +200,7 @@ const Services = () => {
                     <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
                       Payroll Processing
                     </h5>
-                    <p className="mb-0" style={{ fontSize: '0.9rem', color: 'white' }}>
+                    <p className="mb-0" style={{ fontSize: '0.9rem', color: '#174D31' }}>
                       Monthly payroll, cost-to-company calculations, and payslips.
                     </p>
                   </div>
@@ -211,7 +211,7 @@ const Services = () => {
                     className="p-4 rounded-4 h-100"
                     style={{
                       backgroundColor: '#c09c31',
-                      color: 'white',
+                      color: '#174D31',
                       border: '2px solid #c09c31',
                       borderRadius: '12px'
                     }}
@@ -219,7 +219,7 @@ const Services = () => {
                     <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
                       Tax &amp; Compliance
                     </h5>
-                    <p className="mb-0" style={{ fontSize: '0.9rem', color: 'white' }}>
+                    <p className="mb-0" style={{ fontSize: '0.9rem', color: '#174D31' }}>
                       PAYE deductions, SSC/Medical Aid registrations, and ITAS returns.
                     </p>
                   </div>
@@ -230,7 +230,7 @@ const Services = () => {
                     className="p-4 rounded-4 h-100"
                     style={{
                       backgroundColor: '#c09c31',
-                      color: 'white',
+                      color: '#174D31',
                       border: '2px solid #c09c31',
                       borderRadius: '12px'
                     }}
@@ -238,7 +238,7 @@ const Services = () => {
                     <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
                       Leave &amp; Benefits Management
                     </h5>
-                    <p className="mb-0" style={{ fontSize: '0.9rem', color: 'white' }}>
+                    <p className="mb-0" style={{ fontSize: '0.9rem', color: '#174D31' }}>
                       Leave tracking, pension fund administration, and
                       termination payouts.
                     </p>
@@ -250,7 +250,7 @@ const Services = () => {
                     className="p-4 rounded-4 h-100"
                     style={{
                       backgroundColor: '#c09c31',
-                      color: 'white',
+                      color: '#174D31',
                       border: '2px solid #c09c31',
                       borderRadius: '12px'
                     }}
@@ -258,7 +258,7 @@ const Services = () => {
                     <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
                       Payroll Reporting
                     </h5>
-                    <p className="mb-0" style={{ fontSize: '0.9rem', color: 'white' }}>
+                    <p className="mb-0" style={{ fontSize: '0.9rem', color: '#174D31' }}>
                       Detailed reports, historical payroll access, and secured electronic payslips.
                     </p>
                   </div>
@@ -318,7 +318,7 @@ const Services = () => {
                 opacity: 0.9,
                 maxWidth: '600px',
                 margin: '0 auto',
-                marginTop: '20px',
+                marginTop: '20px'
               }}
             >
               Our HR Consulting services help businesses build strong, compliant, and people-
