@@ -643,14 +643,14 @@ const Home = () => {
                         className="fw-bold"
                         style={{
                           fontSize: '36px',
-                          color: '#174D3A',
+                          color: 'white',
                           lineHeight: '1'
                         }}
                       >
                         01
                       </span>
                     </div>
-                    <h6 className="fw-bold mb-0" style={{ color: '#1e5631', fontSize: '14px', lineHeight: '1.3' }}>
+                    <h6 className="fw-bold mb-0" style={{ color: 'white', fontSize: '14px', lineHeight: '1.3' }}>
                       Bold Solutions, Trusted Results, Human Impact.
                     </h6>
                   </div>
@@ -672,20 +672,20 @@ const Home = () => {
                         className="fw-bold"
                         style={{
                           fontSize: '36px',
-                          color:'#174D3A',
+                          color:'white',
                           lineHeight: '1'
                         }}
                       >
                         02
                       </span>
                     </div>
-                    <h6 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '14px', lineHeight: '1.3' }}>
+                    <h6 className="fw-bold mb-2" style={{ color: 'white', fontSize: '14px', lineHeight: '1.3' }}>
                       Tailored Strategies, Compliance Assured.
                     </h6>
                     <p 
                       className="mb-0 flex-grow-1"
                       style={{ 
-                        color: '#174D3A',
+                        color: 'white',
                         fontSize: '12px',
                         opacity: 0.8,
                         lineHeight: '1.4'
@@ -712,20 +712,20 @@ const Home = () => {
                         className="fw-bold"
                         style={{
                           fontSize: '36px',
-                          color: '#174D3A',
+                          color: 'white',
                           lineHeight: '1'
                         }}
                       >
                         03
                       </span>
                     </div>
-                    <h6 className="fw-bold mb-2" style={{ color: '#1e5631', fontSize: '14px', lineHeight: '1.3' }}>
+                    <h6 className="fw-bold mb-2" style={{ color: 'white ', fontSize: '14px', lineHeight: '1.3' }}>
                       Seamless Integration, Trusted Support.
                     </h6>
                     <p 
                       className="mb-0 flex-grow-1"
                       style={{ 
-                        color: '#174D3A',
+                        color: 'white',
                         fontSize: '12px',
                         opacity: 0.8,
                         lineHeight: '1.4'
@@ -773,13 +773,13 @@ const Home = () => {
                       fontSize: '48px',
                       color: 'rgba(0,0,0,0.3)',
                       lineHeight: '1',
-                      color:'#174D3A'
+                      color:'white'
                     }}
                   >
                     04
                   </span>
                 </div>
-                <h5 className="fw-bold mb-3" style={{ fontSize: '18px',color:'#174D3A' }}>
+                <h5 className="fw-bold mb-3" style={{ fontSize: '18px',color:'white' }}>
                   Empowering Growth, People First.
                 </h5>
                 <p 
@@ -788,7 +788,7 @@ const Home = () => {
                     fontSize: '14px',
                     opacity: 0.9,
                     lineHeight: '1.5',
-                    color: '#174D3A'
+                    color: 'white'
                   }}
                 >
                   At Katelago, we're passionate about helping businesses grow with confidence, compliance, and people-first solutions.
