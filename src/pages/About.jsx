@@ -35,7 +35,7 @@ const About = () => {
       <section 
         className="hero-section position-relative d-flex align-items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${StationImage1})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${StationImage2})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -601,7 +601,8 @@ const About = () => {
                   border: '2px solid #f0f0f0',
                   transition: 'all 0.4s ease',
                   cursor: 'pointer',
-                  animation: 'fadeInUp 0.6s ease-out 0.1s both'
+                  animation: 'fadeInUp 0.6s ease-out 0.1s both',
+                  border: '2px solid #c09c31'
                 }}
               >
                 <div 
@@ -613,7 +614,7 @@ const About = () => {
                     borderRadius: '50%',
                     fontSize: '24px',
                     fontWeight: 'bold',
-                    color: '#174D3A'
+                    color: '#174D3A'                    
                   }}
                 >
                   01
@@ -641,7 +642,8 @@ const About = () => {
                   border: '2px solid #c09c31',
                   transition: 'all 0.4s ease',
                   cursor: 'pointer',
-                  animation: 'fadeInUp 0.6s ease-out 0.2s both'
+                  animation: 'fadeInUp 0.6s ease-out 0.2s both',
+                  border: '2px solid #c09c31'
                 }}
               >
                 <div 
@@ -681,7 +683,8 @@ const About = () => {
                   border: '2px solid #f0f0f0',
                   transition: 'all 0.4s ease',
                   cursor: 'pointer',
-                  animation: 'fadeInUp 0.6s ease-out 0.3s both'
+                  animation: 'fadeInUp 0.6s ease-out 0.3s both',
+                  border: '2px solid #c09c31'
                 }}
               >
                 <div 
@@ -723,7 +726,8 @@ const About = () => {
                   border: '2px solid #f0f0f0',
                   transition: 'all 0.4s ease',
                   cursor: 'pointer',
-                  animation: 'fadeInUp 0.6s ease-out 0.4s both'
+                  animation: 'fadeInUp 0.6s ease-out 0.4s both',
+                  border: '2px solid #c09c31'
                 }}
               >
                 <div 
@@ -763,7 +767,8 @@ const About = () => {
                   border: '2px solid #174D31',
                   transition: 'all 0.4s ease',
                   cursor: 'pointer',
-                  animation: 'fadeInUp 0.6s ease-out 0.5s both'
+                  animation: 'fadeInUp 0.6s ease-out 0.5s both',
+                  border: '2px solid #c09c31'
                 }}
               >
                 <div 
