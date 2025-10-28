@@ -579,9 +579,53 @@ const Home = () => {
                       that honour both 
                       business performance and human potential.
                       </p>
-                    </div>
+                    </div>                    
                   </div>
                 </div>
+
+                <div 
+                        className="p-4 rounded-4 vision-mission-card"
+                        style={{
+                          backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                          backdropFilter: 'blur(10px)',
+                          border: '1px solid rgba(255, 255, 255, 0.1)',
+                          transition: 'all 0.3s ease',
+                          cursor: 'pointer',
+                          marginTop:'25px'
+                        }}
+                      >
+                        <div className="d-flex align-items-start">
+                          <div 
+                            className="me-4 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0"
+                            style={{
+                              width: '60px',
+                              height: '60px',
+                              backgroundColor: '#1e5631',
+                              fontSize: '24px',
+                              fontWeight: 'bold',
+                              color: 'white'
+                            }}
+                          >
+                            03
+                          </div>
+                          <div>
+                            <h5 className="text-white fw-bold mb-2">
+                              Philosophy
+                            </h5>
+                            <p 
+                              className="text-white mb-0"
+                              style={{ 
+                                opacity: 0.8,
+                                fontSize: '14px'
+                              }}
+                            >
+                              We believe small actions create extraordinary impact. By listening
+                              deeply, reflecting on our work, and understanding others, we craft solutions that
+                              inspire trust and drive meaningful change.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
               </div>
             </div>
           </div>
