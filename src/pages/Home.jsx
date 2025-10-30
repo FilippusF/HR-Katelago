@@ -365,7 +365,7 @@ const Home = () => {
             </h2>
           </div>
 
-          <div className="row align-items-stretch">
+          <div className="row align-items-stretch ">
             {/* Left Card */}
             <div className="col-lg-6 mb-4">
               <div 
@@ -373,10 +373,12 @@ const Home = () => {
                 style={{
                   backgroundColor: 'rgba(255, 255, 255, 0.1)',
                   backdropFilter: 'blur(10px)',
-                  border: '1px solid rgba(255, 255, 255, 0.1)'
+                  border: '1px solid rgba(255, 255, 255, 0.1)',
+                  display:'inline-block',
+                  paddingRight:'20px'    
                 }}
               >
-                <h3 className="text-white mb-4 fw-bold">
+                <h3 className="text-white mb-4 fw-bold"> 
                   Values
                 </h3>
 
@@ -792,7 +794,8 @@ const Home = () => {
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
                     backgroundColor: 'rgba(255,255,255,0.1)',
-                    transition: 'all 0.3s ease'
+                    transition: 'all 0.3s ease',
+                    top: '0'
                   }}
                 >
                 </div>
@@ -847,7 +850,7 @@ const Home = () => {
 <section 
   className="py-5"
   style={{ 
-    backgroundImage: `url(${StationImage2})`,
+    backgroundImage: `url(${HomeImage})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
@@ -1012,6 +1015,9 @@ const Home = () => {
           transform: translateY(-3px);
           box-shadow: 0 6px 20px rgba(30, 86, 49, 0.4) !important;
         }
+
+      
+          
       `}</style>
     </div>
   );

@@ -79,10 +79,9 @@ const Header = () => {
       </div>
 
       {/* Main Navigation */}
-      <nav className="navbar navbar-expand-lg position-sticky top-0 shadow-sm" style={{ 
+      <nav className="navbar navbar-expand-lg position-sticky top-0 shadow-sm transparent-background" style={{ 
         zIndex: 1050,
         padding: '12px 0',
-        backgroundColor:'rgba(180, 168, 168, 0.05)',  
         backdropFilter: 'blur(10px)',
         WebkitBackdropFilter: 'blur(10px)',
         transition: 'all 0.3s ease'
@@ -271,7 +270,7 @@ const Header = () => {
         }
         
         .dropdown-item:hover {
-          background-color: #f8f9fa !important;
+          background-color: rgba(255, 255, 255, 0.11) !important;
           color:  #1e5631 !important;
         }
         
@@ -297,6 +296,9 @@ const Header = () => {
             align-self: flex-start;
           }
         }
+          .transparent-background{
+          ackground-color: rgba(255, 255, 255, 0.11) !important;
+          }
       `}</style>
     </>
   );

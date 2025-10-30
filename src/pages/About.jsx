@@ -35,12 +35,13 @@ const About = () => {
       <section 
         className="hero-section position-relative d-flex align-items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${StationImage2})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(30, 26, 26, 0.4)), url(${StationImage2})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
           height: '60vh',
           minHeight: '500px'
+        
         }}
       >
         <div className="container">
