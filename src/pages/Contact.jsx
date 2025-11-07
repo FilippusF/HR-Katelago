@@ -43,7 +43,7 @@ const Contact = () => {
     console.log('Form submitted:', formData);
 
     // Simulated success alert
-    alert('✅ Thank you! Your quotation request has been successfully submitted.');
+    alert('Your quotation request has been successfully submitted.');
 
     // Reset form fields
     setFormData({
