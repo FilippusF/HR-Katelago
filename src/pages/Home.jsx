@@ -369,13 +369,16 @@ const Home = () => {
             {/* Left Card */}
             <div className="col-lg-6 mb-4">
               <div 
-                className="h-100 p-5 rounded-4"
+                className="h-100  rounded-4"
                 style={{
                   backgroundColor: 'rgba(255, 255, 255, 0.1)',
                   backdropFilter: 'blur(10px)',
                   border: '1px solid rgba(255, 255, 255, 0.1)',
                   display:'inline-block',
-                  paddingRight:'20px'    
+                  paddingRight:'190px',
+                  paddingLeft:'20px',
+                  paddingTop:'20px',
+                  paddingBottom:''    
                 }}
               >
                 <h3 className="text-white mb-4 fw-bold"> 
@@ -391,6 +394,7 @@ const Home = () => {
                         width: '24px',
                         height: '24px',
                         backgroundColor: '#1e5631'
+
                       }}
                     >
                       <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
