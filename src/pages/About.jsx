@@ -35,7 +35,7 @@ const About = () => {
       <section 
         className="hero-section position-relative d-flex align-items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(30, 26, 26, 0.4)), url(${StationImage2})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(98, 73, 73, 0.4)), url(${StationImage2})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -286,133 +286,137 @@ const About = () => {
                   {/* Left Card */}
                   <div className="col-lg-6 mb-4">
                     <div 
-                      className="h-100 p-5 rounded-4"
+                      className="h-100  rounded-4"
                       style={{
                         backgroundColor: 'rgba(255, 255, 255, 0.1)',
                         backdropFilter: 'blur(10px)',
-                        border: '1px solid rgba(255, 255, 255, 0.1)'
+                        border: '1px solid rgba(255, 255, 255, 0.1)',
+                        display:'inline-block',
+                         paddingRight:'190px',
+                         paddingLeft:'20px',
+                         paddingTop:'20px',
+                         paddingBottom:'' 
                       }}
                     >
-                      <h3 className="text-white mb-4 fw-bold">
-                        Values
-                      </h3>
-      
-                      {/* Check Items */}
-                      <div className="mb-3">
-                        <div className="d-flex align-items-center mb-3">
-                          <div 
-                            className="me-3 rounded-circle d-flex align-items-center justify-content-center"
-                            style={{
-                              width: '24px',
-                              height: '24px',
-                              backgroundColor: '#1e5631'
-                            }}
-                          >
-                            <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
-                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                            </svg>
-                          </div>
-                          <span className="text-white" style={{ opacity: 0.9 }}>
-                            Bold
-                          </span>
-                        </div>
-                        
-                        <div className="d-flex align-items-center">
-                          <div 
-                            className="me-3 rounded-circle d-flex align-items-center justify-content-center"
-                            style={{
-                              width: '24px',
-                              height: '24px',
-                              backgroundColor: '#1e5631'
-                            }}
-                          >
-                            <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
-                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                            </svg>
-                          </div>
-                          <span className="text-white" style={{ opacity: 0.9 }}>
-                            Dynamic
-                          </span>
-                        </div>
-                        <br />
-      
-                        <div className="d-flex align-items-center mb-3">
-                          <div 
-                            className="me-3 rounded-circle d-flex align-items-center justify-content-center"
-                            style={{
-                              width: '24px',
-                              height: '24px',
-                              backgroundColor: '#1e5631'
-                            }}
-                          >
-                            <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
-                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                            </svg>
-                          </div>
-                          <span className="text-white" style={{ opacity: 0.9 }}>
-                            Human
-                          </span>
-                        </div>
+                        <h3 className="text-white mb-4 fw-bold"> 
+                  Values
+                </h3>
 
-      
-                        <div className="d-flex align-items-center mb-3">
-                          <div 
-                            className="me-3 rounded-circle d-flex align-items-center justify-content-center"
-                            style={{
-                              width: '24px',
-                              height: '24px',
-                              backgroundColor: '#1e5631'
-                            }}
-                          >
-                            <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
-                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                            </svg>
-                          </div>
-                          <span className="text-white" style={{ opacity: 0.9 }}>
-                            Integrity
-                          </span>
-                        </div>
+                {/* Check Items */}
+                <div className="mb-3">
+                  <div className="d-flex align-items-center mb-3">
+                    <div 
+                      className="me-3 rounded-circle d-flex align-items-center justify-content-center"
+                      style={{
+                        width: '24px',
+                        height: '24px',
+                        backgroundColor: '#1e5631'
 
-                        <div className="d-flex align-items-center mb-3">
-                          <div 
-                            className="me-3 rounded-circle d-flex align-items-center justify-content-center"
-                            style={{
-                              width: '24px',
-                              height: '24px',
-                              backgroundColor: '#1e5631'
-                            }}
-                          >
-                            <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
-                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                            </svg>
-                          </div>
-                          <span className="text-white" style={{ opacity: 0.9 }}>
-                            Excellence
-                          </span>
-                        </div>
-                        
-                        <div className="d-flex align-items-center mb-3">
-                          <div 
-                            className="me-3 rounded-circle d-flex align-items-center justify-content-center"
-                            style={{
-                              width: '24px',
-                              height: '24px',
-                              backgroundColor: '#1e5631'
-                            }}
-                          >
-                            <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
-                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                            </svg>
-                          </div>
-
-                          <span className="text-white" style={{ opacity: 0.9 }}>
-                            Collaboration 
-                          </span>
-                        </div>
-                        
-                      </div>
+                      }}
+                    >
+                      <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
+                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                      </svg>
                     </div>
+                    <span className="text-white" style={{ opacity: 0.9 }}>
+                      Bold
+                    </span>
                   </div>
+                  
+                  <div className="d-flex align-items-center">
+                    <div 
+                      className="me-3 rounded-circle d-flex align-items-center justify-content-center"
+                      style={{
+                        width: '24px',
+                        height: '24px',
+                        backgroundColor: '#1e5631'
+                      }}
+                    >
+                      <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
+                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                      </svg>
+                    </div>
+                    <span className="text-white" style={{ opacity: 0.9 }}>
+                      Dynamic
+                    </span>
+                  </div>
+                  <br />
+
+                  <div className="d-flex align-items-center mb-3">
+                    <div 
+                      className="me-3 rounded-circle d-flex align-items-center justify-content-center"
+                      style={{
+                        width: '24px',
+                        height: '24px',
+                        backgroundColor: '#1e5631'
+                      }}
+                    >
+                      <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
+                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                      </svg>
+                    </div>
+                    <span className="text-white" style={{ opacity: 0.9 }}>
+                      Human
+                    </span>
+                  </div>
+
+                  <div className="d-flex align-items-center mb-3">
+                    <div 
+                      className="me-3 rounded-circle d-flex align-items-center justify-content-center"
+                      style={{
+                        width: '24px',
+                        height: '24px',
+                        backgroundColor: '#1e5631'
+                      }}
+                    >
+                      <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
+                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                      </svg>
+                    </div>
+                    <span className="text-white" style={{ opacity: 0.9 }}>
+                      Integrity
+                    </span>
+                  </div>
+
+                  <div className="d-flex align-items-center mb-3">
+                    <div 
+                      className="me-3 rounded-circle d-flex align-items-center justify-content-center"
+                      style={{
+                        width: '24px',
+                        height: '24px',
+                        backgroundColor: '#1e5631'
+                      }}
+                    >
+                      <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
+                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                      </svg>
+                    </div>
+                    <span className="text-white" style={{ opacity: 0.9 }}>
+                      Excellence
+                    </span>
+                  </div>
+
+                  <div className="d-flex align-items-center mb-3">
+                    <div 
+                      className="me-3 rounded-circle d-flex align-items-center justify-content-center"
+                      style={{
+                        width: '24px',
+                        height: '24px',
+                        backgroundColor: '#1e5631'
+                      }}
+                    >
+                      <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
+                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                      </svg>
+                    </div>
+                    <span className="text-white" style={{ opacity: 0.9 }}>
+                      Collaboration
+                    </span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
       
                   {/* Right Card */}
                   <div className="col-lg-6">
