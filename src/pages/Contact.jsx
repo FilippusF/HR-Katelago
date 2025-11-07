@@ -3,7 +3,6 @@ import contactImage from '../assets/images/9.jpg';
 import logoImage from '../assets/images/Main-logo.png';
 import StationImage5 from '../assets/images/14.png';
 
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -42,7 +41,16 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    // Handle form submission here
+
+    // Simulated success alert
+    alert('✅ Thank you! Your quotation request has been successfully submitted.');
+
+    // Reset form fields
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
   };
 
   return (
@@ -62,7 +70,6 @@ const Contact = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8 text-center text-white">
-              {/* Breadcrumb */}
               <div className="mb-4">
                 <span 
                   className="text-uppercase fw-medium"
@@ -77,7 +84,6 @@ const Contact = () => {
                 </span>
               </div>
               
-              {/* Main Title */}
               <h1 
                 className="display-4 fw-bold mb-4"
                 style={{
@@ -92,7 +98,6 @@ const Contact = () => {
                 About Your HR Needs
               </h1>
               
-              {/* Description */}
               <p 
                 className="lead mb-0"
                 style={{
@@ -109,11 +114,10 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Contact Form Section with Background */}
+      {/* Contact Form Section */}
       <section style={{ backgroundColor: '#174D3A', padding: '4rem 0' }}>
         <div className="container">
           <div className="row">
-            {/* Contact Form */}
             <div className="col-lg-8 mb-5">
               <h2 className="mb-4 text-white">Get in Touch</h2>
               <form onSubmit={handleSubmit}>
@@ -186,7 +190,6 @@ const Contact = () => {
               </form>
             </div>
 
-            {/* Contact Details */}
             <div className="col-lg-4">
               <h2 className="mb-4 text-white">Contact Details</h2>
               <div className="contact-info text-white">
@@ -281,7 +284,7 @@ const Contact = () => {
             transform: scale(1.1);
           }
         }
-        
+
         .btn:hover {
           transform: translateY(-2px);
           box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
