@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import chooseImage from '../assets/images/choose.png';
 import logoImage from '../assets/images/Main-logo.png';
-import StationImage1 from '../assets/images/10.jpg'; 
-import StationImage2 from '../assets/images/9.jpg';
 import StationImage6 from '../assets/images/33.png';
 
 const Careers = () => {
@@ -12,7 +9,7 @@ const Careers = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -92,49 +89,93 @@ const Careers = () => {
         </div>
       </section>
 
-      {/* Job Listings Section */}
+      {/* Job Application Section */}
       <section className="py-5" style={{ backgroundColor: '#f8f9fa' }}>
         <div className="container">
           <div className="row justify-content-center">
-            {/* Sidebar */}
-            <div className="col-lg-6 col-md-8">
-              {/* Apply Now CTA */}
-              <div 
-                className="bg-white rounded-4 p-4 shadow-sm mb-4"
-                style={{ border: '1px solid #e9ecef' }}
-              >
-                <h5 
-                  className="fw-bold mb-3"
-                  style={{ color: '#2c3e50' }}
-                >
-                  Ready to Apply?
-                </h5>
-                <p 
-                  className="text-muted mb-4"
-                  style={{ fontSize: '14px', lineHeight: '1.6' }}
-                >
-                  Take the next step in your career journey with Katelago HR Consultants.
-                </p>
-                <a 
-                  href="https://www.manatal.com/" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn text-white fw-semibold w-100 py-3"
-                  style={{ 
-                    background: 'linear-gradient(135deg, #1e5631 0%, #2d7d32 100%)',
-                    borderRadius: '25px',
-                    border: 'none',
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.5px',
-                    fontSize: '14px',
-                    transition: 'all 0.3s ease',
-                    boxShadow: '0 3px 10px rgba(30, 86, 49, 0.3)',
-                    textDecoration: 'none'
-                  }}
-                >
-                  Apply Now
-                </a>
+            <div className="col-lg-8">
+              <h2 className="fw-bold mb-4 text-center" style={{ color: '#2c3e50' }}>Apply for a Position</h2>
+              <div className="bg-white rounded-4 p-4 shadow-sm" style={{ border: '1px solid #e9ecef' }}>
+                <form onSubmit={(e) => {
+                  e.preventDefault();
+                  const formData = new FormData(e.target);
+                  const subject = `Job Application - ${formData.get('position')}`;
+                  const body = `Name: ${formData.get('name')}%0AEmail: ${formData.get('email')}%0APhone: ${formData.get('phone')}%0APosition: ${formData.get('position')}%0AMessage: ${formData.get('message')}`;
+                  window.location.href = `mailto:damona.efraim@mail.manatal.com?subject=${subject}&body=${body}`;
+                }}>
+                  <div className="row">
+                    <div className="col-md-6 mb-3">
+                      <input
+                        type="text"
+                        name="name"
+                        className="form-control"
+                        placeholder="Full Name *"
+                        required
+                        style={{ borderRadius: '10px', padding: '12px' }}
+                      />
+                    </div>
+                    <div className="col-md-6 mb-3">
+                      <input
+                        type="email"
+                        name="email"
+                        className="form-control"
+                        placeholder="Email Address *"
+                        required
+                        style={{ borderRadius: '10px', padding: '12px' }}
+                      />
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-6 mb-3">
+                      <input
+                        type="tel"
+                        name="phone"
+                        className="form-control"
+                        placeholder="Phone Number"
+                        style={{ borderRadius: '10px', padding: '12px' }}
+                      />
+                    </div>
+                    <div className="col-md-6 mb-3">
+                      <input
+                        type="text"
+                        name="position"
+                        className="form-control"
+                        placeholder="Position of Interest *"
+                        required
+                        style={{ borderRadius: '10px', padding: '12px' }}
+                      />
+                    </div>
+                  </div>
+                  <div className="mb-4">
+                    <textarea
+                      name="message"
+                      className="form-control"
+                      rows="4"
+                      placeholder="Tell us about yourself and why you're interested in this position..."
+                      style={{ borderRadius: '10px', padding: '12px' }}
+                    ></textarea>
+                  </div>
+                  <div className="text-center">
+                    <button
+                      type="submit"
+                      className="btn text-white fw-semibold px-5 py-3"
+                      style={{
+                        background: 'linear-gradient(135deg, #1e5631 0%, #2d7d32 100%)',
+                        borderRadius: '25px',
+                        border: 'none',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.5px',
+                        fontSize: '14px'
+                      }}
+                    >
+                      Submit Application
+                    </button>
+                  </div>
+                </form>
               </div>
+              <p className="text-center text-muted mt-3" style={{ fontSize: '12px' }}>
+                Applications will be sent to our HR team via Manatal
+              </p>
             </div>
           </div>
         </div>
