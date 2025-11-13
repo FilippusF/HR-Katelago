@@ -107,7 +107,7 @@ const Contact = () => {
                   margin: '0 auto'
                 }}
               >
-                Ready to transform your HR processes? Get in touch with our experts for a personalized consultation.
+                Ready to transform your HR processes? Get in touch with our experts for a personalized consultations.
               </p>
             </div>
           </div>
