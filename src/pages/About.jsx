@@ -6,6 +6,7 @@ import logoImage from '../assets/images/Main-logo.png';
 import missionImage from '../assets/images/mission.jpg';
 import StationImage1 from '../assets/images/10.jpg'; 
 import StationImage2 from '../assets/images/9.jpg'; 
+import NewImage from '../assets/images/13.jpg';
 
 const About = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -35,7 +36,7 @@ const About = () => {
       <section 
         className="hero-section position-relative d-flex align-items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(98, 73, 73, 0.4)), url(${StationImage2})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(98, 73, 73, 0.4)), url(${NewImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',

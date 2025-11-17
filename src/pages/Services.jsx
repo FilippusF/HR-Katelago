@@ -10,6 +10,7 @@ import StationImage1 from '../assets/images/10.jpg';
 import StationImage3 from '../assets/images/mission.jpg';
 import StationImage4 from '../assets/images/13.jpg';
 
+
 const Services = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -38,7 +39,7 @@ const Services = () => {
       <section 
         className="hero-section position-relative d-flex align-items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${StationImage2})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${StationImage4})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
