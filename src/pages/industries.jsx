@@ -102,7 +102,7 @@ const Industries = () => {
             {/* Oil & Gas */}
             <div className="col-lg-6 mb-4">
               <div className="card h-100 border-0 shadow-sm">
-                <div className="card-body p-4" style={{backgroundColor:'#c69b0cff'}}>
+                <div className="card-body p-4" style={{backgroundColor:'#c09c31'}}>
                   <div className="d-flex align-items-center mb-3">
                     <div 
                       className="me-3"
@@ -120,7 +120,7 @@ const Industries = () => {
                         <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
                       </svg>
                     </div>
-                    <h3 className="card-title mb-0" style={{ color: '#2c3e50', fontSize: '1.5rem'}}>Oil & Gas</h3>
+                    <h3 className="card-title mb-0" style={{ color: '#174D31', fontSize: '1.5rem'}}>Oil & Gas</h3>
                   </div>
                   <p className="card-text" style={{ color: 'white', lineHeight: '1.6' }}>
                     Workforce compliance & EOR support.
@@ -132,7 +132,7 @@ const Industries = () => {
             {/* Mining & Engineering */}
             <div className="col-lg-6 mb-4">
               <div className="card h-100 border-0 shadow-sm">
-                <div className="card-body p-4" style={{backgroundColor:'#c69b0cff'}}>
+                <div className="card-body p-4" style={{backgroundColor:'#c09c31'}}>
                   <div className="d-flex align-items-center mb-3">
                     <div 
                       className="me-3"
@@ -150,7 +150,7 @@ const Industries = () => {
                         <path d="M9 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H7a.5.5 0 0 1-.5-.5V1H1.5a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V6.5a.5.5 0 0 0-.5-.5H9z"/>
                       </svg>
                     </div>
-                    <h3 className="card-title mb-0" style={{ color: '#2c3e50', fontSize: '1.5rem' }}>Mining & Engineering</h3>
+                    <h3 className="card-title mb-0" style={{ color: '#174D31', fontSize: '1.5rem' }}>Mining & Engineering</h3>
                   </div>
                   <p className="card-text" style={{ color: 'white', lineHeight: '1.6' }}>
                     Talent acquisition, payroll, HR solutions.
@@ -162,7 +162,7 @@ const Industries = () => {
             {/* Construction Projects */}
             <div className="col-lg-6 mb-4">
               <div className="card h-100 border-0 shadow-sm">
-                <div className="card-body p-4" style={{backgroundColor:'#c69b0cff'}}>
+                <div className="card-body p-4" style={{backgroundColor:'#c09c31'}}>
                   <div className="d-flex align-items-center mb-3">
                     <div 
                       className="me-3"
@@ -180,7 +180,7 @@ const Industries = () => {
                         <path d="M8.5 1a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V5a.5.5 0 0 0 1 0V3.5H10a.5.5 0 0 0 0-1H8.5V1zM3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-9z"/>
                       </svg>
                     </div>
-                    <h3 className="card-title mb-0" style={{ color: '#2c3e50', fontSize: '1.5rem' }}>Construction Projects</h3>
+                    <h3 className="card-title mb-0" style={{ color: '#174D31', fontSize: '1.5rem' }}>Construction Projects</h3>
                   </div>
                   <p className="card-text" style={{ color: 'white', lineHeight: '1.6' }}>
                     Project-based HR solutions.
@@ -192,7 +192,7 @@ const Industries = () => {
             {/* Startups & SMEs */}
             <div className="col-lg-6 mb-4">
               <div className="card h-100 border-0 shadow-sm">
-                <div className="card-body p-4" style={{backgroundColor:'#c69b0cff'}}>
+                <div className="card-body p-4" style={{backgroundColor:'#c09c31'}}>
                   <div className="d-flex align-items-center mb-3">
                     <div 
                       className="me-3"
@@ -211,7 +211,7 @@ const Industries = () => {
                         <path d="M9 14s3-2 3-6-3-6-3-6-3 2-3 6 3 6 3 6z"/>
                       </svg>
                     </div>
-                    <h3 className="card-title mb-0" style={{ color: '#2c3e50', fontSize: '1.5rem' }}>Startups & SMEs</h3>
+                    <h3 className="card-title mb-0" style={{ color: '#174D31', fontSize: '1.5rem' }}>Startups & SMEs</h3>
                   </div>
                   <p className="card-text" style={{ color: 'white', lineHeight: '1.6' }}>
                     Affordable HR outsourcing.
@@ -223,7 +223,7 @@ const Industries = () => {
             {/* NGOs & Development Projects */}
             <div className="col-lg-12 mb-4">
               <div className="card h-100 border-0 shadow-sm">
-                <div className="card-body p-4" style={{backgroundColor:'#c69b0cff'}}>
+                <div className="card-body p-4" style={{backgroundColor:'#c09c31'}}>
                   <div className="d-flex align-items-center mb-3">
                     <div 
                       className="me-3"
@@ -241,7 +241,7 @@ const Industries = () => {
                         <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zM4.5 7.5a.5.5 0 0 1 0-1h5.793L8.146 4.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 7.5H4.5z"/>
                       </svg>
                     </div>
-                    <h3 className="card-title mb-0" style={{ color: '#2c3e50', fontSize: '1.5rem' }}>NGOs & Development Projects</h3>
+                    <h3 className="card-title mb-0" style={{ color: '#174D31', fontSize: '1.5rem' }}>NGOs & Development Projects</h3>
                   </div>
                   <p className="card-text" style={{ color: 'white', lineHeight: '1.6' }}>
                     Compliance & organizational development.
