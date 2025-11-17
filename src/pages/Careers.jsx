@@ -67,9 +67,7 @@ const Careers = () => {
                   textShadow: '2px 2px 4px rgba(0,0,0,0.5)'
                 }}
               >
-                Join Our Team
-                <br />
-                Shape the Future of HR
+                Explore Career Opportunities
               </h1>
               
               {/* Description */}
@@ -82,7 +80,7 @@ const Careers = () => {
                   margin: '0 auto'
                 }}
               >
-                Discover exciting career opportunities and become part of our mission to transform HR solutions.
+                Discover open positions across leading organisations partnered with Katelago HR Consultants.
               </p>
             </div>
           </div>
