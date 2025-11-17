@@ -295,7 +295,8 @@ const About = () => {
                          paddingRight:'190px',
                          paddingLeft:'20px',
                          paddingTop:'20px',
-                         paddingBottom:'' 
+                         paddingBottom:'',
+                         marginLeft: '90px' 
                       }}
                     >
                         <h3 className="text-white mb-4 fw-bold"> 

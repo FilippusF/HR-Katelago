@@ -378,7 +378,8 @@ const Home = () => {
                   paddingRight:'190px',
                   paddingLeft:'20px',
                   paddingTop:'20px',
-                  paddingBottom:''    
+                  paddingBottom:'',
+                  marginLeft: '90px'  
                 }}
               >
                 <h3 className="text-white mb-4 fw-bold"> 
@@ -394,7 +395,7 @@ const Home = () => {
                         width: '24px',
                         height: '24px',
                         backgroundColor: '#1e5631'
-
+                        
                       }}
                     >
                       <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
