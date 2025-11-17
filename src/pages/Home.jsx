@@ -683,7 +683,7 @@ const Home = () => {
                   <div 
                     className="choose-card p-3 rounded-4 d-flex flex-column"
                     style={{
-                      backgroundColor: '#c69b0cff',
+                      backgroundColor: '#c09c31',
                       height: '220px',
                       transition: 'all 0.3s ease',
                       cursor: 'pointer'
@@ -712,7 +712,7 @@ const Home = () => {
                   <div 
                     className="choose-card p-3 rounded-4 d-flex flex-column"
                     style={{
-                      backgroundColor: '#c69b0cff',
+                      backgroundColor: '#c09c31',
                       height: '220px',
                       transition: 'all 0.3s ease',
                       cursor: 'pointer'
@@ -752,7 +752,7 @@ const Home = () => {
                   <div 
                     className="choose-card p-3 rounded-4 d-flex flex-column"
                     style={{
-                      backgroundColor: '#c69b0cff',
+                      backgroundColor: '#c09c31',
                       height: '220px',
                       transition: 'all 0.3s ease',
                       cursor: 'pointer'
@@ -812,7 +812,7 @@ const Home = () => {
               <div 
                 className="choose-card p-4 rounded-4 h-100 position-relative overflow-hidden d-flex flex-column"
                 style={{
-                  backgroundColor: '#c69b0cff',
+                  backgroundColor: '#c09c31',
                   minHeight: '540px',
                   transition: 'all 0.3s ease',
                   cursor: 'pointer'
