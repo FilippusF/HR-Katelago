@@ -176,7 +176,7 @@ const Services = () => {
                     }}
                   >
                     <img 
-                      src={p1Image}
+                      src={StationImage3}
                       alt="HR Services"
                       className="w-100 h-100"
                       style={{
