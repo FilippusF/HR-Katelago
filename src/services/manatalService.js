@@ -22,22 +22,35 @@ class ManatalService {
     }
   }
 
-  async submitApplication(jobId, applicationData) {
+  async submitApplication(applicationData) {
     try {
+      const formData = new FormData();
+      
+      formData.append('first_name', applicationData.firstName);
+      formData.append('last_name', applicationData.lastName);
+      formData.append('email', applicationData.email);
+      formData.append('phone', applicationData.phone || '');
+      formData.append('cover_letter', applicationData.message || '');
+      
+      if (applicationData.jobId) {
+        formData.append('job', applicationData.jobId);
+      }
+      
+      if (applicationData.resume) {
+        formData.append('resume', applicationData.resume);
+      }
+
       const response = await fetch(`${BASE_URL}/candidates/`, {
         method: 'POST',
         headers: {
           'Authorization': `Token ${API_KEY}`,
-          'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          ...applicationData,
-          job: jobId,
-        }),
+        body: formData,
       });
       
       if (!response.ok) {
-        throw new Error('Failed to submit application');
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Failed to submit application');
       }
       
       return await response.json();
