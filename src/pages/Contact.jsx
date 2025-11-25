@@ -5,12 +5,19 @@ import StationImage5 from '../assets/images/14.png';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
+    firstName: '',
+    lastName: '',
     email: '',
+    phoneNumber: '',
+    businessName: '',
+    serviceRequired: '',
+    hearAboutUs: '',
     message: ''
   });
   const [isLoading, setIsLoading] = useState(true);
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -38,19 +45,49 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
+    setSubmitStatus(null);
 
-    // Simulated success alert
-    alert('Your quotation request has been successfully submitted.');
+    try {
+      // Determine the API URL based on environment
+      const apiUrl = 'http://qualis-email-server.vercel.app/api/custom-mails/katelago/quote-request' // Production URL
+        // const apiUrl = 'http://localhost:5001/api/custom-mails/katelago/quote-request'; //development URL
 
-    // Reset form fields
-    setFormData({
-      name: '',
-      email: '',
-      message: ''
-    });
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        alert('Your quotation request has been successfully submitted. We will get back to you soon!');
+        
+        // Reset form fields
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          phoneNumber: '',
+          businessName: '',
+          serviceRequired: '',
+          hearAboutUs: '',
+          message: ''
+        });
+      } else {
+        throw new Error('Failed to submit form');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus('error');
+      alert('There was an error submitting your request. Please try again or contact us directly at info@katelago.com');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -107,7 +144,7 @@ const Contact = () => {
                   margin: '0 auto'
                 }}
               >
-                Ready to transform your HR processes? Get in touch with our experts for a personalized consultations.
+                Ready to transform your HR processes? Get in touch with our experts for a personalized consultation.
               </p>
             </div>
           </div>
@@ -121,14 +158,88 @@ const Contact = () => {
             <div className="col-lg-8 mb-5">
               <h2 className="mb-4 text-white">Get in Touch</h2>
               <form onSubmit={handleSubmit}>
+                <div className="row">
+                  <div className="col-md-6 mb-3">
+                    <label htmlFor="firstName" className="form-label text-white">First Name *</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="firstName"
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleChange}
+                      required
+                      style={{
+                        backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                        border: '1px solid rgba(255, 255, 255, 0.3)',
+                        padding: '0.75rem'
+                      }}
+                    />
+                  </div>
+                  <div className="col-md-6 mb-3">
+                    <label htmlFor="lastName" className="form-label text-white">Last Name *</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="lastName"
+                      name="lastName"
+                      value={formData.lastName}
+                      onChange={handleChange}
+                      required
+                      style={{
+                        backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                        border: '1px solid rgba(255, 255, 255, 0.3)',
+                        padding: '0.75rem'
+                      }}
+                    />
+                  </div>
+                </div>
+
+                <div className="row">
+                  <div className="col-md-6 mb-3">
+                    <label htmlFor="email" className="form-label text-white">Email *</label>
+                    <input
+                      type="email"
+                      className="form-control"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      style={{
+                        backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                        border: '1px solid rgba(255, 255, 255, 0.3)',
+                        padding: '0.75rem'
+                      }}
+                    />
+                  </div>
+                  <div className="col-md-6 mb-3">
+                    <label htmlFor="phoneNumber" className="form-label text-white">Phone Number *</label>
+                    <input
+                      type="tel"
+                      className="form-control"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      value={formData.phoneNumber}
+                      onChange={handleChange}
+                      required
+                      style={{
+                        backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                        border: '1px solid rgba(255, 255, 255, 0.3)',
+                        padding: '0.75rem'
+                      }}
+                    />
+                  </div>
+                </div>
+
                 <div className="mb-3">
-                  <label htmlFor="name" className="form-label text-white">Name</label>
+                  <label htmlFor="businessName" className="form-label text-white">Business Name *</label>
                   <input
                     type="text"
                     className="form-control"
-                    id="name"
-                    name="name"
-                    value={formData.name}
+                    id="businessName"
+                    name="businessName"
+                    value={formData.businessName}
                     onChange={handleChange}
                     required
                     style={{
@@ -138,14 +249,14 @@ const Contact = () => {
                     }}
                   />
                 </div>
+
                 <div className="mb-3">
-                  <label htmlFor="email" className="form-label text-white">Email</label>
-                  <input
-                    type="email"
+                  <label htmlFor="serviceRequired" className="form-label text-white">Service Required *</label>
+                  <select
                     className="form-control"
-                    id="email"
-                    name="email"
-                    value={formData.email}
+                    id="serviceRequired"
+                    name="serviceRequired"
+                    value={formData.serviceRequired}
                     onChange={handleChange}
                     required
                     style={{
@@ -153,10 +264,42 @@ const Contact = () => {
                       border: '1px solid rgba(255, 255, 255, 0.3)',
                       padding: '0.75rem'
                     }}
-                  />
+                  >
+                    <option value="">Select a service...</option>
+                    <option value="HR Consulting">HR Consulting</option>
+                    <option value="Recruitment">Recruitment</option>
+                    <option value="Training & Development">Training & Development</option>
+                    <option value="Payroll Services">Payroll Services</option>
+                    <option value="HR Software Solutions">HR Software Solutions</option>
+                    <option value="Other">Other</option>
+                  </select>
                 </div>
+
                 <div className="mb-3">
-                  <label htmlFor="message" className="form-label text-white">Message</label>
+                  <label htmlFor="hearAboutUs" className="form-label text-white">How did you hear about us?</label>
+                  <select
+                    className="form-control"
+                    id="hearAboutUs"
+                    name="hearAboutUs"
+                    value={formData.hearAboutUs}
+                    onChange={handleChange}
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                      border: '1px solid rgba(255, 255, 255, 0.3)',
+                      padding: '0.75rem'
+                    }}
+                  >
+                    <option value="">Select an option...</option>
+                    <option value="Google Search">Google Search</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Referral">Referral</option>
+                    <option value="Advertisement">Advertisement</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <div className="mb-3">
+                  <label htmlFor="message" className="form-label text-white">Message *</label>
                   <textarea
                     className="form-control"
                     id="message"
@@ -172,20 +315,23 @@ const Contact = () => {
                     }}
                   ></textarea>
                 </div>
+
                 <button
                   type="submit"
+                  disabled={isSubmitting}
                   className="btn text-white fw-semibold px-4 py-2"
                   style={{
-                    backgroundColor: '#2d7d32',
+                    backgroundColor: isSubmitting ? '#666' : '#2d7d32',
                     borderRadius: '25px',
                     border: 'none',
                     textTransform: 'uppercase',
                     letterSpacing: '0.5px',
                     fontSize: '13px',
-                    boxShadow: '0 3px 10px rgba(0, 0, 0, 0.3)'
+                    boxShadow: '0 3px 10px rgba(0, 0, 0, 0.3)',
+                    cursor: isSubmitting ? 'not-allowed' : 'pointer'
                   }}
                 >
-                  Get a Quotation
+                  {isSubmitting ? 'Sending...' : 'Get a Quotation'}
                 </button>
               </form>
             </div>
@@ -285,7 +431,7 @@ const Contact = () => {
           }
         }
 
-        .btn:hover {
+        .btn:hover:not(:disabled) {
           transform: translateY(-2px);
           box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
         }
