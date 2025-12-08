@@ -30,7 +30,7 @@ const Footer = () => {
             <h5 className="text-white mb-3">Quick Links</h5>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <a href="/Home" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   Home Page
                 </a>
