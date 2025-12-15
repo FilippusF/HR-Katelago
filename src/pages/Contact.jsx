@@ -52,7 +52,7 @@ const Contact = () => {
 
     try {
       // Determine the API URL based on environment
-      const apiUrl = 'http://qualis-email-server.vercel.app/api/custom-mails/katelago/quote-request' // Production URL
+      const apiUrl = 'https://qualis-email-server.vercel.app/api/custom-mails/katelago/quote-request' // Production URL
         // const apiUrl = 'http://localhost:5001/api/custom-mails/katelago/quote-request'; //development URL
 
       const response = await fetch(apiUrl, {
