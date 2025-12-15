@@ -267,10 +267,15 @@ const Contact = () => {
                   >
                     <option value="">Select a service...</option>
                     <option value="HR Consulting">HR Consulting</option>
-                    <option value="Recruitment">Recruitment</option>
-                    <option value="Training & Development">Training & Development</option>
-                    <option value="Payroll Services">Payroll Services</option>
-                    <option value="HR Software Solutions">HR Software Solutions</option>
+                    <option value="Recruitment & Talent Acquisition">Recruitment & Talent Acquisition</option>
+                    <option value="Employee Training & Development">Employee Training & Development</option>
+                    <option value="Performance Management">Performance Management</option>
+                    <option value="HR Policy Development">HR Policy Development</option>
+                    <option value="Compliance & Legal Support">Compliance & Legal Support</option>
+                    <option value="Payroll Management">Payroll Management</option>
+                    <option value="Employee Relations">Employee Relations</option>
+                    <option value="Organizational Development">Organizational Development</option>
+                    <option value="HR Technology Solutions">HR Technology Solutions</option>
                     <option value="Other">Other</option>
                   </select>
                 </div>
