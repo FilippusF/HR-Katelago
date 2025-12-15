@@ -173,7 +173,7 @@ const Careers = () => {
       <section 
         className="hero-section position-relative d-flex align-items-center"
         style={{
-          background: 'linear-gradient(135deg, #1e5631 0%, #2d7d32 100%)',
+          background: 'linear-gradient(135deg, #174D3A 0%, #174D3A 100%)',
           height: '60vh',
           minHeight: '500px'
         }}
@@ -226,7 +226,7 @@ const Careers = () => {
         <div className="container">
           <div className="row justify-content-center mb-5">
             <div className="col-lg-10">
-              <h2 className="fw-bold mb-4 text-center" style={{ color: '#2c3e50' }}>
+              <h2 className="fw-bold mb-4 text-center" style={{ color: '#174D3A' }}>
                 Available Positions
               </h2>
 
@@ -453,7 +453,7 @@ const Careers = () => {
           <div className="text-center">
             <div 
               className="spinner-border"
-              style={{ color: '#1e5631' }}
+              style={{ color: '#174D3A' }}
               role="status"
             >
               <span className="visually-hidden">Loading...</span>

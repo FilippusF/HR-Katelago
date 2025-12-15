@@ -20,8 +20,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-light small" style={{ color: '#ffffff !important' }}>
-              Shaping the future of work in Namibia, Katelago is shaping bold,
-              empowered, and human HR solutions that move businesses forward.
+              Shaping the future of work in Namibia, we create bold , empowered, and human HR Solutions that move businesses forward.
             </p>
           </div>
 

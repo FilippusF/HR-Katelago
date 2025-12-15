@@ -111,7 +111,7 @@ const Contact = () => {
                 <span 
                   className="text-uppercase fw-medium"
                   style={{ 
-                    fontSize: '14px',
+                    fontSize: '25px',
                     letterSpacing: '2px',
                     color: '#ffffff',
                     opacity: 0.9
