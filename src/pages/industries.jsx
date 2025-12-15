@@ -101,8 +101,8 @@ const Industries = () => {
           <div className="row">
             {/* Oil & Gas */}
             <div className="col-lg-6 mb-4">
-              <div className="card h-100 border-0 shadow-sm">
-                <div className="card-body p-4" style={{backgroundColor:'#c09c31'}}>
+              <div className="card h-100 border-0 shadow-sm rounded-4">
+                <div className="card-body p-4 rounded-4" style={{backgroundColor:'#c09c31'}}>
                   <div className="d-flex align-items-center mb-3">
                     <div 
                       className="me-3"
@@ -131,8 +131,8 @@ const Industries = () => {
 
             {/* Mining & Engineering */}
             <div className="col-lg-6 mb-4">
-              <div className="card h-100 border-0 shadow-sm">
-                <div className="card-body p-4" style={{backgroundColor:'#c09c31'}}>
+              <div className="card h-100 border-0 shadow-sm rounded-4">
+                <div className="card-body p-4 rounded-4" style={{backgroundColor:'#c09c31'}}>
                   <div className="d-flex align-items-center mb-3">
                     <div 
                       className="me-3"
@@ -161,8 +161,8 @@ const Industries = () => {
 
             {/* Construction Projects */}
             <div className="col-lg-6 mb-4">
-              <div className="card h-100 border-0 shadow-sm">
-                <div className="card-body p-4" style={{backgroundColor:'#c09c31'}}>
+              <div className="card h-100 border-0 shadow-sm rounded-4">
+                <div className="card-body p-4 rounded-4" style={{backgroundColor:'#c09c31'}}>
                   <div className="d-flex align-items-center mb-3">
                     <div 
                       className="me-3"
@@ -191,8 +191,8 @@ const Industries = () => {
 
             {/* Startups & SMEs */}
             <div className="col-lg-6 mb-4">
-              <div className="card h-100 border-0 shadow-sm">
-                <div className="card-body p-4" style={{backgroundColor:'#c09c31'}}>
+              <div className="card h-100 border-0 shadow-sm rounded-4">
+                <div className="card-body p-4 rounded-4" style={{backgroundColor:'#c09c31'}}>
                   <div className="d-flex align-items-center mb-3">
                     <div 
                       className="me-3"
@@ -222,8 +222,8 @@ const Industries = () => {
 
             {/* NGOs & Development Projects */}
             <div className="col-lg-12 mb-4">
-              <div className="card h-100 border-0 shadow-sm">
-                <div className="card-body p-4" style={{backgroundColor:'#c09c31'}}>
+              <div className="card h-100 border-0 shadow-sm rounded-4">
+                <div className="card-body p-4 rounded-4" style={{backgroundColor:'#c09c31'}}>
                   <div className="d-flex align-items-center mb-3">
                     <div 
                       className="me-3"
@@ -295,7 +295,7 @@ const Industries = () => {
             right: '30px',
             width: '50px',
             height: '50px',
-            backgroundColor: '#1e5631',
+            backgroundColor: '#c09c31',
             border: 'none',
             zIndex: 1000,
             transition: 'all 0.3s ease'

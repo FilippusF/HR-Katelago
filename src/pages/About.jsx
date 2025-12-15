@@ -96,7 +96,7 @@ const About = () => {
       </section>
 
       {/* WHO WE ARE Section */}
-      <section className="py-5" style={{ backgroundColor: '#f8f9fa' }}>
+      <section className="py-5" style={{ backgroundColor: '#174D3A' }}>
         <div className="container">
           <div className="row align-items-center">
             {/* Left Content */}
@@ -106,7 +106,7 @@ const About = () => {
                 <span 
                   className="text-uppercase fw-medium"
                   style={{ 
-                    fontSize: '15px', //changed from 12px to 15px
+                    fontSize: '30px', //changed from 12px to 15px
                     letterSpacing: '2px',
                     color: '#c09c31',
                     fontWeight: '600'
@@ -123,7 +123,7 @@ const About = () => {
                   fontSize: '2.8rem',
                   lineHeight: '1.2',
                   fontWeight: '700',
-                  color: 'black'
+                  color: 'white'
                 }}
               >
                 Katelago HR Consultants
@@ -134,7 +134,7 @@ const About = () => {
                 className="mb-4"
                 style={{
                   fontSize: '1.1rem',
-                  color: 'black',
+                  color: 'white',
                   lineHeight: '1.6'
                 }}
               >
@@ -148,7 +148,7 @@ const About = () => {
                 style={{ 
                   borderColor: '#6c757d!important',
                   fontStyle: 'italic',
-                  color: 'black'
+                  color: 'white'
                 }}
               >
                 <strong> Founded in 2012 </strong>, Katelago HR Consultants was built on the belief that HR should be human first.
@@ -163,7 +163,7 @@ const About = () => {
                   style={{
                     width: '24px',
                     height: '24px',
-                    backgroundColor: '#174D31',
+                    backgroundColor: '#c09c31',
                     borderRadius: '4px',
                     display: 'flex',
                     alignItems: 'center',
@@ -524,7 +524,7 @@ const About = () => {
                             style={{
                               width: '60px',
                               height: '60px',
-                              backgroundColor: '#1e5631',
+                              backgroundColor: '#174D3A',
                               fontSize: '24px',
                               fontWeight: 'bold',
                               color: 'white'
@@ -543,7 +543,7 @@ const About = () => {
                                 fontSize: '14px'
                               }}
                             >
-                              We believe small actions create extraordinary impact. By listening
+                              We believe that small actions create an extraordinary impact. By listening
                               deeply, reflecting on our work, and understanding others, we craft solutions that
                               inspire trust and drive meaningful change.
                             </p>
@@ -557,7 +557,7 @@ const About = () => {
             </section>
 
       {/* Our Process Section */}
-      <section className="py-5" style={{ backgroundColor: '#f8f9fa' }}>
+      <section className="py-5" style={{ backgroundColor: '#174D3A' }}>
         <div className="container">
           {/* Section Header */}
           <div className="text-center mb-5">
@@ -580,7 +580,7 @@ const About = () => {
                 fontSize: '2.8rem',
                 lineHeight: '1.2',
                 fontWeight: '700',
-                color: 'black'
+                color: 'white'
               }}
             >
               Our Process
@@ -588,7 +588,7 @@ const About = () => {
             <p 
               className="lead"
               style={{
-                color: 'black',
+                color: 'white',
                 maxWidth: '600px',
                 margin: '0 auto'
               }}
@@ -604,12 +604,11 @@ const About = () => {
               <div 
                 className="process-card h-100 p-4 rounded-4 text-center"
                 style={{
-                  backgroundColor: '#174D31',
-                  border: '2px solid #f0f0f0',
+                  backgroundColor: 'transparent',
+                  border: '2px solid #c09c31',
                   transition: 'all 0.4s ease',
                   cursor: 'pointer',
-                  animation: 'fadeInUp 0.6s ease-out 0.1s both',
-                  border: '2px solid #c09c31'
+                  animation: 'fadeInUp 0.6s ease-out 0.1s both'
                 }}
               >
                 <div 
@@ -645,12 +644,11 @@ const About = () => {
               <div 
                 className="process-card h-100 p-4 rounded-4 text-center"
                 style={{
-                  backgroundColor: '#174D31',
+                  backgroundColor: 'transparent',
                   border: '2px solid #c09c31',
                   transition: 'all 0.4s ease',
                   cursor: 'pointer',
-                  animation: 'fadeInUp 0.6s ease-out 0.2s both',
-                  border: '2px solid #c09c31'
+                  animation: 'fadeInUp 0.6s ease-out 0.2s both'
                 }}
               >
                 <div 
@@ -686,12 +684,11 @@ const About = () => {
               <div 
                 className="process-card h-100 p-4 rounded-4 text-center"
                 style={{
-                  backgroundColor: '#174D31',
-                  border: '2px solid #f0f0f0',
+                  backgroundColor: 'transparent',
+                  border: '2px solid #c09c31',
                   transition: 'all 0.4s ease',
                   cursor: 'pointer',
-                  animation: 'fadeInUp 0.6s ease-out 0.3s both',
-                  border: '2px solid #c09c31'
+                  animation: 'fadeInUp 0.6s ease-out 0.3s both'
                 }}
               >
                 <div 
@@ -729,12 +726,11 @@ const About = () => {
               <div 
                 className="process-card h-100 p-4 rounded-4 text-center"
                 style={{
-                  backgroundColor: '#174D31',
-                  border: '2px solid #f0f0f0',
+                  backgroundColor: 'transparent',
+                  border: '2px solid #c09c31',
                   transition: 'all 0.4s ease',
                   cursor: 'pointer',
-                  animation: 'fadeInUp 0.6s ease-out 0.4s both',
-                  border: '2px solid #c09c31'
+                  animation: 'fadeInUp 0.6s ease-out 0.4s both'
                 }}
               >
                 <div 
@@ -770,12 +766,11 @@ const About = () => {
               <div 
                 className="process-card h-100 p-4 rounded-4 text-center"
                 style={{
-                  backgroundColor: '#174D31',
-                  border: '2px solid #174D31',
+                  backgroundColor: 'transparent',
+                  border: '2px solid #c09c31',
                   transition: 'all 0.4s ease',
                   cursor: 'pointer',
-                  animation: 'fadeInUp 0.6s ease-out 0.5s both',
-                  border: '2px solid #c09c31'
+                  animation: 'fadeInUp 0.6s ease-out 0.5s both'
                 }}
               >
                 <div 
@@ -850,7 +845,7 @@ const About = () => {
             right: '30px',
             width: '50px',
             height: '50px',
-            backgroundColor: '#1e5631',
+            backgroundColor: '#c09c31',
             border: 'none',
             zIndex: 1000,
             transition: 'all 0.3s ease'

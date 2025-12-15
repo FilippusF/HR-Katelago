@@ -9,6 +9,7 @@ import StationImage2 from '../assets/images/9.jpg';
 import StationImage1 from '../assets/images/10.jpg';
 import StationImage3 from '../assets/images/mission.jpg';
 import StationImage4 from '../assets/images/13.jpg';
+import StationImage5 from '../assets/images/20.png';
 
 
 const Services = () => {
@@ -33,6 +34,38 @@ const Services = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.substring(1);
+      if (hash) {
+        setTimeout(() => scrollToSection(hash), 500);
+      }
+    };
+
+    // Handle initial load with hash
+    if (window.location.hash) {
+      handleHashChange();
+    }
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  // Also handle after loading is complete
+  useEffect(() => {
+    if (!isLoading && window.location.hash) {
+      const hash = window.location.hash.substring(1);
+      setTimeout(() => scrollToSection(hash), 100);
+    }
+  }, [isLoading]);
   return (
     <>
       {/* Hero Section with Background Image */}
@@ -98,7 +131,7 @@ const Services = () => {
       </section>
 
       {/* Tailored HR Services Section */}
-      <section className="py-5" style={{ backgroundColor: '#174D31' }}>
+      <section id="payroll-administration" className="py-5" style={{ backgroundColor: '#174D31' }}>
         <div className="container">
           <div className="row align-items-center">
             {/* Left Content */}
@@ -117,8 +150,7 @@ const Services = () => {
                 </span>
               </div>
               
-              <h2 id='PayrollAdministration'
-                className="display-6 fw-bold mb-3"
+              <h2 className="display-6 fw-bold mb-3"
                 style={{
                   fontSize: '2.5rem',
                   lineHeight: '1.2',
@@ -176,7 +208,7 @@ const Services = () => {
                     }}
                   >
                     <img 
-                      src={StationImage3}
+                      src={StationImage4}
                       alt="HR Services"
                       className="w-100 h-100"
                       style={{
@@ -271,7 +303,7 @@ const Services = () => {
       </section>
 
       {/* HR Consulting & Outsourcing Section */}
-      <section id="HRConsultingAndOutSourcing"
+      <section id="hr-consulting"
         className="py-5"
         style={{
           backgroundImage: `url(${missionImage})`,
@@ -297,8 +329,7 @@ const Services = () => {
               </span>
             </div>
             
-            <h2 id='HRConsultingAndOutSourcing'
-              className="display-5 fw-bold mb-4 text-white"
+            <h2 className="display-5 fw-bold mb-4 text-white"
               style={{
                 fontSize: '2.8rem',
                 lineHeight: '1.2',
@@ -393,21 +424,17 @@ const Services = () => {
       </section>
 
       {/* How This HR Solutions Work Section */}
-<section 
+<section id="talent-acquisition"
   className="py-5"
   style={{
-          backgroundImage: `url(${missionImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed'
+          backgroundColor: '#174D31'
         }}
 >
   <div className="container">
     {/* Section Header */}
     <div className="row mb-5">
       <div className="col-lg-6">
-        <h2 id='RecruitmentAndTalentAcquisition'
-          className="display-5 fw-bold text-white mb-0"
+        <h2 className="display-5 fw-bold text-white mb-0"
           style={{
             lineHeight: '1.2'
           }}
@@ -416,8 +443,7 @@ const Services = () => {
         </h2>
       </div>
 
-      <div className='container' style={{padding: '20px', borderRadius: '10px' , backgroundColor: 'rgba(84, 82, 82, 0.2)',
-                backdropFilter: 'blur(20px)',
+      <div className='container' style={{padding: '20px', borderRadius: '10px' , backgroundColor: '#174D31',
                 border: '1px solid rgba(255, 255, 255, 0.2)'}}>
       <div className="col-lg-6 d-flex align-items-end ">
         <p 
@@ -449,9 +475,9 @@ const Services = () => {
                 cursor: 'pointer'
               }}
             >
-              <div className="mb-3">
+              <div className="d-flex align-items-center mb-3">
                 <span 
-                  className="fw-bold"
+                  className="fw-bold me-3"
                   style={{
                     fontSize: '48px',
                     color: '#174D31',
@@ -460,19 +486,19 @@ const Services = () => {
                 >
                   01
                 </span>
-              </div>
-              <div 
-                className="rounded-circle d-flex align-items-center justify-content-center mb-3"
-                style={{
-                  width: '50px',
-                  height: '50px',
-                  backgroundColor: '#174D31',
-                  color: '#c09c31'
-                }}
-              >
-                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M21 8a8.1 8.1 0 0 0-7-7 8.1 8.1 0 0 0-7 7c0 2.15.5 4.35 1.36 6.36l5.63 10.54.01.02.01.02c.18.32.5.66.99.66s.81-.34.99-.66l.01-.02.01-.02 5.63-10.54C20.5 12.35 21 10.15 21 8zm-7 4a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
-                </svg>
+                <div 
+                  className="rounded-circle d-flex align-items-center justify-content-center"
+                  style={{
+                    width: '50px',
+                    height: '50px',
+                    backgroundColor: '#174D31',
+                    color: '#c09c31'
+                  }}
+                >
+                  <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M21 8a8.1 8.1 0 0 0-7-7 8.1 8.1 0 0 0-7 7c0 2.15.5 4.35 1.36 6.36l5.63 10.54.01.02.01.02c.18.32.5.66.99.66s.81-.34.99-.66l.01-.02.01-.02 5.63-10.54C20.5 12.35 21 10.15 21 8zm-7 4a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+                  </svg>
+                </div>
               </div>
               <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '16px', lineHeight: '1.3' }}>
                 Talent Sourcing & Advertising
@@ -502,9 +528,9 @@ const Services = () => {
                 cursor: 'pointer'
               }}
             >
-              <div className="mb-3">
+              <div className="d-flex align-items-center mb-3">
                 <span 
-                  className="fw-bold"
+                  className="fw-bold me-3"
                   style={{
                     fontSize: '48px',
                     color: '#174D31',
@@ -513,19 +539,19 @@ const Services = () => {
                 >
                   02
                 </span>
-              </div>
-              <div 
-                className="rounded-circle d-flex align-items-center justify-content-center mb-3"
-                style={{
-                  width: '50px',
-                  height: '50px',
-                  backgroundColor: '#174D31',
-                  color: '#c09c31'
-                }}
-              >
-                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
+                <div 
+                  className="rounded-circle d-flex align-items-center justify-content-center"
+                  style={{
+                    width: '50px',
+                    height: '50px',
+                    backgroundColor: '#174D31',
+                    color: '#c09c31'
+                  }}
+                >
+                  <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
               </div>
               <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '16px', lineHeight: '1.3' }}>
                 Screening & Shortlisting
@@ -555,9 +581,9 @@ const Services = () => {
                 cursor: 'pointer'
               }}
             >
-              <div className="mb-3">
+              <div className="d-flex align-items-center mb-3">
                 <span 
-                  className="fw-bold"
+                  className="fw-bold me-3"
                   style={{
                     fontSize: '48px',
                     color: '#174D31',
@@ -566,19 +592,19 @@ const Services = () => {
                 >
                   03
                 </span>
-              </div>
-              <div 
-                className="rounded-circle d-flex align-items-center justify-content-center mb-3"
-                style={{
-                  width: '50px',
-                  height: '50px',
-                  backgroundColor: '#174D31',
-                  color: '#c09c31'
-                }}
-              >
-                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
-                </svg>
+                <div 
+                  className="rounded-circle d-flex align-items-center justify-content-center"
+                  style={{
+                    width: '50px',
+                    height: '50px',
+                    backgroundColor: '#174D31',
+                    color: '#c09c31'
+                  }}
+                >
+                  <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                  </svg>
+                </div>
               </div>
               <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '16px', lineHeight: '1.3' }}>
                 Interview Support
@@ -592,7 +618,7 @@ const Services = () => {
                   lineHeight: '1.4'
                 }}
               >
-                Providing interview guides, structured questions, and coordination to ensure consistency.
+                Providing interview guides, structured questions, and evaluation frameworks.
               </p>
             </div>
           </div>
@@ -608,9 +634,9 @@ const Services = () => {
                 cursor: 'pointer'
               }}
             >
-              <div className="mb-3">
+              <div className="d-flex align-items-center mb-3">
                 <span 
-                  className="fw-bold"
+                  className="fw-bold me-3"
                   style={{
                     fontSize: '48px',
                     color: '#174D31',
@@ -619,20 +645,20 @@ const Services = () => {
                 >
                   04
                 </span>
-              </div>
-              <div 
-                className="rounded-circle d-flex align-items-center justify-content-center mb-3"
-                style={{
-                  width: '50px',
-                  height: '50px',
-                  backgroundColor: '#174D31',
-                  color: '#c09c31'
-                }}
-              >
-                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 14l9-5-9-5-9 5 9 5z"/>
-                  <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
-                </svg>
+                <div 
+                  className="rounded-circle d-flex align-items-center justify-content-center"
+                  style={{
+                    width: '50px',
+                    height: '50px',
+                    backgroundColor: '#174D31',
+                    color: '#c09c31'
+                  }}
+                >
+                  <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+                    <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                  </svg>
+                </div>
               </div>
               <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '16px', lineHeight: '1.3' }}>
                 Onboarding Solutions
@@ -653,173 +679,166 @@ const Services = () => {
         </div>
       </div>
     </div>
-
-        {/* Benefits Summary Section */}
-        <div className="row mt-5">
-          <div className="col-12">
-            <div 
-              className="text-center p-5 rounded-4"
-              style={{
-                backgroundColor: 'rgba(212, 175, 55, 0.1)',
-                border: '2px solid #c09c31',
-                backdropFilter: 'blur(10px)'
-              }}
-            >
+    {/* Benefits Summary Section */}
+    <div className="row mt-5">
+      <div className="col-12">
+        <div 
+          className="text-center p-5 rounded-4"
+          style={{
+            backgroundColor: 'rgba(212, 175, 55, 0.1)',
+            border: '2px solid #c09c31',
+            backdropFilter: 'blur(10px)'
+          }}
+        >
+          <div 
+            className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4"
+            style={{
+              width: '80px',
+              height: '80px',
+              backgroundColor: 'rgba(237, 235, 226, 0.1)',
+              color: '#174D31',
+              border: '2px solid #c09c31'
+            }}
+          >
+            <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          
+          <h3 
+            className="fw-bold mb-4"
+            style={{
+              fontSize: '2rem',
+              color: '#ffffff',
+              fontWeight: '700'
+            }}
+          >
+            Why Choose Our Expertise?
+          </h3>
+          
+          <p 
+            className="mb-4"
+            style={{
+              fontSize: '1.2rem',
+              lineHeight: '1.6',
+              color: '#ffffff',
+              maxWidth: '800px',
+              margin: '0 auto 2rem auto'
+            }}
+          >
+            With our 20 year expertise, you'll cut down recruitment time, improve candidate quality,
+            and build a workforce that truly fits your company's values and goals.
+          </p>
+          
+          <div className="row g-4 mt-3">
+            <div className="col-md-4">
               <div 
-                className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4"
+                className="p-3 rounded-3"
                 style={{
-                  width: '80px',
-                  height: '80px',
-                  backgroundColor: 'rgba(237, 235, 226, 0.1)', //changed the star to be transparent 
-                  color: '#174D31',
-                  border: '2px solid #c09c31' //Changed the star to 
-                  
+                  backgroundColor: 'rgba(176, 61, 61, 0.1)',
+                  border: '1px solid rgba(255, 255, 255, 0.2)'
                 }}
               >
-                <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                </svg>
+                <div 
+                  className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+                  style={{
+                    width: '50px',
+                    height: '50px',
+                    backgroundColor: '#174D31',
+                    color: '#c09c31'
+                  }}
+                >
+                  <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
+                <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
+                  Faster Hiring
+                </h5>
+                <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
+                  Streamlined processes reduce time-to-hire significantly
+                </p>
               </div>
-              
-              <h3 
-                className="fw-bold mb-4"
+            </div>
+            
+            <div className="col-md-4">
+              <div 
+                className="p-3 rounded-3"
                 style={{
-                  fontSize: '2rem',
-                  color: '#ffffff',
-                  fontWeight: '700'
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                  border: '1px solid rgba(255, 255, 255, 0.2)'
                 }}
               >
-                Why Choose Our Expertise?
-              </h3>
-              
-              <p 
-                className="mb-4"
+                <div 
+                  className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+                  style={{
+                    width: '50px',
+                    height: '50px',
+                    backgroundColor: '#174D31',
+                    color: '#c09c31'
+                  }}
+                >
+                  <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                  </svg>
+                </div>
+                <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
+                  Improved Candidate Quality
+                </h5>
+                <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
+                  Better screening ensures top-tier talent selection
+                </p>
+              </div>
+            </div>
+            
+            <div className="col-md-4">
+              <div 
+                className="p-3 rounded-3"
                 style={{
-                  fontSize: '1.2rem',
-                  lineHeight: '1.6',
-                  color: '#ffffff',
-                  maxWidth: '800px',
-                  margin: '0 auto 2rem auto'
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                  border: '1px solid rgba(255, 255, 255, 0.2)'
                 }}
               >
-                With our 20 year expertise, you'll cut down recruitment time, improve candidate quality,
-                and build a workforce that truly fits your company's values and goals.
-              </p>
-              
-              <div className="row g-4 mt-3">
-                <div className="col-md-4">
-                  <div 
-                    className="p-3 rounded-3"
-                    style={{
-                      backgroundColor: 'rgba(176, 61, 61, 0.1)',
-                      border: '1px solid rgba(255, 255, 255, 0.2)'
-                    }}
-                  >
-                    <div 
-                      className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
-                      style={{
-                        width: '50px',
-                        height: '50px',
-                        backgroundColor: '#174D31',
-                        color: '#c09c31'
-                      }}
-                    >
-                      <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                      </svg>
-                    </div>
-                    <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
-                      Faster Hiring
-                    </h5>
-                    <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
-                      Streamlined processes reduce time-to-hire significantly
-                    </p>
-                  </div>
+                <div 
+                  className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+                  style={{
+                    width: '50px',
+                    height: '50px',
+                    backgroundColor: '#174D31',
+                    color: '#c09c31'
+                  }}
+                >
+                  <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
                 </div>
-                
-                <div className="col-md-4">
-                  <div 
-                    className="p-3 rounded-3"
-                    style={{
-                      backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                      border: '1px solid rgba(255, 255, 255, 0.2)'
-                    }}
-                  >
-                    <div 
-                      className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
-                      style={{
-                        width: '50px',
-                        height: '50px',
-                        backgroundColor: '#174D31',
-                        color: '#c09c31'
-                      }}
-                    >
-                      <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
-                      </svg>
-                    </div>
-                    <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
-                      Improved Candidate Quality
-                    </h5>
-                    <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
-                      Better screening ensures top-tier talent selection
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="col-md-4">
-                  <div 
-                    className="p-3 rounded-3"
-                    style={{
-                      backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                      border: '1px solid rgba(255, 255, 255, 0.2)'
-                    }}
-                  >
-                    <div 
-                      className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
-                      style={{
-                        width: '50px',
-                        height: '50px',
-                        backgroundColor: '#174D31',
-                        color: '#c09c31'
-                      }}
-                    >
-                      <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                      </svg>
-                    </div>
-                    <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
-                      Value-Aligned Workforce
-                    </h5>
-                    <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
-                      Employees who truly fit your company culture
-                    </p>
-                  </div>
-                </div>
+                <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
+                  Value-Aligned Workforce
+                </h5>
+                <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
+                  Employees who truly fit your company culture
+                </p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
   </div>
 </section>
 
-{/* How This HR Solutions Work Section */}
-<section 
+{/* Job Grading Section */}
+<section id="job-grading"
   className="py-5" 
   style={{ 
-    backgroundColor: 'transparent',
-    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${StationImage3})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat'
+    backgroundColor: '#174D31'
   }}
 >
   <div className="container">
     {/* Header */}
     <div className="row mb-5">
       <div className="col-12 text-center">
-        <h2 id='JobGradingAndSalaryBenchmarking'
-          className="display-6 fw-bold mb-4"
+        <h2 className="display-6 fw-bold mb-4"
           style={{
             fontSize: '2.5rem',
             lineHeight: '1.2',
@@ -1005,7 +1024,7 @@ const Services = () => {
             }}
           >
             <img 
-              src={whoImage}
+              src={StationImage5}
               alt="Job Grading & Salary Benchmarking"
               className="w-100 h-100"
               style={{
@@ -1037,7 +1056,15 @@ const Services = () => {
 </section>
 
 {/* Psychometric Assessment Section */}
-<section className="py-5" style={{ backgroundColor: '#174D31' }}>
+<section id="psychometric-assessment"
+  className="py-5"
+  style={{
+    backgroundImage: `url(${missionImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed'
+  }}
+>
   <div className="container">
     <div className="row align-items-center">
       {/* Left Content */}
@@ -1056,8 +1083,7 @@ const Services = () => {
           </span>
         </div>
         
-        <h2 id='PsychometricAssessment'
-          className="display-6 fw-bold mb-3"
+        <h2 className="display-6 fw-bold mb-3"
           style={{
             fontSize: '2.5rem',
             lineHeight: '1.2',
@@ -1099,8 +1125,9 @@ const Services = () => {
             <div 
               className="p-4 rounded-4 d-flex align-items-start"
               style={{
-                backgroundColor: '#c09c31',
-                border: '2px solid #c09c31'
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.2)'
               }}
             >
               <div 
@@ -1117,10 +1144,10 @@ const Services = () => {
                 </svg>
               </div>
               <div>
-                <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '1.1rem' }}>
+                <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
                   Behavioural Assessment
                 </h5>
-                <p className="mb-0" style={{ fontSize: '0.9rem', color: '#174D31' }}>
+                <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
                   Understanding candidates' work habits and preferences.
                 </p>
               </div>
@@ -1132,8 +1159,9 @@ const Services = () => {
             <div 
               className="p-4 rounded-4 d-flex align-items-start"
               style={{
-                backgroundColor: '#c09c31',
-                border: '2px solid #c09c31'
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.2)'
               }}
             >
               <div 
@@ -1150,10 +1178,10 @@ const Services = () => {
                 </svg>
               </div>
               <div>
-                <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '1.1rem' }}>
+                <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
                   Competency Mapping
                 </h5>
-                <p className="mb-0" style={{ fontSize: '0.9rem', color: '#174D31' }}>
+                <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
                   Aligning behavioural patterns with job competencies.
                 </p>
               </div>
@@ -1165,8 +1193,9 @@ const Services = () => {
             <div 
               className="p-4 rounded-4 d-flex align-items-start"
               style={{
-                backgroundColor: '#c09c31',
-                border: '2px solid #c09c31'
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.2)'
               }}
             >
               <div 
@@ -1183,10 +1212,10 @@ const Services = () => {
                 </svg>
               </div>
               <div>
-                <h5 className="fw-bold mb-2" style={{ color: '#174D31', fontSize: '1.1rem' }}>
+                <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
                   Candidate Matching
                 </h5>
-                <p className="mb-0" style={{ fontSize: '0.9rem', color: '#174D31' }}>
+                <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
                   Leveraging Shadowmatch to select best-fit candidates.
                 </p>
               </div>
@@ -1198,14 +1227,15 @@ const Services = () => {
             <div 
               className="p-3 rounded-4 h-100"
               style={{
-                backgroundColor: '#c09c31',
-                color: '#174D31'
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.2)'
               }}
             >
-              <h6 className="fw-bold mb-2" style={{ fontSize: '1rem' }}>
+              <h6 className="fw-bold mb-2 text-white" style={{ fontSize: '1rem' }}>
                 Team Dynamics
               </h6>
-              <p className="mb-0" style={{ fontSize: '0.85rem', opacity: 0.9 }}>
+              <p className="mb-0 text-white" style={{ fontSize: '0.85rem', opacity: 0.9 }}>
                 Enhancing collaboration and team performance.
               </p>
             </div>
@@ -1215,14 +1245,15 @@ const Services = () => {
             <div 
               className="p-3 rounded-4 h-100"
               style={{
-                backgroundColor: '#c09c31',
-                color: '#174D31'
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.2)'
               }}
             >
-              <h6 className="fw-bold mb-2" style={{ fontSize: '1rem' }}>
+              <h6 className="fw-bold mb-2 text-white" style={{ fontSize: '1rem' }}>
                 Employee Development
               </h6>
-              <p className="mb-0" style={{ fontSize: '0.85rem', opacity: 0.9 }}>
+              <p className="mb-0 text-white" style={{ fontSize: '0.85rem', opacity: 0.9 }}>
                 Identifying growth areas and tailoring training interventions.
               </p>
             </div>
@@ -1234,13 +1265,10 @@ const Services = () => {
 </section>
 
 {/* Employer of Record Section */}
-<section 
+<section id="employer-of-record"
   className="py-5"
   style={{
-    backgroundImage: `url(${missionImage})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundAttachment: 'fixed'
+    backgroundColor: '#174D31'
   }}
 >
   <div className="container">
@@ -1261,38 +1289,36 @@ const Services = () => {
           </span>
         </div>
         
-        <div className='container' style={{padding: '20px', borderRadius: '10px' , backgroundColor: 'rgba(84, 82, 82, 0.2)',
-                backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)'}}>
-        <h2 id='EOR'
-          className="display-6 fw-bold mb-3 text-white"
+        <div className='container' style={{padding: '20px', borderRadius: '10px' , backgroundColor: '#c09c31',
+                border: '2px solid #c09c31'}}>
+        <h2 className="display-6 fw-bold mb-3"
           style={{
             fontSize: '2.5rem',
             lineHeight: '1.2',
-            fontWeight: '700'
+            fontWeight: '700',
+            color: '#174D31'
           }}
         >
           Employer of Record (EOR)
         </h2>
         
         <p 
-          className="mb-4 "
+          className="mb-4"
           style={{
             fontSize: '1rem',
             lineHeight: '1.6',
-            opacity: 0.9,
-            color:'white'
+            color: '#174D31'
           }}
         >
           We act as the legal employer on your behalf, managing all employment responsibilities while you retain full control over day-to-day operations and performance.
         </p>
         
         <p 
-          className="mb-0 text-white"
+          className="mb-0"
           style={{
             fontSize: '1rem',
             lineHeight: '1.6',
-            opacity: 0.9
+            color: '#174D31'
           }}
         >
           With our Employer of Record services, businesses, including those in the Oil & Gas sector, can expand their workforce in Namibia with confidence, speed, and full legal assurance.
@@ -1308,9 +1334,8 @@ const Services = () => {
             <div 
               className="p-4 rounded-4"
               style={{
-                backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                backdropFilter: 'blur(10px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)'
+                backgroundColor: '#c09c31',
+                border: '2px solid #c09c31'
               }}
             >
               <div className="d-flex align-items-start">
@@ -1319,8 +1344,8 @@ const Services = () => {
                   style={{
                     width: '50px',
                     height: '50px',
-                    backgroundColor: '#c09c31',
-                    color: '#174D31'
+                    backgroundColor: '#174D31',
+                    color: '#c09c31'
                   }}
                 >
                   <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -1328,10 +1353,10 @@ const Services = () => {
                   </svg>
                 </div>
                 <div>
-                  <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
+                  <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem', color: '#174D31' }}>
                     Seamless Hiring & Onboarding
                   </h5>
-                  <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
+                  <p className="mb-0" style={{ fontSize: '0.9rem', color: '#174D31' }}>
                     Onboard employees anywhere in Namibia without the need for local entity registration.
                   </p>
                 </div>
@@ -1344,9 +1369,8 @@ const Services = () => {
             <div 
               className="p-4 rounded-4"
               style={{
-                backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                backdropFilter: 'blur(10px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)'
+                backgroundColor: '#c09c31',
+                border: '2px solid #c09c31'
               }}
             >
               <div className="d-flex align-items-start">
@@ -1355,8 +1379,8 @@ const Services = () => {
                   style={{
                     width: '50px',
                     height: '50px',
-                    backgroundColor: '#c09c31',
-                    color: '#174D31'
+                    backgroundColor: '#174D31',
+                    color: '#c09c31'
                   }}
                 >
                   <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -1364,10 +1388,10 @@ const Services = () => {
                   </svg>
                 </div>
                 <div>
-                  <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
+                  <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem', color: '#174D31' }}>
                     Full Legal Employment Compliance
                   </h5>
-                  <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
+                  <p className="mb-0" style={{ fontSize: '0.9rem', color: '#174D31' }}>
                     We ensure contracts, payroll, taxes, and statutory contributions fully comply with Namibian labour laws.
                   </p>
                 </div>
@@ -1380,9 +1404,8 @@ const Services = () => {
             <div 
               className="p-4 rounded-4"
               style={{
-                backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                backdropFilter: 'blur(10px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)'
+                backgroundColor: '#c09c31',
+                border: '2px solid #c09c31'
               }}
             >
               <div className="d-flex align-items-start">
@@ -1391,8 +1414,8 @@ const Services = () => {
                   style={{
                     width: '50px',
                     height: '50px',
-                    backgroundColor: '#c09c31',
-                    color: '#174D31'
+                    backgroundColor: '#174D31',
+                    color: '#c09c31'
                   }}
                 >
                   <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -1400,10 +1423,10 @@ const Services = () => {
                   </svg>
                 </div>
                 <div>
-                  <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
+                  <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem', color: '#174D31' }}>
                     Risk Management & HR Compliance
                   </h5>
-                  <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
+                  <p className="mb-0" style={{ fontSize: '0.9rem', color: '#174D31' }}>
                     Mitigating legal risks through correct classification, fair labour practices, and up-to-date documentation.
                   </p>
                 </div>
@@ -1416,9 +1439,8 @@ const Services = () => {
             <div 
               className="p-4 rounded-4"
               style={{
-                backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                backdropFilter: 'blur(10px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)'
+                backgroundColor: '#c09c31',
+                border: '2px solid #c09c31'
               }}
             >
               <div className="d-flex align-items-start">
@@ -1427,8 +1449,8 @@ const Services = () => {
                   style={{
                     width: '50px',
                     height: '50px',
-                    backgroundColor: '#c09c31',
-                    color: '#174D31'
+                    backgroundColor: '#174D31',
+                    color: '#c09c31'
                   }}
                 >
                   <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -1436,10 +1458,10 @@ const Services = () => {
                   </svg>
                 </div>
                 <div>
-                  <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
+                  <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem', color: '#174D31' }}>
                     Payroll, Tax & Benefit Administration
                   </h5>
-                  <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
+                  <p className="mb-0" style={{ fontSize: '0.9rem', color: '#174D31' }}>
                     Efficient, timely and compliant salary payments, PAYE, Social Security, and Workmen's Compensation.
                   </p>
                 </div>
@@ -1492,7 +1514,7 @@ const Services = () => {
             right: '30px',
             width: '50px',
             height: '50px',
-            backgroundColor: '#174D31',
+            backgroundColor: '#c09c31',
             border: 'none',
             zIndex: 1000,
             transition: 'all 0.3s ease'

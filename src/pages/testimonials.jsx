@@ -356,7 +356,7 @@ const Testimonials = () => {
             right: '30px',
             width: '50px',
             height: '50px',
-            backgroundColor: '#174D31',
+            backgroundColor: '#c09c31',
             border: 'none',
             zIndex: 1000,
             transition: 'all 0.3s ease'

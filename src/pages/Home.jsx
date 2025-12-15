@@ -68,10 +68,11 @@ const Home = () => {
       {/* HR Solutions Section */}
       <section 
         ref={sectionRef}
-        className="py-5 bg-light"
+        className="py-5"
         style={{ 
           minHeight: '600px',
-          overflow: 'hidden'
+          overflow: 'hidden',
+          backgroundColor: '#174D3A'
         }}
       >
         <div className="container">
@@ -85,7 +86,7 @@ const Home = () => {
                     className="badge text-uppercase fw-normal px-0"
                     style={{
                       backgroundColor: 'transparent',
-                      color: '#174D3A',
+                      color: 'white',
                       fontSize: '12px',
                       letterSpacing: '2px',
                       fontFamily: 'Arial, sans-serif'
@@ -111,7 +112,7 @@ const Home = () => {
                 <p 
                   className="lead mb-4 fw-bold"
                   style={{
-                    color: 'black',
+                    color: 'white',
                     fontSize: '16px',
                     lineHeight: '1.6',
                     fontFamily: 'Arial, sans-serif'
@@ -128,7 +129,7 @@ const Home = () => {
                   style={{
                     borderColor: '#174D3A !important',
                     fontStyle: 'italic',
-                    color: 'black',
+                    color: 'white',
                     fontFamily: 'Arial, sans-serif'
                   }}
                 >
@@ -179,13 +180,13 @@ const Home = () => {
                     </svg>
                   </div>
                   <div>
-                    <h5 className="fw-bold mb-2" style={{ color: 'black', fontFamily: 'Arial, sans-serif' }}>
+                    <h5 className="fw-bold mb-2" style={{ color: 'white', fontFamily: 'Arial, sans-serif' }}>
                       Team Ethos
                     </h5>
                     <p 
                       className="mb-0 fw-bold"
                       style={{
-                        color: 'black',
+                        color: 'white',
                         fontSize: '14px',
                         fontFamily: 'Arial, sans-serif'
                       }}
@@ -272,12 +273,13 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <br /><br /> <br />
 
       {/* Clients Section */}
       <section className="py-5" style={{ backgroundColor: '#174D3A' }}>
         <div className="container">
           <div className="text-center mb-5">
-            <h2 className="mb-0" style={{ fontSize: '2rem', fontWeight: '600', color: '#c69b0cff' }}>
+            <h2 className="mb-0" style={{ fontSize: '2rem', fontWeight: '600', color: '#C09C31' }}>
               Corporate Clients Trust Us
             </h2>
           </div>
@@ -666,10 +668,11 @@ const Home = () => {
                 style={{ 
                   opacity: 0.8,
                   fontSize: '16px',
-                  lineHeight: '1.6'
+                  lineHeight: '1.6',
+                  fontStyle: 'italic'
                 }}
               >
-                
+                "We believe that small actions create an extraordinary impact. By listening deeply, reflecting on our quality of work, and understanding others, we craft solutions that inspire trust and drive meaningful change."
               </p>
             </div>
           </div>
@@ -694,7 +697,7 @@ const Home = () => {
                         className="fw-bold"
                         style={{
                           fontSize: '36px',
-                          color: 'white',
+                          color: '#174D3A',
                           lineHeight: '1'
                         }}
                       >
@@ -723,7 +726,7 @@ const Home = () => {
                         className="fw-bold"
                         style={{
                           fontSize: '36px',
-                          color:'white',
+                          color:'#174D3A',
                           lineHeight: '1'
                         }}
                       >
@@ -763,7 +766,7 @@ const Home = () => {
                         className="fw-bold"
                         style={{
                           fontSize: '36px',
-                          color: 'white',
+                          color: '#174D3A',
                           lineHeight: '1'
                         }}
                       >
@@ -810,10 +813,10 @@ const Home = () => {
             {/* Right Side - Card 04 */}
             <div className="col-lg-4">
               <div 
-                className="choose-card p-4 rounded-4 h-100 position-relative overflow-hidden d-flex flex-column"
+                className="choose-card p-3 rounded-4 position-relative overflow-hidden d-flex flex-column"
                 style={{
                   backgroundColor: '#c09c31',
-                  minHeight: '540px',
+                  height: '220px',
                   transition: 'all 0.3s ease',
                   cursor: 'pointer'
                 }}
@@ -825,7 +828,7 @@ const Home = () => {
                       fontSize: '48px',
                       color: 'rgba(0,0,0,0.3)',
                       lineHeight: '1',
-                      color:'white'
+                      color:'#174D3A'
                     }}
                   >
                     04
@@ -946,7 +949,7 @@ const Home = () => {
             right: '30px',
             width: '50px',
             height: '50px',
-            backgroundColor: '#1e5631',
+            backgroundColor: '#c09c31',
             border: 'none',
             zIndex: 1000,
             transition: 'all 0.3s ease'
