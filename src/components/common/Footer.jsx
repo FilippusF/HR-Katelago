@@ -60,38 +60,38 @@ const Footer = () => {
             <h5 className="text-white mb-3">HR Solutions</h5>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <a href="/Services#HRConsultingAndOutSourcing" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services#hr-consulting" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   HR Consulting 
                 </a>
               </li>
               <li className="mb-2">
-                <a href="/Services#PayrollAdministration" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services#payroll-administration" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   Payroll Administration
                 </a>
               </li>
               <li className="mb-2">
-                <a href="/Services#RecruitmentAndTalentAcquisition" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services#talent-acquisition" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   Talent Acquisition
                 </a>
               </li>
               <li className="mb-2">
-                <a href="/Services#JobGradingAndSalaryBenchmarking" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services#job-grading" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                   Job Grading
                 </a>
               </li>
               <li className="mb-2">
-                <a href="/Services#PsychometricAssessment" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services#psychometric-assessment" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                     Psychometric Assessment
                 </a>
               </li>
 
               <li className="mb-2">
-                <a href="/Services#EOR" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services#employer-of-record" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
                     Employer of Record
                 </a>
