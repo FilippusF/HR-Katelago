@@ -600,7 +600,7 @@ const About = () => {
           {/* Process Steps */}
           <div className="row g-4">
             {/* Step 1 */}
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-6 col-md-6">
               <div 
                 className="process-card h-100 p-4 rounded-4 text-center"
                 style={{
@@ -629,18 +629,18 @@ const About = () => {
                   className="fw-bold mb-3"
                   style={{ color: 'white', fontSize: '1.3rem' }}
                 >
-                  Grabbing a coffee and catching up
+                  We listen carefully
                 </h5>
                 <p 
                   style={{ color: 'white', fontSize: '14px', lineHeight: '1.6' }}
                 >
-                  Informal chat (virtual or in-person) to see if we're the right fit.
+                  Understanding your unique challenges and organizational needs through active listening.
                 </p>
               </div>
             </div>
 
             {/* Step 2 */}
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-6 col-md-6">
               <div 
                 className="process-card h-100 p-4 rounded-4 text-center"
                 style={{
@@ -669,18 +669,18 @@ const About = () => {
                   className="fw-bold mb-3"
                   style={{ color: 'white', fontSize: '1.3rem' }}
                 >
-                  Discover and Understand
+                  We ask the hard questions
                 </h5>
                 <p 
                   style={{ color: 'white', fontSize: '14px', lineHeight: '1.6' }}
                 >
-                  Deep dive into business needs and goals.
+                  Challenging assumptions and digging deeper to uncover root causes and opportunities.
                 </p>
               </div>
             </div>
 
             {/* Step 3 */}
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-6 col-md-6">
               <div 
                 className="process-card h-100 p-4 rounded-4 text-center"
                 style={{
@@ -709,20 +709,18 @@ const About = () => {
                   className="fw-bold mb-3"
                   style={{ color: 'white', fontSize: '1.3rem' }}
                 >
-                  Crafting Solutions
+                  We design solutions
                 </h5>
                 <p 
                   style={{ color: 'white', fontSize: '14px', lineHeight: '1.6' }}
                 >
-                  Develop tailored HR solutions aligned to business outcomes.
+                  Creating practical, compliant, and human-centered solutions tailored to your needs.
                 </p>
               </div>
             </div>
 
-
-
             {/* Step 4 */}
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-6 col-md-6">
               <div 
                 className="process-card h-100 p-4 rounded-4 text-center"
                 style={{
@@ -751,53 +749,12 @@ const About = () => {
                   className="fw-bold mb-3"
                   style={{ color: 'white', fontSize: '1.3rem' }}
                 >
-                  Implement and Embed
+                  Building strong organizations
                 </h5>
                 <p 
                   style={{ color: 'white', fontSize: '14px', lineHeight: '1.6' }}
                 >
-                  Partner with clients to execute and embed solutions.
-                </p>
-              </div>
-            </div>
-
-            {/* Step 5 */}
-            <div className="col-lg-8 col-md-12 mx-auto">
-              <div 
-                className="process-card h-100 p-4 rounded-4 text-center"
-                style={{
-                  backgroundColor: 'transparent',
-                  border: '2px solid #c09c31',
-                  transition: 'all 0.4s ease',
-                  cursor: 'pointer',
-                  animation: 'fadeInUp 0.6s ease-out 0.5s both'
-                }}
-              >
-                <div 
-                  className="process-number mx-auto mb-4 d-flex align-items-center justify-content-center"
-                  style={{
-                    width: '80px',
-                    height: '80px',
-                    backgroundColor: '#c09c31',
-                    borderRadius: '50%',
-                    fontSize: '24px',
-                    fontWeight: 'bold',
-                    color: '#174D3A'
-                  }}
-                >
-                  05
-                </div>
-                <h5 
-                  className="fw-bold mb-3 text-white"
-                  style={{ fontSize: '1.3rem' }}
-                >
-                  We are here to help you grow
-                </h5>
-                <p 
-                  className="text-white mb-0"
-                  style={{ fontSize: '14px', lineHeight: '1.6', opacity: 0.9 }}
-                >
-                  Long-term HR partner, supporting growth and change.
+                  Where people are treated fairly, decisions are defensible, and leadership is supported by sound HR judgment.
                 </p>
               </div>
             </div>
