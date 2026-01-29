@@ -704,9 +704,20 @@ const Home = () => {
                         01
                       </span>
                     </div>
-                    <h6 className="fw-bold mb-0" style={{ color: 'white', fontSize: '14px', lineHeight: '1.3' }}>
-                      Bold Solutions, Trusted Results, Human Impact.
+                    <h6 className="fw-bold mb-2" style={{ color: 'white', fontSize: '14px', lineHeight: '1.3' }}>
+                      Depth of Experience and Sound Judgment
                     </h6>
+                    <p 
+                      className="mb-0 flex-grow-1"
+                      style={{ 
+                        color: 'white',
+                        fontSize: '12px',
+                        opacity: 0.8,
+                        lineHeight: '1.4'
+                      }}
+                    >
+                      With over 20 years of combined industry experience, we bring practical insight, measured advice, and calm confidence to every HR decision you need to make.
+                    </p>
                   </div>
                 </div>
 
@@ -734,7 +745,7 @@ const Home = () => {
                       </span>
                     </div>
                     <h6 className="fw-bold mb-2" style={{ color: 'white', fontSize: '14px', lineHeight: '1.3' }}>
-                      Tailored Strategies, Compliance Assured.
+                      Strategic HR, Not Transactions
                     </h6>
                     <p 
                       className="mb-0 flex-grow-1"
@@ -745,7 +756,7 @@ const Home = () => {
                         lineHeight: '1.4'
                       }}
                     >
-                      We design HR strategies tailored to your needs, ensuring compliance with labour laws.
+                      We don't believe HR should be reactive, generic, or transactional. We partner with organisations to build compliant, resilient, and people-centred workplaces that can withstand growth, change, and scrutiny.
                     </p>
                   </div>
                 </div>
@@ -773,8 +784,8 @@ const Home = () => {
                         03
                       </span>
                     </div>
-                    <h6 className="fw-bold mb-2" style={{ color: 'white ', fontSize: '14px', lineHeight: '1.3' }}>
-                      Seamless Integration, Trusted Support.
+                    <h6 className="fw-bold mb-2" style={{ color: 'white', fontSize: '14px', lineHeight: '1.3' }}>
+                      Compliance-Led, People-Centred Solutions
                     </h6>
                     <p 
                       className="mb-0 flex-grow-1"
@@ -785,7 +796,7 @@ const Home = () => {
                         lineHeight: '1.4'
                       }}
                     >
-                      From in-house to outsourced HR, we safeguard confidentiality and professionalism.
+                      Our work is grounded in Namibian labour law and HR best practice. We help you manage risk, meet statutory obligations, and treat people fairly—without losing sight of business realities.
                     </p>
                   </div>
                 </div>
@@ -835,7 +846,7 @@ const Home = () => {
                   </span>
                 </div>
                 <h5 className="fw-bold mb-3" style={{ fontSize: '18px',color:'white' }}>
-                  Empowering Growth, People First.
+                  Trusted, Ethical Partnership
                 </h5>
                 <p 
                   className="mb-0 flex-grow-1"
@@ -846,7 +857,7 @@ const Home = () => {
                     color: 'white'
                   }}
                 >
-                  At Katelago, we're passionate about helping businesses grow with confidence, compliance, and people-first solutions.
+                  We operate with discretion, integrity, and professional accountability. Our clients trust us with sensitive people matters because we lead with sound judgment, ethical practice, and a clear understanding of both employer and employee responsibilities.
                 </p>
               </div>
             </div>
