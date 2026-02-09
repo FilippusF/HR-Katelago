@@ -713,7 +713,8 @@ const Home = () => {
                         color: '#174D3A',
                         fontSize: '12px',
                         opacity: 0.8,
-                        lineHeight: '1.4'
+                        lineHeight: '1.4',
+                        textAlign: 'justify'
                       }}
                     >
                       With over 20 years of combined industry experience, we bring practical insight, measured advice, and calm confidence to every HR decision you need to make.
@@ -753,7 +754,8 @@ const Home = () => {
                         color: '#174D3A',
                         fontSize: '12px',
                         opacity: 0.8,
-                        lineHeight: '1.4'
+                        lineHeight: '1.4',
+                        textAlign: 'justify'
                       }}
                     >
                       We don't believe HR should be reactive, generic, or transactional. We partner with organisations to build compliant, resilient, and people-centred workplaces that can withstand growth, change, and scrutiny.
@@ -793,7 +795,8 @@ const Home = () => {
                         color: '#174D3A',
                         fontSize: '12px',
                         opacity: 0.8,
-                        lineHeight: '1.4'
+                        lineHeight: '1.4',
+                        textAlign: 'justify'
                       }}
                     >
                       Our work is grounded in Namibian labour law and HR best practice. We help you manage risk, meet statutory obligations, and treat people fairly—without losing sight of business realities.
@@ -832,12 +835,11 @@ const Home = () => {
                   cursor: 'pointer'
                 }}
               >
-                <div className="mb-3">
+                <div className="mb-2">
                   <span 
-                    className="fw-bold " 
+                    className="fw-bold" 
                     style={{
-                      fontSize: '48px',
-                      color: 'rgba(0,0,0,0.3)',
+                      fontSize: '36px',
                       lineHeight: '1',
                       color:'#174D3A'
                     }}
@@ -845,16 +847,17 @@ const Home = () => {
                     04
                   </span>
                 </div>
-                <h5 className="fw-bold mb-3" style={{ fontSize: '18px',color:'#174D3A' }}>
+                <h6 className="fw-bold mb-2" style={{ fontSize: '14px', lineHeight: '1.3', color:'#174D3A' }}>
                   Trusted, Ethical Partnership
-                </h5>
+                </h6>
                 <p 
                   className="mb-0 flex-grow-1"
                   style={{ 
-                    fontSize: '14px',
-                    opacity: 0.9,
-                    lineHeight: '1.5',
-                    color: '#174D3A'
+                    fontSize: '12px',
+                    opacity: 0.8,
+                    lineHeight: '1.4',
+                    color: '#174D3A',
+                    textAlign: 'justify'
                   }}
                 >
                   We operate with discretion, integrity, and professional accountability. Our clients trust us with sensitive people matters because we lead with sound judgment, ethical practice, and a clear understanding of both employer and employee responsibilities.
