@@ -679,15 +679,29 @@ const Services = () => {
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+{/* Benefits Summary Section */}
+<section 
+  className="py-5" 
+  style={{
+    backgroundImage: `url(${missionImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed'
+  }}
+>
+  <div className="container">
     {/* Benefits Summary Section */}
-    <div className="row mt-5">
+    <div className="row">
       <div className="col-12">
         <div 
           className="text-center p-5 rounded-4"
           style={{
-            backgroundColor: 'rgba(212, 175, 55, 0.1)',
-            border: '2px solid #c09c31',
-            backdropFilter: 'blur(10px)'
+            backgroundColor: 'rgba(84, 82, 82, 0.2)',
+            backdropFilter: 'blur(20px)',
+            border: '1px solid rgba(255, 255, 255, 0.2)'
           }}
         >
           <div 
