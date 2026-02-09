@@ -704,13 +704,13 @@ const Home = () => {
                         01
                       </span>
                     </div>
-                    <h6 className="fw-bold mb-2" style={{ color: 'white', fontSize: '14px', lineHeight: '1.3' }}>
+                    <h6 className="fw-bold mb-2" style={{ color: '#174D3A', fontSize: '14px', lineHeight: '1.3' }}>
                       Depth of Experience and Sound Judgment
                     </h6>
                     <p 
                       className="mb-0 flex-grow-1"
                       style={{ 
-                        color: 'white',
+                        color: '#174D3A',
                         fontSize: '12px',
                         opacity: 0.8,
                         lineHeight: '1.4'
@@ -744,13 +744,13 @@ const Home = () => {
                         02
                       </span>
                     </div>
-                    <h6 className="fw-bold mb-2" style={{ color: 'white', fontSize: '14px', lineHeight: '1.3' }}>
+                    <h6 className="fw-bold mb-2" style={{ color: '#174D3A', fontSize: '14px', lineHeight: '1.3' }}>
                       Strategic HR, Not Transactions
                     </h6>
                     <p 
                       className="mb-0 flex-grow-1"
                       style={{ 
-                        color: 'white',
+                        color: '#174D3A',
                         fontSize: '12px',
                         opacity: 0.8,
                         lineHeight: '1.4'
@@ -784,13 +784,13 @@ const Home = () => {
                         03
                       </span>
                     </div>
-                    <h6 className="fw-bold mb-2" style={{ color: 'white', fontSize: '14px', lineHeight: '1.3' }}>
+                    <h6 className="fw-bold mb-2" style={{ color: '#174D3A', fontSize: '14px', lineHeight: '1.3' }}>
                       Compliance-Led, People-Centred Solutions
                     </h6>
                     <p 
                       className="mb-0 flex-grow-1"
                       style={{ 
-                        color: 'white',
+                        color: '#174D3A',
                         fontSize: '12px',
                         opacity: 0.8,
                         lineHeight: '1.4'
@@ -845,7 +845,7 @@ const Home = () => {
                     04
                   </span>
                 </div>
-                <h5 className="fw-bold mb-3" style={{ fontSize: '18px',color:'white' }}>
+                <h5 className="fw-bold mb-3" style={{ fontSize: '18px',color:'#174D3A' }}>
                   Trusted, Ethical Partnership
                 </h5>
                 <p 
@@ -854,7 +854,7 @@ const Home = () => {
                     fontSize: '14px',
                     opacity: 0.9,
                     lineHeight: '1.5',
-                    color: 'white'
+                    color: '#174D3A'
                   }}
                 >
                   We operate with discretion, integrity, and professional accountability. Our clients trust us with sensitive people matters because we lead with sound judgment, ethical practice, and a clear understanding of both employer and employee responsibilities.
