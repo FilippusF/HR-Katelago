@@ -700,7 +700,6 @@ const Services = () => {
           className="text-center p-5 rounded-4"
           style={{
             backgroundColor: 'rgba(84, 82, 82, 0.2)',
-            backdropFilter: 'blur(20px)',
             border: '1px solid rgba(255, 255, 255, 0.2)'
           }}
         >
@@ -750,6 +749,7 @@ const Services = () => {
                 className="p-3 rounded-3"
                 style={{
                   backgroundColor: 'rgba(176, 61, 61, 0.1)',
+                  backdropFilter: 'blur(10px)',
                   border: '1px solid rgba(255, 255, 255, 0.2)'
                 }}
               >
@@ -780,6 +780,7 @@ const Services = () => {
                 className="p-3 rounded-3"
                 style={{
                   backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                  backdropFilter: 'blur(10px)',
                   border: '1px solid rgba(255, 255, 255, 0.2)'
                 }}
               >
@@ -810,6 +811,7 @@ const Services = () => {
                 className="p-3 rounded-3"
                 style={{
                   backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                  backdropFilter: 'blur(10px)',
                   border: '1px solid rgba(255, 255, 255, 0.2)'
                 }}
               >
