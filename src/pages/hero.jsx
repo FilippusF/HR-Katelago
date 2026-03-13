@@ -28,7 +28,7 @@ const Hero = () => {
                   marginBottom: '3rem'
                 }}
               >
-                We create a place where your people love to work!
+                Workforce Compliance and Payroll Support for Organisations Operating in Namibia
               </h1>
 
               {/* CTA Button */}

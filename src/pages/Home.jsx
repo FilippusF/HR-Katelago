@@ -80,21 +80,6 @@ const Home = () => {
             {/* Left Content */}
             <div className="col-lg-6">
               <div className="pe-lg-5">
-                {/* Who We Are Tag */}
-                <div className="mb-3">
-                  <span 
-                    className="badge text-uppercase fw-normal px-0"
-                    style={{
-                      backgroundColor: 'transparent',
-                      color: 'white',
-                      fontSize: '12px',
-                      letterSpacing: '2px',
-                      fontFamily: 'Arial, sans-serif'
-                    }}
-                  >
-                    WHO WE ARE
-                  </span>
-                </div>
 
                 {/* Main Heading */}
                 <h1 
@@ -105,7 +90,7 @@ const Home = () => {
                     fontFamily: 'Arial, sans-serif'
                   }}
                 >
-                  We create a place where your people love to work!
+                  Workforce Compliance and Payroll Support for Organisations Operating in Namibia
                 </h1>
 
                 {/* Description */}
@@ -118,9 +103,7 @@ const Home = () => {
                     fontFamily: 'Arial, sans-serif'
                   }}
                 >
-                <strong> Being remarkable   is a journey, </strong> and at Katelago, that journey begins with people.
-                 We help organisations build <strong> beautiful businesses</strong> bold, dynamic, and human workplaces 
-                 where teams feel inspired, valued, and equipped to grow.
+                Katelago HR Consultants is a strategic workforce partner based in Namibia
                 </p>
 
                 {/* Quote */}
@@ -133,9 +116,9 @@ const Home = () => {
                     fontFamily: 'Arial, sans-serif'
                   }}
                 >
-                  We blend creativity, strategy, and compliance; drawing on over 20 years of HR expertise in labour law,
-                   people management, and workplace culture.
-                   With deep local insight and a global mindset, we design people solutions that help your business stand out, attract top talent, and sustain success.
+                We support clients with compliant employment setup, Employer of Record services, payroll governance and practical HR advisory that reduces risk and supports smooth operations.
+                <br />
+                Our work is clear, structured and aligned to Namibian labour requirements.
                 </blockquote>
 
                 {/* Feature Item */}
@@ -253,7 +236,7 @@ const Home = () => {
                     </div>
                     <div>
                       <h6 className="fw-bold mb-1" style={{ color: 'black', fontFamily: 'Arial, sans-serif' }}>
-                        Call Us Now
+                        Speak to a Consultant
                       </h6>
                       <p 
                         className="mb-0"
@@ -536,10 +519,8 @@ const Home = () => {
                           fontSize: '14px'
                         }}
                       >
-                         To redefine the
-                          future of work in Africa by creating bold, 
-                          dynamic, and human workplaces where every business leads with people,
-                           purpose, and progress.
+                         To be Namibia’s leading strategic workforce partner, known for workforce compliance, structured HR 
+                         governance and clear, trusted advice in regulated and project-based environments.
                       </p>
                     </div>
                   </div>
@@ -579,9 +560,8 @@ const Home = () => {
                           fontSize: '14px'
                         }}
                       >
-                      We exist to empower organisations to build compliant, inclusive, and future-ready workplaces 
-                      that honour both 
-                      business performance and human potential.
+                      To help organisations operate with confidence through compliant workforce structures, 
+                      disciplined payroll governance and practical HR advisory aligned to Namibian labour legislation
                       </p>
                     </div>                    
                   </div>
