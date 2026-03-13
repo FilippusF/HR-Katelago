@@ -137,6 +137,7 @@ const Header = () => {
                   href="#" 
                   role="button" 
                   data-bs-toggle="dropdown"
+                  aria-expanded="false"
                   style={{ 
                     fontSize: '15px',
                     letterSpacing: '0.3px',
@@ -163,6 +164,7 @@ const Header = () => {
                   href="#" 
                   role="button" 
                   data-bs-toggle="dropdown"
+                  aria-expanded="false"
                   style={{ 
                     fontSize: '15px',
                     letterSpacing: '0.3px',
@@ -190,6 +192,7 @@ const Header = () => {
                   href="#" 
                   role="button" 
                   data-bs-toggle="dropdown"
+                  aria-expanded="false"
                   style={{ 
                     fontSize: '15px',
                     letterSpacing: '0.3px',
