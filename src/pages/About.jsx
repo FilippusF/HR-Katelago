@@ -154,23 +154,55 @@ const About = () => {
                 We are based in Windhoek and bring over 20 years of practical HR and workforce experience.
                 Our work is grounded in Namibian labour requirements and shaped by the realities clients face in regulated, project-based and growth environments.
               </blockquote>
-              
-              {/* Feature Item */}
-              <div className="d-flex align-items-start mb-4">
-                <div 
-                  className="me-3 mt-1"
-                  style={{
-                    width: '24px',
-                    height: '24px',
-                    backgroundColor: '#c09c31',
-                    borderRadius: '4px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    flexShrink: 0
-                  }}
-                >
-                </div>
+
+              {/* What Makes the Approach Different */}
+              <h4 
+                className="fw-bold mb-3"
+                style={{ color: '#c09c31' }}
+              >
+                What Makes the Approach Different
+              </h4>
+              <p 
+                className="mb-4"
+                style={{
+                  fontSize: '1rem',
+                  color: 'white',
+                  lineHeight: '1.6'
+                }}
+              >
+                We help clients reduce workforce risk, improve compliance, strengthen payroll control and make sound employment decisions with confidence.
+              </p>
+
+              {/* Brand Statement */}
+              <h4 
+                className="fw-bold mb-3"
+                style={{ color: '#c09c31' }}
+              >
+                Brand Statement
+              </h4>
+              <p 
+                className="fw-bold mb-3"
+                style={{ color: 'white', fontSize: '1.1rem' }}
+              >
+                Bold. Dynamic. Human.
+              </p>
+
+              <div className="mb-2">
+                <p style={{ fontSize: '0.95rem', color: 'white', marginBottom: '0.5rem' }}>
+                  <strong>• Bold</strong> - We address workforce risk directly and speak with clarity.
+                </p>
+              </div>
+
+              <div className="mb-2">
+                <p style={{ fontSize: '0.95rem', color: 'white', marginBottom: '0.5rem' }}>
+                  <strong>• Dynamic</strong> - We support organisations operating in changing, project-based and regulated environments.
+                </p>
+              </div>
+
+              <div className="mb-4">
+                <p style={{ fontSize: '0.95rem', color: 'white', marginBottom: '0.5rem' }}>
+                  <strong>• Human</strong> - We believe strong governance should support both the organisation and its people.
+                </p>
               </div>
             </div>
             
