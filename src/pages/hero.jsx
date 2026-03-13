@@ -30,6 +30,9 @@ const Hero = () => {
               >
                 Workforce Compliance and Payroll Support for Organisations Operating in Namibia
               </h1>
+              <p>
+                <blockquote>Bold. Dynamic. Human.</blockquote>
+              </p>
 
               {/* CTA Button */}
               <div className="hero-cta mb-5">

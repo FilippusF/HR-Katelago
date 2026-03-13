@@ -20,7 +20,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-light small" style={{ color: '#ffffff !important' }}>
-              Shaping the future of work in Namibia, we create bold , empowered, and human HR Solutions that move businesses forward.
+              Shaping the future of work in Namibia, We provide structured workforce solutions that help organisations operate with confidence, reduce risk and stay aligned with Namibian labour requirements.
             </p>
           </div>
 
@@ -134,7 +134,7 @@ const Footer = () => {
         <div className="row align-items-center">
           <div className="col-12 text-center text-lg-start">
             <p className="mb-0 text-light small" style={{ color: '#ffffff !important' }}>
-              © 2025 All Rights Reserved - Made with 💙 by Loop Technologies
+              © 2026 All Rights Reserved - Made with 💙 by Loop Technologies
             </p>
           </div>
         </div>

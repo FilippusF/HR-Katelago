@@ -761,20 +761,6 @@ const Services = () => {
             border: '1px solid rgba(255, 255, 255, 0.2)'
           }}
         >
-          <div 
-            className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4"
-            style={{
-              width: '80px',
-              height: '80px',
-              backgroundColor: 'rgba(237, 235, 226, 0.1)',
-              color: '#174D31',
-              border: '2px solid #c09c31'
-            }}
-          >
-            <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-            </svg>
-          </div>
           
           <h3 
             className="fw-bold mb-4"
@@ -784,25 +770,11 @@ const Services = () => {
               fontWeight: '700'
             }}
           >
-            Why Choose Our Expertise?
+            Why Choose Us
           </h3>
           
-          <p 
-            className="mb-4"
-            style={{
-              fontSize: '1.2rem',
-              lineHeight: '1.6',
-              color: '#ffffff',
-              maxWidth: '800px',
-              margin: '0 auto 2rem auto'
-            }}
-          >
-            With our 20 year expertise, you'll cut down recruitment time, improve candidate quality,
-            and build a workforce that truly fits your company's values and goals.
-          </p>
-          
           <div className="row g-4 mt-3">
-            <div className="col-md-4">
+            <div className="col-md-6">
               <div 
                 className="p-3 rounded-3"
                 style={{
@@ -825,15 +797,77 @@ const Services = () => {
                   </svg>
                 </div>
                 <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
-                  Faster Hiring
+                  Experienced and locally grounded
                 </h5>
                 <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
-                  Streamlined processes reduce time-to-hire significantly
+                  We bring practical HR and workforce experience rooted in Namibian labour requirements.
                 </p>
               </div>
             </div>
             
-            <div className="col-md-4">
+            <div className="col-md-6">
+              <div 
+                className="p-3 rounded-3"
+                style={{
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                  backdropFilter: 'blur(10px)',
+                  border: '1px solid rgba(255, 255, 255, 0.2)'
+                }}
+              >
+                <div 
+                  className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+                  style={{
+                    width: '50px',
+                    height: '50px',
+                    backgroundColor: '#174D31',
+                    color: '#c09c31'
+                  }}
+                >
+                  <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
+                  Structured approach
+                </h5>
+                <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
+                  We do not treat workforce matters as isolated admin tasks. We help clients build systems that are easier to manage and defend.
+                </p>
+              </div>
+            </div>
+            
+            <div className="col-md-6">
+              <div 
+                className="p-3 rounded-3"
+                style={{
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                  backdropFilter: 'blur(10px)',
+                  border: '1px solid rgba(255, 255, 255, 0.2)'
+                }}
+              >
+                <div 
+                  className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+                  style={{
+                    width: '50px',
+                    height: '50px',
+                    backgroundColor: '#174D31',
+                    color: '#c09c31'
+                  }}
+                >
+                  <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                  </svg>
+                </div>
+                <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
+                  Compliance-focused
+                </h5>
+                <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
+                  We work with organisations that need lawful, practical and review-ready workforce processes.
+                </p>
+              </div>
+            </div>
+            
+            <div className="col-md-6">
               <div 
                 className="p-3 rounded-3"
                 style={{
@@ -856,44 +890,39 @@ const Services = () => {
                   </svg>
                 </div>
                 <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
-                  Improved Candidate Quality
+                  Trusted advisory
                 </h5>
                 <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
-                  Better screening ensures top-tier talent selection
+                  We handle sensitive workforce matters with discretion, accountability and clear judgement.
                 </p>
               </div>
             </div>
-            
-            <div className="col-md-4">
-              <div 
-                className="p-3 rounded-3"
-                style={{
-                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                  backdropFilter: 'blur(10px)',
-                  border: '1px solid rgba(255, 255, 255, 0.2)'
-                }}
-              >
-                <div 
-                  className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
-                  style={{
-                    width: '50px',
-                    height: '50px',
-                    backgroundColor: '#174D31',
-                    color: '#c09c31'
-                  }}
-                >
-                  <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                  </svg>
-                </div>
-                <h5 className="fw-bold mb-2 text-white" style={{ fontSize: '1.1rem' }}>
-                  Value-Aligned Workforce
-                </h5>
-                <p className="mb-0 text-white" style={{ fontSize: '0.9rem', opacity: 0.9 }}>
-                  Employees who truly fit your company culture
-                </p>
-              </div>
-            </div>
+          </div>
+          
+          {/* Closing CTA */}
+          <div className="mt-5">
+            <h4 className="fw-bold mb-3 text-white" style={{ fontSize: '1.4rem' }}>
+              Need a more structured approach to workforce compliance?
+            </h4>
+            <p className="mb-4 text-white" style={{ fontSize: '1.1rem', opacity: 0.9, maxWidth: '700px', margin: '0 auto 2rem auto' }}>
+              Whether you are entering Namibia, managing a project workforce, improving payroll controls or strengthening HR governance, Katelago can help.
+            </p>
+            <button
+              className="btn fw-bold"
+              onClick={() => navigate('/contact')}
+              style={{
+                backgroundColor: 'white',
+                color: '#174D31',
+                border: 'none',
+                padding: '14px 32px',
+                fontSize: '1.1rem',
+                borderRadius: '8px',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer'
+              }}
+            >
+              Book a Consultation
+            </button>
           </div>
         </div>
       </div>
