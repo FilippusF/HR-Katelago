@@ -383,7 +383,8 @@ const Home = () => {
                       </svg>
                     </div>
                     <span className="text-white" style={{ opacity: 0.9 }}>
-                      Bold
+                      Compliance Before Convenience
+
                     </span>
                   </div>
                   
@@ -401,7 +402,8 @@ const Home = () => {
                       </svg>
                     </div>
                     <span className="text-white" style={{ opacity: 0.9 }}>
-                      Dynamic
+                      Structure Creates Stability
+
                     </span>
                   </div>
                   <br />
@@ -420,7 +422,7 @@ const Home = () => {
                       </svg>
                     </div>
                     <span className="text-white" style={{ opacity: 0.9 }}>
-                      Human
+                      Disciplined Execution
                     </span>
                   </div>
 
@@ -438,7 +440,7 @@ const Home = () => {
                       </svg>
                     </div>
                     <span className="text-white" style={{ opacity: 0.9 }}>
-                      Integrity
+                      Risk Awareness
                     </span>
                   </div>
 
@@ -456,7 +458,7 @@ const Home = () => {
                       </svg>
                     </div>
                     <span className="text-white" style={{ opacity: 0.9 }}>
-                      Excellence
+                      Accountability in Advice
                     </span>
                   </div>
 
@@ -474,7 +476,7 @@ const Home = () => {
                       </svg>
                     </div>
                     <span className="text-white" style={{ opacity: 0.9 }}>
-                      Collaboration
+                      Human Dignity Within Governance
                     </span>
                   </div>
 
@@ -603,9 +605,8 @@ const Home = () => {
                                 fontSize: '14px'
                               }}
                             >
-                              We believe small actions create extraordinary impact. By listening
-                              deeply, reflecting on our work, and understanding others, we craft solutions that
-                              inspire trust and drive meaningful change.
+                              We believe compliant workforce structures, disciplined payroll governance and clear HR frameworks create stronger organisations. Our approach is practical, structured and aligned to Namibian labour legislation, 
+                              helping clients operate with confidence while protecting both their business and their people.
                             </p>
                           </div>
                         </div>
@@ -680,7 +681,7 @@ const Home = () => {
                       </span>
                     </div>
                     <h6 className="fw-bold mb-2" style={{ color: '#174D3A', fontSize: '14px', lineHeight: '1.3' }}>
-                      Depth of Experience and Sound Judgment
+                      We understand Namibian labour compliance
                     </h6>
                     <p 
                       className="mb-0 flex-grow-1"
@@ -692,7 +693,8 @@ const Home = () => {
                         textAlign: 'justify'
                       }}
                     >
-                      With over 20 years of combined industry experience, we bring practical insight, measured advice, and calm confidence to every HR decision you need to make.
+                      Our work is grounded in practical knowledge of Namibian labour legislation and workforce requirements. We help 
+                      clients navigate employment, payroll and compliance matters with clarity and confidence.
                     </p>
                   </div>
                 </div>
@@ -721,7 +723,7 @@ const Home = () => {
                       </span>
                     </div>
                     <h6 className="fw-bold mb-2" style={{ color: '#174D3A', fontSize: '14px', lineHeight: '1.3' }}>
-                      Strategic HR, Not Transactions
+                      We bring structure to complex workforce environments
                     </h6>
                     <p 
                       className="mb-0 flex-grow-1"
@@ -733,7 +735,8 @@ const Home = () => {
                         textAlign: 'justify'
                       }}
                     >
-                      We don't believe HR should be reactive, generic, or transactional. We partner with organisations to build compliant, resilient, and people-centred workplaces that can withstand growth, change, and scrutiny.
+                      From project-based operations to regulated sectors, we help organisations build clear employment frameworks, 
+                      disciplined payroll systems and practical governance processes that support smooth operations.
                     </p>
                   </div>
                 </div>
@@ -762,7 +765,7 @@ const Home = () => {
                       </span>
                     </div>
                     <h6 className="fw-bold mb-2" style={{ color: '#174D3A', fontSize: '14px', lineHeight: '1.3' }}>
-                      Compliance-Led, People-Centred Solutions
+                      We combine compliance with practical execution
                     </h6>
                     <p 
                       className="mb-0 flex-grow-1"
@@ -774,7 +777,8 @@ const Home = () => {
                         textAlign: 'justify'
                       }}
                     >
-                      Our work is grounded in Namibian labour law and HR best practice. We help you manage risk, meet statutory obligations, and treat people fairly—without losing sight of business realities.
+                      We do not believe in advice that looks good on paper 
+                      but fails in practice. Our approach is practical, measured and designed to work in real business environments.
                     </p>
                   </div>
                 </div>
@@ -823,7 +827,7 @@ const Home = () => {
                   </span>
                 </div>
                 <h6 className="fw-bold mb-2" style={{ fontSize: '14px', lineHeight: '1.3', color:'#174D3A' }}>
-                  Trusted, Ethical Partnership
+                  We support premium, risk-aware organisations
                 </h6>
                 <p 
                   className="mb-0 flex-grow-1"
@@ -835,7 +839,8 @@ const Home = () => {
                     textAlign: 'justify'
                   }}
                 >
-                  We operate with discretion, integrity, and professional accountability. Our clients trust us with sensitive people matters because we lead with sound judgment, ethical practice, and a clear understanding of both employer and employee responsibilities.
+                  We work with businesses that value structure, accountability and sound judgement. Our focus is on 
+                  helping clients make informed workforce decisions that protect both operations and reputation.
                 </p>
               </div>
             </div>

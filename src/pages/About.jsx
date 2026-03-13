@@ -138,8 +138,8 @@ const About = () => {
                   lineHeight: '1.6'
                 }}
               >
-               Shaping the future of work in Africa, Katelago is redefining what it means to be bold, dynamic, and human in the world of HR.
-                We empower organisations to build compliant, inclusive, and future-ready workplaces where people, purpose, and progress come together.
+               Katelago is a Namibian workforce partner focused on compliant employment structures, payroll governance and practical HR support.
+               We work with organisations that value structure, sound judgement and workforce processes that can stand up to scrutiny.
               </p>
               
               {/* Quote */}
@@ -151,9 +151,8 @@ const About = () => {
                   color: 'white'
                 }}
               >
-                <strong> Founded in 2012 </strong>, Katelago HR Consultants was built on the belief that HR should be human first.
-                Our team of seasoned professionals combines deep expertise in HR best practice, labour law, and workplace culture to deliver people solutions that are both strategic and meaningful.
-                From payroll to performance, we partner with clients to transform compliance into confidence; and people into possibility.
+                We are based in Windhoek and bring over 20 years of practical HR and workforce experience.
+                Our work is grounded in Namibian labour requirements and shaped by the realities clients face in regulated, project-based and growth environments.
               </blockquote>
               
               {/* Feature Item */}
@@ -259,18 +258,6 @@ const About = () => {
               <div className="container">
                 {/* Section Header */}
                 <div className="text-center mb-5">
-                  <div className="mb-3">
-                    <span 
-                      className="text-uppercase fw-normal"
-                      style={{
-                        color: 'rgba(255, 255, 255, 0.7)',
-                        fontSize: '15px',
-                        letterSpacing: '3px'
-                      }}
-                    >
-                      VISION & MISSION
-                    </span>
-                  </div>
                   <h2 
                     className="display-5 fw-bold text-white mb-4"
                     style={{
@@ -279,146 +266,143 @@ const About = () => {
                       lineHeight: '1.2'
                     }}
                   >
-                    Our  Vision, Mission, Values &amp; Philosophy
+                    Our  Vision, Mission, Values.
                   </h2>
                 </div>
       
-                <div className="row align-items-stretch">
+                <div className="row align-items-stretch ">
                   {/* Left Card */}
                   <div className="col-lg-6 mb-4">
                     <div 
-                      className="h-100  rounded-4"
+                      className="h-100 rounded-4"
                       style={{
                         backgroundColor: 'rgba(255, 255, 255, 0.1)',
                         backdropFilter: 'blur(10px)',
                         border: '1px solid rgba(255, 255, 255, 0.1)',
-                        display:'inline-block',
-                         paddingRight:'190px',
-                         paddingLeft:'20px',
-                         paddingTop:'20px',
-                         paddingBottom:'',
-                         marginLeft: '90px' 
+                        padding: '20px'
                       }}
                     >
-                        <h3 className="text-white mb-4 fw-bold"> 
-                  Values
-                </h3>
+                      <h3 className="text-white mb-4 fw-bold"> 
+                        Values
+                      </h3>
 
-                {/* Check Items */}
-                <div className="mb-3">
-                  <div className="d-flex align-items-center mb-3">
-                    <div 
-                      className="me-3 rounded-circle d-flex align-items-center justify-content-center"
-                      style={{
-                        width: '24px',
-                        height: '24px',
-                        backgroundColor: '#1e5631'
+                      {/* Check Items */}
+                      <div className="mb-3">
+                        <div className="d-flex align-items-center mb-3">
+                          <div 
+                            className="me-3 rounded-circle d-flex align-items-center justify-content-center"
+                            style={{
+                              width: '24px',
+                              height: '24px',
+                              backgroundColor: '#1e5631'
+                              
+                            }}
+                          >
+                            <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
+                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                          </div>
+                          <span className="text-white" style={{ opacity: 0.9 }}>
+                            Compliance Before Convenience
 
-                      }}
-                    >
-                      <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
-                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                      </svg>
+                          </span>
+                        </div>
+                        
+                        <div className="d-flex align-items-center">
+                          <div 
+                            className="me-3 rounded-circle d-flex align-items-center justify-content-center"
+                            style={{
+                              width: '24px',
+                              height: '24px',
+                              backgroundColor: '#1e5631'
+                            }}
+                          >
+                            <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
+                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                          </div>
+                          <span className="text-white" style={{ opacity: 0.9 }}>
+                            Structure Creates Stability
+
+                          </span>
+                        </div>
+                        <br />
+
+                        <div className="d-flex align-items-center mb-3">
+                          <div 
+                            className="me-3 rounded-circle d-flex align-items-center justify-content-center"
+                            style={{
+                              width: '24px',
+                              height: '24px',
+                              backgroundColor: '#1e5631'
+                            }}
+                          >
+                            <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
+                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                          </div>
+                          <span className="text-white" style={{ opacity: 0.9 }}>
+                            Disciplined Execution
+                          </span>
+                        </div>
+
+                        <div className="d-flex align-items-center mb-3">
+                          <div 
+                            className="me-3 rounded-circle d-flex align-items-center justify-content-center"
+                            style={{
+                              width: '24px',
+                              height: '24px',
+                              backgroundColor: '#1e5631'
+                            }}
+                          >
+                            <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
+                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                          </div>
+                          <span className="text-white" style={{ opacity: 0.9 }}>
+                            Risk Awareness
+                          </span>
+                        </div>
+
+                        <div className="d-flex align-items-center mb-3">
+                          <div 
+                            className="me-3 rounded-circle d-flex align-items-center justify-content-center"
+                            style={{
+                              width: '24px',
+                              height: '24px',
+                              backgroundColor: '#1e5631'
+                            }}
+                          >
+                            <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
+                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                          </div>
+                          <span className="text-white" style={{ opacity: 0.9 }}>
+                            Accountability in Advice
+                          </span>
+                        </div>
+
+                        <div className="d-flex align-items-center mb-3">
+                          <div 
+                            className="me-3 rounded-circle d-flex align-items-center justify-content-center"
+                            style={{
+                              width: '24px',
+                              height: '24px',
+                              backgroundColor: '#1e5631'
+                            }}
+                          >
+                            <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
+                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                          </div>
+                          <span className="text-white" style={{ opacity: 0.9 }}>
+                            Human Dignity Within Governance
+                          </span>
+                        </div>
+
+                      </div>
                     </div>
-                    <span className="text-white" style={{ opacity: 0.9 }}>
-                      Bold
-                    </span>
                   </div>
-                  
-                  <div className="d-flex align-items-center">
-                    <div 
-                      className="me-3 rounded-circle d-flex align-items-center justify-content-center"
-                      style={{
-                        width: '24px',
-                        height: '24px',
-                        backgroundColor: '#1e5631'
-                      }}
-                    >
-                      <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
-                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                      </svg>
-                    </div>
-                    <span className="text-white" style={{ opacity: 0.9 }}>
-                      Dynamic
-                    </span>
-                  </div>
-                  <br />
-
-                  <div className="d-flex align-items-center mb-3">
-                    <div 
-                      className="me-3 rounded-circle d-flex align-items-center justify-content-center"
-                      style={{
-                        width: '24px',
-                        height: '24px',
-                        backgroundColor: '#1e5631'
-                      }}
-                    >
-                      <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
-                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                      </svg>
-                    </div>
-                    <span className="text-white" style={{ opacity: 0.9 }}>
-                      Human
-                    </span>
-                  </div>
-
-                  <div className="d-flex align-items-center mb-3">
-                    <div 
-                      className="me-3 rounded-circle d-flex align-items-center justify-content-center"
-                      style={{
-                        width: '24px',
-                        height: '24px',
-                        backgroundColor: '#1e5631'
-                      }}
-                    >
-                      <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
-                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                      </svg>
-                    </div>
-                    <span className="text-white" style={{ opacity: 0.9 }}>
-                      Integrity
-                    </span>
-                  </div>
-
-                  <div className="d-flex align-items-center mb-3">
-                    <div 
-                      className="me-3 rounded-circle d-flex align-items-center justify-content-center"
-                      style={{
-                        width: '24px',
-                        height: '24px',
-                        backgroundColor: '#1e5631'
-                      }}
-                    >
-                      <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
-                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                      </svg>
-                    </div>
-                    <span className="text-white" style={{ opacity: 0.9 }}>
-                      Excellence
-                    </span>
-                  </div>
-
-                  <div className="d-flex align-items-center mb-3">
-                    <div 
-                      className="me-3 rounded-circle d-flex align-items-center justify-content-center"
-                      style={{
-                        width: '24px',
-                        height: '24px',
-                        backgroundColor: '#1e5631'
-                      }}
-                    >
-                      <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
-                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                      </svg>
-                    </div>
-                    <span className="text-white" style={{ opacity: 0.9 }}>
-                      Collaboration
-                    </span>
-                  </div>
-
-                </div>
-              </div>
-            </div>
       
                   {/* Right Card */}
                   <div className="col-lg-6">
@@ -448,7 +432,7 @@ const About = () => {
                           </div>
                           <div>
                             <h5 className="text-white fw-bold mb-2">
-                              Values
+                              Vision
                             </h5>
                             <p 
                               className="text-white mb-0"
@@ -457,22 +441,20 @@ const About = () => {
                                 fontSize: '14px'
                               }}
                             >
-                              To be recognized as the leading HR firm, positively impacting our clients and
-                              their employees through our innovative and people-centric approach..
+                               To be Namibia's leading strategic workforce partner, known for workforce compliance, structured HR 
+                               governance and clear, trusted advice in regulated and project-based environments.
                             </p>
                           </div>
                         </div>
                       </div>
-      
+
                       {/* Second Item */}
                       <div 
-                        className="p-4 rounded-4 mb-4 vision-mission-card"
+                        className="p-4 rounded-4"
                         style={{
                           backgroundColor: 'rgba(255, 255, 255, 0.1)',
                           backdropFilter: 'blur(10px)',
-                          border: '1px solid rgba(255, 255, 255, 0.1)',
-                          transition: 'all 0.3s ease',
-                          cursor: 'pointer'
+                          border: '1px solid rgba(255, 255, 255, 0.1)'
                         }}
                       >
                         <div className="d-flex align-items-start">
@@ -500,14 +482,13 @@ const About = () => {
                                 fontSize: '14px'
                               }}
                             >
-                               We exist to empower organisations to build compliant, inclusive, and future-ready workplaces that honour both business 
-                               performance and human potential.
+                            To help organisations operate with confidence through compliant workforce structures, 
+                            disciplined payroll governance and practical HR advisory aligned to Namibian labour legislation
                             </p>
-                          </div>
+                          </div>                    
                         </div>
                       </div>
 
-                      {/* Third Item - Philosophy */}
                       <div 
                         className="p-4 rounded-4 vision-mission-card"
                         style={{
@@ -515,7 +496,8 @@ const About = () => {
                           backdropFilter: 'blur(10px)',
                           border: '1px solid rgba(255, 255, 255, 0.1)',
                           transition: 'all 0.3s ease',
-                          cursor: 'pointer'
+                          cursor: 'pointer',
+                          marginTop:'25px'
                         }}
                       >
                         <div className="d-flex align-items-start">
@@ -524,7 +506,7 @@ const About = () => {
                             style={{
                               width: '60px',
                               height: '60px',
-                              backgroundColor: '#174D3A',
+                              backgroundColor: '#1e5631',
                               fontSize: '24px',
                               fontWeight: 'bold',
                               color: 'white'
@@ -543,9 +525,8 @@ const About = () => {
                                 fontSize: '14px'
                               }}
                             >
-                              We believe that small actions create an extraordinary impact. By listening
-                              deeply, reflecting on our work, and understanding others, we craft solutions that
-                              inspire trust and drive meaningful change.
+                              We believe compliant workforce structures, disciplined payroll governance and clear HR frameworks create stronger organisations. Our approach is practical, structured and aligned to Namibian labour legislation, 
+                              helping clients operate with confidence while protecting both their business and their people.
                             </p>
                           </div>
                         </div>
@@ -565,7 +546,7 @@ const About = () => {
               <span 
                 className="text-uppercase fw-medium"
                 style={{
-                  fontSize: '25px', //chamged to 15px
+                  fontSize: '25px',
                   letterSpacing: '2px',
                   color: '#c09c31',
                   fontWeight: '600'
@@ -589,11 +570,11 @@ const About = () => {
               className="lead"
               style={{
                 color: 'white',
-                maxWidth: '600px',
+                maxWidth: '700px',
                 margin: '0 auto'
               }}
             >
-              We follow a structured approach to deliver exceptional HR solutions tailored to your business needs.
+              At Katelago, our process is built around structure, compliance and disciplined execution.
             </p>
           </div>
 
@@ -629,12 +610,12 @@ const About = () => {
                   className="fw-bold mb-3"
                   style={{ color: 'white', fontSize: '1.3rem' }}
                 >
-                  We listen carefully
+                  Understand the environment
                 </h5>
                 <p 
                   style={{ color: 'white', fontSize: '14px', lineHeight: '1.6' }}
                 >
-                  Understanding your unique challenges and organizational needs through active listening.
+                  We assess your workforce needs, operating context and compliance exposure.
                 </p>
               </div>
             </div>
@@ -669,12 +650,12 @@ const About = () => {
                   className="fw-bold mb-3"
                   style={{ color: 'white', fontSize: '1.3rem' }}
                 >
-                  We ask the hard questions
+                  Design the right framework
                 </h5>
                 <p 
                   style={{ color: 'white', fontSize: '14px', lineHeight: '1.6' }}
                 >
-                  Challenging assumptions and digging deeper to uncover root causes and opportunities.
+                  We develop practical workforce, payroll or HR solutions aligned to your operational realities.
                 </p>
               </div>
             </div>
@@ -709,12 +690,12 @@ const About = () => {
                   className="fw-bold mb-3"
                   style={{ color: 'white', fontSize: '1.3rem' }}
                 >
-                  We design solutions
+                  Execute with structure
                 </h5>
                 <p 
                   style={{ color: 'white', fontSize: '14px', lineHeight: '1.6' }}
                 >
-                  Creating practical, compliant, and human-centered solutions tailored to your needs.
+                  We implement each solution carefully, with proper process, documentation and control.
                 </p>
               </div>
             </div>
@@ -749,12 +730,12 @@ const About = () => {
                   className="fw-bold mb-3"
                   style={{ color: 'white', fontSize: '1.3rem' }}
                 >
-                  Building strong organizations
+                  Sustain compliance
                 </h5>
                 <p 
                   style={{ color: 'white', fontSize: '14px', lineHeight: '1.6' }}
                 >
-                  Where people are treated fairly, decisions are defensible, and leadership is supported by sound HR judgment.
+                  We provide continued support to help clients maintain standards, reduce risk and strengthen workforce governance.
                 </p>
               </div>
             </div>
