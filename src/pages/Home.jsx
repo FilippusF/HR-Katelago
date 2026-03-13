@@ -326,18 +326,6 @@ const Home = () => {
         <div className="container">
           {/* Section Header */}
           <div className="text-center mb-5">
-            <div className="mb-3">
-              <span 
-                className="text-uppercase fw-normal"
-                style={{
-                  color: 'rgba(255, 255, 255, 0.7)',
-                  fontSize: '14px',
-                  letterSpacing: '3px'
-                }}
-              >
-                VISION & MISSION
-              </span>
-            </div>
             <h2 
               className="display-5 fw-bold text-white mb-4"
               style={{
