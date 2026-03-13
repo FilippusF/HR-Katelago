@@ -80,7 +80,7 @@ const Header = () => {
 
       {/* Main Navigation */}
       <nav className="navbar navbar-expand-lg position-sticky top-0 shadow-sm transparent-background" style={{ 
-        zIndex: 1050,
+        zIndex: 9999,
         padding: '12px 0',
         backdropFilter: 'blur(10px)',
         WebkitBackdropFilter: 'blur(10px)',
@@ -151,7 +151,8 @@ const Header = () => {
                 <ul className="dropdown-menu border-0 shadow-lg" style={{
                   backgroundColor: '#fff',
                   borderRadius: '8px',
-                  marginTop: '8px'
+                  marginTop: '8px',
+                  zIndex: 1051
                 }}>
                   <li><Link className="dropdown-item py-2 px-3" to="/about" style={{ transition: 'all 0.3s ease' }}>About Us</Link></li>
                 </ul>
@@ -178,7 +179,8 @@ const Header = () => {
                 <ul className="dropdown-menu border-0 shadow-lg" style={{
                   backgroundColor: '#fff',
                   borderRadius: '8px',
-                  marginTop: '8px'
+                  marginTop: '8px',
+                  zIndex: 1051
                 }}>
                   <li><Link className="dropdown-item py-2 px-3" to="/services" style={{ transition: 'all 0.3s ease' }}>All Services</Link></li>
                   <li><Link className="dropdown-item py-2 px-3" to="/industries" style={{ transition: 'all 0.3s ease' }}>Industries we serve</Link></li>
@@ -206,7 +208,8 @@ const Header = () => {
                 <ul className="dropdown-menu border-0 shadow-lg" style={{
                   backgroundColor: '#fff',
                   borderRadius: '8px',
-                  marginTop: '8px'
+                  marginTop: '8px',
+                  zIndex: 1051
                 }}>
                   <li><a className="dropdown-item py-2 px-3" href="/careers" style={{ transition: 'all 0.3s ease' }}>Recent Vacancies</a></li>
                 </ul>

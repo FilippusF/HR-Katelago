@@ -11,6 +11,7 @@ import StationImage1 from '../assets/images/10.jpg';
 import StationImage3 from '../assets/images/mission.jpg';
 import StationImage4 from '../assets/images/13.jpg';
 import StationImage5 from '../assets/images/20.png';
+import OilGasImage from '../assets/images/Oil & Gas.png';
 
 
 const Services = () => {
@@ -132,151 +133,169 @@ const Services = () => {
       </section>
 
 
-            {/* Workforce Support for Oil & Gas Section */}
-<section id="talent-acquisition"
-  className="py-5"
-  style={{
-    backgroundColor: '#174D31'
-  }}
->
-  <div className="container">
-    {/* Section Header */}
-    <div className="row mb-5">
-      <div className="col-12 text-center">
-        <h2 className="display-5 fw-bold text-white mb-4"
-          style={{
-            lineHeight: '1.2',
-            fontSize: '2.5rem'
-          }}
-        >
-          Oil & Gas Workforce Solutions
-        </h2>
-        
-        <div className='container' style={{padding: '20px', borderRadius: '10px', backgroundColor: 'rgba(84, 82, 82, 0.2)',
-          backdropFilter: 'blur(20px)',
-          border: '1px solid rgba(255, 255, 255, 0.2)', display: 'inline-block'}}>
-          <p 
-            className="text-white mb-3"
-            style={{ 
-              opacity: 0.9,
-              fontSize: '1.1rem',
-              lineHeight: '1.6',
-              maxWidth: '800px',
-              margin: '0 auto'
-            }}
-          >
-            Oil &amp; Gas projects need more than recruitment. They need workforce structures that can hold up under pressure.
-          </p>
-          <p 
-            className="text-white mb-0"
-            style={{ 
-              opacity: 0.9,
-              fontSize: '1.1rem',
-              lineHeight: '1.6',
-              maxWidth: '800px',
-              margin: '0 auto'
-            }}
-          >
-            Katelago supports operators, EPC contractors, drilling companies and project teams with practical workforce compliance, payroll structure and employment support built for regulated environments.
-          </p>
-        </div>
-      </div>
-    </div>
+      {/* Workforce Support for Oil & Gas Section */}
+      <section id="talent-acquisition" className="py-5" style={{ backgroundColor: '#174D31' }}>
+        <div className="container">
+          <div className="row align-items-center">
+            {/* Left Content */}
+            <div className="col-lg-6 pe-lg-5">
+              <div className="mb-3">
+                <span 
+                  className="text-uppercase fw-medium"
+                  style={{ 
+                    fontSize: '20px',
+                    letterSpacing: '2px',
+                    color: '#c09c31',
+                    fontWeight: '600'
+                  }}
+                >
+                  Overview
+                </span>
+              </div>
+              
+              <h2 className="display-6 fw-bold mb-3"
+                style={{
+                  fontSize: '2.5rem',
+                  lineHeight: '1.2',
+                  color: 'white',
+                  fontWeight: '700'
+                }}
+              >
+                Oil & Gas Workforce Solutions
+              </h2>
+              
+              {/* Tagline */}
+              <div 
+                className="mb-4 p-3 rounded-3"
+                style={{
+                  backgroundColor: '#c09c31',
+                  border: '2px solid #c09c31',
+                  borderRadius: '12px'
+                }}
+              >
+                <p 
+                  className="mb-0 text-center fw-bold"
+                  style={{
+                    fontSize: '1.1rem',
+                    color: '#174D31',
+                    letterSpacing: '1px',
+                    fontWeight: '600'
+                  }}
+                >
+                  Workforce structures that can hold up under pressure.
+                </p>
+              </div>
+              
+              <p 
+                className="mb-4"
+                style={{
+                  fontSize: '1rem',
+                  lineHeight: '1.6',
+                  color: 'white'
+                }}
+              >
+                Katelago supports operators, EPC contractors, drilling companies and project teams with practical workforce compliance, payroll structure and employment support built for regulated environments.
+              </p>
+              
+              <button
+                className="btn fw-bold"
+                onClick={() => navigate('/contact')}
+                style={{
+                  backgroundColor: 'white',
+                  color: '#174D31',
+                  border: 'none',
+                  padding: '12px 24px',
+                  fontSize: '1rem',
+                  borderRadius: '8px',
+                  transition: 'all 0.3s ease',
+                  marginLeft: '160px',
+                  cursor: 'pointer'
+                }}
+              >
+                Request a Consultation
+              </button>
+            </div>
 
-    {/* What We Support Section */}
-    <div className="row mb-5">
-      <div className="col-lg-6 mb-4">
-        <div 
-          className="p-4 rounded-4 h-100"
-          style={{
-            backgroundColor: '#c09c31',
-            border: '2px solid #c09c31'
-          }}
-        >
-          <h3 className="fw-bold mb-3" style={{ color: '#174D31', fontSize: '1.5rem' }}>
-            What We Support
-          </h3>
-          <p className="mb-3" style={{ color: '#174D31', fontSize: '1rem', lineHeight: '1.6' }}>
-            Our Oil &amp; Gas service is designed to support workforce setup, mobilisation and close-out in a lawful and organised way.
-          </p>
-          <ul className="mb-0" style={{ fontSize: '0.95rem', color: '#174D31', paddingLeft: '1.2rem', lineHeight: '1.8' }}>
-            <li>Pre-project workforce compliance reviews</li>
-            <li>Workforce mobilisation planning</li>
-            <li>Rotational and offshore workforce support</li>
-            <li>Project payroll structure</li>
-            <li>Immigration and local labour alignment</li>
-            <li>Demobilisation and termination support</li>
-            <li>Employment documentation that is clear and review-ready</li>
-          </ul>
-        </div>
-      </div>
+            {/* Right Content - Services Grid */}
+            <div className="col-lg-6 mt-5 mt-lg-0">
+              <div className="row g-4">
+                {/* Image Card */}
+                <div className="col-12">
+                  <div 
+                    className="position-relative rounded-4 overflow-hidden"
+                    style={{
+                      height: '250px'
+                    }}
+                  >
+                    <img 
+                      src={OilGasImage}
+                      alt="Oil & Gas Services"
+                      className="w-100 h-100"
+                      style={{
+                        objectFit: 'cover',
+                        objectPosition: 'center'
+                      }}
+                    />
+                  </div>
+                </div>
 
-      <div className="col-lg-6 mb-4">
-        <div 
-          className="p-4 rounded-4 h-100"
-          style={{
-            backgroundColor: '#c09c31',
-            border: '2px solid #c09c31'
-          }}
-        >
-          <h3 className="fw-bold mb-3" style={{ color: '#174D31', fontSize: '1.5rem' }}>
-            Why This Matters
-          </h3>
-          <p className="mb-3" style={{ color: '#174D31', fontSize: '1rem', lineHeight: '1.6' }}>
-            In project environments, small workforce gaps can become expensive very quickly.
-          </p>
-          <p className="mb-0" style={{ color: '#174D31', fontSize: '1rem', lineHeight: '1.6' }}>
-            Unclear contracts, poor overtime control, delayed registrations or weak close-out planning can lead to disputes, payroll exposure and operational disruption.
-            <br /><br />
-            Katelago helps clients reduce that risk by putting the right structure in place early.
-          </p>
-        </div>
-      </div>
-    </div>
+                {/* Service Cards */}
+                <div className="col-6">
+                  <div 
+                    className="p-4 rounded-4 h-100"
+                    style={{
+                      backgroundColor: '#c09c31',
+                      color: '#174D31',
+                      border: '2px solid #c09c31',
+                      borderRadius: '12px'
+                    }}
+                  >
+                    <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
+                      What We Support
+                    </h5>
+                    <ul className="mb-0" style={{ fontSize: '0.9rem', color: '#174D31', paddingLeft: '1.2rem' }}>
+                      <li>Pre-project workforce compliance reviews</li>
+                      <li>Workforce mobilisation planning</li>
+                      <li>Rotational and offshore workforce support</li>
+                      <li>Project payroll structure</li>
+                      <li>Immigration and local labour alignment</li>
+                      <li>Demobilisation and termination support</li>
+                      <li>Employment documentation that is clear and review-ready</li>
+                    </ul>
+                  </div>
+                </div>
 
-    {/* CTA Section */}
-    <div className="row">
-      <div className="col-12 text-center">
-        <div 
-          className="p-5 rounded-4"
-          style={{
-            backgroundColor: 'rgba(255, 255, 255, 0.1)',
-            backdropFilter: 'blur(10px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)'
-          }}
-        >
-          <h4 className="fw-bold mb-3 text-white" style={{ fontSize: '1.3rem' }}>
-            Planning workforce mobilisation in Namibia?
-          </h4>
-          <p className="mb-4 text-white" style={{ fontSize: '1.1rem', opacity: 0.9 }}>
-            Speak to Katelago about structured workforce support for Oil &amp; Gas and project-based operations.
-          </p>
-          <button
-            className="btn fw-bold"
-            onClick={() => navigate('/contact')}
-            style={{
-              backgroundColor: 'white',
-              color: '#174D31',
-              border: 'none',
-              padding: '14px 32px',
-              fontSize: '1.1rem',
-              borderRadius: '8px',
-              transition: 'all 0.3s ease',
-              cursor: 'pointer'
-            }}
-          >
-            Request a Consultation
-          </button>
+                <div className="col-6">
+                  <div 
+                    className="p-4 rounded-4 h-100"
+                    style={{
+                      backgroundColor: '#c09c31',
+                      color: '#174D31',
+                      border: '2px solid #c09c31',
+                      borderRadius: '12px'
+                    }}
+                  >
+                    <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
+                      Why This Matters
+                    </h5>
+                    <p className="mb-0" style={{ fontSize: '0.9rem', color: '#174D31' }}>
+                      In project environments, small workforce gaps can become expensive very quickly.
+                      <br /><br />
+                      Unclear contracts, poor overtime control, delayed registrations or weak close-out planning can lead to disputes, payroll exposure and operational disruption.
+                      <br /><br />
+                      Katelago helps clients reduce that risk by putting the right structure in place early.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
 
 {/* Employer of Record Section */}
-<section id="employer-of-record"
-  className="py-5"
+<section id="employer-of-record" className="py-5"
   style={{
     backgroundImage: `url(${missionImage})`,
     backgroundSize: 'cover',
@@ -285,153 +304,161 @@ const Services = () => {
   }}
 >
   <div className="container">
-    {/* Section Header */}
-    <div className="row mb-5">
-      <div className="col-12 text-center">
-        <h2 className="display-5 fw-bold text-white mb-4"
+    <div className="row align-items-center">
+      {/* Left Content */}
+      <div className="col-lg-6 pe-lg-5">
+        <div className="mb-3">
+          <span 
+            className="text-uppercase fw-medium"
+            style={{ 
+              fontSize: '20px',
+              letterSpacing: '2px',
+              color: '#c09c31',
+              fontWeight: '600'
+            }}
+          >
+            Overview
+          </span>
+        </div>
+        
+        <h2 className="display-6 fw-bold mb-3"
           style={{
+            fontSize: '2.5rem',
             lineHeight: '1.2',
-            fontSize: '2.5rem'
+            color: 'white',
+            fontWeight: '700'
           }}
         >
           Employer of Record Services in Namibia
         </h2>
         
-        <div className='container' style={{padding: '20px', borderRadius: '10px', backgroundColor: 'rgba(84, 82, 82, 0.4)',
-          backdropFilter: 'blur(30px)',
-          border: '1px solid rgba(255, 255, 255, 0.2)', display: 'inline-block'}}>
+        {/* Tagline */}
+        <div 
+          className="mb-4 p-3 rounded-3"
+          style={{
+            backgroundColor: '#c09c31',
+            border: '2px solid #c09c31',
+            borderRadius: '12px'
+          }}
+        >
           <p 
-            className="text-white mb-3"
-            style={{ 
-              opacity: 0.9,
-              fontSize: '1.2rem',
-              lineHeight: '1.6',
-              maxWidth: '800px',
-              margin: '0 auto'
+            className="mb-0 text-center fw-bold"
+            style={{
+              fontSize: '1.1rem',
+              color: '#174D31',
+              letterSpacing: '1px',
+              fontWeight: '600'
             }}
           >
             Hire employees in Namibia without opening a local entity too early.
           </p>
-          <p 
-            className="text-white mb-0"
-            style={{ 
-              opacity: 0.9,
-              fontSize: '1.2rem',
-              lineHeight: '1.6',
-              maxWidth: '800px',
-              margin: '0 auto'
-            }}
-          >
-            Katelago acts as the local employer while you manage the employee's day-to-day work. We handle compliant contracts, payroll, statutory administration and core employment support in line with Namibian requirements.
-          </p>
         </div>
-      </div>
-    </div>
-
-    {/* How the Service Helps */}
-    <div className="row mb-5">
-      <div className="col-12">
-        <div 
-          className="p-4 rounded-4"
+        
+        <p 
+          className="mb-4"
           style={{
-            backgroundColor: 'rgba(255, 255, 255, 0.15)',
-            backdropFilter: 'blur(15px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)'
+            fontSize: '1rem',
+            lineHeight: '1.6',
+            color: 'white'
           }}
         >
-          <h3 className="fw-bold mb-3 text-white" style={{ fontSize: '1.6rem' }}>
-            How the Service Helps
-          </h3>
-          <p className="mb-3 text-white" style={{ fontSize: '1.1rem', lineHeight: '1.6', opacity: 0.9 }}>
-            For many international organisations, the real challenge is not only finding talent. It is employing people lawfully from the first day.
-          </p>
-          <p className="mb-0 text-white" style={{ fontSize: '1.1rem', lineHeight: '1.6', opacity: 0.9 }}>
-            Our EOR service helps clients enter the market in a structured way, reduce early compliance risk and focus on operations while we manage the local employment side.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    {/* EOR Support and When It's Right */}
-    <div className="row mb-5">
-      <div className="col-lg-6 mb-4">
-        <div 
-          className="p-4 rounded-4 h-100"
+          Katelago acts as the local employer while you manage the employee's day-to-day work. We handle compliant contracts, payroll, statutory administration and core employment support in line with Namibian requirements.
+        </p>
+        
+        <button
+          className="btn fw-bold"
+          onClick={() => navigate('/contact')}
           style={{
-            backgroundColor: 'rgba(255, 255, 255, 0.15)',
-            backdropFilter: 'blur(15px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)'
+            backgroundColor: 'white',
+            color: '#174D31',
+            border: 'none',
+            padding: '12px 24px',
+            fontSize: '1rem',
+            borderRadius: '8px',
+            transition: 'all 0.3s ease',
+            marginLeft: '160px',
+            cursor: 'pointer'
           }}
         >
-          <h3 className="fw-bold mb-3 text-white" style={{ fontSize: '1.6rem' }}>
-            EOR Support Includes
-          </h3>
-          <ul className="mb-0 text-white" style={{ fontSize: '1.05rem', paddingLeft: '1.2rem', lineHeight: '1.8', opacity: 0.9 }}>
-            <li>Compliant local employment contracts</li>
-            <li>Employee onboarding and file setup</li>
-            <li>Monthly payroll processing</li>
-            <li>PAYE and Social Security administration</li>
-            <li>Payslips and payroll reporting</li>
-            <li>Leave and employee record management</li>
-            <li>Termination calculations and close-out support</li>
-            <li>Basic HR and compliance guidance</li>
-            <li>Immigration support where needed</li>
-          </ul>
-        </div>
+          Talk to Us About EOR
+        </button>
       </div>
 
-      <div className="col-lg-6 mb-4">
-        <div 
-          className="p-4 rounded-4 h-100"
-          style={{
-            backgroundColor: 'rgba(255, 255, 255, 0.15)',
-            backdropFilter: 'blur(15px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)'
-          }}
-        >
-          <h3 className="fw-bold mb-3 text-white" style={{ fontSize: '1.6rem' }}>
-            When EOR Is the Right Fit
-          </h3>
-          <ul className="mb-0 text-white" style={{ fontSize: '1.05rem', paddingLeft: '1.2rem', lineHeight: '1.8', opacity: 0.9 }}>
-            <li>You want to hire in Namibia before setting up a local company</li>
-            <li>You need to enter the market quickly but stay compliant</li>
-            <li>You are testing operations or mobilising a project team</li>
-            <li>You need a lawful local employment structure while keeping focus on your core business</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+      {/* Right Content - Services Grid */}
+      <div className="col-lg-6 mt-5 mt-lg-0">
+        <div className="row g-4">
+          {/* Image Card */}
+          <div className="col-12">
+            <div 
+              className="position-relative rounded-4 overflow-hidden"
+              style={{
+                height: '250px'
+              }}
+            >
+              <img 
+                src={StationImage4}
+                alt="EOR Services"
+                className="w-100 h-100"
+                style={{
+                  objectFit: 'cover',
+                  objectPosition: 'center'
+                }}
+              />
+            </div>
+          </div>
 
-    {/* CTA Section */}
-    <div className="row">
-      <div className="col-12 text-center">
-        <div 
-          className="p-5 rounded-4"
-          style={{
-            backgroundColor: 'rgba(255, 255, 255, 0.15)',
-            backdropFilter: 'blur(15px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)'
-          }}
-        >
-          <h4 className="fw-bold mb-4 text-white" style={{ fontSize: '1.4rem' }}>
-            Need to hire in Namibia quickly and correctly?
-          </h4>
-          <button
-            className="btn fw-bold"
-            onClick={() => navigate('/contact')}
-            style={{
-              backgroundColor: 'white',
-              color: '#174D31',
-              border: 'none',
-              padding: '14px 32px',
-              fontSize: '1.1rem',
-              borderRadius: '8px',
-              transition: 'all 0.3s ease',
-              cursor: 'pointer'
-            }}
-          >
-            Talk to Us About EOR
-          </button>
+          {/* Service Cards */}
+          <div className="col-6">
+            <div 
+              className="p-4 rounded-4 h-100"
+              style={{
+                backgroundColor: '#c09c31',
+                color: '#174D31',
+                border: '2px solid #c09c31',
+                borderRadius: '12px'
+              }}
+            >
+              <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
+                EOR Support Includes
+              </h5>
+              <ul className="mb-0" style={{ fontSize: '0.9rem', color: '#174D31', paddingLeft: '1.2rem' }}>
+                <li>Compliant local employment contracts</li>
+                <li>Employee onboarding and file setup</li>
+                <li>Monthly payroll processing</li>
+                <li>PAYE and Social Security administration</li>
+                <li>Payslips and payroll reporting</li>
+                <li>Leave and employee record management</li>
+                <li>Termination calculations and close-out support</li>
+                <li>Basic HR and compliance guidance</li>
+                <li>Immigration support where needed</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="col-6">
+            <div 
+              className="p-4 rounded-4 h-100"
+              style={{
+                backgroundColor: '#c09c31',
+                color: '#174D31',
+                border: '2px solid #c09c31',
+                borderRadius: '12px'
+              }}
+            >
+              <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
+                When EOR Is the Right Fit
+              </h5>
+              <p className="mb-0" style={{ fontSize: '0.9rem', color: '#174D31' }}>
+                You want to hire in Namibia before setting up a local company.
+                <br /><br />
+                You need to enter the market quickly but stay compliant.
+                <br /><br />
+                You are testing operations or mobilising a project team.
+                <br /><br />
+                You need a lawful local employment structure while keeping focus on your core business.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -602,9 +629,8 @@ const Services = () => {
         </div>
       </section>
 
-      {/* HR Consulting & Outsourcing Section */}
-      <section id="hr-consulting"
-        className="py-5"
+      {/* HR Advisory Section */}
+      <section id="hr-consulting" className="py-5"
         style={{
           backgroundImage: `url(${missionImage})`,
           backgroundSize: 'cover',
@@ -613,126 +639,154 @@ const Services = () => {
         }}
       >
         <div className="container">
-          {/* Section Header */}
-          <div className="text-center mb-5">
-            
-            <h2 className="display-5 fw-bold mb-4 text-white"
-              style={{
-                fontSize: '2.8rem',
-                lineHeight: '1.2',
-                fontWeight: '700'
-              }}
-            >
-              Strategic HR Advisory Services
-            </h2>
-            
-            <div className='container' style={{padding: '20px', borderRadius: '10px' , backgroundColor: 'rgba(84, 82, 82, 0.2)',
-                backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)' ,display: 'inline-block'}}>
-            <p 
-              className="mb-5 text-white"
-              style={{
-                fontSize: '1.1rem',
-                lineHeight: '1.6',
-                opacity: 0.9,
-                maxWidth: '600px',
-                margin: '0 auto',
-                marginTop: '20px'
-              }}
-            >
-              Alongside our compliance and payroll services, Katelago provides 
-              practical HR advisory support that helps organisations make better workforce decisions.
-            </p>
-          </div>
-          </div>
-          
-          {/* Services Grid */}
-          <div className="row g-4">
-            {[
-              'Psychometric Assessments',
-              'Job Grading and Salary Benchmarking',
-              'Organisational Development',
-              'Recruitment',
-              'Performance Framework Design',
-              'HR governance framework support'
-            ].map((service, index) => (
-              <div 
-                key={index}
-                className="col-lg-6 col-md-6"
+          <div className="row align-items-center">
+            {/* Left Content */}
+            <div className="col-lg-6 pe-lg-5">
+              <div className="mb-3">
+                <span 
+                  className="text-uppercase fw-medium"
+                  style={{ 
+                    fontSize: '20px',
+                    letterSpacing: '2px',
+                    color: '#c09c31',
+                    fontWeight: '600'
+                  }}
+                >
+                  Overview
+                </span>
+              </div>
+              
+              <h2 className="display-6 fw-bold mb-3"
                 style={{
-                  animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`
+                  fontSize: '2.5rem',
+                  lineHeight: '1.2',
+                  color: 'white',
+                  fontWeight: '700'
                 }}
               >
-                <div 
-                  className="service-item d-flex align-items-center p-4 rounded-4"
+                Strategic HR Advisory Services
+              </h2>
+              
+              {/* Tagline */}
+              <div 
+                className="mb-4 p-3 rounded-3"
+                style={{
+                  backgroundColor: '#c09c31',
+                  border: '2px solid #c09c31',
+                  borderRadius: '12px'
+                }}
+              >
+                <p 
+                  className="mb-0 text-center fw-bold"
                   style={{
-                    backgroundColor: 'rgba(20, 18, 18, 0.3)',
-                    backdropFilter: 'blur(10px)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    transition: 'all 0.3s ease',
-                    cursor: 'pointer'
+                    fontSize: '1.1rem',
+                    color: '#174D31',
+                    letterSpacing: '1px',
+                    fontWeight: '600'
                   }}
                 >
-                  <div 
-                    className="me-3 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
-                    style={{
-                      width: '24px',
-                      height: '24px',
-                      backgroundColor: '#c09c31'
-                    }}
-                  >
-                    <svg width="12" height="12" fill="white" viewBox="0 0 16 16">
-                      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                    </svg>
-                  </div>
-                  <span 
-                    className="text-white"
-                    style={{ 
-                      fontSize: '20px',
-                      fontWeight: '500',
-                      opacity: 0.95
-                    }}
-                  >
-                    {service}
-                  </span>
-                </div>
+                  Practical HR advisory support for better workforce decisions.
+                </p>
               </div>
-            ))}
-          </div>
-          
-          {/* Advisory Section */}
-          <div className="row mt-5">
-            <div className="col-12 text-center">
-              <div className='container' style={{padding: '20px', borderRadius: '10px', backgroundColor: 'rgba(84, 82, 82, 0.2)',
-                backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)', display: 'inline-block'}}>
-                <h3 className="fw-bold mb-3 text-white" style={{ fontSize: '1.5rem' }}>
-                  How We Approach It
-                </h3>
-                <p 
-                  className="mb-3 text-white"
-                  style={{
-                    fontSize: '1.1rem',
-                    lineHeight: '1.6',
-                    opacity: 0.9,
-                    maxWidth: '600px',
-                    margin: '0 auto'
-                  }}
-                >
-                  Our advisory work is practical.
-                </p>
-                <p 
-                  className="mb-0 text-white"
-                  style={{
-                    fontSize: '1.1rem',
-                    lineHeight: '1.6',
-                    opacity: 0.9,
-                    maxWidth: '600px',
-                    margin: '0 auto'
-                  }}
-                >
-                  Whether the need is assessment, grading, recruitment or organisational structure, the goal is the same: clearer decisions, stronger fairness and better alignment between people and business needs.
-                </p>
+              
+              <p 
+                className="mb-4"
+                style={{
+                  fontSize: '1rem',
+                  lineHeight: '1.6',
+                  color: 'white'
+                }}
+              >
+                Alongside our compliance and payroll services, Katelago provides practical HR advisory support that helps organisations make better workforce decisions.
+              </p>
+              
+              <button
+                className="btn fw-bold"
+                onClick={() => navigate('/contact')}
+                style={{
+                  backgroundColor: 'white',
+                  color: '#174D31',
+                  border: 'none',
+                  padding: '12px 24px',
+                  fontSize: '1rem',
+                  borderRadius: '8px',
+                  transition: 'all 0.3s ease',
+                  marginLeft: '160px',
+                  cursor: 'pointer'
+                }}
+              >
+                Talk to Us About HR Advisory
+              </button>
+            </div>
+
+            {/* Right Content - Services Grid */}
+            <div className="col-lg-6 mt-5 mt-lg-0">
+              <div className="row g-4">
+                {/* Image Card */}
+                <div className="col-12">
+                  <div 
+                    className="position-relative rounded-4 overflow-hidden"
+                    style={{
+                      height: '250px'
+                    }}
+                  >
+                    <img 
+                      src={StationImage2}
+                      alt="HR Advisory Services"
+                      className="w-100 h-100"
+                      style={{
+                        objectFit: 'cover',
+                        objectPosition: 'center'
+                      }}
+                    />
+                  </div>
+                </div>
+
+                {/* Service Cards */}
+                <div className="col-6">
+                  <div 
+                    className="p-4 rounded-4 h-100"
+                    style={{
+                      backgroundColor: '#c09c31',
+                      color: '#174D31',
+                      border: '2px solid #c09c31',
+                      borderRadius: '12px'
+                    }}
+                  >
+                    <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
+                      HR Advisory Services Include
+                    </h5>
+                    <ul className="mb-0" style={{ fontSize: '0.9rem', color: '#174D31', paddingLeft: '1.2rem' }}>
+                      <li>Psychometric Assessments</li>
+                      <li>Job Grading and Salary Benchmarking</li>
+                      <li>Organisational Development</li>
+                      <li>Recruitment</li>
+                      <li>Performance Framework Design</li>
+                      <li>HR governance framework support</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="col-6">
+                  <div 
+                    className="p-4 rounded-4 h-100"
+                    style={{
+                      backgroundColor: '#c09c31',
+                      color: '#174D31',
+                      border: '2px solid #c09c31',
+                      borderRadius: '12px'
+                    }}
+                  >
+                    <h5 className="fw-bold mb-2" style={{ fontSize: '1.1rem' }}>
+                      How We Approach It
+                    </h5>
+                    <p className="mb-0" style={{ fontSize: '0.9rem', color: '#174D31' }}>
+                      Our advisory work is practical.
+                      <br /><br />
+                      Whether the need is assessment, grading, recruitment or organisational structure, the goal is the same: clearer decisions, stronger fairness and better alignment between people and business needs.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
