@@ -91,6 +91,8 @@ const Hero = () => {
         .hero-section {
           position: relative;
           overflow: hidden;
+          width: 100%;
+          max-width: 100vw;
         }
         
         .hero-content {
@@ -119,22 +121,41 @@ const Hero = () => {
         @media (max-width: 768px) {
           .hero-section {
             background-attachment: scroll;
+            min-height: 100vh !important;
+            padding: 2rem 1rem;
           }
           
           .hero-content h1 {
-            font-size: 2.5rem !important;
+            font-size: 2rem !important;
             line-height: 1.3;
+            margin-bottom: 2rem !important;
           }
           
           .hero-content p {
             font-size: 12px;
             letter-spacing: 2px;
           }
+
+          .btn-lg {
+            padding: 0.75rem 2rem !important;
+            font-size: 12px !important;
+            min-width: 180px !important;
+          }
+
+          .container {
+            padding-left: 1rem;
+            padding-right: 1rem;
+          }
         }
         
         @media (max-width: 576px) {
           .hero-content h1 {
-            font-size: 2rem !important;
+            font-size: 1.75rem !important;
+          }
+
+          .btn-lg {
+            padding: 0.65rem 1.5rem !important;
+            font-size: 11px !important;
           }
         }
       `}</style>

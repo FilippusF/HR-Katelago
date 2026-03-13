@@ -295,10 +295,31 @@ const Header = () => {
             margin-top: 1rem;
             align-self: flex-start;
           }
-        }
-          .transparent-background{
-          ackground-color: rgba(255, 255, 255, 0.11) !important;
+
+          .container-fluid {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
           }
+
+          .navbar-brand img {
+            height: 45px !important;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .small {
+            font-size: 0.75rem !important;
+          }
+
+          ul li {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+          }
+        }
+
+        .transparent-background{
+          background-color: rgba(255, 255, 255, 0.11) !important;
+        }
       `}</style>
     </>
   );

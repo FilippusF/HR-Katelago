@@ -223,7 +223,7 @@ const Home = () => {
 
                 {/* Small Sliding Image */}
                 <div 
-                  className={`position-absolute bg-white rounded-4 shadow-lg p-4`}
+                  className={`position-absolute bg-white rounded-4 shadow-lg p-4 d-none d-lg-block`}
                   style={{
                     bottom: '20px',
                     left: '-50px',
@@ -371,17 +371,12 @@ const Home = () => {
             {/* Left Card */}
             <div className="col-lg-6 mb-4">
               <div 
-                className="h-100  rounded-4"
+                className="h-100 rounded-4"
                 style={{
                   backgroundColor: 'rgba(255, 255, 255, 0.1)',
                   backdropFilter: 'blur(10px)',
                   border: '1px solid rgba(255, 255, 255, 0.1)',
-                  display:'inline-block',
-                  paddingRight:'190px',
-                  paddingLeft:'20px',
-                  paddingTop:'20px',
-                  paddingBottom:'',
-                  marginLeft: '90px'  
+                  padding: '20px'
                 }}
               >
                 <h3 className="text-white mb-4 fw-bold"> 
@@ -1038,8 +1033,74 @@ const Home = () => {
           box-shadow: 0 6px 20px rgba(30, 86, 49, 0.4) !important;
         }
 
-      
-          
+        .home-page {
+          overflow-x: hidden;
+          width: 100%;
+          max-width: 100vw;
+        }
+
+        .container, .container-fluid {
+          max-width: 100%;
+          overflow-x: hidden;
+        }
+
+        @media (max-width: 991px) {
+          .display-5 {
+            font-size: 2rem !important;
+          }
+
+          .display-4 {
+            font-size: 2.5rem !important;
+          }
+
+          .lead {
+            font-size: 1rem !important;
+          }
+
+          section {
+            padding: 2rem 0 !important;
+          }
+
+          .py-5 {
+            padding-top: 2rem !important;
+            padding-bottom: 2rem !important;
+          }
+
+          .pe-lg-5 {
+            padding-right: 0 !important;
+          }
+
+          .col-lg-6, .col-lg-8, .col-lg-4 {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+          }
+
+          .choose-card {
+            height: auto !important;
+            min-height: 180px;
+          }
+
+          .choose-image {
+            height: 250px !important;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .container {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+          }
+
+          .row {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+          }
+
+          .btn-lg {
+            padding: 0.75rem 2rem !important;
+            font-size: 14px !important;
+          }
+        }
       `}</style>
     </div>
   );
