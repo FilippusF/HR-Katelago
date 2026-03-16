@@ -731,7 +731,7 @@ const Services = () => {
                     }}
                   >
                     <img 
-                      src={StationImage2}
+                      src={StationImage4}
                       alt="HR Advisory Services"
                       className="w-100 h-100"
                       style={{
