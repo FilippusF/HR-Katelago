@@ -208,7 +208,7 @@ const Services = () => {
                   fontSize: '1rem',
                   borderRadius: '8px',
                   transition: 'all 0.3s ease',
-                  marginLeft: '160px',
+
                   cursor: 'pointer'
                 }}
               >
@@ -300,7 +300,7 @@ const Services = () => {
     backgroundImage: `url(${missionImage})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    backgroundAttachment: 'fixed'
+    backgroundAttachment: window.innerWidth > 768 ? 'fixed' : 'scroll'
   }}
 >
   <div className="container">
@@ -376,7 +376,7 @@ const Services = () => {
             fontSize: '1rem',
             borderRadius: '8px',
             transition: 'all 0.3s ease',
-            marginLeft: '160px',
+
             cursor: 'pointer'
           }}
         >
@@ -541,7 +541,7 @@ const Services = () => {
                   fontSize: '1rem',
                   borderRadius: '8px',
                   transition: 'all 0.3s ease',
-                  marginLeft: '160px',
+
                   cursor: 'pointer'
                 }}
               >
@@ -635,7 +635,7 @@ const Services = () => {
           backgroundImage: `url(${missionImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundAttachment: 'fixed'
+          backgroundAttachment: window.innerWidth > 768 ? 'fixed' : 'scroll'
         }}
       >
         <div className="container">
@@ -711,7 +711,7 @@ const Services = () => {
                   fontSize: '1rem',
                   borderRadius: '8px',
                   transition: 'all 0.3s ease',
-                  marginLeft: '160px',
+
                   cursor: 'pointer'
                 }}
               >
@@ -801,7 +801,7 @@ const Services = () => {
     backgroundImage: `url(${missionImage})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    backgroundAttachment: 'fixed'
+    backgroundAttachment: window.innerWidth > 768 ? 'fixed' : 'scroll'
   }}
 >
   <div className="container">

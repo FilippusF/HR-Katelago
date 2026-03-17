@@ -227,7 +227,7 @@ const About = () => {
                 
                 {/* Call Us Now Card - Moved outside and positioned at bottom */}
                 <div 
-                  className="position-absolute bg-white rounded shadow p-3"
+                  className="d-none d-lg-block position-absolute bg-white rounded shadow p-3"
                   style={{
                     bottom: '-60px',
                     right: '20px',
@@ -284,7 +284,7 @@ const About = () => {
                 backgroundImage: `url(${missionImage})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                backgroundAttachment: 'fixed'
+                backgroundAttachment: window.innerWidth > 768 ? 'fixed' : 'scroll'
               }}
             >
               <div className="container">

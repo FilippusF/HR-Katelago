@@ -70,7 +70,6 @@ const Home = () => {
         ref={sectionRef}
         className="py-5"
         style={{ 
-          minHeight: '600px',
           overflow: 'hidden',
           backgroundColor: '#174D3A'
         }}
@@ -206,7 +205,7 @@ const Home = () => {
 
                 {/* Small Sliding Image */}
                 <div 
-                  className={`position-absolute bg-white rounded-4 shadow-lg p-4 d-none d-lg-block`}
+                  className={`position-absolute bg-white rounded-4 shadow-lg p-4 d-none d-xl-block`}
                   style={{
                     bottom: '20px',
                     left: '-50px',
@@ -256,7 +255,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <br /><br /> <br />
 
       {/* Clients Section */}
       <section className="py-5" style={{ backgroundColor: '#174D3A' }}>
@@ -320,7 +318,7 @@ const Home = () => {
           backgroundImage: `url(${missionImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundAttachment: 'fixed'
+          backgroundAttachment: window.innerWidth > 768 ? 'fixed' : 'scroll'
         }}
       >
         <div className="container">
