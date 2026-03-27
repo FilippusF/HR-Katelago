@@ -20,12 +20,12 @@ const Footer = () => {
               />
             </div>
             <p className="text-light small" style={{ color: '#ffffff !important' }}>
-              Shaping the future of work in Namibia, we create bold , empowered, and human HR Solutions that move businesses forward.
+              Shaping the future of work in Namibia, We provide structured workforce solutions that help organisations operate with confidence, reduce risk and stay aligned with Namibian labour requirements.
             </p>
           </div>
 
           {/* Quick Links Column */}
-          <div className="col-lg-2 col-md-6 mb-4">
+          <div className="col-lg-2 col-md-6 mb-4 offset-lg-1">
             <h5 className="text-white mb-3">Quick Links</h5>
             <ul className="list-unstyled">
               <li className="mb-2">
@@ -56,51 +56,38 @@ const Footer = () => {
           </div>
 
           {/* HR Solution Column */}
-          <div className="col-lg-2 col-md-6 mb-4">
+          <div className="col-lg-3 col-md-6 mb-4">
             <h5 className="text-white mb-3">HR Solutions</h5>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <a href="/Services#hr-consulting" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services#talent-acquisition" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
-                  HR Consulting 
+                  Oil & Gas Workforce Solutions
+                </a>
+              </li>
+              <li className="mb-2">
+                <a href="/Services#employer-of-record" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                  <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
+                  Employer of Record
                 </a>
               </li>
               <li className="mb-2">
                 <a href="/Services#payroll-administration" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
-                  Payroll Administration
+                  Payroll Governance
                 </a>
               </li>
               <li className="mb-2">
-                <a href="/Services#talent-acquisition" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
+                <a href="/Services#hr-consulting" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
                   <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
-                  Talent Acquisition
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="/Services#job-grading" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
-                  <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
-                  Job Grading
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="/Services#psychometric-assessment" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
-                  <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
-                    Psychometric Assessment
-                </a>
-              </li>
-
-              <li className="mb-2">
-                <a href="/Services#employer-of-record" className="text-light text-decoration-none" style={{ color: '#ffffff !important' }}>
-                  <i className="fas fa-chevron-right me-2" style={{ fontSize: '10px' }}></i>
-                    Employer of Record
+                  Strategic HR Advisory
                 </a>
               </li>
             </ul>
           </div>
 
           {/* Head Office Address Column */}
-          <div className="col-lg-5 col-md-6 mb-4">
+          <div className="col-lg-3 col-md-6 mb-4">
             <h5 className="text-white mb-3">Head Office Address</h5>
             <p className="text-light small mb-3" style={{ color: '#ffffff !important' }}>
               44 Sigma Street, Windhoek, Namibia
@@ -134,7 +121,7 @@ const Footer = () => {
         <div className="row align-items-center">
           <div className="col-12 text-center text-lg-start">
             <p className="mb-0 text-light small" style={{ color: '#ffffff !important' }}>
-              © 2025 All Rights Reserved - Made with 💙 by Loop Technologies
+              © 2026 All Rights Reserved - Made with 💙 by Loop Technologies
             </p>
           </div>
         </div>

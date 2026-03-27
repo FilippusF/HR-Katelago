@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <>
       {/* Top Contact Bar */}
-      <div style={{ backgroundColor: '#174D3A' }} className="text-white py-2">
+      <div style={{ backgroundColor: '#174D3A' }} className="text-white py-2 d-none d-md-block">
         <div className="container-fluid px-4">
           <div className="d-flex justify-content-between align-items-center small">
             <ul style={{
@@ -80,7 +80,7 @@ const Header = () => {
 
       {/* Main Navigation */}
       <nav className="navbar navbar-expand-lg position-sticky top-0 shadow-sm transparent-background" style={{ 
-        zIndex: 1050,
+        zIndex: 9999,
         padding: '12px 0',
         backdropFilter: 'blur(10px)',
         WebkitBackdropFilter: 'blur(10px)',
@@ -137,6 +137,7 @@ const Header = () => {
                   href="#" 
                   role="button" 
                   data-bs-toggle="dropdown"
+                  aria-expanded="false"
                   style={{ 
                     fontSize: '15px',
                     letterSpacing: '0.3px',
@@ -150,7 +151,8 @@ const Header = () => {
                 <ul className="dropdown-menu border-0 shadow-lg" style={{
                   backgroundColor: '#fff',
                   borderRadius: '8px',
-                  marginTop: '8px'
+                  marginTop: '8px',
+                  zIndex: 1051
                 }}>
                   <li><Link className="dropdown-item py-2 px-3" to="/about" style={{ transition: 'all 0.3s ease' }}>About Us</Link></li>
                 </ul>
@@ -163,6 +165,7 @@ const Header = () => {
                   href="#" 
                   role="button" 
                   data-bs-toggle="dropdown"
+                  aria-expanded="false"
                   style={{ 
                     fontSize: '15px',
                     letterSpacing: '0.3px',
@@ -176,7 +179,8 @@ const Header = () => {
                 <ul className="dropdown-menu border-0 shadow-lg" style={{
                   backgroundColor: '#fff',
                   borderRadius: '8px',
-                  marginTop: '8px'
+                  marginTop: '8px',
+                  zIndex: 1051
                 }}>
                   <li><Link className="dropdown-item py-2 px-3" to="/services" style={{ transition: 'all 0.3s ease' }}>All Services</Link></li>
                   <li><Link className="dropdown-item py-2 px-3" to="/industries" style={{ transition: 'all 0.3s ease' }}>Industries we serve</Link></li>
@@ -190,6 +194,7 @@ const Header = () => {
                   href="#" 
                   role="button" 
                   data-bs-toggle="dropdown"
+                  aria-expanded="false"
                   style={{ 
                     fontSize: '15px',
                     letterSpacing: '0.3px',
@@ -203,7 +208,8 @@ const Header = () => {
                 <ul className="dropdown-menu border-0 shadow-lg" style={{
                   backgroundColor: '#fff',
                   borderRadius: '8px',
-                  marginTop: '8px'
+                  marginTop: '8px',
+                  zIndex: 1051
                 }}>
                   <li><a className="dropdown-item py-2 px-3" href="/careers" style={{ transition: 'all 0.3s ease' }}>Recent Vacancies</a></li>
                 </ul>
@@ -295,10 +301,31 @@ const Header = () => {
             margin-top: 1rem;
             align-self: flex-start;
           }
-        }
-          .transparent-background{
-          ackground-color: rgba(255, 255, 255, 0.11) !important;
+
+          .container-fluid {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
           }
+
+          .navbar-brand img {
+            height: 45px !important;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .small {
+            font-size: 0.75rem !important;
+          }
+
+          ul li {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+          }
+        }
+
+        .transparent-background{
+          background-color: rgba(255, 255, 255, 0.11) !important;
+        }
       `}</style>
     </>
   );

@@ -70,7 +70,6 @@ const Home = () => {
         ref={sectionRef}
         className="py-5"
         style={{ 
-          minHeight: '600px',
           overflow: 'hidden',
           backgroundColor: '#174D3A'
         }}
@@ -80,21 +79,6 @@ const Home = () => {
             {/* Left Content */}
             <div className="col-lg-6">
               <div className="pe-lg-5">
-                {/* Who We Are Tag */}
-                <div className="mb-3">
-                  <span 
-                    className="badge text-uppercase fw-normal px-0"
-                    style={{
-                      backgroundColor: 'transparent',
-                      color: 'white',
-                      fontSize: '12px',
-                      letterSpacing: '2px',
-                      fontFamily: 'Arial, sans-serif'
-                    }}
-                  >
-                    WHO WE ARE
-                  </span>
-                </div>
 
                 {/* Main Heading */}
                 <h1 
@@ -105,7 +89,7 @@ const Home = () => {
                     fontFamily: 'Arial, sans-serif'
                   }}
                 >
-                  We create a place where your people love to work!
+                  Workforce Compliance and Payroll Support for Organisations Operating in Namibia
                 </h1>
 
                 {/* Description */}
@@ -118,9 +102,7 @@ const Home = () => {
                     fontFamily: 'Arial, sans-serif'
                   }}
                 >
-                <strong> Being remarkable   is a journey, </strong> and at Katelago, that journey begins with people.
-                 We help organisations build <strong> beautiful businesses</strong> bold, dynamic, and human workplaces 
-                 where teams feel inspired, valued, and equipped to grow.
+                Katelago HR Consultants is a strategic workforce partner based in Namibia
                 </p>
 
                 {/* Quote */}
@@ -133,9 +115,9 @@ const Home = () => {
                     fontFamily: 'Arial, sans-serif'
                   }}
                 >
-                  We blend creativity, strategy, and compliance; drawing on over 20 years of HR expertise in labour law,
-                   people management, and workplace culture.
-                   With deep local insight and a global mindset, we design people solutions that help your business stand out, attract top talent, and sustain success.
+                We support clients with compliant employment setup, Employer of Record services, payroll governance and practical HR advisory that reduces risk and supports smooth operations.
+                <br />
+                Our work is clear, structured and aligned to Namibian labour requirements.
                 </blockquote>
 
                 {/* Feature Item */}
@@ -223,7 +205,7 @@ const Home = () => {
 
                 {/* Small Sliding Image */}
                 <div 
-                  className={`position-absolute bg-white rounded-4 shadow-lg p-4`}
+                  className={`position-absolute bg-white rounded-4 shadow-lg p-4 d-none d-xl-block`}
                   style={{
                     bottom: '20px',
                     left: '-50px',
@@ -253,7 +235,7 @@ const Home = () => {
                     </div>
                     <div>
                       <h6 className="fw-bold mb-1" style={{ color: 'black', fontFamily: 'Arial, sans-serif' }}>
-                        Call Us Now
+                        Speak to a Consultant
                       </h6>
                       <p 
                         className="mb-0"
@@ -273,7 +255,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <br /><br /> <br />
 
       {/* Clients Section */}
       <section className="py-5" style={{ backgroundColor: '#174D3A' }}>
@@ -337,24 +318,12 @@ const Home = () => {
           backgroundImage: `url(${missionImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundAttachment: 'fixed'
+          backgroundAttachment: window.innerWidth > 768 ? 'fixed' : 'scroll'
         }}
       >
         <div className="container">
           {/* Section Header */}
           <div className="text-center mb-5">
-            <div className="mb-3">
-              <span 
-                className="text-uppercase fw-normal"
-                style={{
-                  color: 'rgba(255, 255, 255, 0.7)',
-                  fontSize: '14px',
-                  letterSpacing: '3px'
-                }}
-              >
-                VISION & MISSION
-              </span>
-            </div>
             <h2 
               className="display-5 fw-bold text-white mb-4"
               style={{
@@ -371,17 +340,12 @@ const Home = () => {
             {/* Left Card */}
             <div className="col-lg-6 mb-4">
               <div 
-                className="h-100  rounded-4"
+                className="h-100 rounded-4"
                 style={{
                   backgroundColor: 'rgba(255, 255, 255, 0.1)',
                   backdropFilter: 'blur(10px)',
                   border: '1px solid rgba(255, 255, 255, 0.1)',
-                  display:'inline-block',
-                  paddingRight:'190px',
-                  paddingLeft:'20px',
-                  paddingTop:'20px',
-                  paddingBottom:'',
-                  marginLeft: '90px'  
+                  padding: '20px'
                 }}
               >
                 <h3 className="text-white mb-4 fw-bold"> 
@@ -405,7 +369,8 @@ const Home = () => {
                       </svg>
                     </div>
                     <span className="text-white" style={{ opacity: 0.9 }}>
-                      Bold
+                      Compliance Before Convenience
+
                     </span>
                   </div>
                   
@@ -423,7 +388,8 @@ const Home = () => {
                       </svg>
                     </div>
                     <span className="text-white" style={{ opacity: 0.9 }}>
-                      Dynamic
+                      Structure Creates Stability
+
                     </span>
                   </div>
                   <br />
@@ -442,7 +408,7 @@ const Home = () => {
                       </svg>
                     </div>
                     <span className="text-white" style={{ opacity: 0.9 }}>
-                      Human
+                      Disciplined Execution
                     </span>
                   </div>
 
@@ -460,7 +426,7 @@ const Home = () => {
                       </svg>
                     </div>
                     <span className="text-white" style={{ opacity: 0.9 }}>
-                      Integrity
+                      Risk Awareness
                     </span>
                   </div>
 
@@ -478,7 +444,7 @@ const Home = () => {
                       </svg>
                     </div>
                     <span className="text-white" style={{ opacity: 0.9 }}>
-                      Excellence
+                      Accountability in Advice
                     </span>
                   </div>
 
@@ -496,7 +462,7 @@ const Home = () => {
                       </svg>
                     </div>
                     <span className="text-white" style={{ opacity: 0.9 }}>
-                      Collaboration
+                      Human Dignity Within Governance
                     </span>
                   </div>
 
@@ -541,10 +507,8 @@ const Home = () => {
                           fontSize: '14px'
                         }}
                       >
-                         To redefine the
-                          future of work in Africa by creating bold, 
-                          dynamic, and human workplaces where every business leads with people,
-                           purpose, and progress.
+                         To be Namibia’s leading strategic workforce partner, known for workforce compliance, structured HR 
+                         governance and clear, trusted advice in regulated and project-based environments.
                       </p>
                     </div>
                   </div>
@@ -584,9 +548,8 @@ const Home = () => {
                           fontSize: '14px'
                         }}
                       >
-                      We exist to empower organisations to build compliant, inclusive, and future-ready workplaces 
-                      that honour both 
-                      business performance and human potential.
+                      To help organisations operate with confidence through compliant workforce structures, 
+                      disciplined payroll governance and practical HR advisory aligned to Namibian labour legislation
                       </p>
                     </div>                    
                   </div>
@@ -628,9 +591,8 @@ const Home = () => {
                                 fontSize: '14px'
                               }}
                             >
-                              We believe small actions create extraordinary impact. By listening
-                              deeply, reflecting on our work, and understanding others, we craft solutions that
-                              inspire trust and drive meaningful change.
+                              We believe compliant workforce structures, disciplined payroll governance and clear HR frameworks create stronger organisations. Our approach is practical, structured and aligned to Namibian labour legislation, 
+                              helping clients operate with confidence while protecting both their business and their people.
                             </p>
                           </div>
                         </div>
@@ -705,7 +667,7 @@ const Home = () => {
                       </span>
                     </div>
                     <h6 className="fw-bold mb-2" style={{ color: '#174D3A', fontSize: '14px', lineHeight: '1.3' }}>
-                      Depth of Experience and Sound Judgment
+                      We understand Namibian labour compliance
                     </h6>
                     <p 
                       className="mb-0 flex-grow-1"
@@ -717,7 +679,8 @@ const Home = () => {
                         textAlign: 'justify'
                       }}
                     >
-                      With over 20 years of combined industry experience, we bring practical insight, measured advice, and calm confidence to every HR decision you need to make.
+                      Our work is grounded in practical knowledge of Namibian labour legislation and workforce requirements. We help 
+                      clients navigate employment, payroll and compliance matters with clarity and confidence.
                     </p>
                   </div>
                 </div>
@@ -746,7 +709,7 @@ const Home = () => {
                       </span>
                     </div>
                     <h6 className="fw-bold mb-2" style={{ color: '#174D3A', fontSize: '14px', lineHeight: '1.3' }}>
-                      Strategic HR, Not Transactions
+                      We bring structure to complex workforce environments
                     </h6>
                     <p 
                       className="mb-0 flex-grow-1"
@@ -758,7 +721,8 @@ const Home = () => {
                         textAlign: 'justify'
                       }}
                     >
-                      We don't believe HR should be reactive, generic, or transactional. We partner with organisations to build compliant, resilient, and people-centred workplaces that can withstand growth, change, and scrutiny.
+                      From project-based operations to regulated sectors, we help organisations build clear employment frameworks, 
+                      disciplined payroll systems and practical governance processes that support smooth operations.
                     </p>
                   </div>
                 </div>
@@ -787,7 +751,7 @@ const Home = () => {
                       </span>
                     </div>
                     <h6 className="fw-bold mb-2" style={{ color: '#174D3A', fontSize: '14px', lineHeight: '1.3' }}>
-                      Compliance-Led, People-Centred Solutions
+                      We combine compliance with practical execution
                     </h6>
                     <p 
                       className="mb-0 flex-grow-1"
@@ -799,7 +763,8 @@ const Home = () => {
                         textAlign: 'justify'
                       }}
                     >
-                      Our work is grounded in Namibian labour law and HR best practice. We help you manage risk, meet statutory obligations, and treat people fairly—without losing sight of business realities.
+                      We do not believe in advice that looks good on paper 
+                      but fails in practice. Our approach is practical, measured and designed to work in real business environments.
                     </p>
                   </div>
                 </div>
@@ -848,7 +813,7 @@ const Home = () => {
                   </span>
                 </div>
                 <h6 className="fw-bold mb-2" style={{ fontSize: '14px', lineHeight: '1.3', color:'#174D3A' }}>
-                  Trusted, Ethical Partnership
+                  We support premium, risk-aware organisations
                 </h6>
                 <p 
                   className="mb-0 flex-grow-1"
@@ -860,7 +825,8 @@ const Home = () => {
                     textAlign: 'justify'
                   }}
                 >
-                  We operate with discretion, integrity, and professional accountability. Our clients trust us with sensitive people matters because we lead with sound judgment, ethical practice, and a clear understanding of both employer and employee responsibilities.
+                  We work with businesses that value structure, accountability and sound judgement. Our focus is on 
+                  helping clients make informed workforce decisions that protect both operations and reputation.
                 </p>
               </div>
             </div>
@@ -1038,8 +1004,74 @@ const Home = () => {
           box-shadow: 0 6px 20px rgba(30, 86, 49, 0.4) !important;
         }
 
-      
-          
+        .home-page {
+          overflow-x: hidden;
+          width: 100%;
+          max-width: 100vw;
+        }
+
+        .container, .container-fluid {
+          max-width: 100%;
+          overflow-x: hidden;
+        }
+
+        @media (max-width: 991px) {
+          .display-5 {
+            font-size: 2rem !important;
+          }
+
+          .display-4 {
+            font-size: 2.5rem !important;
+          }
+
+          .lead {
+            font-size: 1rem !important;
+          }
+
+          section {
+            padding: 2rem 0 !important;
+          }
+
+          .py-5 {
+            padding-top: 2rem !important;
+            padding-bottom: 2rem !important;
+          }
+
+          .pe-lg-5 {
+            padding-right: 0 !important;
+          }
+
+          .col-lg-6, .col-lg-8, .col-lg-4 {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+          }
+
+          .choose-card {
+            height: auto !important;
+            min-height: 180px;
+          }
+
+          .choose-image {
+            height: 250px !important;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .container {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+          }
+
+          .row {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+          }
+
+          .btn-lg {
+            padding: 0.75rem 2rem !important;
+            font-size: 14px !important;
+          }
+        }
       `}</style>
     </div>
   );

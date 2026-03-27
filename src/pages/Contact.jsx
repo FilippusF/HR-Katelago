@@ -130,9 +130,8 @@ const Contact = () => {
                   textShadow: '2px 2px 4px rgba(0,0,0,0.5)'
                 }}
               >
-                Let's Start a Conversation
-                <br />
-                About Your HR Needs
+                Start the Right Workforce Conversation
+                
               </h1>
               
               <p 
@@ -144,7 +143,7 @@ const Contact = () => {
                   margin: '0 auto'
                 }}
               >
-                Ready to transform your HR processes? Get in touch with our experts for a personalized consultation.
+                Tell us what support you need, and we will help you find a practical, compliant and well-structured way forward.
               </p>
             </div>
           </div>
