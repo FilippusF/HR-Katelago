@@ -482,7 +482,7 @@ const Home = () => {
                   }}
                 >
                   <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: G.gold, opacity: 0.45, flexShrink: 0 }} />
-                  <img src={client.logo} alt={client.name} style={{ height: '38px', width: 'auto', maxWidth: '110px', objectFit: 'contain' }} />
+                  <img src={client.logo} alt={client.name} style={{ height: '80px', width: 'auto', maxWidth: '220px', objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
