@@ -341,7 +341,7 @@ const Contact = () => {
                     onBlur={(e) => { e.target.style.borderColor = 'rgba(192,156,49,0.2)'; }}
                   >
                     <option value="" style={{ background: G.dark }}>Select a service…</option>
-                    {['HR Consulting','Recruitment & Talent Acquisition','Employee Training & Development','Performance Management','HR Policy Development','Compliance & Legal Support','Payroll Management','Employee Relations','Organizational Development','HR Technology Solutions','Other']
+                    {['Employee Training & Development','Performance Management','HR Policy Development','Compliance & Legal Support','Payroll Governance', 'Oil & Gas Workforce Solutions', 'Employer of Record', 'Recruitment', 'Pyschometric Assesment', 'Job Grading', '','Employee Relations','Organizational Development','Other']
                       .map((s) => <option key={s} value={s} style={{ background: G.dark }}>{s}</option>)}
                   </select>
                 </div>
