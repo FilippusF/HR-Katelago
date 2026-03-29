@@ -404,7 +404,7 @@ const Services = () => {
       card1Title: 'HR Advisory Includes',
       card1Content: (
         <ul style={{ fontFamily: G.sans, fontSize: '12px', paddingLeft: '16px', margin: 0, lineHeight: 1.75 }}>
-          {['Psychometric Assessments','Job Grading & Salary Benchmarking','Organisational Development'].map(i => <li key={i}>{i}</li>)}
+          {['Psychometric Assessments','Job Grading', 'Salary Benchmarking','Organisational Development'].map(i => <li key={i}>{i}</li>)}
         </ul>
       ),
       card2Title: 'How We Approach It',
