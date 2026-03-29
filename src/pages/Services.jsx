@@ -316,9 +316,14 @@ const Services = () => {
       ),
       card2Title: 'When EOR Is the Right Fit',
       card2Content: (
-        <p style={{ fontFamily: G.sans, fontSize: '12px', margin: 0, lineHeight: 1.7 }}>
-          You want to hire in Namibia before setting up a local company. You need to enter the market quickly but stay compliant. You are testing operations or mobilising a project team. You need a lawful local employment structure while keeping focus on your core business.
-        </p>
+        <ul style={{ fontFamily: G.sans, fontSize: '12px', paddingLeft: '16px', margin: 0, lineHeight: 1.75 }}>
+          {[
+            'You want to hire in Namibia before setting up a local company.',
+            'You need to enter the market quickly but stay compliant.',
+            'You are testing operations or mobilising a project team.',
+            'You need a lawful local employment structure while keeping focus on your core business.',
+          ].map(i => <li key={i}>{i}</li>)}
+        </ul>        
       ),
     },
     {
