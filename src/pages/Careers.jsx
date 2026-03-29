@@ -299,7 +299,7 @@ const Careers = () => {
             </p>
           </div>
 
-          <a
+          {/* <a
             href="mailto:careers@katelago.com?subject=Speculative Application"
             style={{
               display: 'inline-block',
@@ -322,7 +322,7 @@ const Careers = () => {
             onMouseOut={(e)  => { e.currentTarget.style.transform = 'translateY(0)';    e.currentTarget.style.boxShadow = '0 4px 20px rgba(192,156,49,0.2)'; }}
           >
             Email Your CV →
-          </a>
+          </a> */}
         </div>
       </section>
 
