@@ -11,7 +11,7 @@ import OilGasImage  from '../assets/images/Oil & Gas.png';
 ────────────────────────────────────────────────────────────────────────── */
 const G = {
   deep:   '#0e3327',
-  dark:   '#174D3A',
+  dark:   '#0e3327',
   mid:    '#1a5c44',
   accent: '#1e5631',
   gold:   '#C09C31',
@@ -547,7 +547,7 @@ const whyItems = [
                 /* Green card: normal contained card with solid bg */
                 /* Parallax card: invisible shell — content sits directly on the image */
                 background:   isGreenCard ? G.dark : 'transparent',
-                border:       isGreenCard ? '1px solid rgba(192,156,49,0.18)' : 'none',
+                border:       isGreenCard ? '1px solid rgba(192, 156, 49, 0)' : 'none',
                 borderRadius: isGreenCard ? '20px' : '0',
                 overflow:     isGreenCard ? 'hidden' : 'visible',
                 boxShadow:    'none',
