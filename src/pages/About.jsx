@@ -477,7 +477,7 @@ const About = () => {
                                governance and clear, trusted advice in regulated and project-based environments.
                             </p>
                           </div>
-                        </div>
+                        </div> 
                       </div>
 
                       {/* Second Item */}
