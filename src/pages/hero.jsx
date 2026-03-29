@@ -306,7 +306,7 @@ const Hero = () => {
               }}
             >
               {[
-                { val: 'EOR',  label: 'Employer of Record' },
+                { val: 'LOCAL',  label: 'Local Content' },
                 null, /* divider */
                 { val: '100%', label: 'Labour Compliant' },
                 null, /* divider */

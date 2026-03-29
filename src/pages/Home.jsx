@@ -341,16 +341,26 @@ const Home = () => {
                     }}
                   >
                     <svg width="14" height="14" fill={G.dark} viewBox="0 0 16 16">
-                      <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122L9.98 10.67a6.5 6.5 0 0 1-3.11-.931 6.5 6.5 0 0 1-.931-3.11l.239-1.804a.678.678 0 0 0-.122-.58L3.654 1.328z" />
+                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v.217l-8 4.8-8-4.8V4zm0 1.383v6.617a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5.383l-7.555 4.533a1 1 0 0 1-1.89 0L0 5.383z"/>
                     </svg>
                   </div>
                   <div>
                     <p style={{ fontFamily: G.sans, fontSize: '10px', letterSpacing: '1px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.4)', margin: '0 0 2px' }}>
                       Speak to a consultant
                     </p>
-                    <p style={{ fontFamily: G.sans, fontSize: '13px', fontWeight: 500, color: G.cream, margin: 0 }}>
-                      +264 81 393 44 31
-                    </p>
+                      <a
+                        href="mailto:info@katelago.com"
+                        style={{
+                          fontFamily: G.sans,
+                          fontSize: '13px',
+                          fontWeight: 500,
+                          color: G.cream,
+                          margin: 0,
+                          textDecoration: 'none',
+                        }}
+                      >
+                        info@katelago.com
+                      </a>
                   </div>
                 </div>
 
@@ -390,7 +400,7 @@ const Home = () => {
                 {[
                   { val: '100%', label: 'Compliant' },
                   null, /* thin vertical divider */
-                  { val: 'EOR', label: 'Employer of Record' },
+                  { val: 'LOCAL', label: 'Local Content' },
                 ].map((item, i) =>
                   item === null ? (
                     <div key={i} style={{ background: 'rgba(255,255,255,0.1)', margin: '4px 0' }} />
