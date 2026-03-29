@@ -338,7 +338,7 @@ export const ManatalWidget = ({ companyId }) => {
     ──────────────────────────────────────────────────────────────────── */
     <div
       style={{
-        maxWidth: '1080px',
+        maxWidth: '1280px',
         margin: '0 auto',
         background: G.dark,
         borderRadius: '20px',

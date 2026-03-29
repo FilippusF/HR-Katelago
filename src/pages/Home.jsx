@@ -13,7 +13,7 @@ import HomeImage    from '../assets/images/mission.jpg';
 ───────────────────────────────────────────────────────────────────────────── */
 const G = {
   deep:   '#0e3327',   /* outermost page background                  */
-  dark:   '#0e3327',   /* card / section surface                      */
+  dark:   '#0e3327',   /* card / section surface   : #174D3A                    */
   mid:    '#1a5c44',   /* lighter green used in image panels          */
   accent: '#1e5631',   /* CTA / icon background green                 */
   gold:   '#C09C31',   /* primary brand gold                          */
@@ -31,7 +31,7 @@ const G = {
 const Card = ({ children, style = {}, animate = true }) => (
   <div
     style={{
-      maxWidth: '1080px',
+      maxWidth: '1280px',
       margin: '0 auto',
       background: G.dark,
       borderRadius: '20px',
@@ -50,7 +50,7 @@ const Section = ({ children, noPad = false, style = {} }) => (
   <section
     style={{
       backgroundColor: G.deep,
-      padding: noPad ? '0 24px' : '40px 24px',
+      padding: noPad ? '0 8px' : '40px 8px',
       overflow: 'hidden',
       ...style,
     }}

@@ -81,7 +81,7 @@ const Footer = () => {
       ──────────────────────────────────────────────────────────────────── */}
       <div
         style={{
-          maxWidth: '1080px',
+          maxWidth: '1280px',
           margin: '0 auto',
           background: G.dark,
           borderRadius: '20px 20px 0 0',     /* flat bottom — bleeds into copyright strip */

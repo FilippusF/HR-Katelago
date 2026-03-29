@@ -207,7 +207,7 @@ const Careers = () => {
       <section style={{ backgroundColor: G.deep, padding: '0 24px 40px' }}>
         <div
           style={{
-            maxWidth: '1080px',
+            maxWidth: '1280px',
             margin: '0 auto',
             background: G.dark,
             borderRadius: '20px',
