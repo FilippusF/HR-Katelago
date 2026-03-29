@@ -118,7 +118,7 @@ const InfoCard = ({ title, children, variant = 'gold' }) => {
   return (
     <div
       style={{
-        background:     isGold ? G.gold : 'rgba(50, 52, 52, 0.18)',  /* dark charcoal-green, readable over any image */
+        background:     isGold ? G.gold : 'rgba(15,25,20,0.72)',  /* dark charcoal-green, readable over any image */
         border:         isGold ? 'none' : '1px solid rgba(192,156,49,0.3)',
         backdropFilter: isGold ? 'none' : 'blur(10px)',
         borderRadius:   '14px',
@@ -258,38 +258,60 @@ const Services = () => {
   const services = [
     {
       id: 'talent-acquisition',
-      variant: 'gold',           /* card 1 starts gold, card 2 transparent */
+      variant: 'gold',
       heading: 'Oil & Gas Workforce Solutions',
       tagline: 'Workforce structures that can hold up under pressure.',
-      body: 'Katelago supports operators, EPC contractors, drilling companies and project teams with practical workforce compliance, payroll structure and employment support built for regulated environments.',
+      body: "Operating in Namibia's Oil & Gas sector requires disciplined workforce governance aligned to labour legislation and project timelines. Katelago HR Consultants provides structured workforce solutions for operators, EPC contractors, and project teams, ensuring compliance, operational continuity, and risk control.",
       ctaLabel: 'Request a Consultation',
       image: OilGasImage,
-      card1Title: 'What We Support',
+      card1Title: 'Our Services',
       card1Content: (
         <ul style={{ fontFamily: G.sans, fontSize: '12px', paddingLeft: '16px', margin: 0, lineHeight: 1.75 }}>
-          {['Pre-project workforce compliance reviews','Workforce mobilisation planning','Rotational and offshore support','Project payroll structure','Immigration and local labour alignment','Demobilisation and termination support','Review-ready employment documentation'].map(i => <li key={i}>{i}</li>)}
+          {[
+            'Workforce Mobilisation & Demobilisation Structuring',
+            'Work Permit Applications for Expatriate Staff',
+            'Medixx Medical Testing & Clearance',
+            'Rotational & Offshore Payroll Governance',
+            'Employee Benefits Administration',
+            'Employer of Record (EOR) for Project Teams',
+            'Compliance Reviews',
+            'Termination & Close-Out Compliance',
+          ].map(i => <li key={i}>{i}</li>)}
         </ul>
       ),
-      card2Title: 'Why This Matters',
+      card2Title: 'Our Focus',
       card2Content: (
-        <p style={{ fontFamily: G.sans, fontSize: '12px', margin: 0, lineHeight: 1.7 }}>
-          In project environments, small workforce gaps can become expensive very quickly. Unclear contracts, poor overtime control or delayed registrations can lead to disputes and payroll exposure. Katelago helps clients reduce that risk by putting the right structure in place early.
-        </p>
+        <ul style={{ fontFamily: G.sans, fontSize: '12px', paddingLeft: '16px', margin: 0, lineHeight: 1.75 }}>
+          {[
+            'Workforce mobilisation and rotational staffing',
+            'Compliant payroll structuring and statutory alignment',
+            'Lawful termination and workforce close-out',
+            'Audit-ready employment frameworks aligned to operations',
+          ].map(i => <li key={i}>{i}</li>)}
+        </ul>
       ),
     },
     {
       id: 'employer-of-record',
-      variant: 'transparent',    /* card 1 starts transparent, card 2 gold */
-      heading: 'Employer of Record Services in Namibia',
-      tagline: 'Hire employees in Namibia without opening a local entity too early.',
-      body: "Katelago acts as the local employer while you manage the employee's day-to-day work. We handle compliant contracts, payroll, statutory administration and core employment support in line with Namibian requirements.",
+      variant: 'transparent',
+      heading: 'Employer of Record (EOR) Services',
+      tagline: 'Hire in Namibia without opening a local entity too early.',
+      body: "For international companies and project teams entering Namibia, lawful employment must be structured from the first hire. Establishing a local entity can be a lengthy and complex process. Our Employer of Record (EOR) solution provides a compliant and efficient alternative. We act as the legal employer for your staff in Namibia, managing all employment responsibilities so you can focus on your operations.",
       ctaLabel: 'Talk to Us About EOR',
       image: StationImage4,
       flip: true,
-      card1Title: 'EOR Support Includes',
+      card1Title: 'How We Work',
       card1Content: (
         <ul style={{ fontFamily: G.sans, fontSize: '12px', paddingLeft: '16px', margin: 0, lineHeight: 1.75 }}>
-          {['Compliant local employment contracts','Employee onboarding and file setup','Monthly payroll processing','PAYE and Social Security administration','Payslips and payroll reporting','Leave and record management','Termination calculations and close-out','Basic HR and compliance guidance','Immigration support where needed'].map(i => <li key={i}>{i}</li>)}
+          {[
+            'Compliant Employment',
+            'Work Permit Applications',
+            'Medixx Medical Testing Coordination',
+            'Full Payroll Management',
+            'Employee Benefits Administration',
+            'Statutory Compliance',
+            'Termination & Close-Out',
+          ].map(i => <li key={i}>{i}</li>)}
         </ul>
       ),
       card2Title: 'When EOR Is the Right Fit',
@@ -301,38 +323,88 @@ const Services = () => {
     },
     {
       id: 'payroll-administration',
-      variant: 'gold',           /* back to gold for service 3 */
+      variant: 'gold',
       heading: 'Payroll Governance',
       tagline: 'Accurate. Compliant. Seamless Payroll.',
-      body: 'We provide full payroll solutions that make your payroll process simple, accurate, and efficient — built around Namibian statutory requirements.',
+      body: "Payroll is not just processing. It is a compliance function that must align with statutory requirements and withstand scrutiny. Incorrect overtime, misclassified allowances, or late statutory submissions create financial and regulatory exposure. Katelago provides structured payroll governance that is accurate, compliant, and audit-ready.",
       ctaLabel: 'Speak to a Payroll Specialist',
       image: StationImage4,
-      card1Title: 'What We Support',
+      card1Title: 'Our Payroll Services',
       card1Content: (
         <ul style={{ fontFamily: G.sans, fontSize: '12px', paddingLeft: '16px', margin: 0, lineHeight: 1.75 }}>
-          {['Monthly payroll processing','Cost-to-company calculations','PAYE and Social Security compliance','Leave administration and reporting','Overtime and allowance control','Pension and benefit administration','Termination payout calculations','Payroll reports and secure payslips','Payroll checks and verification'].map(i => <li key={i}>{i}</li>)}
+          {[
+            'Processing monthly payroll',
+            'Calculation of cost-to-company and net salary packages',
+            'Calculation and recording of overtime, commission and bonuses',
+            'Calculation and deduction of PAYE, Social Security, Medical Aid, Pension and Union contributions',
+            'Register and terminate employees on SSC/Medical Aid',
+            'Monthly PAYE Returns for ITAS',
+            'Annual PAYE 5 Certificates',
+          ].map(i => <li key={i}>{i}</li>)}
         </ul>
       ),
-      card2Title: 'Payroll Reporting',
+      card2Title: 'Our Payroll Services (continued)',
       card2Content: (
-        <p style={{ fontFamily: G.sans, fontSize: '12px', margin: 0, lineHeight: 1.7 }}>
-          Weak payroll controls create avoidable risk — incorrect statutory deductions, overtime errors, poor records or disputes at termination. We help clients build payroll systems that are more controlled, more consistent and easier to review.
-        </p>
+        <ul style={{ fontFamily: G.sans, fontSize: '12px', paddingLeft: '16px', margin: 0, lineHeight: 1.75 }}>
+          {[
+            'Monthly Pension Fund Administration',
+            'Recording of all employee advances, garnishees and loans',
+            'Calculation of termination and retrenchment packages',
+            'Complete leave administration and termination leave payouts',
+            'Monthly Leave Report',
+            'Provision of detailed payroll reports',
+            'Fast and easy access to current and historical payroll data',
+          ].map(i => <li key={i}>{i}</li>)}
+        </ul>
+      ),
+    },
+    {
+      id: 'recruitment',
+      variant: 'transparent',
+      heading: 'Recruitment',
+      tagline: 'Structured recruitment across Namibia — local and international.',
+      body: "We deliver structured recruitment solutions across Namibia, combining access to local content and internationally experienced professionals. We source, assess, and place workforce aligned to operational, technical, and compliance requirements in regulated and project-based environments.",
+      ctaLabel: 'Talk to Us About Recruitment',
+      image: StationImage4,
+      flip: true,
+      card1Title: 'Our Approach',
+      card1Content: (
+        <ul style={{ fontFamily: G.sans, fontSize: '12px', paddingLeft: '16px', margin: 0, lineHeight: 1.75 }}>
+          {[
+            'Access to local and regional talent pools',
+            'Structured vetting aligned with Namibian compliance requirements',
+            'Integration of local and expatriate workforce',
+            'Candidates verified and ready to perform',
+          ].map(i => <li key={i}>{i}</li>)}
+        </ul>
+      ),
+      card2Title: 'Our Recruitment Process',
+      card2Content: (
+        <ul style={{ fontFamily: G.sans, fontSize: '12px', paddingLeft: '16px', margin: 0, lineHeight: 1.75 }}>
+          {[
+            'Candidate Sourcing & Database Access',
+            'Pre-Interview Screening (Where required)',
+            'Psychometric Assessments (Where required)',
+            'Background & Reference Checks',
+            'Police Clearance Certificates',
+            'Medixx Medical Testing Coordination (Where required)',
+            'Offer Management & Onboarding Support',
+          ].map(i => <li key={i}>{i}</li>)}
+        </ul>
       ),
     },
     {
       id: 'hr-consulting',
-      variant: 'transparent',    /* transparent for service 4 */
+      variant: 'gold',
       heading: 'Strategic HR Advisory Services',
       tagline: 'Practical HR advisory support for better workforce decisions.',
       body: 'Alongside our compliance and payroll services, Katelago provides practical HR advisory support that helps organisations make better workforce decisions.',
       ctaLabel: 'Talk to Us About HR Advisory',
       image: StationImage4,
-      flip: true,
       card1Title: 'HR Advisory Includes',
       card1Content: (
         <ul style={{ fontFamily: G.sans, fontSize: '12px', paddingLeft: '16px', margin: 0, lineHeight: 1.75 }}>
-          {['Psychometric Assessments','Job Grading & Salary Benchmarking','Organisational Development','Recruitment','Performance Framework Design','HR governance framework support'].map(i => <li key={i}>{i}</li>)}
+          {['Psychometric Assessments','Job Grading & Salary Benchmarking','Organisational Development'].map(i => <li key={i}>{i}</li>)}
         </ul>
       ),
       card2Title: 'How We Approach It',
@@ -345,11 +417,27 @@ const Services = () => {
   ];
 
   /* ── WHY CHOOSE US data ─────────────────────────────────────────────────*/
-  const whyItems = [
-    { icon: 'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z', title: 'Experienced and locally grounded', body: 'We bring practical HR and workforce experience rooted in Namibian labour requirements.' },
-    { icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z', title: 'Structured approach', body: 'We help clients build systems that are easier to manage and defend — not isolated admin tasks.' },
-    { icon: 'M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z', title: 'Compliance-focused', body: 'We work with organisations that need lawful, practical and review-ready workforce processes.' },
-    { icon: 'M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z', title: 'Trusted advisory', body: 'We handle sensitive workforce matters with discretion, accountability and clear judgement.' },
+const whyItems = [
+    {
+      icon: 'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z',
+      title: 'Compliance Before Convenience',
+      body: 'With over 20 years of experience, we prioritize lawful and defensible workforce structures. Where arrangements create risk, we guide organizations toward compliant and sustainable solutions.',
+    },
+    {
+      icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z',
+      title: 'Structure Creates Stability',
+      body: 'We treat workforce governance as operational infrastructure. From employment frameworks to payroll systems, we build structured environments that support stability and long-term performance.',
+    },
+    {
+      icon: 'M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z',
+      title: 'Disciplined and Accountable',
+      body: 'Our work is grounded in clear processes, consistent standards, and responsible advice. We provide practical, honest guidance and take accountability for the systems we help implement.',
+    },
+    {
+      icon: 'M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z',
+      title: 'Risk-Aware and Human-Centred',
+      body: 'We identify workforce risks early and address them clearly. At the same time, we ensure fair, lawful, and respectful treatment of employees within structured and compliant environments.',
+    },
   ];
 
   return (
@@ -396,7 +484,13 @@ const Services = () => {
 
               {/* Quick-jump service pills */}
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'center' }}>
-                {[['Oil & Gas', 'talent-acquisition'], ['Employer of Record', 'employer-of-record'], ['Payroll Governance', 'payroll-administration'], ['HR Advisory', 'hr-consulting']].map(([label, anchor]) => (
+                {[
+                  ['Oil & Gas',          'talent-acquisition'],
+                  ['Employer of Record', 'employer-of-record'],
+                  ['Payroll Governance', 'payroll-administration'],
+                  ['Recruitment',        'recruitment'],
+                  ['HR Advisory',        'hr-consulting'],
+                ].map(([label, anchor]) => (
                   <button
                     key={anchor}
                     onClick={() => scrollToSec(anchor)}

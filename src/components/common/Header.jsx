@@ -36,7 +36,7 @@ const Header = () => {
     //   type: 'dropdown',
     //   children: [{ label: 'About Us', to: '#/about' }],
     // },
-    { label: 'About', to: '#about', type: 'link' }, 
+    { label: 'About', to: '/#about', type: 'link' },
     { label: 'Services', to: '/services', type: 'link' }, 
     { label: 'Vacancies', to: '/careers', type: 'link' },    
     // {
