@@ -33,6 +33,7 @@ const Footer = () => {
     { label: 'Oil & Gas Workforce Solutions', href: '/Services#talent-acquisition' },
     { label: 'Employer of Record',            href: '/Services#employer-of-record' },
     { label: 'Payroll Governance',            href: '/Services#payroll-administration' },
+    { label: 'Recruitment',            href: '/Services#recruitment' },    
     { label: 'Strategic HR Advisory',         href: '/Services#hr-consulting' },
   ];
 

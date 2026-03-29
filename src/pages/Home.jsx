@@ -13,7 +13,7 @@ import HomeImage    from '../assets/images/mission.jpg';
 ───────────────────────────────────────────────────────────────────────────── */
 const G = {
   deep:   '#0e3327',   /* outermost page background                  */
-  dark:   '#174D3A',   /* card / section surface                      */
+  dark:   '#0e3327',   /* card / section surface                      */
   mid:    '#1a5c44',   /* lighter green used in image panels          */
   accent: '#1e5631',   /* CTA / icon background green                 */
   gold:   '#C09C31',   /* primary brand gold                          */
@@ -204,7 +204,7 @@ const Home = () => {
           The right panel has corner accents, a frosted stats strip, and a
           slide-in float card triggered by the IntersectionObserver above.
       ══════════════════════════════════════════════════════════════════════ */}
-      <Section id="about">
+      <Section>
         <Card>
           <div
             ref={sectionRef}
@@ -496,7 +496,7 @@ const Home = () => {
           Left col: brand values with title + description.
           Right col: numbered pillars (Vision, Mission, Philosophy).
       ══════════════════════════════════════════════════════════════════════ */}
-      <Section noPad style={{ padding: '0 24px 40px' }}>
+      <Section noPad style={{ padding: '0 24px 40px' }} id="about">
         <Card style={{ overflow: 'visible' }}>
           <div style={{ position: 'relative', borderRadius: '20px', overflow: 'hidden' }}>
             {/* Background image — very faint, purely atmospheric */}

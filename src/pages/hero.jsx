@@ -257,7 +257,7 @@ const Hero = () => {
 
               {/* Secondary CTA — ghost outline */}
               <a
-                href="#about"
+                href="/services"
                 style={{
                   display: 'inline-block',
                   padding: '13px 32px',
