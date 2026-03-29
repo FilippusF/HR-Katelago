@@ -602,7 +602,7 @@ const whyItems = [
                 </h2>
               </div>
               <p style={{ fontFamily: G.serif, fontSize: '14px', fontStyle: 'italic', color: 'rgba(255,255,255,0.45)', maxWidth: '360px', margin: 0, lineHeight: 1.7 }}>
-                "Whether you are entering Namibia, managing a project workforce or strengthening HR governance — Katelago can help."
+                "Whether you are entering Namibia, managing a project workforce or strengthening HR governance, Katelago can help."
               </p>
             </div>
 
