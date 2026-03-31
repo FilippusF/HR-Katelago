@@ -14,7 +14,7 @@ const Industries = () => {
   const toggleCard = (cardId) => {
     setExpandedCard(expandedCard === cardId ? null : cardId);
   };
-
+ 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
