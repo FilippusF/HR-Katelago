@@ -6,7 +6,7 @@ import logoImage from '../assets/images/Main-logo.png';
    Same tokens used across Hero, Home, Header, Footer.
 ────────────────────────────────────────────────────────────────────────── */
 const G = {
-  deep:   '#0e3327',
+  deep:   '#0e3327',h
   dark:   '#174D3A',
   accent: '#1e5631',
   gold:   '#C09C31',
@@ -95,6 +95,7 @@ const Contact = () => {
 
       if (res.ok) {
         setSubmitStatus('success');
+            if (window.gtag) { window.gtag('event', 'generate_lead'); }
         alert('Your quotation request has been successfully submitted. We will get back to you soon!');
         setFormData({ firstName: '', lastName: '', email: '', phoneNumber: '', businessName: '', serviceRequired: '', hearAboutUs: '', message: '' });
       } else {
