@@ -351,18 +351,17 @@ const Contact = () => {
                       Thank you for your interest in Katelago.
                     </p>
                     <p style={{ fontFamily: G.sans, fontSize: '13px', fontWeight: 300, color: 'rgba(255,255,255,0.72)', margin: '0 0 14px', lineHeight: 1.75 }}>
-                      We are a <strong style={{ color: G.gold, fontWeight: 500 }}>B2B HR consultancy</strong> — we partner with businesses and organisations to manage their people strategy, compliance, and workforce planning. We do not place individual job seekers or accept unsolicited CVs directly.
+                      We are a <strong style={{ color: G.gold, fontWeight: 500 }}>B2B HR Advisory Partner</strong> — we partner with businesses and organisations to manage their people strategy, compliance, and workforce planning. We do not place individual job seekers or accept unsolicited CVs directly.
                     </p>
                     <p style={{ fontFamily: G.sans, fontSize: '13px', fontWeight: 300, color: 'rgba(255,255,255,0.72)', margin: 0, lineHeight: 1.75 }}>
-                      For employment opportunities in Namibia, we recommend:{' '}
-                      <a href="https://www.mycareer.com.na" target="_blank" rel="noopener noreferrer" style={{ color: G.gold, textDecoration: 'underline' }}>MyCareer Namibia</a>
-                      {' '}or{' '}
-                      <a href="https://www.linkedin.com/jobs" target="_blank" rel="noopener noreferrer" style={{ color: G.gold, textDecoration: 'underline' }}>LinkedIn Jobs</a>.
+                      If we have any open positions, they will be listed on our{' '}
+                      <a href="https://www.katelago.com/careers" target="_blank" rel="noopener noreferrer" style={{ color: G.gold, textDecoration: 'underline' }}>Vacancies page</a>
+                      {' '}— please check there for current opportunities.
                     </p>
                   </div>
                 )}
 
-                {/* ── FULL FORM — shown only to businesses ──────────────── */}
+                {/* ── FULL FORM ─ shown only to businesses ──────────────── */}
                 {inquiryType === 'business' && (
                   <>
                     {/* First + Last name */}
