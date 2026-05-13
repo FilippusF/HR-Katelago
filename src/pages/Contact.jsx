@@ -3,21 +3,21 @@ import StationImage5 from '../assets/images/14.png';
 import logoImage from '../assets/images/Main-logo.png';
 
 /* ── DESIGN TOKENS ──────────────────────────────────────────────────────────
-   Same tokens used across Hero, Home, Header, Footer.
+Same tokens used across Hero, Home, Header, Footer.
 ────────────────────────────────────────────────────────────────────────── */
 const G = {
-  deep:   '#0e3327',h
-  dark:   '#174D3A',
+  deep: '#0e3327',
+  dark: '#174D3A',
   accent: '#1e5631',
-  gold:   '#C09C31',
-  cream:  '#f5f0e4',
-  serif:  "'Georgia', 'Times New Roman', serif",
-  sans:   "'DM Sans', 'Segoe UI', sans-serif",
+  gold: '#C09C31',
+  cream: '#f5f0e4',
+  serif: "'Georgia', 'Times New Roman', serif",
+  sans: "'DM Sans', 'Segoe UI', sans-serif",
 };
 
 /* ── SHARED INPUT STYLE ─────────────────────────────────────────────────────
-   Applied to every form-control so they're consistent.
-   Semi-transparent white surface on dark green background.
+Applied to every form-control so they're consistent.
+Semi-transparent white surface on dark green background.
 ────────────────────────────────────────────────────────────────────────── */
 const inputStyle = {
   backgroundColor: 'rgba(255,255,255,0.08)',
@@ -46,6 +46,7 @@ const labelStyle = {
 };
 
 const Contact = () => {
+  const [inquiryType, setInquiryType] = useState(''); // '' | 'business' | 'individual'
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -56,10 +57,10 @@ const Contact = () => {
     hearAboutUs: '',
     message: '',
   });
-  const [isLoading, setIsLoading]         = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
   const [showBackToTop, setShowBackToTop] = useState(false);
-  const [isSubmitting, setIsSubmitting]   = useState(false);
-  const [submitStatus, setSubmitStatus]   = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
 
   useEffect(() => {
     const t = setTimeout(() => setIsLoading(false), 2000);
@@ -79,6 +80,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (inquiryType !== 'business') return; // Guard: never submit for individuals
     setIsSubmitting(true);
     setSubmitStatus(null);
 
@@ -95,9 +97,10 @@ const Contact = () => {
 
       if (res.ok) {
         setSubmitStatus('success');
-            if (window.gtag) { window.gtag('event', 'generate_lead'); }
+        if (window.gtag) { window.gtag('event', 'generate_lead'); }
         alert('Your quotation request has been successfully submitted. We will get back to you soon!');
         setFormData({ firstName: '', lastName: '', email: '', phoneNumber: '', businessName: '', serviceRequired: '', hearAboutUs: '', message: '' });
+        setInquiryType('');
       } else {
         throw new Error('Failed to submit');
       }
@@ -141,7 +144,7 @@ const Contact = () => {
     },
     {
       label: 'Hours',
-      value: 'Monday – Friday  08:00 – 17:00',
+      value: 'Monday – Friday 08:00 – 17:00',
       icon: (
         <svg width="16" height="16" fill={G.gold} viewBox="0 0 16 16">
           <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
@@ -154,10 +157,7 @@ const Contact = () => {
   return (
     <div style={{ overflowX: 'hidden', backgroundColor: G.deep }}>
 
-      {/* ── HERO SECTION ──────────────────────────────────────────────────────
-          Full-bleed background with blurred photo + dark overlay.
-          Bleeds into the page background (#0e3327) at the bottom.
-      ──────────────────────────────────────────────────────────────────── */}
+      {/* ── HERO SECTION ────────────────────────────────────────────────────── */}
       <section
         style={{
           position: 'relative',
@@ -181,17 +181,17 @@ const Contact = () => {
           }}
         />
 
-        {/* Gradient overlay — subtle top, heavy bottom for section bleed */}
+        {/* Gradient overlay */}
         <div
           style={{
             position: 'absolute',
             inset: 0,
             background: `linear-gradient(
               to bottom,
-              rgba(10,36,25,0.1)  0%,
-              rgba(10,36,25,0.2)  50%,
+              rgba(10,36,25,0.1) 0%,
+              rgba(10,36,25,0.2) 50%,
               rgba(14,51,39,0.95) 88%,
-              rgba(14,51,39,1)    100%
+              rgba(14,51,39,1) 100%
             )`,
           }}
         />
@@ -215,7 +215,6 @@ const Contact = () => {
         <div className="container" style={{ position: 'relative', zIndex: 2, padding: '80px 24px 60px' }}>
           <div className="row justify-content-center text-center">
             <div className="col-lg-8">
-              {/* Eyebrow */}
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', marginBottom: '24px' }}>
                 <div style={{ width: '24px', height: '1px', background: G.gold, opacity: 0.7 }} />
                 <span style={{ fontFamily: G.sans, fontSize: '11px', fontWeight: 500, letterSpacing: '2.5px', textTransform: 'uppercase', color: G.gold }}>
@@ -257,10 +256,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* ── FORM + CONTACT DETAILS CARD ───────────────────────────────────────
-          Contained card sits on the deep-green page background.
-          Left: contact form. Right: details + social links.
-      ──────────────────────────────────────────────────────────────────── */}
+      {/* ── FORM + CONTACT DETAILS CARD ─────────────────────────────────────── */}
       <section style={{ padding: '0 24px 40px', backgroundColor: G.deep }}>
         <div
           style={{
@@ -274,10 +270,7 @@ const Contact = () => {
         >
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 340px' }} className="contact-grid">
 
-            {/* ── LEFT: FORM ──────────────────────────────────────────────
-                All fields use a consistent semi-transparent input style.
-                Labels are uppercase micro-text for refined hierarchy.
-            ────────────────────────────────────────────────────────────── */}
+            {/* ── LEFT: FORM ──────────────────────────────────────────────── */}
             <div style={{ padding: '56px 52px', borderRight: '1px solid rgba(255,255,255,0.06)' }}>
               <span style={{ fontFamily: G.sans, fontSize: '11px', fontWeight: 500, letterSpacing: '2px', textTransform: 'uppercase', color: G.gold, opacity: 0.85, display: 'block', marginBottom: '12px' }}>
                 Send a Message
@@ -288,122 +281,206 @@ const Contact = () => {
 
               <form onSubmit={handleSubmit}>
 
-                {/* First + Last name */}
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '20px' }}>
-                  <div>
-                    <label style={labelStyle} htmlFor="firstName">First Name *</label>
-                    <input id="firstName" name="firstName" type="text" required value={formData.firstName} onChange={handleChange} style={inputStyle}
-                      onFocus={(e) => { e.target.style.borderColor = G.gold; e.target.style.background = 'rgba(255,255,255,0.11)'; }}
-                      onBlur={(e) => { e.target.style.borderColor = 'rgba(192,156,49,0.2)'; e.target.style.background = 'rgba(255,255,255,0.08)'; }}
-                    />
-                  </div>
-                  <div>
-                    <label style={labelStyle} htmlFor="lastName">Last Name *</label>
-                    <input id="lastName" name="lastName" type="text" required value={formData.lastName} onChange={handleChange} style={inputStyle}
-                      onFocus={(e) => { e.target.style.borderColor = G.gold; e.target.style.background = 'rgba(255,255,255,0.11)'; }}
-                      onBlur={(e) => { e.target.style.borderColor = 'rgba(192,156,49,0.2)'; e.target.style.background = 'rgba(255,255,255,0.08)'; }}
-                    />
-                  </div>
-                </div>
-
-                {/* Email + Phone */}
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '20px' }}>
-                  <div>
-                    <label style={labelStyle} htmlFor="email">Email *</label>
-                    <input id="email" name="email" type="email" required value={formData.email} onChange={handleChange} style={inputStyle}
-                      onFocus={(e) => { e.target.style.borderColor = G.gold; e.target.style.background = 'rgba(255,255,255,0.11)'; }}
-                      onBlur={(e) => { e.target.style.borderColor = 'rgba(192,156,49,0.2)'; e.target.style.background = 'rgba(255,255,255,0.08)'; }}
-                    />
-                  </div>
-                  <div>
-                    <label style={labelStyle} htmlFor="phoneNumber">Phone Number *</label>
-                    <input id="phoneNumber" name="phoneNumber" type="tel" required value={formData.phoneNumber} onChange={handleChange} style={inputStyle}
-                      onFocus={(e) => { e.target.style.borderColor = G.gold; e.target.style.background = 'rgba(255,255,255,0.11)'; }}
-                      onBlur={(e) => { e.target.style.borderColor = 'rgba(192,156,49,0.2)'; e.target.style.background = 'rgba(255,255,255,0.08)'; }}
-                    />
-                  </div>
-                </div>
-
-                {/* Business name */}
-                <div style={{ marginBottom: '20px' }}>
-                  <label style={labelStyle} htmlFor="businessName">Business Name *</label>
-                  <input id="businessName" name="businessName" type="text" required value={formData.businessName} onChange={handleChange} style={inputStyle}
-                    onFocus={(e) => { e.target.style.borderColor = G.gold; e.target.style.background = 'rgba(255,255,255,0.11)'; }}
-                    onBlur={(e) => { e.target.style.borderColor = 'rgba(192,156,49,0.2)'; e.target.style.background = 'rgba(255,255,255,0.08)'; }}
-                  />
-                </div>
-
-                {/* Service select */}
-                <div style={{ marginBottom: '20px' }}>
-                  <label style={labelStyle} htmlFor="serviceRequired">Service Required *</label>
-                  <select id="serviceRequired" name="serviceRequired" required value={formData.serviceRequired} onChange={handleChange}
-                    style={{ ...inputStyle, cursor: 'pointer' }}
-                    onFocus={(e) => { e.target.style.borderColor = G.gold; }}
-                    onBlur={(e) => { e.target.style.borderColor = 'rgba(192,156,49,0.2)'; }}
-                  >
-                    <option value="" style={{ background: G.dark }}>Select a service…</option>
-                    {['Employee Training & Development','Performance Management','HR Policy Development','Compliance & Legal Support','Payroll Governance', 'Oil & Gas Workforce Solutions', 'Employer of Record', 'Recruitment', 'Pyschometric Assesment', 'Job Grading', '','Employee Relations','Organizational Development','Other']
-                      .map((s) => <option key={s} value={s} style={{ background: G.dark }}>{s}</option>)}
-                  </select>
-                </div>
-
-                {/* How did you hear */}
-                <div style={{ marginBottom: '20px' }}>
-                  <label style={labelStyle} htmlFor="hearAboutUs">How did you hear about us?</label>
-                  <select id="hearAboutUs" name="hearAboutUs" value={formData.hearAboutUs} onChange={handleChange}
-                    style={{ ...inputStyle, cursor: 'pointer' }}
-                    onFocus={(e) => { e.target.style.borderColor = G.gold; }}
-                    onBlur={(e) => { e.target.style.borderColor = 'rgba(192,156,49,0.2)'; }}
-                  >
-                    <option value="" style={{ background: G.dark }}>Select an option…</option>
-                    {['Google Search','Social Media','Referral','Advertisement','Other']
-                      .map((s) => <option key={s} value={s} style={{ background: G.dark }}>{s}</option>)}
-                  </select>
-                </div>
-
-                {/* Message textarea */}
+                {/* ── STEP 1: QUALIFIER — Who are you? ──────────────────────
+                    This question filters job seekers BEFORE they fill the form.
+                    Only 'business' selections proceed to the full form.
+                ─────────────────────────────────────────────────────────── */}
                 <div style={{ marginBottom: '28px' }}>
-                  <label style={labelStyle} htmlFor="message">Message *</label>
-                  <textarea
-                    id="message" name="message" rows="5" required
-                    value={formData.message} onChange={handleChange}
-                    style={{ ...inputStyle, resize: 'vertical', minHeight: '120px' }}
-                    onFocus={(e) => { e.target.style.borderColor = G.gold; e.target.style.background = 'rgba(255,255,255,0.11)'; }}
-                    onBlur={(e) => { e.target.style.borderColor = 'rgba(192,156,49,0.2)'; e.target.style.background = 'rgba(255,255,255,0.08)'; }}
-                  />
+                  <label style={labelStyle}>I am reaching out as... *</label>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+
+                    {/* Business option */}
+                    <button
+                      type="button"
+                      onClick={() => setInquiryType('business')}
+                      style={{
+                        padding: '16px 14px',
+                        borderRadius: '10px',
+                        border: `1px solid ${inquiryType === 'business' ? G.gold : 'rgba(192,156,49,0.2)'}`,
+                        backgroundColor: inquiryType === 'business' ? 'rgba(192,156,49,0.12)' : 'rgba(255,255,255,0.04)',
+                        color: inquiryType === 'business' ? G.gold : 'rgba(255,255,255,0.6)',
+                        fontFamily: G.sans,
+                        fontSize: '13px',
+                        fontWeight: inquiryType === 'business' ? 500 : 300,
+                        cursor: 'pointer',
+                        textAlign: 'left',
+                        transition: 'all 0.2s ease',
+                        lineHeight: 1.4,
+                      }}
+                    >
+                      🏢 A business or organisation seeking HR services
+                    </button>
+
+                    {/* Individual option */}
+                    <button
+                      type="button"
+                      onClick={() => setInquiryType('individual')}
+                      style={{
+                        padding: '16px 14px',
+                        borderRadius: '10px',
+                        border: `1px solid ${inquiryType === 'individual' ? 'rgba(255,255,255,0.25)' : 'rgba(192,156,49,0.2)'}`,
+                        backgroundColor: inquiryType === 'individual' ? 'rgba(255,255,255,0.05)' : 'rgba(255,255,255,0.04)',
+                        color: 'rgba(255,255,255,0.6)',
+                        fontFamily: G.sans,
+                        fontSize: '13px',
+                        fontWeight: 300,
+                        cursor: 'pointer',
+                        textAlign: 'left',
+                        transition: 'all 0.2s ease',
+                        lineHeight: 1.4,
+                      }}
+                    >
+                      👤 An individual looking for employment
+                    </button>
+
+                  </div>
                 </div>
 
-                {/* Submit button */}
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  style={{
-                    padding: '13px 36px',
-                    borderRadius: '50px',
-                    backgroundColor: isSubmitting ? 'rgba(192,156,49,0.4)' : G.gold,
-                    color: G.dark,
-                    fontFamily: G.sans,
-                    fontSize: '12px',
-                    fontWeight: 500,
-                    letterSpacing: '1.5px',
-                    textTransform: 'uppercase',
-                    border: 'none',
-                    cursor: isSubmitting ? 'not-allowed' : 'pointer',
-                    transition: 'all 0.3s ease',
-                    boxShadow: '0 4px 20px rgba(192,156,49,0.2)',
-                  }}
-                  onMouseOver={(e) => { if (!isSubmitting) { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 28px rgba(192,156,49,0.3)'; }}}
-                  onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(192,156,49,0.2)'; }}
-                >
-                  {isSubmitting ? 'Sending…' : 'Get a Quotation →'}
-                </button>
+                {/* ── REDIRECT MESSAGE — shown only to job seekers ───────── */}
+                {inquiryType === 'individual' && (
+                  <div
+                    style={{
+                      padding: '24px 28px',
+                      borderRadius: '12px',
+                      backgroundColor: 'rgba(192,156,49,0.07)',
+                      border: '1px solid rgba(192,156,49,0.2)',
+                      marginBottom: '8px',
+                    }}
+                  >
+                    <p style={{ fontFamily: G.serif, fontSize: '15px', fontWeight: 400, color: G.cream, margin: '0 0 10px', fontStyle: 'italic' }}>
+                      Thank you for your interest in Katelago.
+                    </p>
+                    <p style={{ fontFamily: G.sans, fontSize: '13px', fontWeight: 300, color: 'rgba(255,255,255,0.72)', margin: '0 0 14px', lineHeight: 1.75 }}>
+                      We are a <strong style={{ color: G.gold, fontWeight: 500 }}>B2B HR consultancy</strong> — we partner with businesses and organisations to manage their people strategy, compliance, and workforce planning. We do not place individual job seekers or accept unsolicited CVs directly.
+                    </p>
+                    <p style={{ fontFamily: G.sans, fontSize: '13px', fontWeight: 300, color: 'rgba(255,255,255,0.72)', margin: 0, lineHeight: 1.75 }}>
+                      For employment opportunities in Namibia, we recommend:{' '}
+                      <a href="https://www.mycareer.com.na" target="_blank" rel="noopener noreferrer" style={{ color: G.gold, textDecoration: 'underline' }}>MyCareer Namibia</a>
+                      {' '}or{' '}
+                      <a href="https://www.linkedin.com/jobs" target="_blank" rel="noopener noreferrer" style={{ color: G.gold, textDecoration: 'underline' }}>LinkedIn Jobs</a>.
+                    </p>
+                  </div>
+                )}
+
+                {/* ── FULL FORM — shown only to businesses ──────────────── */}
+                {inquiryType === 'business' && (
+                  <>
+                    {/* First + Last name */}
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '20px' }}>
+                      <div>
+                        <label style={labelStyle} htmlFor="firstName">First Name *</label>
+                        <input id="firstName" name="firstName" type="text" required value={formData.firstName} onChange={handleChange} style={inputStyle}
+                          onFocus={(e) => { e.target.style.borderColor = G.gold; e.target.style.background = 'rgba(255,255,255,0.11)'; }}
+                          onBlur={(e) => { e.target.style.borderColor = 'rgba(192,156,49,0.2)'; e.target.style.background = 'rgba(255,255,255,0.08)'; }}
+                        />
+                      </div>
+                      <div>
+                        <label style={labelStyle} htmlFor="lastName">Last Name *</label>
+                        <input id="lastName" name="lastName" type="text" required value={formData.lastName} onChange={handleChange} style={inputStyle}
+                          onFocus={(e) => { e.target.style.borderColor = G.gold; e.target.style.background = 'rgba(255,255,255,0.11)'; }}
+                          onBlur={(e) => { e.target.style.borderColor = 'rgba(192,156,49,0.2)'; e.target.style.background = 'rgba(255,255,255,0.08)'; }}
+                        />
+                      </div>
+                    </div>
+
+                    {/* Email + Phone */}
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '20px' }}>
+                      <div>
+                        <label style={labelStyle} htmlFor="email">Email *</label>
+                        <input id="email" name="email" type="email" required value={formData.email} onChange={handleChange} style={inputStyle}
+                          onFocus={(e) => { e.target.style.borderColor = G.gold; e.target.style.background = 'rgba(255,255,255,0.11)'; }}
+                          onBlur={(e) => { e.target.style.borderColor = 'rgba(192,156,49,0.2)'; e.target.style.background = 'rgba(255,255,255,0.08)'; }}
+                        />
+                      </div>
+                      <div>
+                        <label style={labelStyle} htmlFor="phoneNumber">Phone Number *</label>
+                        <input id="phoneNumber" name="phoneNumber" type="tel" required value={formData.phoneNumber} onChange={handleChange} style={inputStyle}
+                          onFocus={(e) => { e.target.style.borderColor = G.gold; e.target.style.background = 'rgba(255,255,255,0.11)'; }}
+                          onBlur={(e) => { e.target.style.borderColor = 'rgba(192,156,49,0.2)'; e.target.style.background = 'rgba(255,255,255,0.08)'; }}
+                        />
+                      </div>
+                    </div>
+
+                    {/* Business name */}
+                    <div style={{ marginBottom: '20px' }}>
+                      <label style={labelStyle} htmlFor="businessName">Business Name *</label>
+                      <input id="businessName" name="businessName" type="text" required value={formData.businessName} onChange={handleChange} style={inputStyle}
+                        onFocus={(e) => { e.target.style.borderColor = G.gold; e.target.style.background = 'rgba(255,255,255,0.11)'; }}
+                        onBlur={(e) => { e.target.style.borderColor = 'rgba(192,156,49,0.2)'; e.target.style.background = 'rgba(255,255,255,0.08)'; }}
+                      />
+                    </div>
+
+                    {/* Service select */}
+                    <div style={{ marginBottom: '20px' }}>
+                      <label style={labelStyle} htmlFor="serviceRequired">Service Required *</label>
+                      <select id="serviceRequired" name="serviceRequired" required value={formData.serviceRequired} onChange={handleChange}
+                        style={{ ...inputStyle, cursor: 'pointer' }}
+                        onFocus={(e) => { e.target.style.borderColor = G.gold; }}
+                        onBlur={(e) => { e.target.style.borderColor = 'rgba(192,156,49,0.2)'; }}
+                      >
+                        <option value="" style={{ background: G.dark }}>Select a service…</option>
+                        {['Employee Training & Development','Performance Management','HR Policy Development','Compliance & Legal Support','Payroll Governance','Oil & Gas Workforce Solutions','Employer of Record','Recruitment','Psychometric Assessment','Job Grading','Employee Relations','Organizational Development','Other']
+                          .map((s) => <option key={s} value={s} style={{ background: G.dark }}>{s}</option>)}
+                      </select>
+                    </div>
+
+                    {/* How did you hear */}
+                    <div style={{ marginBottom: '20px' }}>
+                      <label style={labelStyle} htmlFor="hearAboutUs">How did you hear about us?</label>
+                      <select id="hearAboutUs" name="hearAboutUs" value={formData.hearAboutUs} onChange={handleChange}
+                        style={{ ...inputStyle, cursor: 'pointer' }}
+                        onFocus={(e) => { e.target.style.borderColor = G.gold; }}
+                        onBlur={(e) => { e.target.style.borderColor = 'rgba(192,156,49,0.2)'; }}
+                      >
+                        <option value="" style={{ background: G.dark }}>Select an option…</option>
+                        {['Google Search','Social Media','Referral','Advertisement','Other']
+                          .map((s) => <option key={s} value={s} style={{ background: G.dark }}>{s}</option>)}
+                      </select>
+                    </div>
+
+                    {/* Message textarea */}
+                    <div style={{ marginBottom: '28px' }}>
+                      <label style={labelStyle} htmlFor="message">Message *</label>
+                      <textarea
+                        id="message" name="message" rows="5" required
+                        value={formData.message} onChange={handleChange}
+                        style={{ ...inputStyle, resize: 'vertical', minHeight: '120px' }}
+                        onFocus={(e) => { e.target.style.borderColor = G.gold; e.target.style.background = 'rgba(255,255,255,0.11)'; }}
+                        onBlur={(e) => { e.target.style.borderColor = 'rgba(192,156,49,0.2)'; e.target.style.background = 'rgba(255,255,255,0.08)'; }}
+                      />
+                    </div>
+
+                    {/* Submit button */}
+                    <button
+                      type="submit"
+                      disabled={isSubmitting}
+                      style={{
+                        padding: '13px 36px',
+                        borderRadius: '50px',
+                        backgroundColor: isSubmitting ? 'rgba(192,156,49,0.4)' : G.gold,
+                        color: G.dark,
+                        fontFamily: G.sans,
+                        fontSize: '12px',
+                        fontWeight: 500,
+                        letterSpacing: '1.5px',
+                        textTransform: 'uppercase',
+                        border: 'none',
+                        cursor: isSubmitting ? 'not-allowed' : 'pointer',
+                        transition: 'all 0.3s ease',
+                        boxShadow: '0 4px 20px rgba(192,156,49,0.2)',
+                      }}
+                      onMouseOver={(e) => { if (!isSubmitting) { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 28px rgba(192,156,49,0.3)'; }}}
+                      onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(192,156,49,0.2)'; }}
+                    >
+                      {isSubmitting ? 'Sending…' : 'Get a Quotation →'}
+                    </button>
+                  </>
+                )}
 
               </form>
             </div>
 
-            {/* ── RIGHT: CONTACT DETAILS PANEL ────────────────────────────
-                Slightly darker panel with contact info and a subtle map hint.
-            ────────────────────────────────────────────────────────────── */}
+            {/* ── RIGHT: CONTACT DETAILS PANEL ──────────────────────────────── */}
             <div
               style={{
                 padding: '56px 36px',
@@ -424,7 +501,6 @@ const Contact = () => {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px', marginBottom: '40px' }}>
                 {details.map((d) => (
                   <div key={d.label} style={{ display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
-                    {/* Icon in a small gold-tinted circle */}
                     <div
                       style={{
                         width: '36px', height: '36px',
@@ -470,7 +546,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* ── LOADER ──────────────────────────────────────────────────────────── */}
+      {/* ── LOADER ────────────────────────────────────────────────────────── */}
       {isLoading && (
         <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(255,255,255,0.97)', zIndex: 9999, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <div style={{ textAlign: 'center' }}>
@@ -482,7 +558,7 @@ const Contact = () => {
         </div>
       )}
 
-      {/* ── BACK TO TOP ─────────────────────────────────────────────────────── */}
+      {/* ── BACK TO TOP ───────────────────────────────────────────────────── */}
       {showBackToTop && (
         <button
           onClick={scrollToTop}
@@ -508,7 +584,7 @@ const Contact = () => {
 
         @keyframes ctPulse {
           0%, 100% { transform: scale(1); }
-          50%       { transform: scale(1.08); }
+          50% { transform: scale(1.08); }
         }
 
         /* Collapse to single column on tablet */
