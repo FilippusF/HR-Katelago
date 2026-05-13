@@ -125,25 +125,25 @@ const Home = () => {
     {
       num: '01',
       title: 'Vision',
-      body: "To be Namibia's leading strategic workforce partner, known for workforce compliance, structured HR governance and clear, trusted advice in regulated and project-based environments.",
+      body: 'To be a trusted workforce partner in Namibia, known for disciplined execution, compliance-led systems, and practical HR advisory.',
     },
     {
       num: '02',
       title: 'Mission',
-      body: 'To help organisations operate with confidence through compliant workforce structures, disciplined payroll governance and practical HR advisory aligned to Namibian labour legislation.',
+      body: 'To support organisations with structured workforce systems that ensure compliance, stability, and operational clarity.',
     },
     {
       num: '03',
       title: 'Philosophy',
-      body: 'We believe compliant workforce structures, disciplined payroll governance and clear HR frameworks create stronger organisations. Our approach is practical, structured and aligned to Namibian labour legislation.',
+      body: 'We believe workforce structures must be clear, enforceable, and built for execution. Compliance is not a theoretical exercise. It is a business requirement that, if mismanaged, creates real operational and financial exposure. For this reason, workforce systems must be structured, consistent, and aligned with legislation. Our approach is deliberate and direct. We remove ambiguity, implement systems that hold, and ensure governance frameworks support both organisational performance and the people who operate within them.',
     },
   ];
 
   /* Core brand values with title + description */
   const values = [
-    { title: 'Bold',    desc: 'We address workforce risk directly and speak with clarity.' },
-    { title: 'Dynamic', desc: 'We support organisations operating in changing, project-based and regulated environments.' },
-    { title: 'Human',   desc: 'We believe strong governance should support both the organisation and its people.' },
+    { title: 'Bold.',    desc: 'We address workforce risk directly and without ambiguity. Where there is risk, we identify it early and provide compliant solutions.' },
+    { title: 'Dynamic.', desc: 'We build workforce systems that are structured, consistent, and enforceable. We adapt to project realities without compromising legal standards.' },
+    { title: 'Human.',   desc: 'We ensure these systems are fair, practical, and work for both the business and its people. Compliance does not mean rigidity.' },
   ];
 
   /* Why Choose Us feature cards */
@@ -598,7 +598,7 @@ const Home = () => {
           SECTION 4 — WHY CHOOSE US
           4 gold cards + a full-width team photo below.
           Cards collapse 4→2→1 column via CSS classes.
-      ══════════════════════════════════════════════════════════════════════ */}
+          ══════════════════════════════════════════════════════════════════════ */}
       <Section noPad style={{ padding: '0 24px 40px' }}>
         <Card>
           <div style={{ padding: '60px 52px' }} className="why-inner">
@@ -629,7 +629,7 @@ const Home = () => {
                     transition: 'transform 0.3s ease, box-shadow 0.3s ease',
                     cursor: 'default',
                   }}
-                  onMouseOver={(e) => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = '0 12px 28px rgba(0,0,0,0.2)'; }}
+                  onMouseOver={(e} => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = '0 12px 28px rgba(0,0,0,0.2)'; }}
                   onMouseOut={(e)  => { e.currentTarget.style.transform = 'translateY(0)';    e.currentTarget.style.boxShadow = 'none'; }}
                 >
                   <span style={{ fontFamily: G.serif, fontSize: '2rem', fontWeight: 600, color: G.dark, lineHeight: 1, marginBottom: '12px', opacity: 0.55 }}>{card.num}</span>
@@ -651,20 +651,20 @@ const Home = () => {
                 transition: 'transform 0.4s ease',
                 cursor: 'default',
               }}
-              onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.015)'}
+              onMouseOver={(e} => e.currentTarget.style.transform = 'scale(1.015)'}
               onMouseOut={(e)  => e.currentTarget.style.transform = 'scale(1)'}
             />
           </div>
         </Card>
       </Section>
 
-      {/* ══════════════════════════════════════════════════════════════════════
+      {/*══════════════════════════════════════════════════════════════════════
           SECTION 5 — HOW WE WORK
           4-step process in a 2×2 grid.
           Each step: gold number circle, title, body.
           Steps alternate between a gold-bordered card and a gold-filled card
           for visual rhythm (odd = outline, even = gold fill).
-      ══════════════════════════════════════════════════════════════════════ */}
+          ══════════════════════════════════════════════════════════════════════ */}
       <Section noPad style={{ padding: '0 24px 40px' }} id>
         <Card>
           <div style={{ padding: '60px 52px' }} className="how-inner">
@@ -696,20 +696,20 @@ const Home = () => {
                       cursor:       'default',
                     }}
                     onMouseOver={(e) => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = isGold ? '0 12px 28px rgba(0,0,0,0.18)' : '0 12px 28px rgba(0,0,0,0.1)'; }}
-                    onMouseOut={(e)  => { e.currentTarget.style.transform = 'translateY(0)';    e.currentTarget.style.boxShadow = 'none'; }}
+                    onMouseOut={(e}  => { e.currentTarget.style.transform = 'translateY(0)';    e.currentTarget.style.boxShadow = 'none'; }}
                   >
                     {/* Number circle — colours invert between variants */}
                     <div
                       style={{
                         width: '64px',
                         height: '64px',
-                        borderRadius: '50%',
+                        borderRadius: '50%', 
                         background:  isGold ? G.dark : G.gold,
                         display:     'flex',
                         alignItems:  'center',
                         justifyContent: 'center',
                         marginBottom: '20px',
-                        fontFamily:  G.serif,
+                        fontFamily:  G-.serif,
                         fontSize:    '1.4rem',
                         fontWeight:  600,
                         color:       isGold ? G.gold : G.dark,
@@ -796,7 +796,7 @@ const Home = () => {
                 lineHeight: 1.2,
               }}
             >
-              Let's partner for{' '}
+              Let's partner for{ ' '}
               <em style={{ color: G.gold, fontStyle: 'italic' }}>HR Excellence.</em>
             </h2>
             <p style={{ fontFamily: G.sans, fontSize: '14px', color: 'rgba(255,255,255,0.55)', marginBottom: '36px', fontWeight: 300 }}>
@@ -820,7 +820,7 @@ const Home = () => {
                 boxShadow: '0 4px 24px rgba(192,156,49,0.3)',
               }}
               onMouseOver={(e) => { e.currentTarget.style.transform = 'translateY(-3px)'; e.currentTarget.style.boxShadow = '0 8px 32px rgba(192,156,49,0.4)'; }}
-              onMouseOut={(e)  => { e.currentTarget.style.transform = 'translateY(0)';    e.currentTarget.style.boxShadow = '0 4px 24px rgba(192,156,49,0.3)'; }}
+              onMouseOut={(e)  => { e.currentTarget.style.transform = 'translateY(0)';   e.currentTarget.style.boxShadow = '0 4px 24px rgba(192,156,49,0.3)'; }}
             >
               Book a Consultation →
             </a>
@@ -870,7 +870,7 @@ const Home = () => {
           to   { opacity: 1; transform: translateY(0); }
         }
 
-        /* ── Loader pulse ── */
+        /* ── Loader pulse ── */ 
         @keyframes hmPulse {
           0%, 100% { transform: scale(1); }
           50%       { transform: scale(1.08); }
@@ -888,7 +888,7 @@ const Home = () => {
         }
         .km-client-pill:hover { border-color: rgba(192,156,49,0.4) !important; }
 
-        /* ── Float card — only visible on large screens ── */
+        /* ── Float card — Only visible on large screens ── */
         .km-float-card { display: none; }
         @media (min-width: 1100px) { .km-float-card { display: block; } }
 
@@ -906,7 +906,7 @@ const Home = () => {
           .km-process-grid { grid-template-columns: 1fr !important; }
         }
 
-        /* ── MOBILE (≤600px) ── */
+        /* ── MOBILE (≤���600px) ── */
         @media (max-width: 600px) {
           /* Why cards: single column */
           .km-why-cards { grid-template-columns: 1fr !important; }
