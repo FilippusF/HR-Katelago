@@ -709,7 +709,7 @@ const Home = () => {
                         alignItems:  'center',
                         justifyContent: 'center',
                         marginBottom: '20px',
-                        fontFamily:  G-.serif,
+                        fontFamily:  G.serif,
                         fontSize:    '1.4rem',
                         fontWeight:  600,
                         color:       isGold ? G.gold : G.dark,
