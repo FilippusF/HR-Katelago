@@ -629,7 +629,7 @@ const Home = () => {
                     transition: 'transform 0.3s ease, box-shadow 0.3s ease',
                     cursor: 'default',
                   }}
-                  onMouseOver={(e} => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = '0 12px 28px rgba(0,0,0,0.2)'; }}
+                  onMouseOver={(e) => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = '0 12px 28px rgba(0,0,0,0.2)'; }}
                   onMouseOut={(e)  => { e.currentTarget.style.transform = 'translateY(0)';    e.currentTarget.style.boxShadow = 'none'; }}
                 >
                   <span style={{ fontFamily: G.serif, fontSize: '2rem', fontWeight: 600, color: G.dark, lineHeight: 1, marginBottom: '12px', opacity: 0.55 }}>{card.num}</span>
@@ -651,7 +651,7 @@ const Home = () => {
                 transition: 'transform 0.4s ease',
                 cursor: 'default',
               }}
-              onMouseOver={(e} => e.currentTarget.style.transform = 'scale(1.015)'}
+              onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.015)'}
               onMouseOut={(e)  => e.currentTarget.style.transform = 'scale(1)'}
             />
           </div>
@@ -696,7 +696,7 @@ const Home = () => {
                       cursor:       'default',
                     }}
                     onMouseOver={(e) => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = isGold ? '0 12px 28px rgba(0,0,0,0.18)' : '0 12px 28px rgba(0,0,0,0.1)'; }}
-                    onMouseOut={(e}  => { e.currentTarget.style.transform = 'translateY(0)';    e.currentTarget.style.boxShadow = 'none'; }}
+                    onMouseOut={(e)  => { e.currentTarget.style.transform = 'translateY(0)';    e.currentTarget.style.boxShadow = 'none'; }}
                   >
                     {/* Number circle — colours invert between variants */}
                     <div
