@@ -125,7 +125,7 @@ const Home = () => {
     {
       num: '01',
       title: 'Vision',
-      body: 'To be a trusted workforce partner in Namibia, known for disciplined execution, compliance-led systems, and practical HR advisory.',
+      body: 'To be a trusted workforce partner, known for disciplined execution, compliance-led systems, and practical HR advisory.',
     },
     {
       num: '02',
@@ -582,7 +582,7 @@ const Home = () => {
                         </div>
                         <div>
                           <h5 style={{ fontFamily: G.sans, fontSize: '15px', fontWeight: 500, color: G.cream, marginBottom: '8px' }}>{p.title}</h5>
-                          <p style={{ fontFamily: G.sans, fontSize: '13px', color: 'rgba(255,255,255,0.65)', lineHeight: 1.7, margin: 0, fontWeight: 300 }}>{p.body}</p>
+                          <p style={{ fontFamily: G.sans, fontSize: '13px', color: 'rgba(255,255,255,0.65)', lineHeight: 1.7, margin: 0, fontWeight: 300, textAlign: p.num === '03' ? 'justify' : 'left' }}>{p.body}</p>
                         </div>
                       </div>
                     ))}
