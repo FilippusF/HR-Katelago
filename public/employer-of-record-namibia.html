@@ -193,9 +193,14 @@
         <div class="form-wrap">
           <h3>Request a consultation</h3>
           <p class="small">For businesses hiring in Namibia.</p>
-          <!-- Wire action to your CRM / form handler. On success, redirect to a thank-you page and fire the Google Ads "Qualified Enquiry" conversion. -->
-          <form action="https://www.katelago.com/contact" method="post">
+          <!-- Submissions email to info@katelago.com via FormSubmit, then redirect to /thank-you.html. Fire the Google Ads "Qualified Enquiry" conversion on the thank-you page. To keep data in-house instead, swap the form action to a Vercel function. -->
+          <form action="https://formsubmit.co/info@katelago.com" method="POST">
             <input type="hidden" name="source" value="google-ads-eor">
+            <input type="hidden" name="_subject" value="New EOR enquiry from katelago.com">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://www.katelago.com/thank-you.html">
+            <input type="text" name="_honey" style="display:none">
             <label>Company name <span class="req">*</span></label>
             <input type="text" name="company" required placeholder="Your company">
             <label>Your name <span class="req">*</span></label>
