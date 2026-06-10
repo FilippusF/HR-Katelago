@@ -190,15 +190,9 @@
         <div class="form-wrap">
           <h3>Scope your workforce</h3>
           <p class="small">For operators and contractors hiring in Namibia.</p>
-          <!-- Submissions email to info@katelago.com via FormSubmit, then redirect to /thank-you.html. Fire the Google Ads "Qualified Enquiry" conversion on the thank-you page. To keep data in-house instead, swap the form action to a Vercel function. -->
-          <form action="https://formsubmit.co/damona@katelago.com" method="POST">
+          <!-- Submits via fetch to Katelago's own email API (qualis-email-server) which emails info@katelago.com, then redirects to /thank-you.html. Same backend the main Contact page uses. -->
+          <form class="lead-form" data-service="Oil & Gas / EPC Workforce">
             <input type="hidden" name="source" value="google-ads-oilgas">
-            <input type="hidden" name="_subject" value="New Oil & Gas enquiry from katelago.com">
-            <input type="hidden" name="_cc" value="info@katelago.com">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://www.katelago.com/thank-you.html">
-            <input type="text" name="_honey" style="display:none">
             <label>Company name <span class="req">*</span></label>
             <input type="text" name="company" required placeholder="Your company">
             <label>Your name <span class="req">*</span></label>
@@ -207,6 +201,8 @@
             <input type="text" name="role" required placeholder="e.g. Project Manager, Mobilisation Lead">
             <label>Work email <span class="req">*</span></label>
             <input type="email" name="email" required placeholder="name@company.com">
+            <label>Phone number</label>
+            <input type="tel" name="phone" placeholder="+264 ...">
             <label>Project name / location <span class="req">*</span></label>
             <input type="text" name="project" required placeholder="e.g. Offshore block, Walvis Bay">
             <label>Number of roles needed <span class="req">*</span></label>
@@ -245,6 +241,41 @@
     </div>
   </div>
 </footer>
+
+
+<script>
+document.querySelectorAll('form.lead-form').forEach(function(f){
+  f.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var btn=f.querySelector('button[type=submit]'); var label=btn?btn.textContent:'';
+    if(btn){btn.disabled=true; btn.textContent='Sending...';}
+    var d=Object.fromEntries(new FormData(f).entries());
+    var name=(d.name||'').trim(); var first=name.split(' ')[0]||name; var last=name.split(' ').slice(1).join(' ');
+    var ex=[];
+    if(d.role) ex.push('Role: '+d.role);
+    if(d.headcount) ex.push('Staff to employ: '+d.headcount);
+    if(d.roles) ex.push('Roles needed: '+d.roles);
+    if(d.project) ex.push('Project / location: '+d.project);
+    if(d.timeline) ex.push('Mobilisation timeline: '+d.timeline);
+    if(d.sector) ex.push('Sector: '+d.sector);
+    if(d.stage) ex.push('Stage: '+d.stage);
+    if(d.source) ex.push('Source: '+d.source);
+    var payload={firstName:first,lastName:(last||'-'),email:(d.email||''),phoneNumber:(d.phone||''),
+      businessName:(d.company||''),serviceRequired:(f.getAttribute('data-service')||'Enquiry'),
+      hearAboutUs:'Google Ads',message:ex.join('\n')};
+    try{
+      var res=await fetch('https://qualis-email-server.vercel.app/api/custom-mails/katelago/quote-request',
+        {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+      if(!res.ok) throw new Error('status '+res.status);
+      if(window.gtag){gtag('event','generate_lead');}
+      window.location.href='/thank-you.html';
+    }catch(err){
+      if(btn){btn.disabled=false; btn.textContent=label;}
+      alert('Sorry, something went wrong sending your enquiry. Please email info@katelago.com or call +264 81 393 44 31.');
+    }
+  });
+});
+</script>
 
 </body>
 </html>
