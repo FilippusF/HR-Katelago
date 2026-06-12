@@ -38,7 +38,6 @@ const Header = () => {
     // },
     { label: 'About', to: '/#about', type: 'link' },
     { label: 'Services', to: '/services', type: 'link' }, 
-    { label: 'Blogs', to: '/blogs', type: 'link' },    
     { label: 'Vacancies', to: '/careers', type: 'link' },    
     // {
     //   label: 'Vacancies',
