@@ -6,7 +6,6 @@ import Industries from './pages/industries';
 import Careers from './pages/Careers';
 import Contact from './pages/Contact';
 import Testimonials from './pages/testimonials';
-import Blog from './pages/Blogs';
 
 import Layout from './components/common/Layout';
 import Home from './pages/Home';
@@ -24,7 +23,6 @@ function App() {
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/blogs" element={<Blog />} />
         </Routes>
       </Layout>
     </Router>
