@@ -700,8 +700,7 @@ const whyItems = [
                 <div
                   key={item.title}
                   style={{
-                    background: 'rgba(255,255,255,0.05)',
-                    backdropFilter: 'blur(8px)',
+                    background: 'transparent',
                     border: '1px solid rgba(192,156,49,0.15)',
                     borderRadius: '14px',
                     padding: '28px 24px',
