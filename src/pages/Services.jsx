@@ -288,7 +288,7 @@ const Services = () => {
       variant: 'gold',
       heading: 'Oil & Gas Workforce Solutions',
       tagline: 'Workforce structures that can hold up under pressure.',
-      body: "Operating in Namibia's Oil & Gas sector requires disciplined workforce governance aligned to labour legislation and project timelines. Katelago HR Consultants provides structured workforce solutions for operators, EPC contractors, and project teams, ensuring compliance, operational continuity, and risk control.",
+      body: "Operating in Namibia's Oil & Gas sector requires disciplined workforce governance aligned to labour legislation and project timelines. We provide structured workforce solutions for operators, EPC contractors, and project teams, ensuring compliance, operational continuity, and risk control.",
       ctaLabel: 'Request a Consultation',
       image: OilGasImage,
       card1Title: 'Our Services',
@@ -297,7 +297,7 @@ const Services = () => {
           {[
             'Workforce Mobilisation & Demobilisation Structuring',
             'Work Permit Applications for Expatriate Staff',
-            'Medixx Medical Testing & Clearance',
+            'Medical Testing & Clearance',
             'Rotational & Offshore Payroll Governance',
             'Employee Benefits Administration',
             'Employer of Record (EOR) for Project Teams',
@@ -333,7 +333,7 @@ const Services = () => {
           {[
             'Compliant Employment',
             'Work Permit Applications',
-            'Medixx Medical Testing Coordination',
+            'Medical Testing Coordination',
             'Full Payroll Management',
             'Employee Benefits Administration',
             'Statutory Compliance',
@@ -419,7 +419,7 @@ const Services = () => {
             'Psychometric Assessments (Where required)',
             'Background & Reference Checks',
             'Police Clearance Certificates',
-            'Medixx Medical Testing Coordination (Where required)',
+            'Medical Testing Coordination (Where required)',
             'Offer Management & Onboarding Support',
           ].map(i => <li key={i}>{i}</li>)}
         </ul>

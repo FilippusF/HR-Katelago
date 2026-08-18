@@ -624,8 +624,7 @@ const Home = () => {
                   <div
                     style={{
                       height: '100%',
-                      background: 'rgba(255,255,255,0.05)',
-                      backdropFilter: 'blur(8px)',
+                      background: 'transparent',
                       border: '1px solid rgba(192,156,49,0.15)',
                       borderRadius: '16px',
                       padding: '32px',
@@ -661,8 +660,7 @@ const Home = () => {
                       <div
                         key={p.num}
                         style={{
-                          background: 'rgba(255,255,255,0.05)',
-                          backdropFilter: 'blur(8px)',
+                          background: 'transparent',
                           border: '1px solid rgba(192,156,49,0.15)',
                           borderRadius: '14px',
                           padding: '24px',
