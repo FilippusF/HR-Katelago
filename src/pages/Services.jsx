@@ -137,17 +137,17 @@ const InfoCard = ({ title, children, variant = 'gold' }) => {
 };
 
 /* ── CTA BUTTON ─────────────────────────────────────────────────────────── */
-const CtaBtn = ({ onClick, children }) => (
+const CtaBtn = ({ onClick, children, big = false }) => (
   <button
     onClick={onClick}
     style={{
       display: 'inline-block',
-      padding: '12px 32px',
+      padding: big ? '16px 44px' : '12px 32px',
       borderRadius: '50px',
       backgroundColor: G.gold,
       color: G.dark,
       fontFamily: G.sans,
-      fontSize: '12px',
+      fontSize: big ? '14px' : '12px',
       fontWeight: 500,
       letterSpacing: '1.5px',
       textTransform: 'uppercase',
@@ -176,7 +176,7 @@ const CtaBtn = ({ onClick, children }) => (
 const ServiceLayout = ({
   id, eyebrow, heading, tagline, body, ctaLabel, ctaOnClick,
   image, card1Title, card1Content, card2Title, card2Content,
-  flip = false, variant = 'gold',
+  flip = false, variant = 'gold', fourCards = null,
 }) => (
   <div id={id} className="svc-layout">
     <div className={`svc-grid ${flip ? 'svc-flip' : ''}`}>
@@ -192,23 +192,50 @@ const ServiceLayout = ({
         <p style={{ fontFamily: G.sans, fontSize: '14px', fontWeight: 300, color: 'rgba(255,255,255,0.7)', lineHeight: 1.8, marginBottom: '28px' }}>
           {body}
         </p>
-        <CtaBtn onClick={ctaOnClick}>{ctaLabel}</CtaBtn>
+        {!fourCards && <CtaBtn onClick={ctaOnClick}>{ctaLabel}</CtaBtn>}
       </div>
 
-      {/* ── MEDIA COLUMN ── photo + two feature cards ── */}
+      {/* ── MEDIA COLUMN ── photo + two feature cards (photo only in four-card mode) ── */}
       <div className="svc-media">
-        {/* Photo */}
-        <div style={{ borderRadius: '14px', overflow: 'hidden', height: '220px', border: '1px solid rgba(192,156,49,0.12)', marginBottom: '16px' }}>
+        {/* Photo — taller when it stands alone beside the copy */}
+        <div style={{ borderRadius: '14px', overflow: 'hidden', height: fourCards ? '340px' : '220px', border: '1px solid rgba(192,156,49,0.12)', marginBottom: '16px' }}>
           <img src={image} alt={heading} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} />
         </div>
 
         {/* Two feature cards — collapse to 1-col on mobile via .svc-cards */}
-        <div className="svc-cards">
-          <InfoCard title={card1Title} variant={variant}>{card1Content}</InfoCard>
-          <InfoCard title={card2Title} variant={variant === 'gold' ? 'transparent' : 'gold'}>{card2Content}</InfoCard>
-        </div>
+        {!fourCards && (
+          <div className="svc-cards">
+            <InfoCard title={card1Title} variant={variant}>{card1Content}</InfoCard>
+            <InfoCard title={card2Title} variant={variant === 'gold' ? 'transparent' : 'gold'}>{card2Content}</InfoCard>
+          </div>
+        )}
       </div>
     </div>
+
+    {/* ── FOUR-CARD GRID ── full-width detail blocks below the intro ── */}
+    {fourCards && (
+      <>
+        <div className="svc-cards-4">
+          {fourCards.map((card) => (
+            <InfoCard key={card.title} title={card.title} variant={card.variant}>
+              <ul style={{ fontFamily: G.sans, fontSize: '12px', paddingLeft: '16px', margin: 0, lineHeight: 1.75 }}>
+                {card.items.map(i => <li key={i}>{i}</li>)}
+              </ul>
+            </InfoCard>
+          ))}
+        </div>
+
+        {/* CTA sits below the cards, tucked up into the space the stepped heights leave */}
+        <div className="svc-cta-row" style={{ display: 'flex', alignItems: 'center', gap: '28px', flexWrap: 'wrap' }}>
+          <CtaBtn big onClick={ctaOnClick}>{ctaLabel}</CtaBtn>
+          <div style={{ flex: 1, display: 'flex', justifyContent: 'center' }}>
+            <p style={{ fontFamily: G.serif, fontSize: '16px', fontStyle: 'italic', color: 'rgba(255,255,255,0.5)', lineHeight: 1.8, margin: 0, maxWidth: '440px', textAlign: 'center' }}>
+              "Our advisory work is practical, structured, and aligned to business needs."
+            </p>
+          </div>
+        </div>
+      </>
+    )}
   </div>
 );
 
@@ -406,18 +433,73 @@ const Services = () => {
       body: 'Alongside our compliance and payroll services, Katelago provides practical HR advisory support that helps organisations make better workforce decisions.',
       ctaLabel: 'Talk to Us About HR Advisory',
       image: StationImage4,
-      card1Title: 'HR Advisory Includes',
-      card1Content: (
-        <ul style={{ fontFamily: G.sans, fontSize: '12px', paddingLeft: '16px', margin: 0, lineHeight: 1.75 }}>
-          {['Psychometric Assessments','Job Grading', 'Salary Benchmarking','Organisational Development'].map(i => <li key={i}>{i}</li>)}
-        </ul>
-      ),
-      card2Title: 'How We Approach It',
-      card2Content: (
-        <p style={{ fontFamily: G.sans, fontSize: '12px', margin: 0, lineHeight: 1.7 }}>
-          Our advisory work is practical. Whether the need is assessment, grading, recruitment or organisational structure, the goal is the same: clearer decisions, stronger fairness and better alignment between people and business needs.
-        </p>
-      ),
+      fourCards: [
+        {
+          title: 'Psychometric Assessments',
+          variant: 'transparent',
+          items: [
+            'Assessment of cognitive abilities',
+            'Evaluation of behavioural traits and job suitability',
+            'Standalone or recruitment-linked assessments',
+            'Recruitment and selection support',
+            'Internal promotion assessments',
+            'Workforce-development assessments',
+            'Evidence-based employment decision support',
+          ],
+        },
+        {
+          title: 'Job Grading & Salary Benchmarking',
+          variant: 'gold',
+          items: [
+            'Peromnes and Paterson Grading scales',
+            'Structured job grading using proven methodologies',
+            'Job evaluation and role alignment',
+            'Market salary-data analysis',
+            'Internal salary-equity analysis',
+            'Development of competitive remuneration packages',
+            'Budget-aligned remuneration structures',
+            'Fair, transparent and defensible salary frameworks',
+          ],
+        },
+        {
+          title: 'Organisational Development Support',
+          variant: 'transparent',
+          items: [
+            'Organisational structure and workforce design',
+            'Systems and capability development',
+            'Span-of-control analysis',
+            'Reporting-line alignment',
+            'Skills and competency audits',
+            'Performance management frameworks',
+            'Leadership development and capability building',
+            'Organisational culture development',
+            'Employee engagement',
+            'Talent management and workforce development',
+            'Employee relations',
+            'Organisational health assessments',
+          ],
+        },
+        {
+          title: 'Pre-feasibility and Feasibility Study Support',
+          variant: 'gold',
+          items: [
+            'Structured human resources input for multidisciplinary study teams',
+            'Workforce planning at the early stages of project development',
+            'Organisational structure design',
+            'Labour-compliance assessment',
+            'Remuneration planning and projections',
+            'Workforce-model development',
+            'Employment-framework design',
+            'Workforce cost analysis',
+            'Salary benchmarking',
+            'Assessment of employment-related regulatory requirements',
+            'Human resources risk identification',
+            'Support for accurate financial modelling',
+            'Support for informed investment decisions',
+            'Workforce planning for smoother project execution',
+          ],
+        },
+      ],
     },
   ];
 
@@ -573,6 +655,7 @@ const whyItems = [
                 card1Content={svc.card1Content}
                 card2Title={svc.card2Title}
                 card2Content={svc.card2Content}
+                fourCards={svc.fourCards}
               />
             </Card>
           </Wrap>
@@ -703,6 +786,7 @@ const whyItems = [
 
         .svc-layout {
           padding: 60px 52px;
+          position: relative;
         }
 
         .svc-grid {
@@ -726,6 +810,45 @@ const whyItems = [
         .svc-media {
           display: flex;
           flex-direction: column;
+        }
+
+        /* Four-card detail grid: 4 upright rectangles on desktop, below the intro columns.
+           align-items: start + height:auto lets each card end where its list ends,
+           so the four cards step up with their content instead of stretching equal. */
+        .svc-cards-4 {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 16px;
+          margin-top: 32px;
+          align-items: start;
+        }
+
+        .svc-cards-4 > div {
+          height: auto !important;
+        }
+
+        /* CTA row floats in the whitespace the stepped heights leave,
+           absolutely positioned so it never changes the section's height
+           (a negative margin here made the card clip the tallest box) */
+        .svc-cta-row {
+          position: absolute;
+          bottom: 126px;
+          left: 52px;
+          width: calc(75% - 91px);
+        }
+
+        @media (max-width: 1100px) {
+          .svc-cta-row {
+            position: static;
+            margin-top: 32px;
+            width: 100%;
+          }
+        }
+
+        @media (max-width: 1100px) {
+          .svc-cards-4 {
+            grid-template-columns: 1fr 1fr;
+          }
         }
 
         /* ── WHY GRID ──────────────────────────────────────────────────────── */
@@ -752,6 +875,10 @@ const whyItems = [
           .svc-media { order: 2 !important; }
 
           .why-grid {
+            grid-template-columns: 1fr !important;
+          }
+
+          .svc-cards-4 {
             grid-template-columns: 1fr !important;
           }
         }
