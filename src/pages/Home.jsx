@@ -4,6 +4,7 @@ import { clients } from '../data/clients';
 import whoImage     from '../assets/images/aboutUs.jpg';
 import missionImage from '../assets/images/mission.jpg';
 import logoImage    from '../assets/images/Main-logo.png';
+import anywhererBadge from '../assets/images/anywherer-top-eor-namibia.png';
 import StationImage1 from '../assets/images/10.jpg';
 import HomeImage    from '../assets/images/mission.jpg';
 
@@ -224,25 +225,81 @@ const Home = () => {
             >
               <Eyebrow>Workforce Solutions · Namibia</Eyebrow>
 
-              <h1
-                style={{
-                  fontFamily: G.serif,
-                  fontSize: 'clamp(1.8rem, 2.8vw, 2.6rem)',
-                  fontWeight: 400,
-                  lineHeight: 1.25,
-                  color: G.cream,
-                  marginBottom: '22px',
-                  maxWidth: '420px',
-                }}
-              >
-                Strategic Workforce Partner for{' '}
-                <em style={{ color: G.gold, fontStyle: 'italic' }}>
-                  Regulated &amp; Project-Based
-                </em>{' '}
-                Operations
-              </h1>
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '28px', flexWrap: 'wrap' }}>
+                <h1
+                  style={{
+                    fontFamily: G.serif,
+                    fontSize: 'clamp(1.8rem, 2.8vw, 2.6rem)',
+                    fontWeight: 400,
+                    lineHeight: 1.25,
+                    color: G.cream,
+                    marginBottom: '22px',
+                    maxWidth: '420px',
+                    flex: '1 1 260px',
+                  }}
+                >
+                  Named a{' '}
+                  <em style={{ color: G.gold, fontStyle: 'italic' }}>
+                    Top EOR Provider
+                  </em>{' '}
+                  in Namibia
+                </h1>
+
+                {/* Badge in a white chip, matching the float card */}
+                <a
+                  href="https://www.anywherer.com/eor-in-namibia/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    background: 'white',
+                    borderRadius: '14px',
+                    padding: '10px 12px',
+                    boxShadow: '0 8px 28px rgba(0,0,0,0.25)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0,
+                    alignSelf: 'center',
+                    marginTop: '40px',
+                  }}
+                >
+                  <img
+                    src={anywhererBadge}
+                    alt="Top EOR in Namibia — according to anywherer.com"
+                    style={{ height: '190px', width: 'auto', display: 'block' }}
+                  />
+                </a>
+              </div>
 
               <GoldRule />
+
+              <div
+                style={{
+                  borderRight: `2px solid ${G.gold}`,
+                  paddingRight: '16px',
+                  maxWidth: '440px',
+                }}
+              >
+              <p
+                style={{
+                  fontFamily: G.sans,
+                  fontSize: '14px',
+                  fontWeight: 300,
+                  color: 'rgba(255,255,255,0.72)',
+                  lineHeight: 1.75,
+                  marginBottom: '18px',
+                  maxWidth: '420px',
+                  textAlign: 'justify',
+                }}
+              >
+                Anywherer, an independent platform that reviews Employer of Record providers
+                worldwide, has named Katelago HR Consultants among the{' '}
+                <span style={{ color: G.gold }}>Top 9 EOR providers in Namibia</span>. The
+                recognition was not applied for. It followed Anywherer's own research into
+                providers with{' '}
+                <span style={{ color: G.gold }}>real in-country registration and dependable delivery</span>,
+                which is exactly why it matters.
+              </p>
 
               <p
                 style={{
@@ -252,11 +309,44 @@ const Home = () => {
                   color: 'rgba(255,255,255,0.72)',
                   lineHeight: 1.75,
                   marginBottom: '24px',
-                  maxWidth: '380px',
+                  maxWidth: '420px',
+                  textAlign: 'justify',
                 }}
               >
-                We employ, manage, and pay your workforce in Namibia: compliantly and efficiently.
+                For international companies, an EOR is the practical route into{' '}
+                <span style={{ color: G.gold }}>hiring local talent in Namibia without establishing an entity</span>.
+                The model only works when the provider genuinely knows the terrain: Namibian
+                labour legislation, sector-specific regulation, and the realities of
+                project-based operations. That is the ground we have worked for over 20 years,
+                and it is why organizations{' '}
+                <span style={{ color: G.gold }}>trust us to carry their workforce compliance</span>.
               </p>
+              </div>
+
+              {/* Link to the original feature */}
+              <div style={{ marginBottom: '28px' }}>
+                <a
+                  href="https://www.anywherer.com/eor-in-namibia/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    fontFamily: G.sans,
+                    fontSize: '11px',
+                    fontWeight: 500,
+                    letterSpacing: '1px',
+                    textTransform: 'uppercase',
+                    color: G.gold,
+                    textDecoration: 'none',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                  }}
+                  onMouseOver={(e) => e.currentTarget.style.textDecoration = 'underline'}
+                  onMouseOut={(e)  => e.currentTarget.style.textDecoration = 'none'}
+                >
+                  Read the feature on anywherer.com →
+                </a>
+              </div>
 
               {/* Italic brand quote */}
               <blockquote
@@ -269,10 +359,12 @@ const Home = () => {
               >
                 {/* <p
                   style={{
-                    fontFamily: G.serif,
+                    fontFamily: G.sans,
                     fontSize: '13px',
+                    fontWeight: 300,
                     lineHeight: 1.8,
                     color: 'rgba(255,255,255,0.65)',
+                    textAlign: 'justify',
                     margin: 0,
                   }}
                 >
@@ -283,22 +375,26 @@ const Home = () => {
 
                 <p
                   style={{
-                    fontFamily: G.serif,
+                    fontFamily: G.sans,
                     fontSize: '13px',
+                    fontWeight: 300,
                     lineHeight: 1.8,
                     color: 'rgba(255,255,255,0.65)',
+                    textAlign: 'justify',
                     margin: 0,
                   }}
                 >
-                  Katelago HR Consultants is a strategic workforce partner based in Namibia. We provide workforce compliance, Employer of Record (EOR) solutions, payroll governance, recruitment, and strategic HR advisory services for organizations operating in regulated and project-based environments.
+                  As a strategic workforce partner based in Windhoek, Namibia, we provide workforce compliance, Employer of Record (EOR) solutions, payroll governance, recruitment, and strategic HR advisory services for organizations operating in regulated and project-based environments.
                 </p>
 
                 <p
                   style={{
-                    fontFamily: G.serif,
+                    fontFamily: G.sans,
                     fontSize: '13px',
+                    fontWeight: 300,
                     lineHeight: 1.8,
                     color: 'rgba(255,255,255,0.65)',
+                    textAlign: 'justify',
                     marginTop: '10px',
                     marginBottom: 0,
                   }}
@@ -308,10 +404,12 @@ const Home = () => {
 
                 <p
                   style={{
-                    fontFamily: G.serif,
+                    fontFamily: G.sans,
                     fontSize: '13px',
+                    fontWeight: 300,
                     lineHeight: 1.8,
                     color: 'rgba(255,255,255,0.65)',
+                    textAlign: 'justify',
                     marginTop: '10px',
                     marginBottom: 0,
                   }}
@@ -436,6 +534,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+
         </Card>
       </Section>
 
