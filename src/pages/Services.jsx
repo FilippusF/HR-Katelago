@@ -832,7 +832,7 @@ const whyItems = [
            (a negative margin here made the card clip the tallest box) */
         .svc-cta-row {
           position: absolute;
-          bottom: 126px;
+          bottom: 60px;
           left: 52px;
           width: calc(75% - 91px);
         }
