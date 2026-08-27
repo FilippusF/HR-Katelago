@@ -451,7 +451,7 @@ const Services = () => {
           title: 'Job Grading & Salary Benchmarking',
           variant: 'gold',
           items: [
-            'Peromnes and Paterson Grading scales',
+            'Paterson Grading scale',
             'Structured job grading using proven methodologies',
             'Job evaluation and role alignment',
             'Market salary-data analysis',
