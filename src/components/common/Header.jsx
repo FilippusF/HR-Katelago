@@ -37,8 +37,11 @@ const Header = () => {
     //   children: [{ label: 'About Us', to: '#/about' }],
     // },
     { label: 'About', to: '/#about', type: 'link' },
-    { label: 'Services', to: '/services', type: 'link' }, 
-    { label: 'Vacancies', to: '/careers', type: 'link' },    
+    { label: 'Services', to: '/services', type: 'link' },
+    /* Static resource hub served from public/hub — plain anchor so the
+       browser leaves the SPA and Vercel serves the static files. */
+    { label: 'HR Hub', href: '/hub/', type: 'anchor' },
+    { label: 'Vacancies', to: '/careers', type: 'link' },
     // {
     //   label: 'Vacancies',
     //   type: 'dropdown',
@@ -177,7 +180,30 @@ const Header = () => {
             {/* Spacer so links sit in the true centre between logo and CTA */}
             <ul className="navbar-nav mx-auto" style={{ gap: '0.25rem' }}>
               {navItems.map((item) =>
-                item.type === 'link' ? (
+                item.type === 'anchor' ? (
+                  /* Plain anchor for pages outside the SPA (static /hub/) */
+                  <li key={item.label} className="nav-item">
+                    <a
+                      className="nav-link"
+                      href={item.href}
+                      style={{
+                        fontFamily: G.sans,
+                        fontSize: '13px',
+                        fontWeight: 500,
+                        letterSpacing: '1.2px',
+                        textTransform: 'uppercase',
+                        color: '#2a2a2a',
+                        padding: '8px 14px',
+                        borderRadius: '6px',
+                        transition: 'color 0.2s ease, background 0.2s ease',
+                      }}
+                      onMouseOver={(e) => { e.currentTarget.style.color = G.dark; e.currentTarget.style.background = 'rgba(23,77,58,0.06)'; }}
+                      onMouseOut={(e) => { e.currentTarget.style.color = '#2a2a2a'; e.currentTarget.style.background = 'transparent'; }}
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ) : item.type === 'link' ? (
                   /* Simple nav link */
                   <li key={item.label} className="nav-item">
                     <Link
