@@ -9,16 +9,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap">
 <link rel="stylesheet" href="styles.css">
+<script src="hub.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
 <nav class="nav wrap">
-  <a class="brand" href="index.html"><img src="assets/main-logo.png" alt="Katelago HR Consultants"></a>
+  <a class="brand" href="./"><img src="assets/main-logo.png" alt="Katelago HR Consultants"></a>
   <div class="navlinks">
-    <a href="guides.html">Guides</a>
-    <a href="compliance-calendar.html">Compliance calendar</a>
-    <a href="templates.html">Templates</a>
+    <a href="guides">Guides</a>
+    <a href="compliance-calendar">Compliance calendar</a>
+    <a href="templates">Templates</a>
     <a href="/contact" class="cta">Contact Us</a>
   </div>
 </nav>
@@ -29,7 +30,7 @@
   <p class="eyebrow">Guide library</p>
   <h1>The complete guide library</h1>
   <p>Practical guidance on Namibian employment practice, grounded in the Labour Act and kept current. Filter by topic, or search for the situation you are sitting with.</p>
-  <form class="searchbox" action="guides.html" method="get" role="search" style="box-shadow:none;border:1px solid var(--line);max-width:560px;">
+  <form class="searchbox" action="guides" method="get" role="search" style="box-shadow:none;border:1px solid var(--line);max-width:560px;">
     <label for="q2" class="skip">Search the library</label>
     <input id="q2" name="q" type="search" placeholder="Search the library">
     <button type="submit">Search</button>
@@ -50,7 +51,7 @@
   <div class="split">
     <div>
       <div class="list" id="guidelist">
-        <a class="row" href="guides/dismissal-for-misconduct.html" data-topic="Discipline" id="discipline">
+        <a class="row" href="guides/dismissal-for-misconduct" data-topic="Discipline" id="discipline">
           <div>
             <div class="meta"><span class="pill">Discipline</span><span class="stamp">25 August 2026</span><span class="stamp">8 min</span></div>
             <h3>Dismissal for misconduct: the disciplinary process step by step</h3>
@@ -58,7 +59,7 @@
           </div>
           <span class="rowarrow" aria-hidden="true">&rsaquo;</span>
         </a>
-        <a class="row" href="guides/sick-leave-namibia.html" data-topic="Leave" id="leave">
+        <a class="row" href="guides/sick-leave-namibia" data-topic="Leave" id="leave">
           <div>
             <div class="meta"><span class="pill">Leave</span><span class="stamp">25 August 2026</span><span class="stamp">5 min</span></div>
             <h3>Sick leave in Namibia runs on a three year cycle, not a year</h3>
@@ -66,7 +67,7 @@
           </div>
           <span class="rowarrow" aria-hidden="true">&rsaquo;</span>
         </a>
-        <a class="row" href="guides/local-content-namibia.html" data-topic="Oil and gas">
+        <a class="row" href="guides/local-content-namibia" data-topic="Oil and gas">
           <div>
             <div class="meta"><span class="pill">Oil and gas</span><span class="stamp">25 August 2026</span><span class="stamp">8 min</span></div>
             <h3>What local content actually means in Namibia</h3>
@@ -74,7 +75,7 @@
           </div>
           <span class="rowarrow" aria-hidden="true">&rsaquo;</span>
         </a>
-        <a class="row" href="guides/employing-non-namibians-oil-and-gas.html" data-topic="Oil and gas">
+        <a class="row" href="guides/employing-non-namibians-oil-and-gas" data-topic="Oil and gas">
           <div>
             <div class="meta"><span class="pill">Oil and gas</span><span class="stamp">25 August 2026</span><span class="stamp">8 min</span></div>
             <h3>Employing non-Namibians, and the understudy rule everyone forgets</h3>
@@ -82,7 +83,7 @@
           </div>
           <span class="rowarrow" aria-hidden="true">&rsaquo;</span>
         </a>
-        <a class="row" href="guides/retrenchment-section-34.html" data-topic="Termination" id="termination">
+        <a class="row" href="guides/retrenchment-section-34" data-topic="Termination" id="termination">
           <div>
             <div class="meta"><span class="pill">Termination</span><span class="stamp">25 August 2026</span><span class="stamp">9 min</span></div>
             <h3>Retrenching one person triggers the same process as retrenching fifty</h3>
@@ -90,7 +91,7 @@
           </div>
           <span class="rowarrow" aria-hidden="true">&rsaquo;</span>
         </a>
-        <a class="row" href="guides/affirmative-action-reporting.html" data-topic="Affirmative Action" id="aa-guide">
+        <a class="row" href="guides/affirmative-action-reporting" data-topic="Affirmative Action" id="aa-guide">
           <div>
             <div class="meta"><span class="pill">Affirmative Action</span><span class="stamp">25 August 2026</span><span class="stamp">10 min</span></div>
             <h3>Affirmative Action reporting: what the Commission is actually looking for</h3>
@@ -98,7 +99,7 @@
           </div>
           <span class="rowarrow" aria-hidden="true">&rsaquo;</span>
         </a>
-        <a class="row" href="guides/notice-periods.html" data-topic="Termination">
+        <a class="row" href="guides/notice-periods" data-topic="Termination">
           <div>
             <div class="meta"><span class="pill">Termination</span><span class="stamp">25 August 2026</span><span class="stamp">6 min</span></div>
             <h3>Notice periods, and the leave trap that catches good employers</h3>
@@ -106,7 +107,7 @@
           </div>
           <span class="rowarrow" aria-hidden="true">&rsaquo;</span>
         </a>
-        <a class="row" href="compliance-calendar.html" data-topic="Payroll" id="payroll">
+        <a class="row" href="compliance-calendar" data-topic="Payroll" id="payroll">
           <div>
             <div class="meta"><span class="pill">Payroll</span><span class="stamp">25 August 2026</span><span class="stamp">Reference</span></div>
             <h3>The Namibian employer compliance calendar</h3>
@@ -121,22 +122,22 @@
       </div>
       <p class="sectionsub">Namibia's upstream sector has brought a new vocabulary, a new policy and a new set of workforce obligations. These guides explain them for managers and business owners rather than engineers.</p>
       <div class="cats">
-        <a class="cat" href="guides/local-content-namibia.html">
+        <a class="cat" href="guides/local-content-namibia">
           <b>What local content actually means</b>
           <span>The definition, the three layers of obligation, and which of them already bind you today.</span>
           <em>8 min read</em>
         </a>
-        <a class="cat" href="guides/local-content-policy-employers.html">
+        <a class="cat" href="guides/local-content-policy-employers">
           <b>What the new policy will mean for Namibian business</b>
           <span>Cabinet approved it in August 2026. What changes, what does not change yet, and what to prepare.</span>
           <em>7 min read</em>
         </a>
-        <a class="cat" href="guides/oil-and-gas-terms-explained.html">
+        <a class="cat" href="guides/oil-and-gas-terms-explained">
           <b>Onshore, offshore, upstream, FID</b>
           <span>The words explained, including why FID is the only date a workforce plan should be built around.</span>
           <em>6 min read</em>
         </a>
-        <a class="cat" href="guides/employing-non-namibians-oil-and-gas.html">
+        <a class="cat" href="guides/employing-non-namibians-oil-and-gas">
           <b>Employing non-Namibians in the sector</b>
           <span>Work permits, the new five year business permit, and the understudy rule employers forget.</span>
           <em>8 min read</em>
@@ -158,13 +159,13 @@
       <div class="card">
         <h4>Start here</h4>
         <ol>
-          <li><a href="compliance-calendar.html">The compliance calendar</a></li>
-          <li><a href="guides/local-content-namibia.html">What local content means</a></li>
-          <li><a href="guides/dismissal-for-misconduct.html">Dismissal for misconduct</a></li>
-          <li><a href="guides/retrenchment-section-34.html">Retrenchment under section 34</a></li>
-          <li><a href="guides/affirmative-action-reporting.html">Affirmative Action reporting</a></li>
-          <li><a href="guides/sick-leave-namibia.html">The sick leave cycle</a></li>
-          <li><a href="guides/notice-periods.html">Notice periods</a></li>
+          <li><a href="compliance-calendar">The compliance calendar</a></li>
+          <li><a href="guides/local-content-namibia">What local content means</a></li>
+          <li><a href="guides/dismissal-for-misconduct">Dismissal for misconduct</a></li>
+          <li><a href="guides/retrenchment-section-34">Retrenchment under section 34</a></li>
+          <li><a href="guides/affirmative-action-reporting">Affirmative Action reporting</a></li>
+          <li><a href="guides/sick-leave-namibia">The sick leave cycle</a></li>
+          <li><a href="guides/notice-periods">Notice periods</a></li>
         </ol>
       </div>
       <div class="card">
@@ -182,9 +183,9 @@
   <div class="footgrid">
     <div>
       <b>The Hub</b>
-      <a href="guides.html">All guides</a>
-      <a href="compliance-calendar.html">Compliance calendar</a>
-      <a href="templates.html">Templates</a>
+      <a href="guides">All guides</a>
+      <a href="compliance-calendar">Compliance calendar</a>
+      <a href="templates">Templates</a>
     </div>
     <div>
       <b>Services</b>
