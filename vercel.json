@@ -1,9 +1,12 @@
 {
-  "cleanUrls": true,
+  "redirects": [
+    { "source": "/hub/index.html", "destination": "/hub", "permanent": true },
+    { "source": "/hub/(.*)\\.html", "destination": "/hub/$1", "permanent": true }
+  ],
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+    { "source": "/hub", "destination": "/hub/index.html" },
+    { "source": "/hub/guides/(.*)", "destination": "/hub/guides/$1.html" },
+    { "source": "/hub/(guides|compliance-calendar|templates)", "destination": "/hub/$1.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
