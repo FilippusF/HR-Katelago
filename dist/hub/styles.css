@@ -333,6 +333,16 @@ table.data .num{font-variant-numeric:tabular-nums;white-space:nowrap;}
   font-weight:700;color:var(--gold);
 }
 
+/* ---------- template download links ---------- */
+.doclinks a{
+  color:var(--gold);font-weight:700;text-decoration:none;
+  border-bottom:2px solid var(--gold);padding-bottom:1px;
+}
+.doclinks a:hover{color:var(--emerald);border-color:var(--emerald);}
+.inlinegate .doclinks a{color:var(--gold-light);border-color:var(--gold-light);}
+.inlinegate .doclinks a:hover{color:#fff;border-color:#fff;}
+.tfile .field{border:1px solid var(--line);margin-top:6px;}
+
 /* ---------- filter chips ---------- */
 .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
 .chip{
