@@ -16,6 +16,7 @@
   --beige-soft:#b29c55;
   --paper:#003e1d;
   --surface:#FFFFFF;
+   --gold-pale:#F5EDD8;
   --ink:#1f2a24;
   --muted:#6C7671;
   --line:#E6DFCD;
@@ -161,7 +162,7 @@ a{color:var(--emerald);}
 .searchbox button:hover{background:var(--gold-light);}
 
 /* ---------- page header (inner pages) ---------- */
-.pagehead{background:var(--surface);padding-top:clamp(30px,5vw,52px);padding-bottom:clamp(22px,3vw,30px);}
+.pagehead{background:var(--gold-pale);padding-top:clamp(30px,5vw,52px);padding-bottom:clamp(22px,3vw,30px);}
 .pagehead h1{
   font-family:var(--f-display);
   font-weight:600;
@@ -179,7 +180,7 @@ a{color:var(--emerald);}
 /* ---------- bands ---------- */
 section.band{padding-top:clamp(34px,5.5vw,58px);padding-bottom:clamp(34px,5.5vw,58px);}
 .band.paper{background:var(--paper);}
-.band.white{background:var(--surface);}
+.band.white{background:var(--gold-pale);}
 .band.beige{background:var(--beige-soft);}
 
 .sectionhead{
