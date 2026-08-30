@@ -18,7 +18,7 @@
   --surface:#FFFFFF;
    --gold-pale:#E8EBE8;
   --ink:#1f2a24;
-  --muted:#6C7671;
+  --muted:#59635C;
   --line:#E6DFCD;
   --alert:#8C3B1E;
 
@@ -447,3 +447,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
 
 .band.paper .callout a{color:var(--emerald-deep);}
 .band.paper > .fineprint{color:#A9BCB1;}
+
+/* ---------- contrast fixes on grey and khaki backgrounds ---------- */
+.cadence,.cat em,.doclinks a,.tfile .gate,.pagehead .eyebrow{color:#7D6419;}
+.doclinks a{border-color:#7D6419;}
+.pill{background:var(--gold-pale);}
+.foot .legal{color:#8FA79A;}
+.band.beige .fineprint,.band.beige .disclaimer,.band.beige .sectionsub{color:var(--ink);}
+.band.beige .prose h2,.band.beige .sectionhead h2,.callout b{color:var(--emerald-deep);}
