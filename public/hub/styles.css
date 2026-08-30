@@ -13,7 +13,7 @@
   --gold:#C09C31;
   --gold-light:#D6B65C;
   --beige:#EAE2CF;
-  --beige-soft:#b0a277;
+  --beige-soft:#b29c55;
   --paper:#003e1d;
   --surface:#FFFFFF;
   --ink:#1f2a24;
@@ -429,3 +429,17 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
 @media (prefers-reduced-motion:reduce){
   *{transition:none !important;animation:none !important;scroll-behavior:auto !important;}
 }
+
+/* ---------- readable text on the dark green paper background ---------- */
+.band.paper{color:#F2F5F2;}
+.band.paper .sectionhead h2{color:#fff;}
+.band.paper .sectionhead a{color:var(--gold-light);}
+.band.paper .sectionhead a:hover{color:#fff;}
+.band.paper .sectionsub{color:#CFDCD4;}
+.band.paper .prose h2{color:var(--gold-light);}
+.band.paper .prose h3{color:#fff;}
+.band.paper .prose a{color:var(--gold-light);}
+.band.paper .byline,.band.paper .disclaimer{color:#A9BCB1;}
+.band.paper .sources h3,.band.paper .sources ul,.band.paper .sources a{color:#A9BCB1;}
+.band.paper table.data caption{color:#fff;}
+.cat,.card,.calitem,.row,.tfile,table.data{color:var(--ink);}
