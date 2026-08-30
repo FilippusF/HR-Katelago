@@ -455,3 +455,4 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
 .foot .legal{color:#8FA79A;}
 .band.beige .fineprint,.band.beige .disclaimer,.band.beige .sectionsub{color:var(--ink);}
 .band.beige .prose h2,.band.beige .sectionhead h2,.callout b{color:var(--emerald-deep);}
+.card.dark .fineprint{color:#9FB6A9;}
