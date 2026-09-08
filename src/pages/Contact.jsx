@@ -74,6 +74,7 @@ const Contact = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
+  const [emailError, setEmailError] = useState(null);
 
   useEffect(() => {
     const t = setTimeout(() => setIsLoading(false), 2000);
@@ -88,17 +89,22 @@ const Contact = () => {
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
-  const handleChange = (e) =>
+  const handleChange = (e) => {
+    if (e.target.name === 'email') setEmailError(null);
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (inquiryType !== 'business') return; // Guard: never submit for individuals
     if (!isBusinessEmail(formData.email)) {
       setSubmitStatus('error');
-      alert('Please use your work email address. This form is for employers, so we cannot accept free addresses such as Gmail, Yahoo or Outlook.');
+      setEmailError('Please use your work email address. This form is for employers, so we cannot accept free addresses such as Gmail, Yahoo or Outlook.');
+      const emailField = document.getElementById('email');
+      if (emailField) emailField.focus();
       return;
     }
+    setEmailError(null);
     setIsSubmitting(true);
     setSubmitStatus(null);
 
@@ -472,6 +478,26 @@ const Contact = () => {
                         onBlur={(e) => { e.target.style.borderColor = 'rgba(192,156,49,0.2)'; e.target.style.background = 'rgba(255,255,255,0.08)'; }}
                       />
                     </div>
+
+                    {/* Business email notice */}
+                    {emailError && (
+                      <div
+                        role="alert"
+                        style={{
+                          margin: '0 0 20px',
+                          padding: '12px 14px',
+                          border: '1px solid #c9302c',
+                          background: '#fdf4f3',
+                          color: '#7d2b28',
+                          borderRadius: '6px',
+                          fontFamily: G.sans,
+                          fontSize: '14px',
+                          lineHeight: 1.5,
+                        }}
+                      >
+                        {emailError}
+                      </div>
+                    )}
 
                     {/* Submit button */}
                     <button
