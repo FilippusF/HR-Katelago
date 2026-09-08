@@ -99,7 +99,7 @@ const Contact = () => {
     if (inquiryType !== 'business') return; // Guard: never submit for individuals
     if (!isBusinessEmail(formData.email)) {
       setSubmitStatus('error');
-      setEmailError('Please use your work email address. This form is for employers, so we cannot accept free addresses such as Gmail, Yahoo or Outlook.');
+      setEmailError('This form is for employers. Please use your registered company email address.');
       const emailField = document.getElementById('email');
       if (emailField) emailField.focus();
       return;
