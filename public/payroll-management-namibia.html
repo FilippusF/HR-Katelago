@@ -240,12 +240,43 @@
 </footer>
 
 <script>
+/* --- Business email gate: Katelago works with employers, not job seekers --- */
+var KAT_FREE_EMAIL_DOMAINS=['gmail.com','googlemail.com','yahoo.com','yahoo.co.uk','yahoo.co.za','yahoo.co.in','ymail.com','rocketmail.com','hotmail.com','hotmail.co.uk','hotmail.co.za','outlook.com','outlook.co.za','live.com','live.co.uk','live.co.za','msn.com','aol.com','icloud.com','me.com','mac.com','protonmail.com','protonmail.ch','proton.me','gmx.com','gmx.net','gmx.de','mail.com','mail.ru','zoho.com','yandex.com','yandex.ru','rediffmail.com','inbox.com','fastmail.com','tutanota.com','hushmail.com','mailinator.com','10minutemail.com','guerrillamail.com','tempmail.com','iafrica.com','webmail.co.za','vodamail.co.za','telkomsa.net','mweb.co.za','absamail.co.za','iway.na','africaonline.com.na'];
+function katIsBusinessEmail(v){
+  var e=(v||'').trim().toLowerCase();
+  var at=e.lastIndexOf('@');
+  if(at<1) return false;
+  var d=e.slice(at+1);
+  if(d.indexOf('.')<1) return false;
+  return KAT_FREE_EMAIL_DOMAINS.indexOf(d)===-1;
+}
+function katShowFormError(f,html){
+  var box=f.querySelector('.lead-form-error');
+  if(!box){
+    box=document.createElement('div');
+    box.className='lead-form-error';
+    box.setAttribute('role','alert');
+    box.style.cssText='margin:12px 0;padding:12px 14px;border:1px solid #c9302c;background:#fdf4f3;color:#7d2b28;border-radius:6px;font-size:14px;line-height:1.5';
+    var b=f.querySelector('button[type=submit]');
+    if(b&&b.parentNode){b.parentNode.insertBefore(box,b);}else{f.appendChild(box);}
+  }
+  box.innerHTML=html;
+  box.style.display='block';
+}
+function katClearFormError(f){var b=f.querySelector('.lead-form-error'); if(b){b.style.display='none';}}
+
 document.querySelectorAll('form.lead-form').forEach(function(f){
   f.addEventListener('submit', async function(e){
     e.preventDefault();
     var btn=f.querySelector('button[type=submit]'); var label=btn?btn.textContent:'';
-    if(btn){btn.disabled=true; btn.textContent='Sending...';}
     var d=Object.fromEntries(new FormData(f).entries());
+    katClearFormError(f);
+    if(!katIsBusinessEmail(d.email)){
+      katShowFormError(f,'Please use your work email address. Katelago works with employers, so enquiries need to come from a company email rather than a free address such as Gmail, Yahoo or Outlook.<br><br><strong>Looking for a job?</strong> We are not able to help with job applications or personal work permits through this form. You are welcome to <a href="https://www.katelago.com/careers" style="color:#7d2b28;font-weight:700">add your CV to our candidate database</a> instead.');
+      var ef=f.querySelector('input[name=email]'); if(ef){ef.focus();}
+      return;
+    }
+    if(btn){btn.disabled=true; btn.textContent='Sending...';}
     var name=(d.name||'').trim(); var first=name.split(' ')[0]||name; var last=name.split(' ').slice(1).join(' ');
     var skip=['name','email','phone','company','source'];
     var parts=[];
