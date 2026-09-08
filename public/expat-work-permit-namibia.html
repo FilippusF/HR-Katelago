@@ -223,7 +223,7 @@
             </select>
             <button class="btn btn-gold submit" type="submit">Request a Consultation</button>
           </form>
-          <div class="form-note"><strong>Looking for a job?</strong> Katelago partners with employers. This page is for businesses operating in Namibia. You are welcome to add your CV to our database via our main site.</div>
+          <div class="form-note"><strong>Looking for a job?</strong> This form is for employers only. Job seekers are welcome to <a href="https://www.katelago.com/careers">add a CV to our candidate database</a> instead.</div>
         </div>
       </div>
     </div>
@@ -276,7 +276,7 @@ document.querySelectorAll('form.lead-form').forEach(function(f){
     var d=Object.fromEntries(new FormData(f).entries());
     katClearFormError(f);
     if(!katIsBusinessEmail(d.email)){
-      katShowFormError(f,'Please use your work email address. Katelago works with employers, so enquiries need to come from a company email rather than a free address such as Gmail, Yahoo or Outlook.<br><br><strong>Looking for a job?</strong> We are not able to help with job applications or personal work permits through this form. You are welcome to <a href="https://www.katelago.com/careers" style="color:#7d2b28;font-weight:700">add your CV to our candidate database</a> instead.');
+      katShowFormError(f,'Please use your work email address. This form is for employers, so we cannot accept free addresses such as Gmail, Yahoo or Outlook.');
       var ef=f.querySelector('input[name=email]'); if(ef){ef.focus();}
       return;
     }
