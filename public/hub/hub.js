@@ -40,7 +40,7 @@
         })
       }).then(function (r) {
         if (!r.ok) throw new Error('send failed');
-        if (window.gtag) { window.gtag('event', 'generate_lead'); }
+        if (window.gtag) { window.gtag('event', 'hub_resource_request'); }
         button.textContent = 'Done';
         input.value = '';
         notify(form, 'Thank you. We have received your request and will be in touch.');
