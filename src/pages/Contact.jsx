@@ -2,6 +2,19 @@ import React, { useState, useEffect } from 'react';
 import StationImage5 from '../assets/images/14.png';
 import logoImage from '../assets/images/Main-logo.png';
 
+/* Katelago works with employers. Enquiries must come from a company email. */
+const FREE_EMAIL_DOMAINS = ['gmail.com','googlemail.com','yahoo.com','yahoo.co.uk','yahoo.co.za','yahoo.co.in','ymail.com','rocketmail.com','hotmail.com','hotmail.co.uk','hotmail.co.za','outlook.com','outlook.co.za','live.com','live.co.uk','live.co.za','msn.com','aol.com','icloud.com','me.com','mac.com','protonmail.com','protonmail.ch','proton.me','gmx.com','gmx.net','gmx.de','mail.com','mail.ru','zoho.com','yandex.com','yandex.ru','rediffmail.com','inbox.com','fastmail.com','tutanota.com','hushmail.com','mailinator.com','10minutemail.com','guerrillamail.com','tempmail.com','iafrica.com','webmail.co.za','vodamail.co.za','telkomsa.net','mweb.co.za','absamail.co.za','iway.na','africaonline.com.na'];
+
+const isBusinessEmail = (value) => {
+  const e = (value || '').trim().toLowerCase();
+  const at = e.lastIndexOf('@');
+  if (at < 1) return false;
+  const domain = e.slice(at + 1);
+  if (domain.indexOf('.') < 1) return false;
+  return !FREE_EMAIL_DOMAINS.includes(domain);
+};
+
+
 /* ── DESIGN TOKENS ──────────────────────────────────────────────────────────
 Same tokens used across Hero, Home, Header, Footer.
 ────────────────────────────────────────────────────────────────────────── */
@@ -81,6 +94,11 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (inquiryType !== 'business') return; // Guard: never submit for individuals
+    if (!isBusinessEmail(formData.email)) {
+      setSubmitStatus('error');
+      alert('Please use your work email address. This form is for employers, so we cannot accept free addresses such as Gmail, Yahoo or Outlook.');
+      return;
+    }
     setIsSubmitting(true);
     setSubmitStatus(null);
 
