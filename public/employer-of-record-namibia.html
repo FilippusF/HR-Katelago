@@ -274,7 +274,7 @@ document.querySelectorAll('form.lead-form').forEach(function(f){
     var d=Object.fromEntries(new FormData(f).entries());
     katClearFormError(f);
     if(!katIsBusinessEmail(d.email)){
-      katShowFormError(f,'Please use your work email address. This form is for employers, so we cannot accept free addresses such as Gmail, Yahoo or Outlook.');
+      katShowFormError(f,'This form is for employers. Please use your registered company email address.');
       var ef=f.querySelector('input[name=email]'); if(ef){ef.focus();}
       return;
     }
