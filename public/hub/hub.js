@@ -1,5 +1,5 @@
 /* Katelago HR Hub
-   Newsletter and request forms deliver through the same mail relay the
+   Document request forms deliver through the same mail relay the
    main site contact form uses. Template downloads are direct links.
    Also applies the guide library search. */
 (function () {
@@ -12,7 +12,7 @@
       var button = form.querySelector('button');
       if (!input || !input.value || !button) return;
 
-      var context = 'The Friday HR Brief';
+      var context = 'HR Hub resource';
       var gate = form.closest('.inlinegate');
       var card = form.closest('.card');
       if (gate && gate.querySelector('b')) {
